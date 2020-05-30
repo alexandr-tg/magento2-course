@@ -161,12 +161,12 @@ class StoreTest extends \PHPUnit\Framework\TestCase
             [UrlInterface::URL_TYPE_WEB, false, true, 'http://localhost/'],
             [UrlInterface::URL_TYPE_WEB, true, false, 'http://localhost/'],
             [UrlInterface::URL_TYPE_WEB, true, true, 'http://localhost/'],
-            [UrlInterface::URL_TYPE_LINK, false, false, 'http://localhost/index.php/'],
-            [UrlInterface::URL_TYPE_LINK, false, true, 'http://localhost/index.php/default/'],
+            [UrlInterface::URL_TYPE_LINK, false, false, 'http://localhost/Index.php/'],
+            [UrlInterface::URL_TYPE_LINK, false, true, 'http://localhost/Index.php/default/'],
             [UrlInterface::URL_TYPE_LINK, true, false, 'http://localhost/'],
             [UrlInterface::URL_TYPE_LINK, true, true, 'http://localhost/default/'],
-            [UrlInterface::URL_TYPE_DIRECT_LINK, false, false, 'http://localhost/index.php/'],
-            [UrlInterface::URL_TYPE_DIRECT_LINK, false, true, 'http://localhost/index.php/'],
+            [UrlInterface::URL_TYPE_DIRECT_LINK, false, false, 'http://localhost/Index.php/'],
+            [UrlInterface::URL_TYPE_DIRECT_LINK, false, true, 'http://localhost/Index.php/'],
             [UrlInterface::URL_TYPE_DIRECT_LINK, true, false, 'http://localhost/'],
             [UrlInterface::URL_TYPE_DIRECT_LINK, true, true, 'http://localhost/'],
             [UrlInterface::URL_TYPE_STATIC, false, false, 'http://localhost/pub/static/'],
@@ -248,8 +248,8 @@ class StoreTest extends \PHPUnit\Framework\TestCase
                 true,
                 'http://localhost/custom_entry.php/default/'
             ],
-            [UrlInterface::URL_TYPE_LINK, true, false, 'http://localhost/index.php/'],
-            [UrlInterface::URL_TYPE_LINK, true, true, 'http://localhost/index.php/default/'],
+            [UrlInterface::URL_TYPE_LINK, true, false, 'http://localhost/Index.php/'],
+            [UrlInterface::URL_TYPE_LINK, true, true, 'http://localhost/Index.php/default/'],
             [
                 UrlInterface::URL_TYPE_DIRECT_LINK,
                 false,
@@ -262,8 +262,8 @@ class StoreTest extends \PHPUnit\Framework\TestCase
                 true,
                 'http://localhost/custom_entry.php/'
             ],
-            [UrlInterface::URL_TYPE_DIRECT_LINK, true, false, 'http://localhost/index.php/'],
-            [UrlInterface::URL_TYPE_DIRECT_LINK, true, true, 'http://localhost/index.php/']
+            [UrlInterface::URL_TYPE_DIRECT_LINK, true, false, 'http://localhost/Index.php/'],
+            [UrlInterface::URL_TYPE_DIRECT_LINK, true, true, 'http://localhost/Index.php/']
         ];
     }
 
@@ -297,13 +297,13 @@ class StoreTest extends \PHPUnit\Framework\TestCase
         $this->model->load('admin');
         $this->model
             ->expects($this->any())->method('getUrl')
-            ->will($this->returnValue('http://localhost/index.php'));
+            ->will($this->returnValue('http://localhost/Index.php'));
         $this->assertStringEndsWith('default', $this->model->getCurrentUrl());
         $this->assertStringEndsNotWith('default', $this->model->getCurrentUrl(false));
 
         $this->model
             ->expects($this->any())->method('getUrl')
-            ->willReturn('http://localhost/index.php?' .SidResolverInterface::SESSION_ID_QUERY_PARAM .'=12345');
+            ->willReturn('http://localhost/Index.php?' .SidResolverInterface::SESSION_ID_QUERY_PARAM .'=12345');
         $this->request->setParams([SidResolverInterface::SESSION_ID_QUERY_PARAM, '12345']);
         $this->request->setQueryValue(SidResolverInterface::SESSION_ID_QUERY_PARAM, '12345');
         $this->assertContains(SidResolverInterface::SESSION_ID_QUERY_PARAM .'=12345', $this->model->getCurrentUrl());

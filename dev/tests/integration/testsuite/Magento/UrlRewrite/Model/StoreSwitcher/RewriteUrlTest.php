@@ -103,8 +103,8 @@ class RewriteUrlTest extends TestCase
         $fromStore = $this->getStoreByCode('default');
         $toStore = $this->getStoreByCode('fixture_second_store');
 
-        $redirectUrl = "http://localhost/index.php/page-c/";
-        $expectedUrl = "http://localhost/index.php/page-c-on-2nd-store";
+        $redirectUrl = "http://localhost/Index.php/page-c/";
+        $expectedUrl = "http://localhost/Index.php/page-c-on-2nd-store";
 
         $this->assertEquals($expectedUrl, $this->storeSwitcher->switch($fromStore, $toStore, $redirectUrl));
     }
@@ -120,8 +120,8 @@ class RewriteUrlTest extends TestCase
     {
         $fromStore = $this->getStoreByCode('default');
         $toStore = $this->getStoreByCode('fixture_second_store');
-        $redirectUrl = "http://localhost/index.php/page100/";
-        $expectedUrl = "http://localhost/index.php/page100/";
+        $redirectUrl = "http://localhost/Index.php/page100/";
+        $expectedUrl = "http://localhost/Index.php/page100/";
         $this->assertEquals($expectedUrl, $this->storeSwitcher->switch($fromStore, $toStore, $redirectUrl));
     }
 
@@ -142,8 +142,8 @@ class RewriteUrlTest extends TestCase
         $fromStore = $this->getStoreByCode('default');
         $toStore = $this->getStoreByCode('fixture_second_store');
 
-        $redirectUrl = "http://localhost/index.php/page-c/";
-        $expectedUrl = "http://localhost/index.php/page-c-on-2nd-store";
+        $redirectUrl = "http://localhost/Index.php/page-c/";
+        $expectedUrl = "http://localhost/Index.php/page-c-on-2nd-store";
 
         $secureRedirectUrl = $this->storeSwitcher->switch($fromStore, $toStore, $redirectUrl);
         $this->assertEquals($expectedUrl, $secureRedirectUrl);

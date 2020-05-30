@@ -169,7 +169,7 @@ class AddressTest extends \PHPUnit\Framework\TestCase
     public function getPrimaryAddressEditUrlDataProvider()
     {
         return [
-            '1' => [1, 'http://localhost/index.php/customer/address/edit/id/1/'],
+            '1' => [1, 'http://localhost/Index.php/customer/address/edit/id/1/'],
         ];
     }
 }

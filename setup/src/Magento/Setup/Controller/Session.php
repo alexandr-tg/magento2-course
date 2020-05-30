@@ -6,7 +6,7 @@
 namespace Magento\Setup\Controller;
 
 /**
- * Sets up session for setup/index.php/session/prolong or redirects to error page
+ * Sets up session for setup/Index.php/session/prolong or redirects to error page
  */
 class Session extends \Zend\Mvc\Controller\AbstractActionController
 {

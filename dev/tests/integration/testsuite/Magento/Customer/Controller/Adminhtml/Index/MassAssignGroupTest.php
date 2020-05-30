@@ -25,7 +25,7 @@ class MassAssignGroupTest extends AbstractBackendController
      *
      * @var string
      */
-    protected $baseControllerUrl = 'http://localhost/index.php/backend/customer/index/index';
+    protected $baseControllerUrl = 'http://localhost/Index.php/backend/customer/index/index';
 
     /**
      * @var CustomerRepositoryInterface

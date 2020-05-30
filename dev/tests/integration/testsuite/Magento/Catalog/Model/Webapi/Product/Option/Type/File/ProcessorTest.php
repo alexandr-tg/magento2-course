@@ -53,7 +53,7 @@ class ProcessorTest extends \PHPUnit\Framework\TestCase
         return [
             // default config
             [[]],
-            // config from pub/index.php
+            // config from pub/Index.php
             [
                 [
                     DirectoryList::PUB => [DirectoryList::URL_PATH => ''],

@@ -70,7 +70,7 @@ class EditTest extends \PHPUnit\Framework\TestCase
      */
     public function testGetSaveUrl()
     {
-        $this->assertEquals('http://localhost/index.php/customer/address/formPost/', $this->_block->getSaveUrl());
+        $this->assertEquals('http://localhost/Index.php/customer/address/formPost/', $this->_block->getSaveUrl());
     }
 
     /**

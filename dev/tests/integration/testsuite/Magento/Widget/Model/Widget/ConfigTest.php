@@ -53,7 +53,7 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
         $this->assertInternalType('array', $plugins['options']['placeholders']);
 
         $this->assertStringStartsWith(
-            'http://localhost/index.php/backend/admin/widget/index/key',
+            'http://localhost/Index.php/backend/admin/widget/index/key',
             $plugins['options']['window_url']
         );
     }
@@ -64,6 +64,6 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
 
         $url = $this->_model->getWidgetWindowUrl($config);
 
-        $this->assertStringStartsWith('http://localhost/index.php/backend/admin/widget/index/skip_widgets', $url);
+        $this->assertStringStartsWith('http://localhost/Index.php/backend/admin/widget/index/skip_widgets', $url);
     }
 }

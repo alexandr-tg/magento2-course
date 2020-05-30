@@ -376,7 +376,7 @@ class CartTest extends \Magento\TestFramework\TestCase\AbstractController
         $this->dispatch('checkout/cart/add');
 
         $this->assertEquals(
-            '{"backUrl":"http:\/\/localhost\/index.php\/checkout\/cart\/"}',
+            '{"backUrl":"http:\/\/localhost\/Index.php\/checkout\/cart\/"}',
             $this->getResponse()->getBody()
         );
 
@@ -417,7 +417,7 @@ class CartTest extends \Magento\TestFramework\TestCase\AbstractController
         $this->assertSessionMessages(
             $this->contains(
                 "\n" . 'You added Simple Product to your ' .
-                '<a href="http://localhost/index.php/checkout/cart/">shopping cart</a>.'
+                '<a href="http://localhost/Index.php/checkout/cart/">shopping cart</a>.'
             ),
             \Magento\Framework\Message\MessageInterface::TYPE_SUCCESS
         );

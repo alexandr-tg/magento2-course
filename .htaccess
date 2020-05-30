@@ -142,7 +142,9 @@
 
     Options +FollowSymLinks
     RewriteEngine on
-
+    
+    SetEnvIf Host spain.magento2.loc* MAGE_RUN_CODE=spain_web
+    SetEnvIf Host spain.magento2.loc* MAGE_RUN_TYPE=website
 ############################################
 ## you can put here your magento root folder
 ## path relative to web root
@@ -176,7 +178,7 @@
     RewriteCond %{REQUEST_FILENAME} !-l
 
 ############################################
-## rewrite everything else to index.php
+## rewrite everything else to Index.php
 
     RewriteRule .* index.php [L]
 

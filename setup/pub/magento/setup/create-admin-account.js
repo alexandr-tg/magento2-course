@@ -50,7 +50,7 @@ angular.module('create-admin-account', ['ngStorage'])
             };
             $scope.validate();
             if ($scope.valid) {
-                $http.post('index.php/validate-admin-credentials', data)
+                $http.post('Index.php/validate-admin-credentials', data)
                     .then(function successCallback(resp) {
                         $scope.validateCredentials.result = resp.data;
 
@@ -98,10 +98,10 @@ angular.module('create-admin-account', ['ngStorage'])
                         isValid = typeof value === 'string' && minReg.test(value);
 
                     ctrl.$setValidity('checkPassword', isValid);
-                    
+
                     return value;
                 };
-                
+
                 ctrl.$parsers.unshift(validator);
                 ctrl.$formatters.unshift(validator);
             }

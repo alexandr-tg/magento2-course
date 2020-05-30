@@ -62,7 +62,7 @@ class Locales
     public function getList($type = self::TYPE_ALL)
     {
         $this->transport->write(
-            rtrim(str_replace('index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
+            rtrim(str_replace('Index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
             $this->prepareParamArray($type),
             CurlInterface::POST,
             []

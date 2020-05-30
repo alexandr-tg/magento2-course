@@ -259,7 +259,7 @@ class AccountTest extends \Magento\TestFramework\TestCase\AbstractController
             $this->equalTo(
                 [
                     'You must confirm your account. Please check your email for the confirmation link or '
-                    . '<a href="http://localhost/index.php/customer/account/confirmation/'
+                    . '<a href="http://localhost/Index.php/customer/account/confirmation/'
                     . '?email=test2%40email.com">click here</a> for a new link.'
                 ]
             ),
@@ -280,7 +280,7 @@ class AccountTest extends \Magento\TestFramework\TestCase\AbstractController
                 [
                     'There is already an account with this email address. ' .
                     'If you are sure that it is your email address, ' .
-                    '<a href="http://localhost/index.php/customer/account/forgotpassword/">click here</a>' .
+                    '<a href="http://localhost/Index.php/customer/account/forgotpassword/">click here</a>' .
                     ' to get your password and access your account.',
                 ]
             ),
@@ -622,7 +622,7 @@ class AccountTest extends \Magento\TestFramework\TestCase\AbstractController
             $this->equalTo(
                 [
                     'You must confirm your account. Please check your email for the confirmation link or '
-                    . '<a href="http://localhost/index.php/customer/account/confirmation/'
+                    . '<a href="http://localhost/Index.php/customer/account/confirmation/'
                     . '?email=test_example%40email.com">click here</a> for a new link.'
                 ]
             ),
@@ -962,7 +962,7 @@ class AccountTest extends \Magento\TestFramework\TestCase\AbstractController
 
         if (preg_match('<a\s*href="(?<url>.*?)".*>', $content, $matches)) {
             $confirmationUrl = $matches['url'];
-            $confirmationUrl = str_replace('http://localhost/index.php/', '', $confirmationUrl);
+            $confirmationUrl = str_replace('http://localhost/Index.php/', '', $confirmationUrl);
             // phpcs:ignore Magento2.Functions.DiscouragedFunction
             $confirmationUrl = html_entity_decode($confirmationUrl);
         }

@@ -103,11 +103,11 @@ class AdminAnalyzer extends \Symfony\Component\Console\Command\Command
         }
         $this->output->outputMessages($this->urlAnalyzer->fixLastSlash('app_backend_url'));
         $url1 = $_ENV['app_backend_url'];
-        if (strpos($url1, '/index.php') !== false) {
-            $url2 = str_replace('/index.php', '', $url1);
+        if (strpos($url1, '/Index.php') !== false) {
+            $url2 = str_replace('/Index.php', '', $url1);
         } else {
             $pattern = '/(\/\w+\/)$/';
-            $replacement = '/index.php$1';
+            $replacement = '/Index.php$1';
             $url2 = str_replace($url1, preg_replace($pattern, $replacement, $url1), $url1);
         }
         $urls = [$url1, $url2];

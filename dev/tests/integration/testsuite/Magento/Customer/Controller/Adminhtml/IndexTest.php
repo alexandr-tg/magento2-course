@@ -51,7 +51,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
     protected function setUp()
     {
         parent::setUp();
-        $this->_baseControllerUrl = 'http://localhost/index.php/backend/customer/index/';
+        $this->_baseControllerUrl = 'http://localhost/Index.php/backend/customer/index/';
         $this->customerRepository = Bootstrap::getObjectManager()->get(
             \Magento\Customer\Api\CustomerRepositoryInterface::class
         );

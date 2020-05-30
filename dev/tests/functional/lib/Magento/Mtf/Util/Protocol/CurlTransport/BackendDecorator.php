@@ -73,10 +73,10 @@ class BackendDecorator implements CurlInterface
         $urls[] = $originalUrl;
         // It could be the case that the page needs a refresh, so we will try the original one twice.
         $urls[] = $originalUrl;
-        if (strpos($originalUrl, '/index.php') !== false) {
-            $url2 = str_replace('/index.php', '', $originalUrl);
+        if (strpos($originalUrl, '/Index.php') !== false) {
+            $url2 = str_replace('/Index.php', '', $originalUrl);
         } else {
-            $url2 = $originalUrl . 'index.php/';
+            $url2 = $originalUrl . 'Index.php/';
         }
         $urls[] = $url2;
         if (strpos($originalUrl, 'https') !== false) {
