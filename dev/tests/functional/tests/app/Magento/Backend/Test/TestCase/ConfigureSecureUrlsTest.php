@@ -115,7 +115,7 @@ class ConfigureSecureUrlsTest extends Injectable
             'web/secure/base_url' => [
                 'scope' => 'default',
                 'scope_id' => 0,
-                'value' => str_replace(['http', 'index.php/'], ['https', ''], $_ENV['app_frontend_url'])
+                'value' => str_replace(['http', 'Index.php/'], ['https', ''], $_ENV['app_frontend_url'])
             ]
         ];
         $config = $this->fixtureFactory->createByCode('configData', ['dataset' => $configData, 'data' => $data]);

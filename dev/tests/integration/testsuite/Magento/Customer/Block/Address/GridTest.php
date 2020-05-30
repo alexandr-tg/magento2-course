@@ -58,7 +58,7 @@ class GridTest extends \PHPUnit\Framework\TestCase
         $gridBlock = $this->createBlockForCustomer(1);
 
         $this->assertEquals(
-            'http://localhost/index.php/customer/address/edit/id/1/',
+            'http://localhost/Index.php/customer/address/edit/id/1/',
             $gridBlock->getAddressEditUrl(1)
         );
     }

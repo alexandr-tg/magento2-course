@@ -54,7 +54,7 @@ class Website
     {
         $this->transport->addOption(CURLOPT_HEADER, 1);
         $this->transport->write(
-            rtrim(str_replace('index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
+            rtrim(str_replace('Index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
             $this->prepareParamArray($websiteCode),
             CurlInterface::POST,
             []

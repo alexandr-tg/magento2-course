@@ -82,8 +82,8 @@ class UrlTest extends \PHPUnit\Framework\TestCase
     public function getUrlsWithSecondStoreProvider()
     {
         return [
-           'case1' => ['fixturestore', 'http://sample-second.com/index.php/simple-product-one.html'],
-           'case2' => ['default', 'http://sample.com/index.php/simple-product-one.html']
+           'case1' => ['fixturestore', 'http://sample-second.com/Index.php/simple-product-one.html'],
+           'case2' => ['default', 'http://sample.com/Index.php/simple-product-one.html']
         ];
     }
 

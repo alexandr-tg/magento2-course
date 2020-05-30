@@ -139,19 +139,19 @@ class DataTest extends \PHPUnit\Framework\TestCase
                 'setId',
                 42,
                 'abc',
-                'http://localhost/index.php/shipping/tracking/popup?hash=b3JkZXJfaWQ6NDI6YWJj',
+                'http://localhost/Index.php/shipping/tracking/popup?hash=b3JkZXJfaWQ6NDI6YWJj',
             ],
             [\Magento\Sales\Model\Order\Shipment::class,
                 'setId',
                 42,
                 'abc',
-                'http://localhost/index.php/shipping/tracking/popup?hash=c2hpcF9pZDo0MjphYmM%2C'
+                'http://localhost/Index.php/shipping/tracking/popup?hash=c2hpcF9pZDo0MjphYmM%2C'
             ],
             [\Magento\Sales\Model\Order\Shipment\Track::class,
                 'setEntityId',
                 42,
                 'abc',
-                'http://localhost/index.php/shipping/tracking/popup?hash=dHJhY2tfaWQ6NDI6YWJj'
+                'http://localhost/Index.php/shipping/tracking/popup?hash=dHJhY2tfaWQ6NDI6YWJj'
             ]
         ];
     }

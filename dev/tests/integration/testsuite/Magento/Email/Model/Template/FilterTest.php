@@ -90,7 +90,7 @@ class FilterTest extends \PHPUnit\Framework\TestCase
         $url = $this->model->storeDirective(
             ['{{store url="translation/ajax/index"}}', 'store', ' url="translation/ajax/index"']
         );
-        $this->assertStringMatchesFormat('http://example.com/index.php/backend/translation/ajax/index/%A', $url);
+        $this->assertStringMatchesFormat('http://example.com/Index.php/backend/translation/ajax/index/%A', $url);
     }
 
     /**

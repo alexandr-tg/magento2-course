@@ -84,7 +84,7 @@ class Reader implements ReaderInterface
     private function getFiles()
     {
         $this->transport->write(
-            rtrim(str_replace('index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
+            rtrim(str_replace('Index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
             $this->prepareParamArray(),
             CurlInterface::POST,
             []

@@ -19,7 +19,7 @@ class ResetPasswordTest extends \Magento\TestFramework\TestCase\AbstractBackendC
      *
      * @var string
      */
-    protected $baseControllerUrl = 'http://localhost/index.php/backend/customer/index/';
+    protected $baseControllerUrl = 'http://localhost/Index.php/backend/customer/index/';
 
     /**
      * Checks reset password functionality with no restrictive settings and customer reset request event.

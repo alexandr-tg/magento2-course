@@ -53,7 +53,7 @@ class PathChecker
     public function pathExists($path)
     {
         $this->transport->write(
-            rtrim(str_replace('index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
+            rtrim(str_replace('Index.php', '', $_ENV['app_frontend_url']), '/') . self::URL,
             $this->prepareParamArray($path),
             CurlInterface::POST,
             []

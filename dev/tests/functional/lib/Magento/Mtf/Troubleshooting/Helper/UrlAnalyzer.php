@@ -33,7 +33,7 @@ class UrlAnalyzer
     }
 
     /**
-     * Add/remove 'index.php' as a part of url if needed.
+     * Add/remove 'Index.php' as a part of url if needed.
      *
      * @param string $url
      * @return array

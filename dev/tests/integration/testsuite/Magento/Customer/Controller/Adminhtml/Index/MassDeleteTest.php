@@ -31,7 +31,7 @@ class MassDeleteTest extends AbstractBackendController
      *
      * @var string
      */
-    private $baseControllerUrl = 'http://localhost/index.php/backend/customer/index/index';
+    private $baseControllerUrl = 'http://localhost/Index.php/backend/customer/index/index';
 
     /**
      * @inheritDoc

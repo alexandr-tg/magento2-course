@@ -117,7 +117,7 @@ class IndexTest extends \Magento\TestFramework\TestCase\AbstractController
             $this->equalTo(
                 [
                     "\n&lt;script&gt;alert(&quot;xss&quot;);&lt;/script&gt; has been added to your Wish List. "
-                    . 'Click <a href="http://localhost/index.php/">here</a> to continue shopping.',
+                    . 'Click <a href="http://localhost/Index.php/">here</a> to continue shopping.',
                 ]
             ),
             \Magento\Framework\Message\MessageInterface::TYPE_SUCCESS

@@ -172,8 +172,8 @@ class WebapiDecorator implements CurlInterface
     protected function isValidIntegration()
     {
         $url = rtrim($_ENV['app_frontend_url'], '/');
-        if (strpos($url, 'index.php') === false) {
-            $url .=  '/index.php/rest/V1/modules';
+        if (strpos($url, 'Index.php') === false) {
+            $url .=  '/Index.php/rest/V1/modules';
         } else {
             $url .= '/rest/V1/modules';
         }

@@ -15,17 +15,17 @@ angular.module('status', ['ngStorage'])
             $scope.isConsole = $scope.isConsole === false;
         };
         $scope.rollback = function () {
-            $http.post('index.php/rollback');
+            $http.post('Index.php/rollback');
             $scope.error = true;
             $scope.rollbackStarted = true;
         };
         $scope.goToSuccessPage = function () {
-            window.location.href = '../setup/index.php#/updater-success';
+            window.location.href = '../setup/Index.php#/updater-success';
         };
 
         $interval(
             function () {
-                $http.post('index.php/status')
+                $http.post('Index.php/status')
                     .success(function (result) {
                         if (result['complete']) {
                             $localStorage.rollbackStarted = $scope.rollbackStarted;
@@ -60,7 +60,7 @@ angular.module('status', ['ngStorage'])
         );
         $interval(
             function () {
-                $http.post('../setup/index.php/session/prolong')
+                $http.post('../setup/Index.php/session/prolong')
                     .success(function (result) {
                     })
                     .error(function (result) {
