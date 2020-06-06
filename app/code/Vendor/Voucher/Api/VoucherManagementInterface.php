@@ -10,9 +10,10 @@ namespace Vendor\Voucher\Api;
 interface VoucherManagementInterface
 {
     /**
-     * @return string[]
+     * @param mixed $status
+     * @return mixed
      */
-    public function createVoucherStatus();
+    public function createVoucherStatus($status);
 
     /**
      * @param int $id
@@ -26,9 +27,12 @@ interface VoucherManagementInterface
     public function getAllVoucherStatuses();
 
     /**
+     * @param int $customer_id
+     * @param int $status_id
+     * @param string $voucher_code
      * @return mixed
      */
-    public function createVoucher();
+    public function createVoucher($customer_id, $status_id, $voucher_code);
 
     /**
      * @param int $id

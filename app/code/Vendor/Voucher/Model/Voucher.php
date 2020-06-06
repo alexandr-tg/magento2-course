@@ -31,6 +31,17 @@ class Voucher extends AbstractModel implements IdentityInterface
     }
 
     /**
+     * @param $customer_id
+     * @param $status_id
+     * @param $voucher_code
+     * @return Voucher
+     */
+    public function setVoucherCode($customer_id, $status_id, $voucher_code)
+    {
+        return $this->setData(['customer_id' => $customer_id, 'status_id' => $status_id, 'voucher_code' =>$voucher_code]);
+    }
+
+    /**
      * @return string[]
      */
     public function getVoucherCode()
