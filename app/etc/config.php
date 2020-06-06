@@ -247,6 +247,7 @@ return [
         'Vendor_CustomShipping' => 1,
         'Vendor_CustomerAttribute' => 1,
         'Vendor_ProductAttribute' => 1,
+        'Vendor_Voucher' => 1,
         'Vertex_Tax' => 1,
         'Vertex_AddressValidation' => 1,
         'Yotpo_Yotpo' => 1
