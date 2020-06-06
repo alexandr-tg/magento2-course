@@ -6,6 +6,9 @@ use Magento\Framework\Model\ResourceModel\Db\Context;
 
 class VoucherStatus extends AbstractDb
 {
+
+    protected $_isPkAutoIncrement = false;
+
     public function __construct(Context $context)
     {
         parent::__construct($context);

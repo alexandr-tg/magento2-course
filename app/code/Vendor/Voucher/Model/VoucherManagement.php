@@ -4,10 +4,10 @@ namespace Vendor\Voucher\Model;
 
 use Magento\Customer\Model\CustomerFactory as CustomerModelFactory;
 use Vendor\Voucher\Api\VoucherManagementInterface;
+use Vendor\Voucher\Model\ResourceModel\Voucher as VoucherResource;
 use Vendor\Voucher\Model\ResourceModel\Voucher\CollectionFactory as VoucherCollectionFactory;
-use Vendor\Voucher\Model\ResourceModel\VoucherFactory as VoucherResourceFactory;
+use Vendor\Voucher\Model\ResourceModel\VoucherStatus as VoucherStatusResourceModel;
 use Vendor\Voucher\Model\ResourceModel\VoucherStatus\CollectionFactory as VoucherStatusCollectionFactory;
-use Vendor\Voucher\Model\ResourceModel\VoucherStatusFactory as VoucherStatusResourceModel;
 use Vendor\Voucher\Model\VoucherFactory as VoucherModelFactory;
 use Vendor\Voucher\Model\VoucherStatusFactory as VoucherStatusModelFactory;
 
@@ -30,7 +30,7 @@ class VoucherManagement implements VoucherManagementInterface
      */
     private $voucherModelFactory;
     /**
-     * @var VoucherResourceFactory
+     * @var VoucherResource
      */
     private $voucherResourceFactory;
     /**
@@ -48,7 +48,7 @@ class VoucherManagement implements VoucherManagementInterface
      * @param VoucherStatusFactory $voucherStatusModelFactory
      * @param VoucherStatusResourceModel $voucherStatusResourceFactory
      * @param VoucherFactory $voucherModelFactory
-     * @param VoucherResourceFactory $voucherResourceFactory
+     * @param VoucherResource $voucherResourceFactory
      * @param VoucherCollectionFactory $voucherCollectionFactory
      * @param CustomerModelFactory $customerModelFactory
      */
@@ -57,7 +57,7 @@ class VoucherManagement implements VoucherManagementInterface
         VoucherStatusModelFactory $voucherStatusModelFactory,
         VoucherStatusResourceModel $voucherStatusResourceFactory,
         VoucherModelFactory $voucherModelFactory,
-        VoucherResourceFactory $voucherResourceFactory,
+        VoucherResource $voucherResourceFactory,
         VoucherCollectionFactory $voucherCollectionFactory,
         CustomerModelFactory $customerModelFactory
     ) {
@@ -70,14 +70,11 @@ class VoucherManagement implements VoucherManagementInterface
         $this->customerModelFactory = $customerModelFactory;
     }
 
-    public function createVoucherStatus()
+    public function createVoucherStatus($status)
     {
-        $content = trim(file_get_contents("php://input"));
-        $status = json_decode($content, true)['status'];
         $voucherStatus = $this->voucherStatusModelFactory->create();
-        $voucherStatus->setData(['status_code' => $status]);
-        $voucherStatus->save();
-        return $voucherStatus->getId();
+        $voucherStatus->setStatusCode($status);
+        $this->voucherStatusResourceFactory->save($voucherStatus);
     }
 
     public function deleteVoucherStatus($id)
@@ -88,7 +85,6 @@ class VoucherManagement implements VoucherManagementInterface
         } catch (\Exception $e) {
             throw new \Exception($e->getMessage());
         }
-
 
         return true;
     }
@@ -106,17 +102,11 @@ class VoucherManagement implements VoucherManagementInterface
         return $data;
     }
 
-    public function createVoucher()
+    public function createVoucher($customer_id, $status_id, $voucher_code)
     {
-        $content = trim(file_get_contents("php://input"));
-        $decode = json_decode($content, true);
-        $customer_id = $decode['customer_id'];
-        $status_id = $decode['status_id'];
-        $voucher_code = $decode['voucher_code'];
-
         $voucher = $this->voucherModelFactory->create();
-        $voucher->setData(['customer_id' => $customer_id, 'status_id' => $status_id, 'voucher_code' =>$voucher_code]);
-        $voucher->save();
+        $voucher->setVoucherCode($customer_id, $status_id, $voucher_code);
+        $this->voucherResourceFactory->save($voucher);
         return $voucher->getId();
     }
 

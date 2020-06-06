@@ -31,6 +31,14 @@ class VoucherStatus extends AbstractModel implements IdentityInterface
     }
 
     /**
+     * @param $status
+     */
+    public function setStatusCode($status)
+    {
+        $this->setData(['status_code' => $status]);
+    }
+
+    /**
      * @return string[]
      */
     public function getStatusCode()
