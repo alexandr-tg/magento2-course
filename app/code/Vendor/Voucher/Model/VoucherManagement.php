@@ -106,7 +106,9 @@ class VoucherManagement implements VoucherManagementInterface
     public function createVoucher($customer_id, $status_id, $voucher_code)
     {
         $voucher = $this->voucherModelFactory->create();
-        $voucher->setVoucherCode($customer_id, $status_id, $voucher_code);
+        $voucher->setCustomerId($customer_id);
+        $voucher->setStatusId($status_id);
+        $voucher->setVoucherCode($voucher_code);
         $this->voucherResourceFactory->save($voucher);
         return $voucher->getId();
     }
@@ -150,5 +152,16 @@ class VoucherManagement implements VoucherManagementInterface
         }
 
         return $data;
+    }
+
+    /**
+     * @param string $customer_name
+     * @param string $voucher_status
+     * @param string $voucher_code
+     */
+    public function additionalTask($customer_name, $voucher_status, $voucher_code)
+    {
+        $customer = $this->customerModelFactory->create()->loadByEmail('5b4e5f58555f4e5b@gmail.com')->getId();
+        return $customer;
     }
 }
