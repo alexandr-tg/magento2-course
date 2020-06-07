@@ -15,7 +15,7 @@
         </resources>
     </route>
 
-    <route method="GET" url="/V1/VoucherStatus/getAll">
+    <route method="GET" url="/V1/VoucherStatus">
         <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="getAllVoucherStatuses"/>
         <resources>
             <resource ref="anonymous"/>

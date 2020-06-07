@@ -75,6 +75,7 @@ class VoucherManagement implements VoucherManagementInterface
         $voucherStatus = $this->voucherStatusModelFactory->create();
         $voucherStatus->setStatusCode($status);
         $this->voucherStatusResourceFactory->save($voucherStatus);
+        return $voucherStatus->getId();
     }
 
     public function deleteVoucherStatus($id)
