@@ -1,0 +1,53 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+
+    <route method="POST" url="/V1/VoucherStatus">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="createVoucherStatus"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+
+    <route method="DELETE" url="/V1/VoucherStatus/:id">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="deleteVoucherStatus"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+
+    <route method="GET" url="/V1/VoucherStatus">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="getAllVoucherStatuses"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route method="POST" url="/V1/Voucher">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="createVoucher"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+
+    <route method="DELETE" url="/V1/Voucher/:id">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="deleteVoucher"/>
+        <resources>
+            <resource ref="Magento_Backend::admin"/>
+        </resources>
+    </route>
+
+    <route method="GET" url="/V1/Voucher">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="getAllVouchers"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+    <route method="GET" url="/V1/Voucher/:id">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="getAllVouchersByCustomerId"/>
+        <resources>
+            <resource ref="anonymous"/>
+        </resources>
+    </route>
+
+</routes>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="voucher_status" resource="default" engine="innodb" comment="Voucher_status">
+
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true"
+                comment="Entity ID"/>
+
+        <column xsi:type="varchar" name="status_code" padding="5" unsigned="true" nullable="false"
+                identity="false" comment="Code status"/>
+
+        <column xsi:type="timestamp" name="created_at" on_update="false" default="CURRENT_TIMESTAMP" comment="Create time"/>
+
+        <column xsi:type="timestamp" name="updated_at" on_update="true" default="CURRENT_TIMESTAMP" comment="Update time"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+
+        <constraint xsi:type="unique" referenceId="VOUCHER_STATUS_STATUS_CODE">
+            <column name="status_code"/>
+        </constraint>
+
+    </table>
+
+    <table name="voucher" resource="default" engine="innodb" comment="Vouchers">
+
+        <column xsi:type="int" name="entity_id" padding="10" unsigned="true" nullable="false" identity="true"
+                comment="Entity ID"/>
+
+        <column xsi:type="int" name="customer_id" padding="10" unsigned="true" nullable="false"
+                identity="false" comment="Customer id"/>
+
+        <column xsi:type="int" name="status_id" padding="10" unsigned="true" nullable="false"
+                identity="false" comment="Status id"/>
+
+        <column xsi:type="varchar" name="voucher_code" padding="5" unsigned="true" nullable="false"
+                identity="false" comment="Voucher code"/>
+
+        <column xsi:type="timestamp" name="created_at" on_update="false" default="CURRENT_TIMESTAMP" comment="Create time"/>
+
+        <column xsi:type="timestamp" name="consumed_date" on_update="false" nullable="true" comment="Consumed date"/>
+
+        <constraint xsi:type="primary" referenceId="PRIMARY">
+            <column name="entity_id"/>
+        </constraint>
+
+        <constraint xsi:type="foreign" referenceId="VOUCHER_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID" table="voucher"
+                    column="customer_id" referenceTable="customer_entity" referenceColumn="entity_id" onDelete="CASCADE"/>
+
+        <constraint xsi:type="foreign" referenceId="VOUCHER_STATUS_ID_VOUCHER_STATUS_ENTITY_ID" table="voucher"
+                    column="status_id" referenceTable="voucher_status" referenceColumn="entity_id" onDelete="CASCADE"/>
+
+        <constraint xsi:type="unique" referenceId="VOUCHER_VOUCHER_CODE">
+            <column name="voucher_code"/>
+        </constraint>
+
+    </table>
+</schema>
