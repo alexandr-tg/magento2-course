@@ -1,4 +1,17 @@
 <?xml version="1.0" ?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Vendor\Voucher\Api\VoucherManagementInterface" type="Vendor\Voucher\Model\VoucherManagement"/>
+
+    <type name="Vendor\Voucher\Model\VoucherManagement">
+        <plugin name="Vendor\Voucher\Plugin\VoucherBeforeCreateVoucherPlugin" type="Vendor\Voucher\Plugin\VoucherBeforeCreateVoucherPlugin" sortOrder="10" />
+    </type>
+
+    <type name="Vendor\Voucher\Model\Voucher">
+        <plugin name="Vendor\Voucher\Plugin\VoucherAfterLoadPlugin" type="Vendor\Voucher\Plugin\VoucherAfterLoadPlugin" sortOrder="10" />
+        <plugin name="Vendor\Voucher\Plugin\VoucherBeforeSavePlugin" type="Vendor\Voucher\Plugin\VoucherBeforeSavePlugin" sortOrder="20" />
+    </type>
+
+
 </config>
+
+
