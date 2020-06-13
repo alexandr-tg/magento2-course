@@ -50,4 +50,5 @@ interface VoucherManagementInterface
      * @return string[]
      */
     public function getAllVouchersByCustomerId($id);
+
 }
