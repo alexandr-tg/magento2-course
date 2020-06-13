@@ -5,7 +5,7 @@ namespace Vendor\Voucher\Observer;
 use Magento\Framework\Event\Observer;
 use Magento\Framework\Event\ObserverInterface;
 use Vendor\Voucher\Model\ResourceModel\Voucher\CollectionFactory as VoucherCollection;
-use Vendor\Voucher\Model\VoucherFactory as VoucherModel;
+use Vendor\Voucher\Model\Voucher as VoucherModel;
 
 class ChangeCustomerGroupIdAfter implements ObserverInterface
 {
@@ -31,10 +31,10 @@ class ChangeCustomerGroupIdAfter implements ObserverInterface
         if (is_object($vouchers) && count($vouchers) != 0) {
             $group_id = $customer->getGroupId();
 
-            if ($group_id != 9) {
-
+            $data = '';
+            if ($group_id != 10) {
                 foreach ($vouchers as $value) {
-                    $this->voucherModel->create()->load($value->getEntityId())->delete();
+                    $this->voucherModel->setEntityId($value->getEntityId())->delete();
                 }
             }
         }
