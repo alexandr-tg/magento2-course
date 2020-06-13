@@ -31,7 +31,7 @@ class VoucherBeforeCreateVoucherPlugin
     {
         $customer = $this->customerModel->create()->load($customer_id);
 
-        if ($customer->getGroupId() != 9) {
+        if ($customer->getGroupId() != 10) {
             throw new LocalizedException(__('Customer isn\'t in a privileged group'));
         }
     }
