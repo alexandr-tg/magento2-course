@@ -11,6 +11,6 @@ class VoucherBeforeSavePlugin
      */
     public function beforeSave(Subject $subject)
     {
-        $subject->setData('customer_id', $subject->getExtensionAttributes()->getCustomer()->getId());
+        $subject->setCustomerId($subject->getExtensionAttributes()->getCustomer()->getId());
     }
 }
