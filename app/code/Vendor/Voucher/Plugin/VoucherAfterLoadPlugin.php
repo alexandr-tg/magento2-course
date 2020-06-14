@@ -35,6 +35,6 @@ class VoucherAfterLoadPlugin
             throw new LocalizedException(__('GetExtensionAttributes return Null'));
         }
 
-        $subject->getExtensionAttributes()->setCustomer($customer);
+        $voucher->setCustomer($customer);
     }
 }
