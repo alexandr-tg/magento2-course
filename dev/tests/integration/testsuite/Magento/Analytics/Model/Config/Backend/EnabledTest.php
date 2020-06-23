@@ -110,7 +110,7 @@ class EnabledTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $path The configuration path in format section/group/field_name
      * @param string $value The configuration value
-     * @param string $scope The configuration scope (default, website, or store)
+     * @param string $scope The configuration scope (vouchers_voucherstatus_index.xml, website, or store)
      * @return void
      * @throws \Magento\Framework\Exception\RuntimeException
      * @throws \Magento\Framework\Exception\AlreadyExistsException

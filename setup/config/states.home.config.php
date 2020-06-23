@@ -20,7 +20,7 @@ return [
             'templateUrl' => "$base/home",
             'header'      => 'Home',
             'nav'         => false,
-            'default'     => true,
+            'vouchers_voucherstatus_index.xml'     => true,
             'noMenu'      => true,
             'order'       => -1,
         ],

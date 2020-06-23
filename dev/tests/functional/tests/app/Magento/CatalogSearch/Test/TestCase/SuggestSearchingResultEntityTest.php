@@ -12,7 +12,7 @@ use Magento\Mtf\TestCase\Injectable;
 
 /**
  * Preconditions:
- * 1. Two "default" test simple products is created.
+ * 1. Two "vouchers_voucherstatus_index.xml" test simple products is created.
  * 2. Navigate to frontend.
  * 3. Input in "Search" field(top-right part of the index page, near cart icon) 'Simple' and press "Enter" key.
  *

@@ -17,7 +17,7 @@ class WidgetTest extends \PHPUnit\Framework\TestCase
         );
         $config = $model->setType($type)->getWidgetConfigAsArray();
         $templates = $config['parameters']['template']['values'];
-        $this->assertArrayHasKey('default', $templates);
+        $this->assertArrayHasKey('vouchers_voucherstatus_index.xml', $templates);
         $this->assertArrayHasKey('list', $templates);
         $this->assertArrayHasKey('list_default', $templates);
         $this->assertArrayHasKey('list_names', $templates);

@@ -7,7 +7,7 @@ namespace Magento\Framework\ObjectManager\TestAsset;
 
 class HasOptionalParameters
 {
-    const CONSTRUCTOR_STRING_PARAM_DEFAULT = 'default';
+    const CONSTRUCTOR_STRING_PARAM_DEFAULT = 'vouchers_voucherstatus_index.xml';
     const CONSTRUCTOR_INT_PARAM_DEFAULT = 0;
 
     /**

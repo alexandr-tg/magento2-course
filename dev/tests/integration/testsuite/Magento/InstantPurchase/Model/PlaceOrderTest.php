@@ -179,7 +179,7 @@ class PlaceOrderTest extends TestCase
     private function getFixtureStore(): Store
     {
         $repository = $this->objectManager->create(StoreRepositoryInterface::class);
-        $store = $repository->get('default');
+        $store = $repository->get('vouchers_voucherstatus_index.xml');
         return $store;
     }
 

@@ -472,7 +472,7 @@ class CheckoutTest extends \PHPUnit\Framework\TestCase
      * @magentoConfigFixture current_store payment/paypal_express/active 1
      * @magentoConfigFixture current_store payment/paypal_express/allowspecific 1
      * @magentoConfigFixture current_store payment/paypal_express/specificcountry US,GB
-     * @magentoConfigFixture current_store general/country/default US
+     * @magentoConfigFixture current_store general/country/vouchers_voucherstatus_index.xml US
      *
      * @magentoDbIsolation enabled
      *
@@ -489,13 +489,13 @@ class CheckoutTest extends \PHPUnit\Framework\TestCase
     /**
      * Test case when customer doesn't have either billing or shipping addresses.
      * Customer add virtual product to quote and place order using PayPal Express method.
-     * PayPal Express allowed specific country list doesn't contain default store country.
+     * PayPal Express allowed specific country list doesn't contain vouchers_voucherstatus_index.xml store country.
      *
      * @magentoDataFixture Magento/Paypal/_files/virtual_quote_with_empty_billing_address.php
      * @magentoConfigFixture current_store payment/paypal_express/active 1
      * @magentoConfigFixture current_store payment/paypal_express/allowspecific 1
      * @magentoConfigFixture current_store payment/paypal_express/specificcountry US,GB
-     * @magentoConfigFixture current_store general/country/default CA
+     * @magentoConfigFixture current_store general/country/vouchers_voucherstatus_index.xml CA
      *
      * @magentoDbIsolation enabled
      * @expectedException \Magento\Framework\Exception\LocalizedException

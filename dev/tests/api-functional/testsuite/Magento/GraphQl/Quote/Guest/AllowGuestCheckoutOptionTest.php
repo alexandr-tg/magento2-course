@@ -78,7 +78,7 @@ QUERY;
 
         self::assertNotNull($guestCart->getId());
         self::assertNull($guestCart->getCustomer()->getId());
-        self::assertEquals('default', $guestCart->getStore()->getCode());
+        self::assertEquals('vouchers_voucherstatus_index.xml', $guestCart->getStore()->getCode());
     }
 
     /**
@@ -169,7 +169,7 @@ QUERY;
         $query = <<<QUERY
 mutation {
   setPaymentMethodOnCart(input: {
-    cart_id: "{$maskedQuoteId}", 
+    cart_id: "{$maskedQuoteId}",
     payment_method: {
       code: "{$methodCode}"
     }
@@ -254,9 +254,9 @@ QUERY;
 
         $query = <<<QUERY
 mutation {
-  setShippingMethodsOnCart(input: 
+  setShippingMethodsOnCart(input:
     {
-      cart_id: "$maskedQuoteId", 
+      cart_id: "$maskedQuoteId",
       shipping_methods: [{
         carrier_code: "$carrierCode"
         method_code: "$methodCode"

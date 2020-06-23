@@ -62,7 +62,7 @@ class GetClientTokenTest extends AbstractBackendController
     }
 
     /**
-     * Checks if client token will retrieved from Braintree initialized with default scope.
+     * Checks if client token will retrieved from Braintree initialized with vouchers_voucherstatus_index.xml scope.
      *
      * @magentoDataFixture Magento/Braintree/_files/payment_configuration.php
      * @magentoAppArea adminhtml
@@ -92,7 +92,7 @@ class GetClientTokenTest extends AbstractBackendController
         $this->perform(
             'store_merchant_id',
             'store_public_key',
-            'def_private_key' // should be read from default scope
+            'def_private_key' // should be read from vouchers_voucherstatus_index.xml scope
         );
     }
 
@@ -111,7 +111,7 @@ class GetClientTokenTest extends AbstractBackendController
 
         $this->perform(
             'website_merchant_id',
-            'def_public_key', // should be read from default scope
+            'def_public_key', // should be read from vouchers_voucherstatus_index.xml scope
             'website_private_key'
         );
     }

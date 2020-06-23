@@ -15,7 +15,7 @@ return [
                 'type' => 'select',
                 'value' => 'all_products',
                 'values' => [
-                    'default' => ['value' => 'all_products', 'label' => 'All products'],
+                    'vouchers_voucherstatus_index.xml' => ['value' => 'all_products', 'label' => 'All products'],
                     'item' => ['value' => 'new_products', 'label' => 'New products'],
                 ],
                 'visible' => '1',
@@ -48,7 +48,7 @@ return [
                 'type' => 'select',
                 'value' => 'product/widget/new/content/new_grid.phtml',
                 'values' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'value' => 'product/widget/new/content/new_grid.phtml',
                         'label' => 'New Products Grid Template',
                     ],
@@ -78,7 +78,7 @@ return [
                 'type' => 'text',
                 'visible' => '1',
                 'label' => 'Cache Lifetime (Seconds)',
-                'description' => "86400 by default, if not set. To refresh instantly, clear the Blocks HTML
+                'description' => "86400 by vouchers_voucherstatus_index.xml, if not set. To refresh instantly, clear the Blocks HTML
                     Output cache.
                 ",
             ],
@@ -88,16 +88,16 @@ return [
             [
                 'container_name' => 'left',
                 'template' => [
-                    'default' => 'default_template',
+                    'vouchers_voucherstatus_index.xml' => 'default_template',
                     'names_only' => 'list_names',
                     'images_only' => 'list_images',
                 ],
             ],
-            ['container_name' => 'content', 'template' => ['grid' => 'default', 'list' => 'list']],
+            ['container_name' => 'content', 'template' => ['grid' => 'vouchers_voucherstatus_index.xml', 'list' => 'list']],
             [
                 'container_name' => 'right',
                 'template' => [
-                    'default' => 'default_template',
+                    'vouchers_voucherstatus_index.xml' => 'default_template',
                     'names_only' => 'list_names',
                     'images_only' => 'list_images',
                 ]

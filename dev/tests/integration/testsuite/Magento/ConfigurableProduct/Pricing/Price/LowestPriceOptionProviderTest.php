@@ -82,7 +82,7 @@ class LowestPriceOptionProviderTest extends \PHPUnit\Framework\TestCase
             true
         );
         $lowestPriceChildProduct->setStatus(Status::STATUS_DISABLED);
-        // update in default store scope
+        // update in vouchers_voucherstatus_index.xml store scope
         $currentStoreId = $this->storeManager->getStore()->getId();
         $defaultStore = $this->storeManager->getDefaultStoreView();
         $this->storeManager->setCurrentStore($defaultStore->getId());

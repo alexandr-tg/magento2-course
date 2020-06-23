@@ -83,7 +83,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
     {
         return [
            'case1' => ['fixturestore', 'http://sample-second.com/Index.php/simple-product-one.html'],
-           'case2' => ['default', 'http://sample.com/Index.php/simple-product-one.html']
+           'case2' => ['vouchers_voucherstatus_index.xml', 'http://sample.com/Index.php/simple-product-one.html']
         ];
     }
 

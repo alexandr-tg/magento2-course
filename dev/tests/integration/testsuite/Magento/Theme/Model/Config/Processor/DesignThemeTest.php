@@ -17,7 +17,7 @@ class DesignThemeTest extends \PHPUnit\Framework\TestCase
         $designTheme = Bootstrap::getObjectManager()->create(DesignTheme::class);
 
         $config = [
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 'design' => ['theme' => ['theme_id' => '']],
             ],
         ];

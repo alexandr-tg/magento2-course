@@ -10,10 +10,10 @@ use Magento\Mtf\TestCase\Scenario;
 
 /**
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Stores > Taxes > Tax Rules.
  * 3. Click 'Add New Tax Rule' button.
- * 4. Assign default rates to rule.
+ * 4. Assign vouchers_voucherstatus_index.xml rates to rule.
  * 5. Save Tax Rate.
  * 6. Go to Products > Catalog.
  * 7. Add new product.

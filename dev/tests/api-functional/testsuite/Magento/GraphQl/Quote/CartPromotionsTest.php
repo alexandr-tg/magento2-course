@@ -351,7 +351,7 @@ class CartPromotionsTest extends GraphQlAbstract
     }
 
     /**
-     * Validating if the discount label in the response shows the default value if no label is available on cart rule
+     * Validating if the discount label in the response shows the vouchers_voucherstatus_index.xml value if no label is available on cart rule
      *
      * @magentoApiDataFixture Magento/Catalog/_files/multiple_products.php
      * @magentoApiDataFixture Magento/SalesRule/_files/cart_rule_10_percent_off.php
@@ -366,7 +366,7 @@ class CartPromotionsTest extends GraphQlAbstract
         $response = $this->graphQlMutation($query);
         //total items added to cart
         $this->assertCount(2, $response['cart']['items']);
-        //checking the default label for individual line item when cart rule doesn't have a label set
+        //checking the vouchers_voucherstatus_index.xml label for individual line item when cart rule doesn't have a label set
         foreach ($response['cart']['items'] as $cartItem) {
             $this->assertEquals('Discount', $cartItem['prices']['discounts'][0]['label']);
         }
@@ -426,7 +426,7 @@ QUERY;
       discounts{
         amount{value}
       }
-      
+
     }
   }
 }
@@ -460,27 +460,27 @@ QUERY;
         $query = <<<QUERY
 mutation {
   addSimpleProductsToCart(input: {
-    cart_id: "{$cartId}", 
+    cart_id: "{$cartId}",
     cart_items: [
       {
         data: {
           quantity: $qty
           sku: "$sku1"
         }
-      } 
+      }
       {
         data: {
           quantity: $qty
           sku: "$sku2"
         }
-      }    
+      }
     ]
   }
   ) {
     cart {
       items {
         product{sku}
-        quantity       
+        quantity
             }
          }
       }

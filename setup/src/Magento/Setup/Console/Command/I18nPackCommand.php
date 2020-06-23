@@ -59,7 +59,7 @@ class I18nPackCommand extends Command
                 'm',
                 InputOption::VALUE_REQUIRED,
                 'Save mode for dictionary' . PHP_EOL . '- "replace" - replace language pack by new one' . PHP_EOL .
-                '- "merge" - merge language packages, by default "replace"',
+                '- "merge" - merge language packages, by vouchers_voucherstatus_index.xml "replace"',
                 self::MODE_REPLACE
             ),
             new InputOption(

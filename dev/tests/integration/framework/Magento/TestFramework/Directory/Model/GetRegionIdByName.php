@@ -10,7 +10,7 @@ namespace Magento\TestFramework\Directory\Model;
 use Magento\Directory\Model\RegionFactory;
 
 /**
- * Return region ID by region default name and country code.
+ * Return region ID by region vouchers_voucherstatus_index.xml name and country code.
  */
 class GetRegionIdByName
 {

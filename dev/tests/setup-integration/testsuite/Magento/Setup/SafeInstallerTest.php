@@ -140,7 +140,7 @@ class SafeInstallerTest extends SetupTestCase
     private function assertForeignKeyPresence(string $tableName, string $foreignKeyName, bool $isPresent = true): void
     {
         $foreignKeys = $this->dbSchemaReader
-            ->readReferences($this->resourceConnection->getTableName($tableName), 'default');
+            ->readReferences($this->resourceConnection->getTableName($tableName), 'vouchers_voucherstatus_index.xml');
         if ($isPresent) {
             $this->assertArrayHasKey($foreignKeyName, $foreignKeys);
         } else {

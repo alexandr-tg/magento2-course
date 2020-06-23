@@ -45,21 +45,21 @@ class InstallSchema implements InstallSchemaInterface
                 'smallint',
                 \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
                 2,
-                ['nullable' => true, 'default' => 0],
+                ['nullable' => true, 'vouchers_voucherstatus_index.xml' => 0],
                 'Smallint'
             )
             ->addColumn(
                 'bigint',
                 \Magento\Framework\DB\Ddl\Table::TYPE_BIGINT,
                 10,
-                ['nullable' => true, 'unsigned' => false, 'default' => 0],
+                ['nullable' => true, 'unsigned' => false, 'vouchers_voucherstatus_index.xml' => 0],
                 'Bigint'
             )
             ->addColumn(
                 'float',
                 \Magento\Framework\DB\Ddl\Table::TYPE_FLOAT,
                 null,
-                ['default' => 0],
+                ['vouchers_voucherstatus_index.xml' => 0],
                 'Float'
             )
             ->addColumn(
@@ -73,7 +73,7 @@ class InstallSchema implements InstallSchemaInterface
                 'timestamp',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
                 null,
-                ['default' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT_UPDATE],
+                ['vouchers_voucherstatus_index.xml' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT_UPDATE],
                 'Timestamp'
             )
             ->addColumn(

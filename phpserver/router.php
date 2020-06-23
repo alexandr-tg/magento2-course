@@ -55,8 +55,8 @@ if (php_sapi_name() === 'cli-server') {
 
     $debug("route: $route");
 
-    if (strpos($route, 'pub/errors/default/') === 0) {
-        $route = preg_replace('#pub/errors/default/#', 'errors/default/', $route, 1);
+    if (strpos($route, 'pub/errors/vouchers_voucherstatus_index.xml/') === 0) {
+        $route = preg_replace('#pub/errors/vouchers_voucherstatus_index.xml/#', 'errors/vouchers_voucherstatus_index.xml/', $route, 1);
     }
 
     $magentoPackagePubDir = __DIR__."/../pub";
@@ -64,8 +64,8 @@ if (php_sapi_name() === 'cli-server') {
     if (strpos($route, 'media/') === 0 ||
         strpos($route, 'opt/') === 0 ||
         strpos($route, 'static/') === 0 ||
-        strpos($route, 'errors/default/css/') === 0 ||
-        strpos($route, 'errors/default/images/') === 0
+        strpos($route, 'errors/vouchers_voucherstatus_index.xml/css/') === 0 ||
+        strpos($route, 'errors/vouchers_voucherstatus_index.xml/images/') === 0
     ) {
         $origFile = $magentoPackagePubDir.'/'.$route;
 

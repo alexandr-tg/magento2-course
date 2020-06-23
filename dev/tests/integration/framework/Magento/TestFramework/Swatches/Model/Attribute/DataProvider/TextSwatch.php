@@ -153,7 +153,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                                 'order' => '4',
                                 'swatch' => [
                                     Store::DEFAULT_STORE_ID => 'Swatch 1 Admin',
-                                    'default' => 'Swatch 1 Store 1',
+                                    'vouchers_voucherstatus_index.xml' => 'Swatch 1 Store 1',
                                     'fixture_second_store' => 'Swatch 1 Store 2',
                                     'fixture_third_store' => 'Swatch 1 Store 3',
                                 ],
@@ -162,7 +162,7 @@ class TextSwatch extends AbstractSwatchAttributeData
                                 'order' => '5',
                                 'swatch' => [
                                     Store::DEFAULT_STORE_ID => 'Swatch 2 Admin',
-                                    'default' => 'Swatch 2 Store 1',
+                                    'vouchers_voucherstatus_index.xml' => 'Swatch 2 Store 1',
                                     'fixture_second_store' => 'Swatch 2 Store 2',
                                     'fixture_third_store' => 'Swatch 2 Store 3',
                                 ],

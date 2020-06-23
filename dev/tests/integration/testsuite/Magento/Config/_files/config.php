@@ -5,14 +5,14 @@
  */
 return [
     'system' => [
-        'default' => [
+        'vouchers_voucherstatus_index.xml' => [
             'web' => [
                 'test' => [
-                    'test_value_2' => 'value2.local_config.default.test',
+                    'test_value_2' => 'value2.local_config.vouchers_voucherstatus_index.xml.test',
                 ],
                 'test2' => [
-                    'test_value_3' => 'value3.local_config.default.test',
-                    'test_value_4' => 'value4.local_config.default.test',
+                    'test_value_3' => 'value3.local_config.vouchers_voucherstatus_index.xml.test',
+                    'test_value_4' => 'value4.local_config.vouchers_voucherstatus_index.xml.test',
                 ],
             ],
         ],
@@ -30,7 +30,7 @@ return [
             ],
         ],
         'stores' => [
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 'web' => [
                     'test' => [
                         'test_value_2' => 'value2.local_config.store_default.test',

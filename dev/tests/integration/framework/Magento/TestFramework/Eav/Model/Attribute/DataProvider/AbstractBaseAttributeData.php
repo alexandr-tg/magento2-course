@@ -319,7 +319,7 @@ abstract class AbstractBaseAttributeData
                 'post_data' => [
                     'frontend_label' => [
                         Store::DEFAULT_STORE_ID => 'Test Attribute Update',
-                        'default' => 'Default Store Update',
+                        'vouchers_voucherstatus_index.xml' => 'Default Store Update',
                         'fixture_second_store' => 'Second Store Update',
                         'fixture_third_store' => 'Third Store Update',
                     ]
@@ -327,7 +327,7 @@ abstract class AbstractBaseAttributeData
                 'expected_data' => [
                     'frontend_label' => 'Test Attribute Update',
                     'store_labels' => [
-                        'default' => 'Default Store Update',
+                        'vouchers_voucherstatus_index.xml' => 'Default Store Update',
                         'fixture_second_store' => 'Second Store Update',
                         'fixture_third_store' => 'Third Store Update',
                     ],
@@ -337,7 +337,7 @@ abstract class AbstractBaseAttributeData
                 'post_data' => [
                     'frontend_label' => [
                         Store::DEFAULT_STORE_ID => 'Test Attribute Update',
-                        'default' => 'Default Store Update',
+                        'vouchers_voucherstatus_index.xml' => 'Default Store Update',
                         'fixture_second_store' => '',
                         'fixture_third_store' => '',
                     ]
@@ -345,7 +345,7 @@ abstract class AbstractBaseAttributeData
                 'expected_data' => [
                     'frontend_label' => 'Test Attribute Update',
                     'store_labels' => [
-                        'default' => 'Default Store Update',
+                        'vouchers_voucherstatus_index.xml' => 'Default Store Update',
                     ],
                 ],
             ],
@@ -356,7 +356,7 @@ abstract class AbstractBaseAttributeData
                 'expected_data' => [
                     'frontend_label' => 'Test Attribute Update',
                     'store_labels' => [
-                        'default' => 'Default Store View',
+                        'vouchers_voucherstatus_index.xml' => 'Default Store View',
                         'fixture_second_store' => 'Fixture Second Store',
                         'fixture_third_store' => 'Fixture Third Store',
                     ],

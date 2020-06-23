@@ -90,7 +90,7 @@ return [
             'templateUrl' => "$base/system-config",
             'title'       => 'System config',
             'controller'  => 'systemConfigController',
-            'default'     => false,
+            'vouchers_voucherstatus_index.xml'     => false,
             'nav-bar'     => false,
             'noMenu'      => true,
             'order'       => -1,

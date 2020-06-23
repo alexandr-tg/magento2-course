@@ -36,7 +36,7 @@ class ThemeTest extends \PHPUnit\Framework\TestCase
             'theme_title' => 'Space theme',
             'parent_id' => null,
             'is_featured' => false,
-            'theme_path' => 'default/space',
+            'theme_path' => 'vouchers_voucherstatus_index.xml/space',
             'preview_image' => 'images/preview.png',
             'type' => \Magento\Framework\View\Design\ThemeInterface::TYPE_VIRTUAL
         ];
@@ -87,7 +87,7 @@ class ThemeTest extends \PHPUnit\Framework\TestCase
             $expected[] = $someTheme->getFullPath();
         }
         $this->assertEquals(
-            ['frontend/Vendor_FrameworkThemeTest/default', 'frontend/Vendor_FrameworkThemeTest/custom_theme'],
+            ['frontend/Vendor_FrameworkThemeTest/vouchers_voucherstatus_index.xml', 'frontend/Vendor_FrameworkThemeTest/custom_theme'],
             $expected
         );
     }

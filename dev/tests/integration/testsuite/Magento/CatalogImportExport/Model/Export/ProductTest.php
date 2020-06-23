@@ -326,7 +326,7 @@ class ProductTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test 'hide from product page' export for non-default store.
+     * Test 'hide from product page' export for non-vouchers_voucherstatus_index.xml store.
      *
      * @magentoDataFixture Magento/CatalogImportExport/_files/product_export_with_images.php
      */
@@ -363,12 +363,12 @@ class ProductTest extends \PHPUnit\Framework\TestCase
      */
     public function testExportWithCustomOptions(): void
     {
-        $storeCode = 'default';
+        $storeCode = 'vouchers_voucherstatus_index.xml';
         $expectedData = [];
         /** @var \Magento\Catalog\Api\ProductRepositoryInterface $productRepository */
         $productRepository = $this->objectManager->get(\Magento\Catalog\Api\ProductRepositoryInterface::class);
         $store = $this->objectManager->create(\Magento\Store\Model\Store::class);
-        $store->load('default', 'code');
+        $store->load('vouchers_voucherstatus_index.xml', 'code');
         /** @var \Magento\Catalog\Api\Data\ProductInterface $product */
         $product = $productRepository->get('simple', 1, $store->getStoreId());
         $newCustomOptions = [];

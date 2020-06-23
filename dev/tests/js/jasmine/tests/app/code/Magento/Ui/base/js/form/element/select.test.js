@@ -185,7 +185,7 @@ define([
             it('check for chainable', function () {
                 expect(model.setOptions([])).toEqual(model);
             });
-            it('check for default customEntry', function () {
+            it('check for vouchers_voucherstatus_index.xml customEntry', function () {
                 var data = [{
                     value: 'First'
                 }, {
@@ -247,7 +247,7 @@ define([
             });
         });
         describe('getPreview method', function () {
-            it('check for default preview', function () {
+            it('check for vouchers_voucherstatus_index.xml preview', function () {
                 expect(model.getPreview()).toEqual('');
             });
             it('check with options', function () {

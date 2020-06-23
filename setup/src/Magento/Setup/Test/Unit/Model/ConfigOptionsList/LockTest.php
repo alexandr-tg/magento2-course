@@ -89,7 +89,7 @@ class LockTest extends TestCase
     public function createConfigDataProvider(): array
     {
         return [
-            'Check default values' => [
+            'Check vouchers_voucherstatus_index.xml values' => [
                 'options' => [],
                 'expectedResult' => [
                     'lock' => [
@@ -100,7 +100,7 @@ class LockTest extends TestCase
                     ],
                 ],
             ],
-            'Check default value for cache lock' => [
+            'Check vouchers_voucherstatus_index.xml value for cache lock' => [
                 'options' => [
                     LockConfigOptionsList::INPUT_KEY_LOCK_PROVIDER => LockBackendFactory::LOCK_CACHE,
                 ],
@@ -110,7 +110,7 @@ class LockTest extends TestCase
                     ],
                 ],
             ],
-            'Check default value for zookeeper lock' => [
+            'Check vouchers_voucherstatus_index.xml value for zookeeper lock' => [
                 'options' => [
                     LockConfigOptionsList::INPUT_KEY_LOCK_PROVIDER => LockBackendFactory::LOCK_ZOOKEEPER,
                 ],

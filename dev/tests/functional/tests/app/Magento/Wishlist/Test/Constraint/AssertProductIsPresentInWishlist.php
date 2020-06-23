@@ -13,12 +13,12 @@ use Magento\Mtf\Constraint\AbstractConstraint;
 use Magento\Mtf\Fixture\InjectableFixture;
 
 /**
- * Assert that product is present in default wishlist.
+ * Assert that product is present in vouchers_voucherstatus_index.xml wishlist.
  */
 class AssertProductIsPresentInWishlist extends AbstractConstraint
 {
     /**
-     * Assert that product is present in default wishlist.
+     * Assert that product is present in vouchers_voucherstatus_index.xml wishlist.
      *
      * @param CmsIndex $cmsIndex
      * @param CustomerAccountIndex $customerAccountIndex
@@ -56,6 +56,6 @@ class AssertProductIsPresentInWishlist extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Product is present in default Wish List.';
+        return 'Product is present in vouchers_voucherstatus_index.xml Wish List.';
     }
 }

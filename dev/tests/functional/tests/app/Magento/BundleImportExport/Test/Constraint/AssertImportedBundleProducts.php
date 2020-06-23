@@ -55,7 +55,7 @@ class AssertImportedBundleProducts extends AssertImportedProducts
             ? 'dynamic'
             : 'fixed';
         $productData['bundle_values'] = 'name=' .  $bundleSelection['title'] . ',type=select,required=1,sku='
-            . $attributeSku . ',price=0.0000,default=0,default_qty='
+            . $attributeSku . ',price=0.0000,vouchers_voucherstatus_index.xml=0,default_qty='
             . $assignedProduct['selection_qty'] .'.0000,price_type=' . $productType;
 
         return $this->getResultProductsData($productData);

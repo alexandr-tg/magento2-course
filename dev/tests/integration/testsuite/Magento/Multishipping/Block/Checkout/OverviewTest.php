@@ -31,7 +31,7 @@ class OverviewTest extends \PHPUnit\Framework\TestCase
                 'checkout_overview',
                 [
                     'data' => [
-                        'renderer_template' => 'Magento_Multishipping::checkout/item/default.phtml',
+                        'renderer_template' => 'Magento_Multishipping::checkout/item/vouchers_voucherstatus_index.xml.phtml',
                         'row_renderer_template' => 'Magento_Multishipping::checkout/overview/item.phtml',
                     ],
                 ]
@@ -41,9 +41,9 @@ class OverviewTest extends \PHPUnit\Framework\TestCase
         $this->_block->getChildBlock(
             'renderer.list'
         )->addChild(
-            'default',
+            'vouchers_voucherstatus_index.xml',
             \Magento\Checkout\Block\Cart\Item\Renderer::class,
-            ['template' => 'cart/item/default.phtml']
+            ['template' => 'cart/item/vouchers_voucherstatus_index.xml.phtml']
         );
     }
 
@@ -58,7 +58,7 @@ class OverviewTest extends \PHPUnit\Framework\TestCase
         /** @var $quote \Magento\Quote\Model\Quote */
         $quote = $this->_objectManager->create(\Magento\Quote\Model\Quote::class);
         $item->setQuote($quote);
-        // assure that default renderer was obtained
+        // assure that vouchers_voucherstatus_index.xml renderer was obtained
         $this->assertEquals(
             1,
             \Magento\TestFramework\Helper\Xpath::getElementsCountForXpath(

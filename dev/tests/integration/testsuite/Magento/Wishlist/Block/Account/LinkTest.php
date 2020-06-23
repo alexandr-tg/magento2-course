@@ -71,7 +71,7 @@ class LinkTest extends TestCase
     private function preparePage(): void
     {
         $this->page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'customer_account',
         ]);
         $this->page->getLayout()->generateXml();

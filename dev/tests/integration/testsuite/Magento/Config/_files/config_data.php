@@ -12,10 +12,10 @@ use Magento\TestFramework\Helper\Bootstrap;
 $configData = [
     ScopeConfigInterface::SCOPE_TYPE_DEFAULT => [
         '' => [
-            'web/test/test_value_1' => 'value1.db.default.test',
-            'web/test/test_value_2' => 'value2.db.default.test',
-            'web/test2/test_value_3' => 'value3.db.default.test',
-            'web/test2/test_value_4' => 'value4.db.default.test',
+            'web/test/test_value_1' => 'value1.db.vouchers_voucherstatus_index.xml.test',
+            'web/test/test_value_2' => 'value2.db.vouchers_voucherstatus_index.xml.test',
+            'web/test2/test_value_3' => 'value3.db.vouchers_voucherstatus_index.xml.test',
+            'web/test2/test_value_4' => 'value4.db.vouchers_voucherstatus_index.xml.test',
             'carriers/fedex/account' => 'value5.db.hashed.value',
             'paypal/fetch_reports/ftp_password' => 'value6.db.hashed.value',
         ]
@@ -29,7 +29,7 @@ $configData = [
         ]
     ],
     ScopeInterface::SCOPE_STORES => [
-        'default' => [
+        'vouchers_voucherstatus_index.xml' => [
             'web/test/test_value_1' => 'value1.db.store_default.test',
             'web/test/test_value_2' => 'value2.db.store_default.test',
             'web/test2/test_value_3' => 'value3.db.store_default.test',

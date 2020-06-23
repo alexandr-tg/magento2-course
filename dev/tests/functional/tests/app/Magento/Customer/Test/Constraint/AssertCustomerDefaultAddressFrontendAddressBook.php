@@ -46,7 +46,7 @@ class AssertCustomerDefaultAddressFrontendAddressBook extends AbstractConstraint
 
         \PHPUnit\Framework\Assert::assertTrue(
             $validated,
-            'Customer default address on address book tab is not matching the fixture.'
+            'Customer vouchers_voucherstatus_index.xml address on address book tab is not matching the fixture.'
         );
     }
 

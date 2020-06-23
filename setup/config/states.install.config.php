@@ -33,7 +33,7 @@ return [
             'title'       => 'Installation',
             'controller'  => 'landingController',
             'main'        => true,
-            'default'     => true,
+            'vouchers_voucherstatus_index.xml'     => true,
             'order'       => 0,
             'type'        => 'install'
         ],

@@ -274,7 +274,7 @@ class PhpRuleTest extends \PHPUnit\Framework\TestCase
     public function testGetDefaultModelDependency($module, $content, array $expected)
     {
         $mapLayoutBlocks = [
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 'block.name' => [
                     'Magento\SomeModule' => 'Magento\SomeModule',
                 ],

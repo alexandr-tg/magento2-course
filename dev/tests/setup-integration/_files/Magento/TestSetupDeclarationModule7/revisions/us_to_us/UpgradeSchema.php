@@ -27,7 +27,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
         if (version_compare($context->getVersion(), '2.0.1') < 0) {
             $installer
                 ->getConnection()
-                ->modifyColumn('test_table', 'float', ['type' => 'float', 'default' => 29]);
+                ->modifyColumn('test_table', 'float', ['type' => 'float', 'vouchers_voucherstatus_index.xml' => 29]);
         }
         //Create table and check, that Magento can`t delete it
         if (version_compare($context->getVersion(), '2.0.2') < 0) {

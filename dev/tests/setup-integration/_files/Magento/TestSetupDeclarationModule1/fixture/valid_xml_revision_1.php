@@ -18,28 +18,28 @@ return [
                 'tinyint_without_padding' => [
                     'type' => 'tinyint',
                     'name' => 'tinyint_without_padding',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'nullable' => 'false',
                     'unsigned' => 'false',
                 ],
                 'bigint_without_padding' => [
                     'type' => 'bigint',
                     'name' => 'bigint_without_padding',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'nullable' => 'false',
                     'unsigned' => 'false',
                 ],
                 'smallint_without_padding' => [
                     'type' => 'smallint',
                     'name' => 'smallint_without_padding',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'nullable' => 'false',
                     'unsigned' => 'false',
                 ],
                 'integer_without_padding' => [
                     'type' => 'int',
                     'name' => 'integer_without_padding',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'nullable' => 'false',
                     'unsigned' => 'false',
                 ],
@@ -47,7 +47,7 @@ return [
                     'type' => 'smallint',
                     'name' => 'smallint_with_big_padding',
                     'padding' => '254',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'nullable' => 'false',
                     'unsigned' => 'false',
                 ],
@@ -76,7 +76,7 @@ return [
                     'name' => 'bigint_default_nullable',
                     'padding' => '2',
                     'nullable' => 'true',
-                    'default' => '1',
+                    'vouchers_voucherstatus_index.xml' => '1',
                     'unsigned' => 'true',
                 ],
                 'bigint_not_default_not_nullable' => [
@@ -97,7 +97,7 @@ return [
                 ],
             ],
             'name' => 'reference_table',
-            'resource' => 'default',
+            'resource' => 'vouchers_voucherstatus_index.xml',
         ],
         'auto_increment_test' => [
             'column' => [
@@ -112,7 +112,7 @@ return [
                 'int_disabled_auto_increment' => [
                     'type' => 'smallint',
                     'name' => 'int_disabled_auto_increment',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'identity' => 'false',
                     'padding' => '12',
                     'unsigned' => 'true',
@@ -129,7 +129,7 @@ return [
                 ],
             ],
             'name' => 'auto_increment_test',
-            'resource' => 'default',
+            'resource' => 'vouchers_voucherstatus_index.xml',
         ],
         'test_table' => [
             'column' => [
@@ -150,7 +150,7 @@ return [
                 'bigint' => [
                     'type' => 'bigint',
                     'name' => 'bigint',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'padding' => '13',
                     'nullable' => 'true',
                     'unsigned' => 'false',
@@ -158,21 +158,21 @@ return [
                 'float' => [
                     'type' => 'float',
                     'name' => 'float',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'scale' => '4',
                     'precision' => '12',
                 ],
                 'double' => [
                     'type' => 'decimal',
                     'name' => 'double',
-                    'default' => '11111111.111111',
+                    'vouchers_voucherstatus_index.xml' => '11111111.111111',
                     'precision' => '14',
                     'scale' => '6',
                 ],
                 'decimal' => [
                     'type' => 'decimal',
                     'name' => 'decimal',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'scale' => '4',
                     'precision' => '15',
                 ],
@@ -183,13 +183,13 @@ return [
                 'timestamp' => [
                     'type' => 'timestamp',
                     'name' => 'timestamp',
-                    'default' => 'CURRENT_TIMESTAMP',
+                    'vouchers_voucherstatus_index.xml' => 'CURRENT_TIMESTAMP',
                     'on_update' => 'true',
                 ],
                 'datetime' => [
                     'type' => 'datetime',
                     'name' => 'datetime',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                 ],
                 'longtext' => [
                     'type' => 'longtext',
@@ -220,7 +220,7 @@ return [
                 'varbinary_rename' => [
                     'type' => 'varbinary',
                     'name' => 'varbinary_rename',
-                    'default' => '10101',
+                    'vouchers_voucherstatus_index.xml' => '10101',
                     'disabled' => 'true',
                 ],
             ],
@@ -254,7 +254,7 @@ return [
                 ],
             ],
             'name' => 'test_table',
-            'resource' => 'default',
+            'resource' => 'vouchers_voucherstatus_index.xml',
         ],
     ],
 ];

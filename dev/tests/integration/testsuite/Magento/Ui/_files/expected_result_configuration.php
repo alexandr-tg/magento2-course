@@ -32,7 +32,7 @@ return ['arguments' => [
             'template' => [
                 'name' => 'template',
                 'xsi:type' => 'string',
-                'value' => 'templates/listing/default',
+                'value' => 'templates/listing/vouchers_voucherstatus_index.xml',
             ],
             'spinner' => [
                 'name' => 'spinner',

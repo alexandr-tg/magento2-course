@@ -24,7 +24,7 @@ use Magento\Mtf\TestStep\TestStepFactory;
  * 2. Navigate to System->Other Settings->Custom Variables.
  * 3. Open from grid created custom system variable.
  * 4. Navigate to the Store Switcher.
- * 5. Choose Appropriate Storeview (non default).
+ * 5. Choose Appropriate Storeview (non vouchers_voucherstatus_index.xml).
  * 6. Set Use Default Variable Values.
  * 7. Edit necessary fields.
  * 8. Save Custom variable using correspond saveActions.

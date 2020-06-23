@@ -17,7 +17,7 @@ use Magento\Mtf\TestCase\Injectable;
  * 1. Tax Rule is created.
  *
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Sales > Tax Rules.
  * 3. Select required tax rule from preconditions.
  * 4. Click on the "Delete Rule" button.

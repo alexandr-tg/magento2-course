@@ -39,7 +39,7 @@ class Form extends FormInterface
     protected $taxRateBlock = '[class*="tax_rate"]';
 
     /**
-     * Tax rate default multiple select selector.
+     * Tax rate vouchers_voucherstatus_index.xml multiple select selector.
      *
      * @var string
      */

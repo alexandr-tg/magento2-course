@@ -34,7 +34,7 @@ class UrlRewriteTest extends AbstractSaveCategoryTest
     }
 
     /**
-     * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
      * @dataProvider categoryDataProvider
      * @param array $data
      * @return void

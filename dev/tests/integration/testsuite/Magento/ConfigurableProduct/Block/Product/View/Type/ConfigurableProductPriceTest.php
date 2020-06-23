@@ -155,7 +155,7 @@ class ConfigurableProductPriceTest extends TestCase
     private function preparePageLayout(): void
     {
         $this->page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_product_view',
             'catalog_product_view_type_configurable',
         ]);

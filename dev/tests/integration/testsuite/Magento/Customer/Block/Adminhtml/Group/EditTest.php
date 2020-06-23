@@ -64,7 +64,7 @@ class EditTest extends AbstractController
     }
 
     /**
-     * Verify that the Delete button does not exist for the default group.
+     * Verify that the Delete button does not exist for the vouchers_voucherstatus_index.xml group.
      * @magentoAppIsolation enabled
      */
     public function testDeleteButtonNotExistInDefaultGroup()

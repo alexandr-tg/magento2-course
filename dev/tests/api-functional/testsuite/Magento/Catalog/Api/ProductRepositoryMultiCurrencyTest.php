@@ -81,7 +81,7 @@ class ProductRepositoryMultiCurrencyTest extends WebapiAbstract
             'soap' => [
                 'service' => self::WEBSITES_SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::WEBSITES_SERVICE_NAME . 'GetList'
+                'operation' => self::WEBSITES_SERVICE_NAME . 'Index'
             ]
         ];
 

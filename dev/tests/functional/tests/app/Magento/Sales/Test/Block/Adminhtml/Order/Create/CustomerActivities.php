@@ -27,7 +27,7 @@ class CustomerActivities extends Block
      *
      * @var string
      */
-    protected $updateChanges = '.actions .action-default.scalable';
+    protected $updateChanges = '.actions .action-vouchers_voucherstatus_index.xml.scalable';
 
     /**
      * Order sidebar reorder css selector

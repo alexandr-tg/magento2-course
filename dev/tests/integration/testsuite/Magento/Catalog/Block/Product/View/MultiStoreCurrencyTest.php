@@ -31,10 +31,10 @@ class MultiStoreCurrencyTest extends AbstractCurrencyTest
     }
 
     /**
-     * @magentoConfigFixture default/currency/options/base USD
-     * @magentoConfigFixture current_store currency/options/default CNY
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/currency/options/base USD
+     * @magentoConfigFixture current_store currency/options/vouchers_voucherstatus_index.xml CNY
      * @magentoConfigFixture current_store currency/options/allow CNY,USD
-     * @magentoConfigFixture fixturestore_store currency/options/default UAH
+     * @magentoConfigFixture fixturestore_store currency/options/vouchers_voucherstatus_index.xml UAH
      * @magentoConfigFixture fixturestore_store currency/options/allow UAH,USD
      *
      * @magentoDataFixture Magento/Store/_files/core_fixturestore.php
@@ -52,10 +52,10 @@ class MultiStoreCurrencyTest extends AbstractCurrencyTest
     }
 
     /**
-     * @magentoConfigFixture default/currency/options/base USD
-     * @magentoConfigFixture current_store currency/options/default CNY
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/currency/options/base USD
+     * @magentoConfigFixture current_store currency/options/vouchers_voucherstatus_index.xml CNY
      * @magentoConfigFixture current_store currency/options/allow CNY,USD
-     * @magentoConfigFixture fixturestore_store currency/options/default UAH
+     * @magentoConfigFixture fixturestore_store currency/options/vouchers_voucherstatus_index.xml UAH
      * @magentoConfigFixture fixturestore_store currency/options/allow UAH,USD
      *
      * @magentoDataFixture Magento/Store/_files/core_fixturestore.php
@@ -73,10 +73,10 @@ class MultiStoreCurrencyTest extends AbstractCurrencyTest
     }
 
     /**
-     * @magentoConfigFixture default/currency/options/base USD
-     * @magentoConfigFixture current_store currency/options/default CNY
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/currency/options/base USD
+     * @magentoConfigFixture current_store currency/options/vouchers_voucherstatus_index.xml CNY
      * @magentoConfigFixture current_store currency/options/allow CNY,USD
-     * @magentoConfigFixture fixturestore_store currency/options/default UAH
+     * @magentoConfigFixture fixturestore_store currency/options/vouchers_voucherstatus_index.xml UAH
      * @magentoConfigFixture fixturestore_store currency/options/allow UAH,USD
      *
      * @magentoDataFixture Magento/Store/_files/core_fixturestore.php
@@ -91,7 +91,7 @@ class MultiStoreCurrencyTest extends AbstractCurrencyTest
         $this->assertProductStorePrice(
             'simple-product-tax-none',
             'Buy 2 for CN¥280.00 each and save 80%',
-            'default',
+            'vouchers_voucherstatus_index.xml',
             self::TIER_PRICE_BLOCK_NAME
         );
         $this->reloadProductPriceInfo();
@@ -115,7 +115,7 @@ class MultiStoreCurrencyTest extends AbstractCurrencyTest
     private function assertProductStorePrice(
         string $productSku,
         string $expectedData,
-        string $storeCode = 'default',
+        string $storeCode = 'vouchers_voucherstatus_index.xml',
         string $priceBlockName = self::FINAL_PRICE_BLOCK_NAME
     ): void {
         $currentStore = $this->storeManager->getStore();

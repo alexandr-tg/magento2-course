@@ -221,7 +221,7 @@ class InstallSchema implements InstallSchemaInterface
                 [
                     'unsigned' => true,
                     'nullable' => true,
-                    'default' => 0
+                    'vouchers_voucherstatus_index.xml' => 0
                 ],
                 'Empty
                 Counter
@@ -325,7 +325,7 @@ class InstallSchema implements InstallSchemaInterface
                 [
                     'unsigned' => true,
                     'nullable' => true,
-                    'default' => 100
+                    'vouchers_voucherstatus_index.xml' => 100
                 ],
                 'Counter'
             );

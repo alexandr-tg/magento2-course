@@ -501,11 +501,11 @@ class CustomerRepositoryTest extends \PHPUnit\Framework\TestCase
     public function updateCustomerDataProvider()
     {
         return [
-            'Customer remove default shipping and billing' => [
+            'Customer remove vouchers_voucherstatus_index.xml shipping and billing' => [
                 null,
                 null
             ],
-            'Customer update default shipping and billing' => [
+            'Customer update vouchers_voucherstatus_index.xml shipping and billing' => [
                 1,
                 1
             ],
@@ -587,7 +587,7 @@ class CustomerRepositoryTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test update default shipping and default billing address
+     * Test update vouchers_voucherstatus_index.xml shipping and vouchers_voucherstatus_index.xml billing address
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDbIsolation enabled

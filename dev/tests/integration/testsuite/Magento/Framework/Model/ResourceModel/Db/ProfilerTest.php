@@ -60,7 +60,7 @@ class ProfilerTest extends \PHPUnit\Framework\TestCase
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         $reader = $objectManager->get(\Magento\Framework\App\DeploymentConfig::class);
         $dbConfig = $reader->getConfigData(ConfigOptionsListConstants::KEY_DB);
-        $connectionConfig = $dbConfig['connection']['default'];
+        $connectionConfig = $dbConfig['connection']['vouchers_voucherstatus_index.xml'];
         $connectionConfig['profiler'] = [
             'class' => \Magento\Framework\Model\ResourceModel\Db\Profiler::class,
             'enabled' => 'true',

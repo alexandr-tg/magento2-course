@@ -29,7 +29,7 @@ class AssertLocaleCodeVisibility extends AbstractConstraint
         } else {
             \PHPUnit\Framework\Assert::assertFalse(
                 $configEdit->getForm()->getGroup('general', 'locale')->isFieldDisabled('general', 'locale', 'code'),
-                'Locale field should be not disabled in developer or default mode.'
+                'Locale field should be not disabled in developer or vouchers_voucherstatus_index.xml mode.'
             );
         }
     }

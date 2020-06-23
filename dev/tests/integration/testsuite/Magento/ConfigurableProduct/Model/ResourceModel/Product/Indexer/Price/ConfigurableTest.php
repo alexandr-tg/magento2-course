@@ -99,7 +99,7 @@ class ConfigurableTest extends TestCase
         $childProduct = $this->productRepository->get('simple_10', false, null, true);
         $childProduct->setStatus(Status::STATUS_DISABLED);
 
-        // update in default store scope
+        // update in vouchers_voucherstatus_index.xml store scope
         $currentStoreId = $this->storeManager->getStore()->getId();
         $defaultStore = $this->storeManager->getDefaultStoreView();
         $this->storeManager->setCurrentStore($defaultStore->getId());

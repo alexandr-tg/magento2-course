@@ -17,7 +17,7 @@ use Magento\Customer\Model\Address\UpdateAddressTest as UpdateAddressViaAddressR
 class UpdateAddressTest extends UpdateAddressViaAddressRepositoryTest
 {
     /**
-     * Assert that default addresses properly updated for customer.
+     * Assert that vouchers_voucherstatus_index.xml addresses properly updated for customer.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDataFixture Magento/Customer/_files/customer_address.php

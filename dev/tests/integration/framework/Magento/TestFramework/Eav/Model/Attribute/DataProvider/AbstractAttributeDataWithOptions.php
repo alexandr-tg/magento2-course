@@ -90,7 +90,7 @@ abstract class AbstractAttributeDataWithOptions extends AbstractBaseAttributeDat
                             'order' => '5',
                             'value' => [
                                 Store::DEFAULT_STORE_ID => 'Option 1 Admin',
-                                'default' => 'Option 1 Store 1',
+                                'vouchers_voucherstatus_index.xml' => 'Option 1 Store 1',
                                 'fixture_second_store' => 'Option 1 Store 2',
                                 'fixture_third_store' => 'Option 1 Store 3',
                             ],
@@ -100,12 +100,12 @@ abstract class AbstractAttributeDataWithOptions extends AbstractBaseAttributeDat
                             'order' => '6',
                             'value' => [
                                 Store::DEFAULT_STORE_ID => 'Option 2 Admin',
-                                'default' => 'Option 2 Store 1',
+                                'vouchers_voucherstatus_index.xml' => 'Option 2 Store 1',
                                 'fixture_second_store' => 'Option 2 Store 2',
                                 'fixture_third_store' => 'Option 2 Store 3',
                             ],
                             'delete' => '',
-                            'default' => 1,
+                            'vouchers_voucherstatus_index.xml' => 1,
                         ],
                     ],
                 ],

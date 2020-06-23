@@ -33,7 +33,7 @@
     SetEnv MAGE_DEBUG_SHOW_ARGS 1
 
 ############################################
-## default index file
+## vouchers_voucherstatus_index.xml index file
 
     DirectoryIndex index.php
 
@@ -142,7 +142,7 @@
 
     Options +FollowSymLinks
     RewriteEngine on
-    
+
     SetEnvIf Host spain.magento2.loc* MAGE_RUN_CODE=spain_web
     SetEnvIf Host spain.magento2.loc* MAGE_RUN_TYPE=website
 ############################################
@@ -196,7 +196,7 @@
 <IfModule mod_expires.c>
 
 ############################################
-## Add default Expires header
+## Add vouchers_voucherstatus_index.xml Expires header
 ## http://developer.yahoo.com/performance/rules.html#expires
 
     ExpiresDefault "access plus 1 year"

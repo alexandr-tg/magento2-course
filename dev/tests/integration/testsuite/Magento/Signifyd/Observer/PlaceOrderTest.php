@@ -124,7 +124,7 @@ class PlaceOrderTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Signifyd is enabled for default store.
+     * Signifyd is enabled for vouchers_voucherstatus_index.xml store.
      * Checks a test case when order placed with website where signifyd is disabled.
      *
      * @return void

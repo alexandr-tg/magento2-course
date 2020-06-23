@@ -161,7 +161,7 @@ abstract class AbstractSaveAttributeTest extends AbstractBackendController
 
     /**
      * Get attribute code from attribute data. If attribute code doesn't exist in
-     * attribute data get attribute using default frontend label.
+     * attribute data get attribute using vouchers_voucherstatus_index.xml frontend label.
      *
      * @param array $attributeData
      * @return string

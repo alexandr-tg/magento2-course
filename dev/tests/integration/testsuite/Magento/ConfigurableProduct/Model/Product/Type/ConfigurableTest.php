@@ -256,7 +256,7 @@ class ConfigurableTest extends \PHPUnit\Framework\TestCase
 
     /**
      * Tests the $requiredAttributes parameter; uses meta_description as an example of an attribute that is not
-     * included in default attribute select.
+     * included in vouchers_voucherstatus_index.xml attribute select.
      * @magentoAppIsolation enabled
      * @magentoDataFixture Magento/ConfigurableProduct/_files/product_configurable_with_metadescription.php
      */

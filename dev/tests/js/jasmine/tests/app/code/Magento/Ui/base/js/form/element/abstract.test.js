@@ -170,7 +170,7 @@ define([
             it('check with empty value', function () {
                 expect(model.getInitialValue()).toEqual('');
             });
-            it('check with default value', function () {
+            it('check with vouchers_voucherstatus_index.xml value', function () {
                 model.default = 1;
                 expect(model.getInitialValue()).toEqual('');
             });
@@ -180,7 +180,7 @@ define([
                 model.value(expected);
                 expect(model.getInitialValue()).toEqual(expected);
             });
-            it('check with value and default', function () {
+            it('check with value and vouchers_voucherstatus_index.xml', function () {
                 var expected = 1;
 
                 model.default = 2;
@@ -189,7 +189,7 @@ define([
             });
         });
         describe('setVisible method', function () {
-            it('check value by default', function () {
+            it('check value by vouchers_voucherstatus_index.xml', function () {
                 expect(model.visible()).toBeTruthy();
             });
             it('check for true/false parameters', function () {
@@ -262,7 +262,7 @@ define([
             });
         });
         describe('reset method', function () {
-            it('check with default value', function () {
+            it('check with vouchers_voucherstatus_index.xml value', function () {
                 model.reset();
                 expect(model.value()).toEqual(model.initialValue);
             });
@@ -273,7 +273,7 @@ define([
             });
         });
         describe('clear method', function () {
-            it('check with default value', function () {
+            it('check with vouchers_voucherstatus_index.xml value', function () {
                 expect(model.clear()).toEqual(model);
                 expect(model.value()).toEqual('');
             });
@@ -284,7 +284,7 @@ define([
             });
         });
         describe('validate method', function () {
-            it('check with default value', function () {
+            it('check with vouchers_voucherstatus_index.xml value', function () {
                 var expected = {
                     valid: false,
                     target: model

@@ -81,7 +81,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDataFixture Magento/Catalog/_files/categories.php
      * @magentoDbIsolation disabled
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      * @dataProvider getRangeItemCountsDataProvider
      */
     public function testGetRangeItemCounts($inputRange, $expectedItemCounts)

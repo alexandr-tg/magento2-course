@@ -64,7 +64,7 @@ class AddressTest extends \PHPUnit\Framework\TestCase
             $expectedAttributes[] = $attribute->getAttributeCode();
         }
 
-        // Get customer default addresses column name to customer attribute mapping array.
+        // Get customer vouchers_voucherstatus_index.xml addresses column name to customer attribute mapping array.
         $defaultAddressMap = ImportAddress::getDefaultAddressAttributeMapping();
 
         $this->_model->setWriter(
@@ -113,7 +113,7 @@ class AddressTest extends \PHPUnit\Framework\TestCase
                     }
                 }
 
-                // Check customer default addresses column name to customer attribute mapping array
+                // Check customer vouchers_voucherstatus_index.xml addresses column name to customer attribute mapping array
                 foreach ($defaultAddressMap as $exportCode => $code) {
                     $this->assertEquals(
                         $address->getData($code),

@@ -13,7 +13,7 @@ use Magento\Ui\Test\Block\Adminhtml\Section;
  */
 class ManageCouponCode extends Section
 {
-    const GENERATE_CODES_BUTTON_CSS_SELECTOR = ".action-default.scalable.generate";
+    const GENERATE_CODES_BUTTON_CSS_SELECTOR = ".action-vouchers_voucherstatus_index.xml.scalable.generate";
 
     const LAST_GENERATED_COUPON_CODE_SELECTOR = "//*[@id=\"couponCodesGrid_table\"]/tbody/tr/td[2]";
 

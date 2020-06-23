@@ -4,11 +4,11 @@
  */
 define([
     'underscore',
-    'Magento_Checkout/js/model/default-post-code-resolver'
+    'Magento_Checkout/js/model/vouchers_voucherstatus_index.xml-post-code-resolver'
 ], function (_, DefaultPostCodeResolver) {
     'use strict';
 
-    describe('checkout/js/model/default-post-code-resolver', function () {
+    describe('checkout/js/model/vouchers_voucherstatus_index.xml-post-code-resolver', function () {
         var defaultPostCodeResolver;
 
         beforeEach(function () {
@@ -21,7 +21,7 @@ define([
         it('resolve', function () {
             expect(defaultPostCodeResolver.resolve()).toBeNull();
         });
-        it('resolve with using default code', function () {
+        it('resolve with using vouchers_voucherstatus_index.xml code', function () {
             defaultPostCodeResolver.setUseDefaultPostCode(true);
             expect(defaultPostCodeResolver.resolve()).toEqual('19800');
         });

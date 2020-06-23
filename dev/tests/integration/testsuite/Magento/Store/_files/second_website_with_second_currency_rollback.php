@@ -9,7 +9,7 @@ $objectManager =  \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
 $configResource = $objectManager->get(\Magento\Config\Model\ResourceModel\Config::class);
 $configResource->deleteConfig(
     \Magento\Catalog\Helper\Data::XML_PATH_PRICE_SCOPE,
-    'default',
+    'vouchers_voucherstatus_index.xml',
     0
 );
 $website = $objectManager->create(\Magento\Store\Model\Website::class);

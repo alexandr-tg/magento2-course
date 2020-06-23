@@ -43,7 +43,7 @@ class EnvironmentPlaceholderTest extends \PHPUnit\Framework\TestCase
             ]
         );
         $expected = [
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 'web' => [
                     'unsecure' => [
                         'base_url' => 'http://expected.local'
@@ -69,7 +69,7 @@ class EnvironmentPlaceholderTest extends \PHPUnit\Framework\TestCase
             ]
         ];
         $config = [
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 'web' => [
                     'unsecure' => [
                         'base_url' => 'http://original.local',

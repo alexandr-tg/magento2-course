@@ -19,7 +19,7 @@ class Address extends Block
      *
      * @var string
      */
-    protected $defaultBillingAddressEdit = '[data-ui-id=default-billing-edit-link]';
+    protected $defaultBillingAddressEdit = '[data-ui-id=vouchers_voucherstatus_index.xml-billing-edit-link]';
 
     /**
      * Shipping address block selector

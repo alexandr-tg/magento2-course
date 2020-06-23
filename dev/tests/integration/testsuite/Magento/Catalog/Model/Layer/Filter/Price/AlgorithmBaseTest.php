@@ -38,7 +38,7 @@ class AlgorithmBaseTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDbIsolation disabled
      * @magentoAppIsolation enabled
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      * @dataProvider pricesSegmentationDataProvider
      * @covers       \Magento\Framework\Search\Dynamic\Algorithm::calculateSeparators
      */
@@ -55,7 +55,7 @@ class AlgorithmBaseTest extends \PHPUnit\Framework\TestCase
         $dimensions = [
             'scope' => $objectManager->create(
                 \Magento\Framework\Search\Request\Dimension::class,
-                ['name' => 'someName', 'value' => 'default']
+                ['name' => 'someName', 'value' => 'vouchers_voucherstatus_index.xml']
             ),
         ];
 

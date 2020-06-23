@@ -42,10 +42,10 @@ class GroupManagementTest extends WebapiAbstract
     }
 
     /**
-     * Verify the retrieval of the default group for storeId equal to 1.
+     * Verify the retrieval of the vouchers_voucherstatus_index.xml group for storeId equal to 1.
      *
      * @param int $storeId The store Id
-     * @param array $defaultGroupData The default group data for the store with the specified Id.
+     * @param array $defaultGroupData The vouchers_voucherstatus_index.xml group data for the store with the specified Id.
      *
      * @dataProvider getDefaultGroupDataProvider
      */
@@ -53,7 +53,7 @@ class GroupManagementTest extends WebapiAbstract
     {
         $serviceInfo = [
             'rest' => [
-                'resourcePath' => self::RESOURCE_PATH . "/default/$storeId",
+                'resourcePath' => self::RESOURCE_PATH . "/vouchers_voucherstatus_index.xml/$storeId",
                 'httpMethod' => \Magento\Framework\Webapi\Rest\Request::HTTP_METHOD_GET,
             ],
             'soap' => [
@@ -65,7 +65,7 @@ class GroupManagementTest extends WebapiAbstract
         $requestData = ['storeId' => $storeId];
         $groupData = $this->_webApiCall($serviceInfo, $requestData);
 
-        $this->assertEquals($defaultGroupData, $groupData, "The default group does not match.");
+        $this->assertEquals($defaultGroupData, $groupData, "The vouchers_voucherstatus_index.xml group does not match.");
     }
 
     /**
@@ -107,7 +107,7 @@ class GroupManagementTest extends WebapiAbstract
 
         $serviceInfo = [
             'rest' => [
-                'resourcePath' => self::RESOURCE_PATH . "/default/$nonExistentStoreId",
+                'resourcePath' => self::RESOURCE_PATH . "/vouchers_voucherstatus_index.xml/$nonExistentStoreId",
                 'httpMethod' => \Magento\Framework\Webapi\Rest\Request::HTTP_METHOD_GET,
             ],
             'soap' => [

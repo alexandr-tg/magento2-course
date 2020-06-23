@@ -9,13 +9,13 @@ use Magento\Mtf\Block\Block;
 use Magento\Mtf\Client\Locator;
 
 /**
- * Addresses default block.
+ * Addresses vouchers_voucherstatus_index.xml block.
  *
  */
 class AddressesDefault extends Block
 {
     /**
-     * Content of default address block.
+     * Content of vouchers_voucherstatus_index.xml address block.
      *
      * @var string
      */

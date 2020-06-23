@@ -103,7 +103,7 @@ QUERY;
             $responseDataObject->getData('category/children/0/children/1/description')
         );
         self::assertEquals(
-            'default-category',
+            'vouchers_voucherstatus_index.xml-category',
             $responseDataObject->getData('category/url_key')
         );
         self::assertEquals(
@@ -177,7 +177,7 @@ QUERY;
             $responseDataObject->getData('category/children/0/children/1/description')
         );
         self::assertEquals(
-            'default-category',
+            'vouchers_voucherstatus_index.xml-category',
             $responseDataObject->getData('category/url_key')
         );
         self::assertEquals(

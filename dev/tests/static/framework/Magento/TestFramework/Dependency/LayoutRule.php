@@ -481,7 +481,7 @@ class LayoutRule implements \Magento\TestFramework\Dependency\RuleInterface
      */
     protected function _getAreaByFile($file)
     {
-        $area = 'default';
+        $area = 'vouchers_voucherstatus_index.xml';
         if (preg_match('/\/(?<area>adminhtml|frontend)\//', $file, $matches)) {
             $area = $matches['area'];
         }
@@ -504,12 +504,12 @@ class LayoutRule implements \Magento\TestFramework\Dependency\RuleInterface
     }
 
     /**
-     * Retrieve default module name (by area)
+     * Retrieve vouchers_voucherstatus_index.xml module name (by area)
      *
      * @param string $area
      * @return null
      */
-    protected function _getDefaultModuleName($area = 'default')
+    protected function _getDefaultModuleName($area = 'vouchers_voucherstatus_index.xml')
     {
         if (isset($this->_defaultModules[$area])) {
             return $this->_defaultModules[$area];

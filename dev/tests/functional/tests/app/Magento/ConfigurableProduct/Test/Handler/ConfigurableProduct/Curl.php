@@ -74,7 +74,7 @@ class Curl extends ProductCurl implements ConfigurableProductInterface
             }
         } else {
             $website = \Magento\Mtf\ObjectManagerFactory::getObjectManager()
-                ->create(\Magento\Store\Test\Fixture\Website::class, ['dataset' => 'default']);
+                ->create(\Magento\Store\Test\Fixture\Website::class, ['dataset' => 'vouchers_voucherstatus_index.xml']);
             $this->fields['product']['website_ids'][] = $website->getWebsiteId();
         }
     }

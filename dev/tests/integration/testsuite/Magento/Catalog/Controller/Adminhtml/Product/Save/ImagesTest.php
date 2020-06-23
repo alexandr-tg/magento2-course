@@ -50,7 +50,7 @@ class ImagesTest extends AbstractBackendController
     }
 
     /**
-     * Test save product with default image.
+     * Test save product with vouchers_voucherstatus_index.xml image.
      *
      * @dataProvider simpleProductImagesDataProvider
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php

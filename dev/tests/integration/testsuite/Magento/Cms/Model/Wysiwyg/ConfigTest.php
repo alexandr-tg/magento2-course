@@ -63,7 +63,7 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
      *
      * @return void
      *
-     * @magentoConfigFixture default/cms/wysiwyg/editor Magento_TestModuleWysiwygConfig/wysiwyg/tinymce4TestAdapter
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/cms/wysiwyg/editor Magento_TestModuleWysiwygConfig/wysiwyg/tinymce4TestAdapter
      */
     public function testTestModuleEnabledModuleIsAbleToModifyConfig()
     {

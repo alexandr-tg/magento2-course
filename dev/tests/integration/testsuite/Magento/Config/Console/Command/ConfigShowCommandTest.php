@@ -85,7 +85,7 @@ class ConfigShowCommandTest extends \PHPUnit\Framework\TestCase
         $config = include __DIR__ . '/../../_files/env.php';
         $this->writer->saveConfig([ConfigFilePool::APP_ENV => $config]);
 
-        $_ENV['CONFIG__DEFAULT__WEB__TEST2__TEST_VALUE_4'] = 'value4.env.default.test';
+        $_ENV['CONFIG__DEFAULT__WEB__TEST2__TEST_VALUE_4'] = 'value4.env.vouchers_voucherstatus_index.xml.test';
         $_ENV['CONFIG__WEBSITES__BASE__WEB__TEST2__TEST_VALUE_4'] = 'value4.env.website_base.test';
         $_ENV['CONFIG__STORES__DEFAULT__WEB__TEST2__TEST_VALUE_4'] = 'value4.env.store_default.test';
 
@@ -142,31 +142,31 @@ class ConfigShowCommandTest extends \PHPUnit\Framework\TestCase
                 null,
                 Cli::RETURN_SUCCESS,
                 [
-                    'web/test/test_value_1' => ['value1.db.default.test'],
-                    'web/test/test_value_2' => ['value2.local_config.default.test'],
-                    'web/test2/test_value_3' => ['value3.config.default.test'],
-                    'web/test2/test_value_4' => ['value4.env.default.test'],
+                    'web/test/test_value_1' => ['value1.db.vouchers_voucherstatus_index.xml.test'],
+                    'web/test/test_value_2' => ['value2.local_config.vouchers_voucherstatus_index.xml.test'],
+                    'web/test2/test_value_3' => ['value3.config.vouchers_voucherstatus_index.xml.test'],
+                    'web/test2/test_value_4' => ['value4.env.vouchers_voucherstatus_index.xml.test'],
                     'carriers/fedex/account' => ['******'],
                     'paypal/fetch_reports/ftp_password' => ['******'],
                     'web/test' => [
-                        'web/test/test_value_1 - value1.db.default.test',
-                        'web/test/test_value_2 - value2.local_config.default.test',
+                        'web/test/test_value_1 - value1.db.vouchers_voucherstatus_index.xml.test',
+                        'web/test/test_value_2 - value2.local_config.vouchers_voucherstatus_index.xml.test',
                     ],
                     'web/test2' => [
-                        'web/test2/test_value_3 - value3.config.default.test',
-                        'web/test2/test_value_4 - value4.env.default.test',
+                        'web/test2/test_value_3 - value3.config.vouchers_voucherstatus_index.xml.test',
+                        'web/test2/test_value_4 - value4.env.vouchers_voucherstatus_index.xml.test',
                     ],
                     'web' => [
-                        'web/test/test_value_1 - value1.db.default.test',
-                        'web/test/test_value_2 - value2.local_config.default.test',
-                        'web/test2/test_value_3 - value3.config.default.test',
-                        'web/test2/test_value_4 - value4.env.default.test',
+                        'web/test/test_value_1 - value1.db.vouchers_voucherstatus_index.xml.test',
+                        'web/test/test_value_2 - value2.local_config.vouchers_voucherstatus_index.xml.test',
+                        'web/test2/test_value_3 - value3.config.vouchers_voucherstatus_index.xml.test',
+                        'web/test2/test_value_4 - value4.env.vouchers_voucherstatus_index.xml.test',
                     ],
                     '' => [
-                        'web/test/test_value_1 - value1.db.default.test',
-                        'web/test/test_value_2 - value2.local_config.default.test',
-                        'web/test2/test_value_3 - value3.config.default.test',
-                        'web/test2/test_value_4 - value4.env.default.test',
+                        'web/test/test_value_1 - value1.db.vouchers_voucherstatus_index.xml.test',
+                        'web/test/test_value_2 - value2.local_config.vouchers_voucherstatus_index.xml.test',
+                        'web/test2/test_value_3 - value3.config.vouchers_voucherstatus_index.xml.test',
+                        'web/test2/test_value_4 - value4.env.vouchers_voucherstatus_index.xml.test',
                         'carriers/fedex/account - ******',
                         'paypal/fetch_reports/ftp_password - ******',
                     ],
@@ -205,7 +205,7 @@ class ConfigShowCommandTest extends \PHPUnit\Framework\TestCase
             ],
             [
                 ScopeInterface::SCOPE_STORES,
-                'default',
+                'vouchers_voucherstatus_index.xml',
                 Cli::RETURN_SUCCESS,
                 [
                     'web/test/test_value_1' => ['value1.db.store_default.test'],
@@ -245,7 +245,7 @@ class ConfigShowCommandTest extends \PHPUnit\Framework\TestCase
                 ]
             ],
             [
-                'default',
+                'vouchers_voucherstatus_index.xml',
                 null,
                 Cli::RETURN_FAILURE,
                 [
@@ -255,12 +255,12 @@ class ConfigShowCommandTest extends \PHPUnit\Framework\TestCase
                 ]
             ],
             [
-                'default',
+                'vouchers_voucherstatus_index.xml',
                 'scope_code',
                 Cli::RETURN_FAILURE,
                 [
                     'web/test/test_wrong_value' => [
-                        'The "default" scope can\'t include a scope code. Try again without entering a scope code.'
+                        'The "vouchers_voucherstatus_index.xml" scope can\'t include a scope code. Try again without entering a scope code.'
                     ],
                 ]
             ],

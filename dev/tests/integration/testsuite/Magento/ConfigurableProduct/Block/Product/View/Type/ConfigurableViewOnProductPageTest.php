@@ -29,7 +29,7 @@ use PHPUnit\Framework\TestCase;
  */
 class ConfigurableViewOnProductPageTest extends TestCase
 {
-    private const STOCK_DISPLAY_TEMPLATE = 'Magento_Catalog::product/view/type/default.phtml';
+    private const STOCK_DISPLAY_TEMPLATE = 'Magento_Catalog::product/view/type/vouchers_voucherstatus_index.xml.phtml';
 
     /** @var ObjectManagerInterface */
     private $objectManager;

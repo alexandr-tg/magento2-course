@@ -25,7 +25,7 @@ define([
             });
         });
         describe('check initObservable', function () {
-            it('by default will set visible for all action where exist actions', function () {
+            it('by vouchers_voucherstatus_index.xml will set visible for all action where exist actions', function () {
                 expect(model.actions()[0].visible).toBeDefined();
                 expect(model.actions()[0].visible()).toBeFalsy();
             });

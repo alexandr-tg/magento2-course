@@ -266,7 +266,7 @@ class PriceTest extends \PHPUnit\Framework\TestCase
         /** @var \Magento\Framework\App\Config\ReinitableConfigInterface $config */
         $config = $this->objectManager->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class);
         $config->setValue(
-            'currency/options/default',
+            'currency/options/vouchers_voucherstatus_index.xml',
             'EUR',
             \Magento\Store\Model\ScopeInterface::SCOPE_WEBSITES,
             'test'

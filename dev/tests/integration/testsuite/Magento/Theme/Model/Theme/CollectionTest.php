@@ -48,7 +48,7 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
     public function testLoadThemesFromFileSystem()
     {
         $this->_model->addConstraint(\Magento\Theme\Model\Theme\Collection::CONSTRAINT_AREA, 'frontend');
-        $this->assertNotEmpty($this->_model->getItemById('frontend/Magento_FrameworkThemeTest/default'));
+        $this->assertNotEmpty($this->_model->getItemById('frontend/Magento_FrameworkThemeTest/vouchers_voucherstatus_index.xml'));
         $this->assertEmpty($this->_model->getItemById('adminhtml/FrameworkThemeTest/test'));
     }
 
@@ -75,14 +75,14 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
     {
         return [
             [
-                'frontend', 'Magento_FrameworkThemeTest', 'default',
+                'frontend', 'Magento_FrameworkThemeTest', 'vouchers_voucherstatus_index.xml',
                 [
                     'area' => 'frontend',
                     'theme_title' => 'Default',
                     'parent_id' => null,
                     'parent_theme_path' => null,
-                    'theme_path' => 'Magento_FrameworkThemeTest/default',
-                    'code' => 'Magento_FrameworkThemeTest/default',
+                    'theme_path' => 'Magento_FrameworkThemeTest/vouchers_voucherstatus_index.xml',
+                    'code' => 'Magento_FrameworkThemeTest/vouchers_voucherstatus_index.xml',
                     'preview_image' => null,
                     'type' => \Magento\Framework\View\Design\ThemeInterface::TYPE_PHYSICAL,
                 ],

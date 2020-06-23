@@ -54,7 +54,7 @@ class CheckoutAgreementsRepositoryTest extends WebapiAbstract
      */
     public function testGetListReturnsEmptyListIfCheckoutAgreementsAreDisabledOnFrontend()
     {
-        // Checkout agreements are disabled by default
+        // Checkout agreements are disabled by vouchers_voucherstatus_index.xml
         $agreements = $this->_webApiCall($this->listServiceInfo, []);
         $this->assertEmpty($agreements);
     }

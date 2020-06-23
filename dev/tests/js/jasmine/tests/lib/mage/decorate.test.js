@@ -49,7 +49,7 @@ define([
                 $('#' + listId).remove();
             });
 
-            it('Check correct class decoration with default params', function () {
+            it('Check correct class decoration with vouchers_voucherstatus_index.xml params', function () {
                 var $list = $('#' + listId);
 
                 $list.find('li').decorate('generic');
@@ -104,7 +104,7 @@ define([
                 $('#' + tableId).remove();
             });
 
-            it('Check correct class decoration with default params', function () {
+            it('Check correct class decoration with vouchers_voucherstatus_index.xml params', function () {
                 var $table = $('#' + tableId);
 
                 $table.decorate('table');

@@ -73,7 +73,7 @@ class ProductRepositoryMultiStoreTest extends WebapiAbstract
         $this->assertEquals(
             $nameInDefaultStore,
             $defaultStoreResponse[Product::NAME],
-            'Product name in default store is invalid.'
+            'Product name in vouchers_voucherstatus_index.xml store is invalid.'
         );
         $fixtureStoreResponse = $this->_webApiCall($serviceInfo, $requestData, null, self::STORE_CODE_FROM_FIXTURE);
         $this->assertEquals(

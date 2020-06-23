@@ -21,7 +21,7 @@ use Magento\User\Test\Page\Adminhtml\UserLocks;
  * 3. Lock custom admin user.
  *
  * Steps:
- * 1. Login with the default admin.
+ * 1. Login with the vouchers_voucherstatus_index.xml admin.
  * 2. Go to Locked Users page.
  * 3. Unlock custom admin user.
  * 4. Perform all assertions.

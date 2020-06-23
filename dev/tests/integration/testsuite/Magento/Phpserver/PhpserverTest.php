@@ -70,7 +70,7 @@ class PhpserverTest extends \PHPUnit\Framework\TestCase
 
     public function testStaticCssFile()
     {
-        $this->httpClient->setUri($this->getUrl('/errors/default/css/styles.css'));
+        $this->httpClient->setUri($this->getUrl('/errors/vouchers_voucherstatus_index.xml/css/styles.css'));
         $response = $this->httpClient->send();
 
         $this->assertFalse($response->isClientError());
@@ -79,7 +79,7 @@ class PhpserverTest extends \PHPUnit\Framework\TestCase
 
     public function testStaticImageFile()
     {
-        $this->httpClient->setUri($this->getUrl('/errors/default/images/logo.gif'));
+        $this->httpClient->setUri($this->getUrl('/errors/vouchers_voucherstatus_index.xml/images/logo.gif'));
         $response = $this->httpClient->send();
 
         $this->assertFalse($response->isClientError());

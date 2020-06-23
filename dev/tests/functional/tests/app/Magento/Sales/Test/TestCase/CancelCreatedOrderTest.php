@@ -97,7 +97,7 @@ class CancelCreatedOrderTest extends Injectable
     }
 
     /**
-     * Reset config settings to default.
+     * Reset config settings to vouchers_voucherstatus_index.xml.
      *
      * @return void
      */

@@ -40,7 +40,7 @@ class AssertCategoryWithCustomStoreOnFrontend extends AbstractConstraint
         \PHPUnit\Framework\Assert::assertEquals(
             $initialCategory->getName(),
             $categoryView->getTitleBlock()->getTitle(),
-            'Wrong category name is displayed for default store.'
+            'Wrong category name is displayed for vouchers_voucherstatus_index.xml store.'
         );
 
         $store = $category->getData()['store_id']['source']->getName();

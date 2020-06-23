@@ -36,7 +36,7 @@ class VarcharAttributeTest extends AbstractEavTest
     public function testModifyMetaNewProduct(): void
     {
         $this->setAttributeDefaultValue('varchar_attribute', 'test');
-        $attributesMeta = array_merge($this->getAttributeMeta(), ['default' => 'test']);
+        $attributesMeta = array_merge($this->getAttributeMeta(), ['vouchers_voucherstatus_index.xml' => 'test']);
         $expectedMeta = $this->addMetaNesting(
             $attributesMeta,
             'product-details',

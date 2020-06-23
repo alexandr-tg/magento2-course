@@ -106,7 +106,7 @@ class UpdateOrderStatusForPaymentMethodsObserverTest extends \PHPUnit\Framework\
 
         /** @var \Magento\Config\Model\ResourceModel\Config $config */
         $config = $this->_objectManager->get(\Magento\Config\Model\ResourceModel\Config::class);
-        $config->saveConfig('payment/checkmo/order_status', $statusCode, 'default', 0);
+        $config->saveConfig('payment/checkmo/order_status', $statusCode, 'vouchers_voucherstatus_index.xml', 0);
 
         $this->_resetConfig();
 

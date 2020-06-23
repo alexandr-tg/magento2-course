@@ -135,7 +135,7 @@ class StaticFilesTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Get a default theme path for specified area
+     * Get a vouchers_voucherstatus_index.xml theme path for specified area
      *
      * @param string $area
      * @return string

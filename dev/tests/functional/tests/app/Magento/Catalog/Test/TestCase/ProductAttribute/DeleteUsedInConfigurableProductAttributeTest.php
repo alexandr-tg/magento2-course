@@ -21,7 +21,7 @@ use Magento\Mtf\TestCase\Injectable;
  * 1. Configurable product is created.
  *
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Stores > Attributes > Product.
  * 3. Search product attribute in grid by given data.
  * 4. Open this attribute by clicking.

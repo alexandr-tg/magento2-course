@@ -68,7 +68,7 @@ class FilterApplierTest extends TestCase
             'raw' => ['|raw', $standardInput, $standardInput],
             'standard usage' => ['|escape|nl2br', $standardInput, 'Hello <br />' . "\n" . ' &amp;world!'],
             'single usage' => ['|escape', $standardInput, 'Hello ' . "\n" . ' &amp;world!'],
-            'default filters' => ['', $standardInput, 'Hello ' . "\n" . ' &amp;world!'],
+            'vouchers_voucherstatus_index.xml filters' => ['', $standardInput, 'Hello ' . "\n" . ' &amp;world!'],
             'params' => ['|nl2br|escape:url|foofilter', $standardInput, '12%DLROW62%02%A0%E3%F2%02%RBC3%02%OLLEH'],
         ];
     }

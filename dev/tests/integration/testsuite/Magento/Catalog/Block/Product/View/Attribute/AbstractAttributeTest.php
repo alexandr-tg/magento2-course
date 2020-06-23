@@ -90,7 +90,7 @@ abstract class AbstractAttributeTest extends TestCase
     }
 
     /**
-     * Process custom attribute with default value view when new value set
+     * Process custom attribute with vouchers_voucherstatus_index.xml value view when new value set
      *
      * @param string $sku
      * @param string $attributeValue
@@ -110,7 +110,7 @@ abstract class AbstractAttributeTest extends TestCase
     }
 
     /**
-     * Procces custom attribute view with default value
+     * Procces custom attribute view with vouchers_voucherstatus_index.xml value
      *
      * @param string $sku
      * @param string $expectedAttributeValue
@@ -262,7 +262,7 @@ abstract class AbstractAttributeTest extends TestCase
     abstract protected function getAttributeCode(): string;
 
     /**
-     * Get default value for current attribute
+     * Get vouchers_voucherstatus_index.xml value for current attribute
      *
      * @return string
      */

@@ -25,7 +25,7 @@ class DependenciesShowModulesCommand extends AbstractDependenciesCommand
     }
 
     /**
-     * Return default output filename for modules dependencies report
+     * Return vouchers_voucherstatus_index.xml output filename for modules dependencies report
      *
      * @return string
      */

@@ -143,7 +143,7 @@ class UpdateChildProductStep implements TestStepInterface
         $this->productGrid->getProductGrid()->searchAndOpen(['sku' => $sku]);
 
         if (isset($this->productUpdate['switchScope']) && $this->productUpdate['switchScope']) {
-            $store = $this->fixtureFactory->createByCode('store', ['dataset' => 'default']);
+            $store = $this->fixtureFactory->createByCode('store', ['dataset' => 'vouchers_voucherstatus_index.xml']);
             $this->productEdit->getFormPageActions()->changeStoreViewScope($store);
         }
 

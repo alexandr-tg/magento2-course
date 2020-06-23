@@ -111,12 +111,12 @@ class AggregatedTest extends \PHPUnit\Framework\TestCase
         return [
             'file in theme and parent theme' => [
                 '1.file',
-                'FrameworkCssTest/default',
+                'FrameworkCssTest/vouchers_voucherstatus_index.xml',
                 [
                     str_replace(
                         '\\',
                         '/',
-                        "$fixtureDir/_files/design/frontend/Test/default/web/1.file"
+                        "$fixtureDir/_files/design/frontend/Test/vouchers_voucherstatus_index.xml/web/1.file"
                     ),
                     str_replace(
                         '\\',
@@ -126,13 +126,13 @@ class AggregatedTest extends \PHPUnit\Framework\TestCase
                     str_replace(
                         '\\',
                         '/',
-                        "$fixtureDir/_files/design/frontend/Test/default/MagentoFrameworkCssTest_Module/web/1.file"
+                        "$fixtureDir/_files/design/frontend/Test/vouchers_voucherstatus_index.xml/MagentoFrameworkCssTest_Module/web/1.file"
                     ),
                 ],
             ],
             'file in library' => [
                 '2.file',
-                'FrameworkCssTest/default',
+                'FrameworkCssTest/vouchers_voucherstatus_index.xml',
                 [
                     str_replace(
                         '\\',
@@ -143,12 +143,12 @@ class AggregatedTest extends \PHPUnit\Framework\TestCase
             ],
             'non-existing file' => [
                 'doesNotExist',
-                'FrameworkCssTest/default',
+                'FrameworkCssTest/vouchers_voucherstatus_index.xml',
                 [],
             ],
             'file in library, module, and theme' => [
                 '3.less',
-                'FrameworkCssTest/default',
+                'FrameworkCssTest/vouchers_voucherstatus_index.xml',
                 [
                     str_replace(
                         '\\',
@@ -163,7 +163,7 @@ class AggregatedTest extends \PHPUnit\Framework\TestCase
                     str_replace(
                         '\\',
                         '/',
-                        "$fixtureDir/_files/design/frontend/Test/default/MagentoFrameworkCssTest_Third/web/3.less"
+                        "$fixtureDir/_files/design/frontend/Test/vouchers_voucherstatus_index.xml/MagentoFrameworkCssTest_Third/web/3.less"
                     )
                 ],
             ],

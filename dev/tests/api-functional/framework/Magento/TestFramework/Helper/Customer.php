@@ -20,7 +20,7 @@ class Customer extends WebapiAbstract
 
     const CONFIRMATION = 'a4fg7h893e39d';
     const CREATED_AT = '2013-11-05';
-    const CREATED_IN = 'default';
+    const CREATED_IN = 'vouchers_voucherstatus_index.xml';
     const STORE_NAME = 'Store Name';
     const DOB = '1970-01-01';
     const GENDER = 'Male';

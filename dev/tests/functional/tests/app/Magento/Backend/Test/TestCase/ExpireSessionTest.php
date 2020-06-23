@@ -18,7 +18,7 @@ use Magento\Mtf\TestStep\TestStepFactory;
  * 3. Apply configuration settings.
  * 4. Wait for session to expire.
  * 5. Perform asserts.
- * 6. Restore default configuration settings.
+ * 6. Restore vouchers_voucherstatus_index.xml configuration settings.
  *
  * @ZephyrId MAGETWO-47722, MAGETWO-47723
  */
@@ -87,7 +87,7 @@ class ExpireSessionTest extends Injectable
     }
 
     /**
-     * Restore default configuration settings.
+     * Restore vouchers_voucherstatus_index.xml configuration settings.
      *
      * @return void
      */

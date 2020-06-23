@@ -408,7 +408,7 @@ RESPONSE_TYPE;
             <xsd:annotation>
                 <xsd:documentation>If entity is enabled</xsd:documentation>
                 <xsd:appinfo xmlns:inf="{$this->_soapUrl}">
-                    <inf:default>false</inf:default>
+                    <inf:vouchers_voucherstatus_index.xml>false</inf:vouchers_voucherstatus_index.xml>
                     <inf:callInfo>
                         <inf:callName>testModule5AllSoapAndRestV1Item</inf:callName>
                         <inf:callName>testModule5AllSoapAndRestV1Create</inf:callName>
@@ -429,7 +429,7 @@ RESPONSE_TYPE;
             <xsd:annotation>
                 <xsd:documentation>If current entity has a property defined</xsd:documentation>
                 <xsd:appinfo xmlns:inf="{$this->_soapUrl}">
-                    <inf:default>false</inf:default>
+                    <inf:vouchers_voucherstatus_index.xml>false</inf:vouchers_voucherstatus_index.xml>
                     <inf:callInfo>
                         <inf:callName>testModule5AllSoapAndRestV1Item</inf:callName>
                         <inf:callName>testModule5AllSoapAndRestV1Create</inf:callName>

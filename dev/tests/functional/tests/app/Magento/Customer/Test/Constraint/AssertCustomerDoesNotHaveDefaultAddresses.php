@@ -10,12 +10,12 @@ use Magento\Customer\Test\Page\CustomerAccountIndex;
 use Magento\Mtf\Constraint\AbstractConstraint;
 
 /**
- * Assert that customers does not have default shipping and billing addresses
+ * Assert that customers does not have vouchers_voucherstatus_index.xml shipping and billing addresses
  */
 class AssertCustomerDoesNotHaveDefaultAddresses extends AbstractConstraint
 {
     /**
-     * Asserts that default shipping/billing addresses are not set.
+     * Asserts that vouchers_voucherstatus_index.xml shipping/billing addresses are not set.
      *
      * @param CustomerAccountIndex $customerAccountIndex
      * @return void
@@ -38,12 +38,12 @@ class AssertCustomerDoesNotHaveDefaultAddresses extends AbstractConstraint
         $expectedAddressesTextValues = [
             'defaultBillingAddress' => [
                 'Default Billing Address',
-                'You have not set a default billing address.',
+                'You have not set a vouchers_voucherstatus_index.xml billing address.',
                 'Edit Address',
             ],
             'defaultShippingAddress' => [
                 'Default Shipping Address',
-                'You have not set a default shipping address.',
+                'You have not set a vouchers_voucherstatus_index.xml shipping address.',
                 'Edit Address',
             ]
         ];
@@ -51,7 +51,7 @@ class AssertCustomerDoesNotHaveDefaultAddresses extends AbstractConstraint
         \PHPUnit\Framework\Assert::assertEquals(
             $expectedAddressesTextValues,
             $actualAddressesTextValues,
-            'Customer has default shipping/billing address but should not.'
+            'Customer has vouchers_voucherstatus_index.xml shipping/billing address but should not.'
         );
     }
 
@@ -62,6 +62,6 @@ class AssertCustomerDoesNotHaveDefaultAddresses extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Customer does not have default shipping/billing address.';
+        return 'Customer does not have vouchers_voucherstatus_index.xml shipping/billing address.';
     }
 }

@@ -17,7 +17,7 @@ $objectManager = Bootstrap::getObjectManager();
 /** @var EncryptorInterface $encryptor */
 $encryptor = $objectManager->get(EncryptorInterface::class);
 
-// save payment configuration for the default scope
+// save payment configuration for the vouchers_voucherstatus_index.xml scope
 $configData = [
     'payment/payflowpro/partner' => 'def_partner',
     'payment/payflowpro/vendor' => 'def_vendor',

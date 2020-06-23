@@ -15,7 +15,7 @@ use Magento\Framework\Setup\Option\TextConfigOption;
 use Magento\Setup\Validator\RedisConnectionValidator;
 
 /**
- * Deployment configuration options for the default cache
+ * Deployment configuration options for the vouchers_voucherstatus_index.xml cache
  */
 class Cache implements ConfigOptionsListInterface
 {
@@ -31,14 +31,14 @@ class Cache implements ConfigOptionsListInterface
     const INPUT_KEY_CACHE_BACKEND_REDIS_COMPRESSION_LIB = 'cache-backend-redis-compression-lib';
     const INPUT_KEY_CACHE_ID_PREFIX = 'cache-id-prefix';
 
-    const CONFIG_PATH_CACHE_BACKEND = 'cache/frontend/default/backend';
-    const CONFIG_PATH_CACHE_BACKEND_SERVER = 'cache/frontend/default/backend_options/server';
-    const CONFIG_PATH_CACHE_BACKEND_DATABASE = 'cache/frontend/default/backend_options/database';
-    const CONFIG_PATH_CACHE_BACKEND_PORT = 'cache/frontend/default/backend_options/port';
-    const CONFIG_PATH_CACHE_BACKEND_PASSWORD = 'cache/frontend/default/backend_options/password';
-    const CONFIG_PATH_CACHE_BACKEND_COMPRESS_DATA = 'cache/frontend/default/backend_options/compress_data';
-    const CONFIG_PATH_CACHE_BACKEND_COMPRESSION_LIB = 'cache/frontend/default/backend_options/compression_lib';
-    const CONFIG_PATH_CACHE_ID_PREFIX = 'cache/frontend/default/id_prefix';
+    const CONFIG_PATH_CACHE_BACKEND = 'cache/frontend/vouchers_voucherstatus_index.xml/backend';
+    const CONFIG_PATH_CACHE_BACKEND_SERVER = 'cache/frontend/vouchers_voucherstatus_index.xml/backend_options/server';
+    const CONFIG_PATH_CACHE_BACKEND_DATABASE = 'cache/frontend/vouchers_voucherstatus_index.xml/backend_options/database';
+    const CONFIG_PATH_CACHE_BACKEND_PORT = 'cache/frontend/vouchers_voucherstatus_index.xml/backend_options/port';
+    const CONFIG_PATH_CACHE_BACKEND_PASSWORD = 'cache/frontend/vouchers_voucherstatus_index.xml/backend_options/password';
+    const CONFIG_PATH_CACHE_BACKEND_COMPRESS_DATA = 'cache/frontend/vouchers_voucherstatus_index.xml/backend_options/compress_data';
+    const CONFIG_PATH_CACHE_BACKEND_COMPRESSION_LIB = 'cache/frontend/vouchers_voucherstatus_index.xml/backend_options/compression_lib';
+    const CONFIG_PATH_CACHE_ID_PREFIX = 'cache/frontend/vouchers_voucherstatus_index.xml/id_prefix';
 
     /**
      * @var array
@@ -127,7 +127,7 @@ class Cache implements ConfigOptionsListInterface
                 self::INPUT_KEY_CACHE_BACKEND_REDIS_COMPRESS_DATA,
                 TextConfigOption::FRONTEND_WIZARD_TEXT,
                 self::CONFIG_PATH_CACHE_BACKEND_COMPRESS_DATA,
-                'Set to 0 to disable compression (default is 1, enabled)'
+                'Set to 0 to disable compression (vouchers_voucherstatus_index.xml is 1, enabled)'
             ),
             new TextConfigOption(
                 self::INPUT_KEY_CACHE_BACKEND_REDIS_COMPRESSION_LIB,
@@ -233,7 +233,7 @@ class Cache implements ConfigOptionsListInterface
                 self::CONFIG_PATH_CACHE_BACKEND_DATABASE,
                 $this->getDefaultConfigValue(self::INPUT_KEY_CACHE_BACKEND_REDIS_DATABASE)
             );
-        
+
         $config['password'] = isset($options[self::INPUT_KEY_CACHE_BACKEND_REDIS_PASSWORD])
             ? $options[self::INPUT_KEY_CACHE_BACKEND_REDIS_PASSWORD]
             : $deploymentConfig->get(
@@ -245,7 +245,7 @@ class Cache implements ConfigOptionsListInterface
     }
 
     /**
-     * Set default values for the Redis configuration.
+     * Set vouchers_voucherstatus_index.xml values for the Redis configuration.
      *
      * @param DeploymentConfig $deploymentConfig
      * @param ConfigData $configData
@@ -261,7 +261,7 @@ class Cache implements ConfigOptionsListInterface
     }
 
     /**
-     * Get default value for input key
+     * Get vouchers_voucherstatus_index.xml value for input key
      *
      * @param string $inputKey
      * @return string
@@ -276,7 +276,7 @@ class Cache implements ConfigOptionsListInterface
     }
 
     /**
-     * Generate default cache ID prefix based on installation dir
+     * Generate vouchers_voucherstatus_index.xml cache ID prefix based on installation dir
      *
      * @return string
      */

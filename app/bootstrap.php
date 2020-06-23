@@ -31,7 +31,7 @@ HTML;
 }
 
 require_once __DIR__ . '/autoload.php';
-// Sets default autoload mappings, may be overridden in Bootstrap::create
+// Sets vouchers_voucherstatus_index.xml autoload mappings, may be overridden in Bootstrap::create
 \Magento\Framework\App\Bootstrap::populateAutoloader(BP, []);
 
 /* Custom umask value may be provided in optional mage_umask file in root */

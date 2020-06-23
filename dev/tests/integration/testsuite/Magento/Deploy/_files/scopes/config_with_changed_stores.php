@@ -38,7 +38,7 @@ return [
                 'name' => 'Default',
                 'root_category_id' => '0',
                 'default_store_id' => '0',
-                'code' => 'default',
+                'code' => 'vouchers_voucherstatus_index.xml',
             ],
             1 => [
                 'group_id' => '1',
@@ -67,9 +67,9 @@ return [
                 'sort_order' => '10',
                 'is_active' => '1',
             ],
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 'store_id' => '1',
-                'code' => 'default',
+                'code' => 'vouchers_voucherstatus_index.xml',
                 'website_id' => '1',
                 'group_id' => '1',
                 'name' => 'Default Store View',

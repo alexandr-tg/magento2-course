@@ -25,7 +25,7 @@ class DependenciesShowModulesCircularCommand extends AbstractDependenciesCommand
     }
 
     /**
-     * Return default output filename for modules circular dependencies report
+     * Return vouchers_voucherstatus_index.xml output filename for modules circular dependencies report
      *
      * @return string
      */

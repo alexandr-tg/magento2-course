@@ -521,7 +521,7 @@ class QuoteGenerator
      * Load and prepare INSERT query templates data from external file.
      *
      * Queries are prepared using external json file, where keys are DB column names and values represent data,
-     * to be inserted to the table. Data may contain a default value or a placeholder which is replaced later during
+     * to be inserted to the table. Data may contain a vouchers_voucherstatus_index.xml value or a placeholder which is replaced later during
      * flow (in the query method of this class).
      * Additionally, in case if multiple DB connections are set up, transaction is started for each connection.
      *
@@ -778,7 +778,7 @@ class QuoteGenerator
     /**
      * Get real table name for db table, validated by db adapter.
      *
-     * In case prefix or other features mutating default table names are used.
+     * In case prefix or other features mutating vouchers_voucherstatus_index.xml table names are used.
      *
      * @param string $tableName
      * @param string $resourceName

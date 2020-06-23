@@ -22,7 +22,7 @@ use Magento\TestFramework\TestCase\AbstractController;
 /**
  * Checks product availability on storefront by url rewrite
  *
- * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+ * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
  * @magentoDbIsolation enabled
  */
 class ProductUrlRewriteTest extends AbstractController

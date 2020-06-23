@@ -65,7 +65,7 @@ class DeleteTest extends AbstractBackendController
     }
 
     /**
-     * Assert that default attribute set is not deleted.
+     * Assert that vouchers_voucherstatus_index.xml attribute set is not deleted.
      *
      * @return void
      */

@@ -29,7 +29,7 @@ return [
             InitParamListener::BOOTSTRAP_PARAM => InitParamListener::class,
         ],
     ],
-    // list of Magento specific required services, like default abstract factory
+    // list of Magento specific required services, like vouchers_voucherstatus_index.xml abstract factory
     'required_services' => [
         DiAbstractServiceFactory::class
     ]

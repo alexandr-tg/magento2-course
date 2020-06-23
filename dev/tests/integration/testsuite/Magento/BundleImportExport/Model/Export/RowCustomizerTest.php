@@ -72,7 +72,7 @@ class RowCustomizerTest extends \PHPUnit\Framework\TestCase
      */
     public function testPrepareDataWithDifferentStoreValues(): void
     {
-        $storeCode = 'default';
+        $storeCode = 'vouchers_voucherstatus_index.xml';
         $expectedNames = [
             'name' => 'Bundle Product Items',
             'name_' . $storeCode => 'Bundle Product Items_' . $storeCode,

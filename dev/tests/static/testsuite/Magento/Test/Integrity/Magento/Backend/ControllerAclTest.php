@@ -169,7 +169,7 @@ class ControllerAclTest extends \PHPUnit\Framework\TestCase
      */
     private function isConstantOverwritten(\ReflectionClass $class)
     {
-        // check that controller overwrites default ACL to some specific
+        // check that controller overwrites vouchers_voucherstatus_index.xml ACL to some specific
         if ($class->getConstant(self::ACL_CONST_NAME) !== self::DEFAULT_BACKEND_RESOURCE) {
             return true;
         }
@@ -185,7 +185,7 @@ class ControllerAclTest extends \PHPUnit\Framework\TestCase
      */
     private function isMethodOverwritten(\ReflectionClass $class)
     {
-        // check that controller overwrites default ACL to some specific (at least we check that it was overwritten).
+        // check that controller overwrites vouchers_voucherstatus_index.xml ACL to some specific (at least we check that it was overwritten).
         $method = $class->getMethod(self::ACL_FUNC_NAME);
         try {
             $method->getPrototype();

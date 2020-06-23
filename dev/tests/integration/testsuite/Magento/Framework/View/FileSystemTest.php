@@ -34,20 +34,20 @@ class FileSystemTest extends \PHPUnit\Framework\TestCase
         $objectManager->get(
             \Magento\Framework\View\DesignInterface::class
         )->setDesignTheme(
-            'Test_FrameworkThemeTest/default'
+            'Test_FrameworkThemeTest/vouchers_voucherstatus_index.xml'
         );
     }
 
     public function testGetTemplateFileName()
     {
-        $expected = '%s/frontend/Test/default/Magento_Catalog/templates/theme_template.phtml';
+        $expected = '%s/frontend/Test/vouchers_voucherstatus_index.xml/Magento_Catalog/templates/theme_template.phtml';
         $actual = $this->_model->getTemplateFileName('Magento_Catalog::theme_template.phtml', []);
         $this->_testExpectedVersusActualFilename($expected, $actual);
     }
 
     public function testGetFileNameAccordingToLocale()
     {
-        $expected = '%s/frontend/Test/default/web/i18n/fr_FR/logo.gif';
+        $expected = '%s/frontend/Test/vouchers_voucherstatus_index.xml/web/i18n/fr_FR/logo.gif';
         $actual = $this->_model->getStaticFileName('logo.gif', ['locale' => 'fr_FR']);
         $this->_testExpectedVersusActualFilename($expected, $actual);
     }

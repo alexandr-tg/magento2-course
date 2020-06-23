@@ -13,7 +13,7 @@ use Magento\Cms\Test\Page\CmsIndex;
 class AssertVisibleItemsQtyMessageOnCheckoutSummaryBlock extends AbstractConstraint
 {
     /**
-     * Items counter default message
+     * Items counter vouchers_voucherstatus_index.xml message
      */
     const ITEMS_COUNTER_MASSAGE = "%s Items in Cart";
 

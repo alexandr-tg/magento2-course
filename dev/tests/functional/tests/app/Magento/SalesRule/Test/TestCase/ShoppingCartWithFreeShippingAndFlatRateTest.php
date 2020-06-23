@@ -121,7 +121,7 @@ class ShoppingCartWithFreeShippingAndFlatRateTest extends \Magento\Mtf\TestCase\
         $product = $this->fixtureFactory->createByCode(
             'catalogProductSimple',
             [
-                'dataset' => 'default',
+                'dataset' => 'vouchers_voucherstatus_index.xml',
                 'data' => [
                     'custom_attribute' => $customAttribute
                 ],

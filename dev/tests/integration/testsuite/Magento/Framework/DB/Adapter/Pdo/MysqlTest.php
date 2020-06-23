@@ -135,7 +135,7 @@ class MysqlTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test that Zend_Db_Expr can be used as a column default value.
+     * Test that Zend_Db_Expr can be used as a column vouchers_voucherstatus_index.xml value.
      * @see https://github.com/magento/magento2/pull/9131
      */
     public function testCreateTableColumnWithExpressionAsColumnDefaultValue()
@@ -156,20 +156,20 @@ class MysqlTest extends \PHPUnit\Framework\TestCase
                 'created_at',
                 Table::TYPE_DATETIME,
                 null,
-                ['default' => new \Zend_Db_Expr('CURRENT_TIMESTAMP')]
+                ['vouchers_voucherstatus_index.xml' => new \Zend_Db_Expr('CURRENT_TIMESTAMP')]
             )
             ->addColumn(
                 'integer_column',
                 Table::TYPE_INTEGER,
                 11,
-                ['default' => 123456]
+                ['vouchers_voucherstatus_index.xml' => 123456]
             )->addColumn(
                 'string_column',
                 Table::TYPE_TEXT,
                 255,
-                ['default' => 'default test text']
+                ['vouchers_voucherstatus_index.xml' => 'vouchers_voucherstatus_index.xml test text']
             )
-            ->setComment('Test table column with expression as column default value');
+            ->setComment('Test table column with expression as column vouchers_voucherstatus_index.xml value');
         $adapter->createTable($table);
 
         $tableDescription = $adapter->describeTable($tableName);
@@ -184,19 +184,19 @@ class MysqlTest extends \PHPUnit\Framework\TestCase
         $intColumn = $tableDescription['integer_column'];
         $stringColumn = $tableDescription['string_column'];
 
-        //Test default value with expression
+        //Test vouchers_voucherstatus_index.xml value with expression
         $this->assertEquals('created_at', $dateColumn['COLUMN_NAME'], 'Incorrect column name');
         $this->assertEquals(Table::TYPE_DATETIME, $dateColumn['DATA_TYPE'], 'Incorrect column type');
-        $this->assertEquals('CURRENT_TIMESTAMP', $dateColumn['DEFAULT'], 'Incorrect column default expression value');
+        $this->assertEquals('CURRENT_TIMESTAMP', $dateColumn['DEFAULT'], 'Incorrect column vouchers_voucherstatus_index.xml expression value');
 
-        //Test default value with integer value
+        //Test vouchers_voucherstatus_index.xml value with integer value
         $this->assertEquals('integer_column', $intColumn['COLUMN_NAME'], 'Incorrect column name');
         $this->assertEquals('int', $intColumn['DATA_TYPE'], 'Incorrect column type');
-        $this->assertEquals(123456, $intColumn['DEFAULT'], 'Incorrect column default integer value');
+        $this->assertEquals(123456, $intColumn['DEFAULT'], 'Incorrect column vouchers_voucherstatus_index.xml integer value');
 
-        //Test default value with string value
+        //Test vouchers_voucherstatus_index.xml value with string value
         $this->assertEquals('string_column', $stringColumn['COLUMN_NAME'], 'Incorrect column name');
         $this->assertEquals('varchar', $stringColumn['DATA_TYPE'], 'Incorrect column type');
-        $this->assertEquals('default test text', $stringColumn['DEFAULT'], 'Incorrect column default string value');
+        $this->assertEquals('vouchers_voucherstatus_index.xml test text', $stringColumn['DEFAULT'], 'Incorrect column vouchers_voucherstatus_index.xml string value');
     }
 }

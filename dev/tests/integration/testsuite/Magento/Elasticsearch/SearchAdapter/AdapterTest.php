@@ -74,7 +74,7 @@ class AdapterTest extends \Magento\Framework\Search\Adapter\Mysql\AdapterTest
     public function testMatchOrderedQuery()
     {
         $this->markTestSkipped(
-            'Elasticsearch not expected to order results by default. Test is skipped intentionally.'
+            'Elasticsearch not expected to order results by vouchers_voucherstatus_index.xml. Test is skipped intentionally.'
         );
     }
 

@@ -38,7 +38,7 @@ class Curl extends CatalogProductAttributeCurl implements SwatchProductAttribute
     }
 
     /**
-     * Re-map options from default options structure to swatches structure,
+     * Re-map options from vouchers_voucherstatus_index.xml options structure to swatches structure,
      * as swatches was initially created with name convention differ from other attributes.
      *
      * @inheritdoc

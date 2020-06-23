@@ -307,7 +307,7 @@ class CollectionTest extends TestCase
      */
     protected function tearDown()
     {
-        // restore default timezone
+        // restore vouchers_voucherstatus_index.xml timezone
         $this->setSpecificTimezone($this->defaultTimezone);
     }
 }

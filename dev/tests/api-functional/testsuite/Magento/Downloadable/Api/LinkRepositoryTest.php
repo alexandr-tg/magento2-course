@@ -1056,7 +1056,7 @@ class LinkRepositoryTest extends WebapiAbstract
         return [
             'links' => [
                 '/downloadable-links',
-                'GetList',
+                'Index',
                 $linkExpectation,
             ],
         ];

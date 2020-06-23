@@ -13,7 +13,7 @@ use Magento\Mtf\TestCase\Injectable;
 
 /**
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Stores > Tax Rules.
  * 3. Click 'Add New Tax Rule' button.
  * 4. Fill in data according to dataset

@@ -84,7 +84,7 @@ class UpdateProductAttributeEntityTest extends Injectable
         $product = $this->fixtureFactory->createByCode(
             'catalogProductSimple',
             [
-                'dataset' => 'default',
+                'dataset' => 'vouchers_voucherstatus_index.xml',
                 'data' => ['attribute_set_id' => ['attribute_set' => $attributeSet]]
             ]
         );

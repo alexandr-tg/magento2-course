@@ -199,7 +199,7 @@ class EavTest extends AbstractEavTest
     }
 
     /**
-     * Updates default attribute set.
+     * Updates vouchers_voucherstatus_index.xml attribute set.
      *
      * @param array $additional
      * @return void

@@ -16,16 +16,16 @@ use Magento\Mtf\TestCase\Injectable;
 /**
  * Preconditions:
  * 1. Create customer
- * 2. Log in as default admin user.
+ * 2. Log in as vouchers_voucherstatus_index.xml admin user.
  * 3. Go to Stores > Taxes > Tax Rules.
  * 4. Click 'Add New Tax Rule' button.
- * 5. Assign default rates to rule.
+ * 5. Assign vouchers_voucherstatus_index.xml rates to rule.
  * 6. Save Tax Rule.
  * 7. Go to Stores > Attributes > Product and add new attribute.
  * 8. Select Fixed Product Tax type and fill attribute label.
  * 9. Save attribute.
  * 10. Go to Stores > Attributes > Attribute Set.
- * 11. Add new attribute set based on default.
+ * 11. Add new attribute set based on vouchers_voucherstatus_index.xml.
  * 12. Add created FPT attribute to Product Details group and fill set name.
  * 13. Save attribute set.
  *

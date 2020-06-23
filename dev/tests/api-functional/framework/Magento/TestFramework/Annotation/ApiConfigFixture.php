@@ -125,7 +125,7 @@ class ApiConfigFixture extends ConfigFixture
     {
         $configCollectionFactory = Bootstrap::getObjectManager()->get(CollectionFactory::class);
         $collection = $configCollectionFactory->create();
-        $scope = $storeCode ? 'stores' : 'default';
+        $scope = $storeCode ? 'stores' : 'vouchers_voucherstatus_index.xml';
         $scopeId = $storeCode ? $this->getStoreIdByCode($storeCode) : 0;
 
         $collection->addScopeFilter($scope, $scopeId, $configPath);

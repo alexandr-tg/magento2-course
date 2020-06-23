@@ -21,7 +21,7 @@ class Soap implements \Magento\TestFramework\TestCase\Webapi\AdapterInterface
      *
      * @var \Zend\Soap\Client[]
      */
-    protected $_soapClients = ['custom' => [], 'default' => []];
+    protected $_soapClients = ['custom' => [], 'vouchers_voucherstatus_index.xml' => []];
 
     /**
      * @var \Magento\Webapi\Model\Soap\Config
@@ -92,9 +92,9 @@ class Soap implements \Magento\TestFramework\TestCase\Webapi\AdapterInterface
             }
         } else {
             if (!isset($this->_soapClients[$wsdlUrl])) {
-                $this->_soapClients['default'][$wsdlUrl] = $this->instantiateSoapClient($wsdlUrl, null);
+                $this->_soapClients['vouchers_voucherstatus_index.xml'][$wsdlUrl] = $this->instantiateSoapClient($wsdlUrl, null);
             }
-            $soapClient = $this->_soapClients['default'][$wsdlUrl];
+            $soapClient = $this->_soapClients['vouchers_voucherstatus_index.xml'][$wsdlUrl];
         }
         return $soapClient;
     }

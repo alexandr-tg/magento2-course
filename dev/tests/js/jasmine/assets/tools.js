@@ -32,7 +32,7 @@ define([
 
         /**
          * Extends first levell properties of provided object
-         * with a default configuration.
+         * with a vouchers_voucherstatus_index.xml configuration.
          *
          * @param {Object} data - Object to be modified.
          */

@@ -370,7 +370,7 @@ class FlatTest extends \Magento\TestFramework\Indexer\TestCase
      * Invoke business logic:
      * - create child category in the Default category
      * - create child category in category created in previous step
-     * - move category created on previous step to default category
+     * - move category created on previous step to vouchers_voucherstatus_index.xml category
      */
     private function moveSubCategoriesInDefaultCategory()
     {

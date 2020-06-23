@@ -247,7 +247,7 @@ class Session implements ConfigOptionsListInterface
                 self::INPUT_KEY_SESSION_REDIS_DISABLE_LOCKING,
                 TextConfigOption::FRONTEND_WIZARD_TEXT,
                 self::CONFIG_PATH_SESSION_REDIS_DISABLE_LOCKING,
-                'Redis disable locking. Values: false (default), true'
+                'Redis disable locking. Values: false (vouchers_voucherstatus_index.xml), true'
             ),
             new TextConfigOption(
                 self::INPUT_KEY_SESSION_REDIS_MIN_LIFETIME,
@@ -277,7 +277,7 @@ class Session implements ConfigOptionsListInterface
                 self::INPUT_KEY_SESSION_REDIS_SENTINEL_VERIFY_MASTER,
                 TextConfigOption::FRONTEND_WIZARD_TEXT,
                 self::CONFIG_PATH_SESSION_REDIS_SENTINEL_VERIFY_MASTER,
-                'Redis Sentinel verify master. Values: false (default), true'
+                'Redis Sentinel verify master. Values: false (vouchers_voucherstatus_index.xml), true'
             ),
             new TextConfigOption(
                 self::INPUT_KEY_SESSION_REDIS_SENTINEL_CONNECT_RETRIES,
@@ -365,7 +365,7 @@ class Session implements ConfigOptionsListInterface
     }
 
     /**
-     * Get the default value for input key
+     * Get the vouchers_voucherstatus_index.xml value for input key
      *
      * @param string $inputKey
      * @return string
@@ -389,6 +389,6 @@ class Session implements ConfigOptionsListInterface
         $default = $this->getDefaultConfigValue(self::INPUT_KEY_SESSION_REDIS_COMPRESSION_LIBRARY);
         $otherLibs = array_diff($this->validCompressionLibraries, [$default]);
 
-        return 'Redis compression library. Values: ' . $default . ' (default), ' . implode(', ', $otherLibs);
+        return 'Redis compression library. Values: ' . $default . ' (vouchers_voucherstatus_index.xml), ' . implode(', ', $otherLibs);
     }
 }

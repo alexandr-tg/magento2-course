@@ -260,7 +260,7 @@ class ConfigImportCommandTest extends \PHPUnit\Framework\TestCase
     {
         $correctData = [
             'system' => [
-                'default' => [
+                'vouchers_voucherstatus_index.xml' => [
                     'web' => [
                         'secure' => [
                             'base_url' => 'http://magento2.local/',
@@ -269,7 +269,7 @@ class ConfigImportCommandTest extends \PHPUnit\Framework\TestCase
                     'currency' => [
                         'options' => [
                             'base' => 'USD',
-                            'default' => 'EUR',
+                            'vouchers_voucherstatus_index.xml' => 'EUR',
                         ],
                     ],
                 ],
@@ -277,7 +277,7 @@ class ConfigImportCommandTest extends \PHPUnit\Framework\TestCase
         ];
         $wrongData = [
             'system' => [
-                'default' => [
+                'vouchers_voucherstatus_index.xml' => [
                     'web' => [
                         'secure' => [
                             'base_url' => 'wrong_url',
@@ -288,10 +288,10 @@ class ConfigImportCommandTest extends \PHPUnit\Framework\TestCase
         ];
         $wrongCurrency = [
             'system' => [
-                'default' => [
+                'vouchers_voucherstatus_index.xml' => [
                     'currency' => [
                         'options' => [
-                            'default' => 'GBP',
+                            'vouchers_voucherstatus_index.xml' => 'GBP',
                         ],
                     ],
                 ],
@@ -325,7 +325,7 @@ class ConfigImportCommandTest extends \PHPUnit\Framework\TestCase
         $commandTester->execute([]);
 
         $this->assertContains(
-            'Import failed: Sorry, the default display currency you selected is not available in allowed currencies.',
+            'Import failed: Sorry, the vouchers_voucherstatus_index.xml display currency you selected is not available in allowed currencies.',
             $commandTester->getDisplay()
         );
         $this->assertSame(Cli::RETURN_FAILURE, $commandTester->getStatusCode());

@@ -168,7 +168,7 @@ class CouponManagementTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME_COUPON,
                 'serviceVersion' => self::SERVICE_VERSION_COUPON,
-                'operation' => self::SERVICE_NAME_COUPON . 'GetList',
+                'operation' => self::SERVICE_NAME_COUPON . 'Index',
             ],
         ];
 

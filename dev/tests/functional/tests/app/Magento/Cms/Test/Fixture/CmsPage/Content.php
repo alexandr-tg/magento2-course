@@ -132,7 +132,7 @@ class Content extends DataSource
      */
     protected function createProduct($widget = null)
     {
-        $dataset = $widget === null ? 'default' : $widget['chosen_option']['category_path'];
+        $dataset = $widget === null ? 'vouchers_voucherstatus_index.xml' : $widget['chosen_option']['category_path'];
         /** @var CatalogProductSimple $product */
         $product = $this->fixtureFactory->createByCode('catalogProductSimple', ['dataset' => $dataset]);
         if (!$product->hasData('id')) {

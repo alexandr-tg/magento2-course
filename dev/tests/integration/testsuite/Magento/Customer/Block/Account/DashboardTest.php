@@ -69,7 +69,7 @@ class DashboardTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Verify that the specified customer has neither a default billing no shipping address.
+     * Verify that the specified customer has neither a vouchers_voucherstatus_index.xml billing no shipping address.
      *
      * @magentoDataFixture Magento/Customer/_files/customer_no_address.php
      */
@@ -80,7 +80,7 @@ class DashboardTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Verify that the specified customer has the same default billing and shipping address.
+     * Verify that the specified customer has the same vouchers_voucherstatus_index.xml billing and shipping address.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDataFixture Magento/Customer/_files/customer_address.php
@@ -98,7 +98,7 @@ class DashboardTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Verify that the specified customer has different default billing and shipping addresses.
+     * Verify that the specified customer has different vouchers_voucherstatus_index.xml billing and shipping addresses.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDataFixture Magento/Customer/_files/customer_primary_addresses.php

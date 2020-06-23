@@ -67,7 +67,7 @@ class AssertProductInCustomStoreView extends AbstractAssertForm
     }
 
     /**
-     * Verify product name in default store view.
+     * Verify product name in vouchers_voucherstatus_index.xml store view.
      *
      * @param FixtureInterface $initialProduct
      * @return void
@@ -111,6 +111,6 @@ class AssertProductInCustomStoreView extends AbstractAssertForm
      */
     public function toString()
     {
-        return 'Product is displayed correctly in default and custom store views.';
+        return 'Product is displayed correctly in vouchers_voucherstatus_index.xml and custom store views.';
     }
 }

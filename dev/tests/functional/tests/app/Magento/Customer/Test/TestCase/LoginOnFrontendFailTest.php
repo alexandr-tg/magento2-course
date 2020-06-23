@@ -45,7 +45,7 @@ class LoginOnFrontendFailTest extends Injectable
         $customer->persist();
         $customerData = $customer->getData();
         $customerData['password'] = 'fail';
-        $customerData['group_id'] = ['dataset' => 'default'];
+        $customerData['group_id'] = ['dataset' => 'vouchers_voucherstatus_index.xml'];
         $failCustomer = $fixtureFactory->createByCode('customer', ['data' => $customerData]);
 
         // Steps

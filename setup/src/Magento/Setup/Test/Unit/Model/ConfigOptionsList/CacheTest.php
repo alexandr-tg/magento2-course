@@ -90,7 +90,7 @@ class CacheTest extends \PHPUnit\Framework\TestCase
         $expectedConfigData = [
             'cache' => [
                 'frontend' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'backend' => 'Cm_Cache_Backend_Redis',
                         'backend_options' => [
                             'server' => '',
@@ -119,7 +119,7 @@ class CacheTest extends \PHPUnit\Framework\TestCase
         $expectedConfigData = [
             'cache' => [
                 'frontend' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'backend' => 'Cm_Cache_Backend_Redis',
                         'backend_options' => [
                             'server' => 'localhost',
@@ -159,7 +159,7 @@ class CacheTest extends \PHPUnit\Framework\TestCase
         $expectedConfigData = [
             'cache' => [
                 'frontend' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'id_prefix' => $this->expectedIdPrefix(),
                     ]
                 ]
@@ -182,7 +182,7 @@ class CacheTest extends \PHPUnit\Framework\TestCase
         $expectedConfigData = [
             'cache' => [
                 'frontend' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'id_prefix' => $explicitPrefix,
                     ]
                 ]
@@ -231,7 +231,7 @@ class CacheTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * The default ID prefix, based on installation directory
+     * The vouchers_voucherstatus_index.xml ID prefix, based on installation directory
      *
      * @return string
      */

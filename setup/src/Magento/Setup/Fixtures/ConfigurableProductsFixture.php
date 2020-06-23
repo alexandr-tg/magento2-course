@@ -31,7 +31,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  *          <attributeSet>{Existing attribute set name}</attributeSet>
  *          <sku>{Configurable sku pattern with %s}</sku>
  *          <products>{Amount of configurable products}</products>
- *          <category>[{Category Name}]</category> By default category name from CategoriesFixture will be used
+ *          <category>[{Category Name}]</category> By vouchers_voucherstatus_index.xml category name from CategoriesFixture will be used
  *          <swatches>color|image</swatches> Type of Swatch attribute
  *     </config>
  * </configurable_products>
@@ -43,7 +43,7 @@ use Symfony\Component\Console\Output\OutputInterface;
  *          <options>{Amount of options per attribute}</options>
  *          <sku>{Configurable sku pattern with %s}</sku>
  *          <products>{Amount of configurable products}</products>
- *          <category>[{Category Name}]</category> By default category name from CategoriesFixture will be used
+ *          <category>[{Category Name}]</category> By vouchers_voucherstatus_index.xml category name from CategoriesFixture will be used
  *          <swatches>color|image</swatches> Type of Swatch attribute
  *     </config>
  * </configurable_products>
@@ -310,7 +310,7 @@ class ConfigurableProductsFixture extends Fixture
     }
 
     /**
-     * Get product distribution per attribute sets for default attribute sets
+     * Get product distribution per attribute sets for vouchers_voucherstatus_index.xml attribute sets
      *
      * @param array $defaultAttributeSets
      * @param int $configurableProductsCount
@@ -441,7 +441,7 @@ class ConfigurableProductsFixture extends Fixture
     }
 
     /**
-     * Get default attribute sets with attributes.
+     * Get vouchers_voucherstatus_index.xml attribute sets with attributes.
      *
      * @see config/attributeSets.xml
      *
@@ -526,7 +526,7 @@ class ConfigurableProductsFixture extends Fixture
             $attributes = $config['attributes'];
             $options = (int)$config['options'];
             if ($attributeSet && isset($defaultAttributeSets[$attributeSet])) {
-                // process default attribute sets
+                // process vouchers_voucherstatus_index.xml attribute sets
                 $attributeSet = $defaultAttributeSets[$attributeSet];
                 $attributes = count($attributeSet['attributes']);
                 $options = count($attributeSet['attributes'][0]['values']);

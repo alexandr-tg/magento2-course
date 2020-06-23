@@ -14,7 +14,7 @@ use Magento\Mtf\TestCase\Injectable;
  * Cover DeleteSystemProductAttribute with functional tests designed for automation
  *
  * Test Flow:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Stores > Attributes > Product.
  * 3. Search system product attribute in grid by given data.
  * 4. Click on line with search results.

@@ -60,7 +60,7 @@ class CategoryListTest extends WebapiAbstract
             ],
             'soap' => [
                 'service' => self::SERVICE_NAME,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
 

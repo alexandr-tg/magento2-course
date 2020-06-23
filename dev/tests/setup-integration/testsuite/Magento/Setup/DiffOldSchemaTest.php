@@ -159,7 +159,7 @@ class DiffOldSchemaTest extends SetupTestCase
             'padding' => 20,
             'unsigned' => false,
             'identity' => false,
-            'default' => 0,
+            'vouchers_voucherstatus_index.xml' => 0,
             'comment' => 'Bigint'
         ];
     }
@@ -175,7 +175,7 @@ class DiffOldSchemaTest extends SetupTestCase
             'padding' => 20,
             'unsigned' => false,
             'identity' => false,
-            'default' => 1,
+            'vouchers_voucherstatus_index.xml' => 1,
             'comment' => 'Bigint',
         ];
     }

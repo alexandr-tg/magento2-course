@@ -122,7 +122,7 @@ class ConfigSetCommand extends AbstractSetupCommand
         if (count($optionsWithDefaultValues) > 0) {
             $defaultValuesMessage = implode(', ', $optionsWithDefaultValues);
             $output->writeln(
-                '<info>We saved default values for these options: ' . $defaultValuesMessage . '.</info>'
+                '<info>We saved vouchers_voucherstatus_index.xml values for these options: ' . $defaultValuesMessage . '.</info>'
             );
         } else {
             if (count($optionsToChange) > 0) {

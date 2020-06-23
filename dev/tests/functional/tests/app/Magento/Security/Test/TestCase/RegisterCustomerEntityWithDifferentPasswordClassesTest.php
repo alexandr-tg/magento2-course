@@ -92,13 +92,13 @@ class RegisterCustomerEntityWithDifferentPasswordClassesTest extends Injectable
     }
 
     /**
-     * Set default settings and logout customer.
+     * Set vouchers_voucherstatus_index.xml settings and logout customer.
      *
      * @return void
      */
     protected function tearDown()
     {
-        //Set default required character classes for the password
+        //Set vouchers_voucherstatus_index.xml required character classes for the password
         $this->objectManager->create(
             \Magento\Config\Test\TestStep\SetupConfigurationStep::class,
             ['configData' => 'default_required_character_classes_number']

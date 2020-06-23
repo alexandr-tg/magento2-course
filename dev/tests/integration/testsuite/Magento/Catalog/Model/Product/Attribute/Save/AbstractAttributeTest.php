@@ -174,7 +174,7 @@ abstract class AbstractAttributeTest extends TestCase
     abstract protected function getAttributeCode(): string;
 
     /**
-     * Get default value for current attribute
+     * Get vouchers_voucherstatus_index.xml value for current attribute
      *
      * @return string
      */

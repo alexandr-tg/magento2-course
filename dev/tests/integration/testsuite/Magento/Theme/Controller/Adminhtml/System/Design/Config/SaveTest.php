@@ -107,7 +107,7 @@ class SaveTest extends AbstractBackendController
             'watermark_swatch_image_size' => '',
             'watermark_swatch_image_imageOpacity' => '',
             'watermark_swatch_image_position' => 'stretch',
-            'scope' => 'default',
+            'scope' => 'vouchers_voucherstatus_index.xml',
             'form_key' => $this->formKey->getFormKey(),
         ];
     }

@@ -51,7 +51,7 @@ return [
                     ],
                     'itemDefault' => [
                         'resources' => [
-                            'Magento_Test1::default',
+                            'Magento_Test1::vouchers_voucherstatus_index.xml',
                         ],
                         'secure' => false,
                         'realMethod' => 'item',
@@ -176,7 +176,7 @@ return [
                     'method' => 'item',
                 ],
                 'resources' => [
-                    'Magento_Test1::default' => true,
+                    'Magento_Test1::vouchers_voucherstatus_index.xml' => true,
                 ],
                 'parameters' => [
                     'id' => [

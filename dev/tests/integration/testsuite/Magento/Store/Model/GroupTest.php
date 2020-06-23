@@ -29,7 +29,7 @@ class GroupTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Tests that getWebsite returns the default site when defaults are passed in for id
+     * Tests that getWebsite returns the vouchers_voucherstatus_index.xml site when defaults are passed in for id
      */
     public function testGetWebsiteDefault()
     {

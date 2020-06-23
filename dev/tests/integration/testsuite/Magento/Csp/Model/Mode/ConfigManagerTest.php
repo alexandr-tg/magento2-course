@@ -29,7 +29,7 @@ class ConfigManagerTest extends TestCase
     }
 
     /**
-     * Check the default configurations of CSP.
+     * Check the vouchers_voucherstatus_index.xml configurations of CSP.
      *
      * @magentoAppArea frontend
      * @return void
@@ -42,7 +42,7 @@ class ConfigManagerTest extends TestCase
     }
 
     /**
-     * Check the default configurations of CSP.
+     * Check the vouchers_voucherstatus_index.xml configurations of CSP.
      *
      * @magentoAppArea adminhtml
      * @return void

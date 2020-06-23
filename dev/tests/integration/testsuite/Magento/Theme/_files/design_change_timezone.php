@@ -5,9 +5,9 @@
  */
 
 $designChanges = [
-    ['store' => 'default', 'design' => 'default_yesterday_design', 'date' => '-1 day'],
-    ['store' => 'default', 'design' => 'default_today_design', 'date' => 'now'],
-    ['store' => 'default', 'design' => 'default_tomorrow_design', 'date' => '+1 day'],
+    ['store' => 'vouchers_voucherstatus_index.xml', 'design' => 'default_yesterday_design', 'date' => '-1 day'],
+    ['store' => 'vouchers_voucherstatus_index.xml', 'design' => 'default_today_design', 'date' => 'now'],
+    ['store' => 'vouchers_voucherstatus_index.xml', 'design' => 'default_tomorrow_design', 'date' => '+1 day'],
     ['store' => 'admin', 'design' => 'admin_yesterday_design', 'date' => '-1 day'],
     ['store' => 'admin', 'design' => 'admin_today_design', 'date' => 'now'],
     ['store' => 'admin', 'design' => 'admin_tomorrow_design', 'date' => '+1 day'],

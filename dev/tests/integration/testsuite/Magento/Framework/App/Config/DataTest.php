@@ -73,7 +73,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
             0
         )->addFieldToFilter(
             'scope',
-            'default'
+            'vouchers_voucherstatus_index.xml'
         );
         foreach ($collection as $configData) {
             $this->_model = $configData;
@@ -95,7 +95,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
         $this->_model->setWebsiteCode('base');
         $this->assertEquals(self::SAMPLE_VALUE, $this->_model->getOldValue());
 
-        $this->_model->setStoreCode('default');
+        $this->_model->setStoreCode('vouchers_voucherstatus_index.xml');
         $this->assertEquals(self::SAMPLE_VALUE, $this->_model->getOldValue());
     }
 
@@ -109,7 +109,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     public function testCRUD()
     {
         $this->_model->setData(
-            ['scope' => 'default', 'scope_id' => 0, 'path' => 'test/config/path', 'value' => 'test value']
+            ['scope' => 'vouchers_voucherstatus_index.xml', 'scope_id' => 0, 'path' => 'test/config/path', 'value' => 'test value']
         );
         $crud = new \Magento\TestFramework\Entity($this->_model, ['value' => 'new value']);
         $crud->testCrud();

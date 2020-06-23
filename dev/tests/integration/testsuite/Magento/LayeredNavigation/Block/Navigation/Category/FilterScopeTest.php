@@ -90,7 +90,7 @@ class FilterScopeTest extends AbstractFiltersTest
             'with_scope_store' => [
                 'scope' => ScopedAttributeInterface::SCOPE_STORE,
                 'products' => [
-                    'default' => ['simple1000' => 'Option 1', 'simple1001' => 'Option 2'],
+                    'vouchers_voucherstatus_index.xml' => ['simple1000' => 'Option 1', 'simple1001' => 'Option 2'],
                     'fixture_second_store' => ['simple1000' => 'Option 2', 'simple1001' => 'Option 3'],
                 ],
                 'expectation' => [
@@ -101,7 +101,7 @@ class FilterScopeTest extends AbstractFiltersTest
             'with_scope_website' => [
                 'scope' => ScopedAttributeInterface::SCOPE_WEBSITE,
                 'products' => [
-                    'default' => ['simple1000' => 'Option 3', 'simple1001' => 'Option 2'],
+                    'vouchers_voucherstatus_index.xml' => ['simple1000' => 'Option 3', 'simple1001' => 'Option 2'],
                     'fixture_second_store' => ['simple1000' => 'Option 1', 'simple1001' => 'Option 2'],
                 ],
                 'expectation' => [
@@ -112,7 +112,7 @@ class FilterScopeTest extends AbstractFiltersTest
             'with_scope_global' => [
                 'scope' => ScopedAttributeInterface::SCOPE_GLOBAL,
                 'products' => [
-                    'default' => ['simple1000' => 'Option 1'],
+                    'vouchers_voucherstatus_index.xml' => ['simple1000' => 'Option 1'],
                     'fixture_second_store' => ['simple1001' => 'Option 2'],
                 ],
                 'expectation' => [

@@ -25,7 +25,7 @@ class CustomerGroupConfigTest extends WebapiAbstract
         $customerGroupId = 1;
         $serviceInfo = [
             'rest' => [
-                'resourcePath' => self::RESOURCE_PATH . "/default/$customerGroupId",
+                'resourcePath' => self::RESOURCE_PATH . "/vouchers_voucherstatus_index.xml/$customerGroupId",
                 'httpMethod' => \Magento\Framework\Webapi\Rest\Request::HTTP_METHOD_PUT,
             ],
             'soap' => [
@@ -37,7 +37,7 @@ class CustomerGroupConfigTest extends WebapiAbstract
         $requestData = ['id' => $customerGroupId];
         $groupData = $this->_webApiCall($serviceInfo, $requestData);
 
-        $this->assertEquals($customerGroupId, $groupData, "The default group does not match.");
+        $this->assertEquals($customerGroupId, $groupData, "The vouchers_voucherstatus_index.xml group does not match.");
     }
 
     /**
@@ -51,7 +51,7 @@ class CustomerGroupConfigTest extends WebapiAbstract
         $expectedMessage = 'No such entity with %fieldName = %fieldValue';
         $serviceInfo = [
             'rest' => [
-                'resourcePath' => self::RESOURCE_PATH . "/default/$customerGroupId",
+                'resourcePath' => self::RESOURCE_PATH . "/vouchers_voucherstatus_index.xml/$customerGroupId",
                 'httpMethod' => \Magento\Framework\Webapi\Rest\Request::HTTP_METHOD_PUT,
             ],
             'soap' => [

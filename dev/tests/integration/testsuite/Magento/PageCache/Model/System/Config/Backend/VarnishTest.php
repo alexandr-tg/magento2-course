@@ -28,7 +28,7 @@ class VarnishTest extends \PHPUnit\Framework\TestCase
             'backend_port' => 8080,
             'ttl' => 120,
         ];
-        $this->_config->setValue('system/full_page_cache/default', $data);
+        $this->_config->setValue('system/full_page_cache/vouchers_voucherstatus_index.xml', $data);
         $this->_model = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(
             \Magento\PageCache\Model\System\Config\Backend\Varnish::class
         );

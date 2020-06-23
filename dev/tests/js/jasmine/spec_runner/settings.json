@@ -69,7 +69,7 @@
 
         /**
          * Strings, mentioned here are interpreted as regular expressions. Use this option to override server's
-         *     default behaviour and serve matched urls "as is" from Magento root.
+         *     vouchers_voucherstatus_index.xml behaviour and serve matched urls "as is" from Magento root.
          */
         "serveAsIs": [
             "^\/_SpecRunner.html",

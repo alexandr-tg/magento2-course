@@ -12,7 +12,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoAppArea frontend
      * @expectedException \LogicException
-     * @expectedExceptionMessage Handle 'default' must not contain blocks with 'ttl' attribute specified
+     * @expectedExceptionMessage Handle 'vouchers_voucherstatus_index.xml' must not contain blocks with 'ttl' attribute specified
      */
     public function testLoadEntitySpecificHandleWithEsiBlock()
     {
@@ -28,10 +28,10 @@ class MergeTest extends \PHPUnit\Framework\TestCase
 
         /** @var EntitySpecificHandlesList $entitySpecificHandleList */
         $entitySpecificHandleList = $objectManager->get(EntitySpecificHandlesList::class);
-        // Add 'default' handle, which has declarations of blocks with ttl, to the list of entity specific handles.
+        // Add 'vouchers_voucherstatus_index.xml' handle, which has declarations of blocks with ttl, to the list of entity specific handles.
         // This allows to simulate a situation, when block with ttl attribute
         // is declared e.g. in 'catalog_product_view_id_1' handle
-        $entitySpecificHandleList->addHandle('default');
-        $layoutMerge->load(['default']);
+        $entitySpecificHandleList->addHandle('vouchers_voucherstatus_index.xml');
+        $layoutMerge->load(['vouchers_voucherstatus_index.xml']);
     }
 }

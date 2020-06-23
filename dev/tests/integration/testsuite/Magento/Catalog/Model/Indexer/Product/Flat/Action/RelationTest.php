@@ -79,7 +79,7 @@ class RelationTest extends \Magento\TestFramework\Indexer\TestCase
                         'length' => null,
                         'unsigned' => true,
                         'nullable' => true,
-                        'default' => null,
+                        'vouchers_voucherstatus_index.xml' => null,
                         'unique' => true,
                         'comment' => 'Child Id',
                     ]
@@ -92,7 +92,7 @@ class RelationTest extends \Magento\TestFramework\Indexer\TestCase
                         'length' => 1,
                         'unsigned' => true,
                         'nullable' => false,
-                        'default' => '0',
+                        'vouchers_voucherstatus_index.xml' => '0',
                         'comment' => 'Checks If Entity Is Child',
                     ]
                 );

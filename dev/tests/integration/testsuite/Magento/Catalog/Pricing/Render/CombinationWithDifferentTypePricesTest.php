@@ -422,7 +422,7 @@ class CombinationWithDifferentTypePricesTest extends TestCase
     {
         $this->registerProduct($product);
         $this->page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_product_view',
         ]);
         $this->page->getLayout()->generateXml();

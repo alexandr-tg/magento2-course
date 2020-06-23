@@ -135,7 +135,7 @@ class QuoteValidatorTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Checks a case when the default website has country restrictions and the quote created
+     * Checks a case when the vouchers_voucherstatus_index.xml website has country restrictions and the quote created
      * for the another website with different country restrictions.
      *
      * @magentoDataFixture Magento/Quote/Fixtures/quote_sec_website.php

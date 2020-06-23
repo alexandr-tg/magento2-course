@@ -69,7 +69,7 @@ class ProductAttributeRepositoryTest extends \Magento\TestFramework\TestCase\Web
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
         $response = $this->_webApiCall($serviceInfo, $searchCriteria);
@@ -116,7 +116,7 @@ class ProductAttributeRepositoryTest extends \Magento\TestFramework\TestCase\Web
         //'Blue' should be first as it has sort_order = 0
         $this->assertEquals('Default Blue', $attribute['options'][1]['label']);
         $this->assertArrayHasKey('default_value', $attribute);
-        //'Blue' should be set as default
+        //'Blue' should be set as vouchers_voucherstatus_index.xml
         $this->assertEquals($attribute['default_value'], $attribute['options'][1]['value']);
         $this->assertEquals('Default Red', $attribute['options'][2]['label']);
     }
@@ -148,7 +148,7 @@ class ProductAttributeRepositoryTest extends \Magento\TestFramework\TestCase\Web
         $attributeCode = uniqid('label_attr_code');
         $attribute = $this->createAttribute($attributeCode);
 
-        //Make sure that 'Blue' is set as default
+        //Make sure that 'Blue' is set as vouchers_voucherstatus_index.xml
         $this->assertEquals($attribute['default_value'], $attribute['options'][1]['value']);
         $attributeData = [
             'attribute' => [
@@ -204,7 +204,7 @@ class ProductAttributeRepositoryTest extends \Magento\TestFramework\TestCase\Web
         $this->assertEquals($attributeCode, $result['attribute_code']);
         $this->assertEquals('default_label_new', $result['default_frontend_label']);
         $this->assertEquals('front_lbl_store1_new', $result['frontend_labels'][0]['label']);
-        //New option set as default
+        //New option set as vouchers_voucherstatus_index.xml
         $this->assertEquals($result['options'][3]['value'], $result['default_value']);
         $this->assertEquals("Default Blue Updated", $result['options'][1]['label']);
     }

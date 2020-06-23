@@ -10,21 +10,21 @@ return [
                 'tinyint_ref' => [
                     'type' => 'tinyint',
                     'name' => 'tinyint_ref',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'padding' => '7',
                     'nullable' => 'true',
                     'unsigned' => 'false',
                 ],
             ],
             'name' => 'reference_table',
-            'resource' => 'default',
+            'resource' => 'vouchers_voucherstatus_index.xml',
         ],
         'test_table' => [
             'column' => [
                 'tinyint' => [
                     'type' => 'tinyint',
                     'name' => 'tinyint',
-                    'default' => '0',
+                    'vouchers_voucherstatus_index.xml' => '0',
                     'padding' => '7',
                     'nullable' => 'true',
                     'unsigned' => 'false',
@@ -41,7 +41,7 @@ return [
                 ],
             ],
             'name' => 'test_table',
-            'resource' => 'default',
+            'resource' => 'vouchers_voucherstatus_index.xml',
         ],
     ],
 ];

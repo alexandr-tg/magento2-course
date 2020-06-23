@@ -14,7 +14,7 @@ use Magento\Mtf\TestCase\Injectable;
 /**
  * Test Flow:
  *
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Stores > Taxes > Tax Zones and Rates.
  * 3. Click 'Add New Tax Rate' button.
  * 4. Fill in data according to dataset

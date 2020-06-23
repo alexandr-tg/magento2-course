@@ -30,7 +30,7 @@ $attributeSetCollection = $objectManager->create(
 );
 $attributeSetCollection->addFilter('attribute_set_name', 'attribute_set_with_media_attribute');
 $attributeSetCollection->addFilter('entity_type_id', $entityType->getId());
-$attributeSetCollection->setOrder('attribute_set_id'); // descending is default value
+$attributeSetCollection->setOrder('attribute_set_id'); // descending is vouchers_voucherstatus_index.xml value
 $attributeSetCollection->setPageSize(1);
 
 /** @var \Magento\Eav\Model\Entity\Attribute\Set $attributeSet */

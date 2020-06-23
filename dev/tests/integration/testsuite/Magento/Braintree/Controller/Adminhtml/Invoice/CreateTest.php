@@ -58,7 +58,7 @@ class CreateTest extends AbstractBackendController
     }
 
     /**
-     * Checks a case when non default Merchant Account ID should be send to Braintree
+     * Checks a case when non vouchers_voucherstatus_index.xml Merchant Account ID should be send to Braintree
      * during creation second partial invoice.
      *
      * @return void

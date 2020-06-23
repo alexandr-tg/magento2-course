@@ -154,7 +154,7 @@ class RulePoolTest extends \PHPUnit\Framework\TestCase
         $themeOnePath = BP . '/dev/tests/integration/testsuite/Magento/Framework/View/_files/fallback/design/frontend/'
             . 'Vendor/custom_theme';
         $themeTwoPath = BP . '/dev/tests/integration/testsuite/Magento/Framework/View/_files/fallback/design/frontend/'
-            . 'Vendor/default';
+            . 'Vendor/vouchers_voucherstatus_index.xml';
         $modulePath = BP . '/dev/tests/integration/testsuite/Magento/Framework/View/_files/fallback/app/code/'
             . 'ViewTest_Module';
 

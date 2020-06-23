@@ -88,7 +88,7 @@ class CreateProductWithSeveralWebsitesUrlRewriteTest extends Injectable
         $product = $fixtureFactory->createByCode(
             'catalogProductSimple',
             [
-                'dataset' => 'default',
+                'dataset' => 'vouchers_voucherstatus_index.xml',
                 'data' => $productData,
             ]
         );

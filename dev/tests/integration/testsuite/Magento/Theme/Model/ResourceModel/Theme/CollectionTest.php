@@ -71,10 +71,10 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
     public function getThemeByFullPathDataProvider()
     {
         return [
-            ['test_area/test/default', true],
+            ['test_area/test/vouchers_voucherstatus_index.xml', true],
             ['test_area2/test/pro', true],
             ['test_area/test/pro', false],
-            ['test_area2/test/default', false],
+            ['test_area2/test/vouchers_voucherstatus_index.xml', false],
             ['', false],
             ['test_area', false],
             ['test_area/test', false],
@@ -244,8 +244,8 @@ class CollectionTest extends \PHPUnit\Framework\TestCase
         return [
             [
                 'parent_id' => '0',
-                'theme_path' => 'test/default',
-                'code' => 'test/default',
+                'theme_path' => 'test/vouchers_voucherstatus_index.xml',
+                'code' => 'test/vouchers_voucherstatus_index.xml',
                 'theme_title' => 'Test',
                 'preview_image' => 'test_default.jpg',
                 'is_featured' => '1',

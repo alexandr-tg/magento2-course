@@ -117,7 +117,7 @@ class ProductInMultipleStoresCacheTest extends GraphQlAbstract
 QUERY;
 
         //test non existing currency
-        $headerMap = ['Store' => 'default', 'Content-Currency' => 'someNonExistentCurrency'];
+        $headerMap = ['Store' => 'vouchers_voucherstatus_index.xml', 'Content-Currency' => 'someNonExistentCurrency'];
         $this->expectExceptionMessage('GraphQL response contains errors: Please correct the target currency');
         $this->graphQlQuery($query, [], '', $headerMap);
     }
@@ -172,7 +172,7 @@ QUERY;
     }
 
     /**
-     * Test a product from a custom and default store, with cache with repeating queries asserting different results.
+     * Test a product from a custom and vouchers_voucherstatus_index.xml store, with cache with repeating queries asserting different results.
      *
      * @magentoApiDataFixture Magento/Store/_files/second_website_with_second_currency.php
      * @magentoApiDataFixture Magento/Catalog/_files/product_simple.php
@@ -271,7 +271,7 @@ QUERY;
         );
 
         // test non cached store + currency header in USD not cached
-        $headerMap = ['Store' => 'default', 'Content-Currency' => 'USD'];
+        $headerMap = ['Store' => 'vouchers_voucherstatus_index.xml', 'Content-Currency' => 'USD'];
         $response = $this->graphQlQuery($query, [], '', $headerMap);
         $this->assertEquals(
             'Simple Product',
@@ -281,11 +281,11 @@ QUERY;
         $this->assertEquals(
             'USD',
             $response['products']['items'][0]['price']['minimalPrice']['amount']['currency'],
-            'Currency code USD in fixture store default is unexpected'
+            'Currency code USD in fixture store vouchers_voucherstatus_index.xml is unexpected'
         );
 
         // test non cached store + currency header in USD not cached
-        $headerMap = ['Store' => 'default', 'Content-Currency' => 'EUR'];
+        $headerMap = ['Store' => 'vouchers_voucherstatus_index.xml', 'Content-Currency' => 'EUR'];
         $response = $this->graphQlQuery($query, [], '', $headerMap);
         $this->assertEquals(
             'Simple Product',
@@ -295,11 +295,11 @@ QUERY;
         $this->assertEquals(
             'EUR',
             $response['products']['items'][0]['price']['minimalPrice']['amount']['currency'],
-            'Currency code EUR in fixture store default is unexpected'
+            'Currency code EUR in fixture store vouchers_voucherstatus_index.xml is unexpected'
         );
 
         // test non cached store + currency header in USD  cached
-        $headerMap = ['Store' => 'default'];
+        $headerMap = ['Store' => 'vouchers_voucherstatus_index.xml'];
         $response = $this->graphQlQuery($query, [], '', $headerMap);
         $this->assertEquals(
             'Simple Product',
@@ -309,7 +309,7 @@ QUERY;
         $this->assertEquals(
             'USD',
             $response['products']['items'][0]['price']['minimalPrice']['amount']['currency'],
-            'Currency code USD in fixture store default is unexpected'
+            'Currency code USD in fixture store vouchers_voucherstatus_index.xml is unexpected'
         );
 
         // test cached response store + currency header with non existing currency, and no valid response, no cache

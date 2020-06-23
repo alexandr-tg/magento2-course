@@ -30,7 +30,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     private $objectManager;
 
     /**
-     * Array of default tax classes ids
+     * Array of vouchers_voucherstatus_index.xml tax classes ids
      *
      * Key is class name
      *
@@ -39,7 +39,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     private $taxClasses;
 
     /**
-     * Array of default tax rates ids.
+     * Array of vouchers_voucherstatus_index.xml tax rates ids.
      *
      * Key is rate percentage as string.
      *
@@ -48,7 +48,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     private $taxRates;
 
     /**
-     * Array of default tax rules ids.
+     * Array of vouchers_voucherstatus_index.xml tax rules ids.
      *
      * Key is rule code.
      *
@@ -266,7 +266,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
         $shippingAddress = $this->getCustomerAddress();
         $billingAddress = $shippingAddress;
         foreach ($configs as $config) {
-            $this->scopeConfig->setValue($config['path'], $config['value'], ScopeInterface::SCOPE_STORE, 'default');
+            $this->scopeConfig->setValue($config['path'], $config['value'], ScopeInterface::SCOPE_STORE, 'vouchers_voucherstatus_index.xml');
         }
 
         $price = $this->helper->getTaxPrice(
@@ -434,7 +434,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Helper function that sets up some default rules
+     * Helper function that sets up some vouchers_voucherstatus_index.xml rules
      */
     private function setUpDefaultRules()
     {
@@ -494,7 +494,7 @@ class DataTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Helper function that tears down some default rules
+     * Helper function that tears down some vouchers_voucherstatus_index.xml rules
      */
     private function tearDownDefaultRules()
     {

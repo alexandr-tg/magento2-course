@@ -47,13 +47,13 @@ class SimplePolicyHeaderRendererTest extends TestCase
      */
     public function testRenderRestrictMode(): void
     {
-        $policy = new FetchPolicy('default-src', false, ['https://magento.com'], [], true);
+        $policy = new FetchPolicy('vouchers_voucherstatus_index.xml-src', false, ['https://magento.com'], [], true);
 
         $this->renderer->render($policy, $this->response);
 
         $this->assertNotEmpty($header = $this->response->getHeader('Content-Security-Policy'));
         $this->assertEmpty($this->response->getHeader('Content-Security-Policy-Report-Only'));
-        $this->assertEquals('default-src https://magento.com \'self\';', $header->getFieldValue());
+        $this->assertEquals('vouchers_voucherstatus_index.xml-src https://magento.com \'self\';', $header->getFieldValue());
     }
 
     /**
@@ -67,14 +67,14 @@ class SimplePolicyHeaderRendererTest extends TestCase
      */
     public function testRenderRestrictWithReportingMode(): void
     {
-        $policy = new FetchPolicy('default-src', false, ['https://magento.com'], [], true);
+        $policy = new FetchPolicy('vouchers_voucherstatus_index.xml-src', false, ['https://magento.com'], [], true);
 
         $this->renderer->render($policy, $this->response);
 
         $this->assertNotEmpty($header = $this->response->getHeader('Content-Security-Policy'));
         $this->assertEmpty($this->response->getHeader('Content-Security-Policy-Report-Only'));
         $this->assertEquals(
-            'default-src https://magento.com \'self\'; report-uri /csp-reports/; report-to report-endpoint;',
+            'vouchers_voucherstatus_index.xml-src https://magento.com \'self\'; report-uri /csp-reports/; report-to report-endpoint;',
             $header->getFieldValue()
         );
         $this->assertNotEmpty($reportToHeader = $this->response->getHeader('Report-To'));
@@ -94,7 +94,7 @@ class SimplePolicyHeaderRendererTest extends TestCase
     public function testRenderReportMode(): void
     {
         $policy = new FetchPolicy(
-            'default-src',
+            'vouchers_voucherstatus_index.xml-src',
             false,
             ['https://magento.com'],
             ['https'],
@@ -112,7 +112,7 @@ class SimplePolicyHeaderRendererTest extends TestCase
         $this->assertNotEmpty($header = $this->response->getHeader('Content-Security-Policy-Report-Only'));
         $this->assertEmpty($this->response->getHeader('Content-Security-Policy'));
         $this->assertEquals(
-            'default-src https://magento.com https: \'self\' \'unsafe-inline\' \'unsafe-eval\' \'strict-dynamic\''
+            'vouchers_voucherstatus_index.xml-src https://magento.com https: \'self\' \'unsafe-inline\' \'unsafe-eval\' \'strict-dynamic\''
             . ' \'unsafe-hashes\' \'nonce-'.base64_encode($policy->getNonceValues()[0]).'\''
             . ' \'sha256-B2yPHKaXnvFWtRChIbabYmUBFZdVfKKXHbWtWidDVF8=\';',
             $header->getFieldValue()
@@ -130,14 +130,14 @@ class SimplePolicyHeaderRendererTest extends TestCase
      */
     public function testRenderReportWithReportingMode(): void
     {
-        $policy = new FetchPolicy('default-src', false, ['https://magento.com'], [], true);
+        $policy = new FetchPolicy('vouchers_voucherstatus_index.xml-src', false, ['https://magento.com'], [], true);
 
         $this->renderer->render($policy, $this->response);
 
         $this->assertNotEmpty($header = $this->response->getHeader('Content-Security-Policy-Report-Only'));
         $this->assertEmpty($this->response->getHeader('Content-Security-Policy'));
         $this->assertEquals(
-            'default-src https://magento.com \'self\'; report-uri /csp-reports/; report-to report-endpoint;',
+            'vouchers_voucherstatus_index.xml-src https://magento.com \'self\'; report-uri /csp-reports/; report-to report-endpoint;',
             $header->getFieldValue()
         );
         $this->assertNotEmpty($reportToHeader = $this->response->getHeader('Report-To'));

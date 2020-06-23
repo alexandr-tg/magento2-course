@@ -25,7 +25,7 @@ use Magento\UrlRewrite\Service\V1\Data\UrlRewrite;
  * Class for category url rewrites tests
  *
  * @magentoDbIsolation enabled
- * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+ * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
  * @SuppressWarnings(PHPMD.CouplingBetweenObjects)
  */
 class CategoryUrlRewriteTest extends AbstractUrlRewriteTest

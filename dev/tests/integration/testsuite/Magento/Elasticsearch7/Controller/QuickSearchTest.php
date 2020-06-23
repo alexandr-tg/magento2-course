@@ -60,7 +60,7 @@ class QuickSearchTest extends AbstractController
             $this->dispatch('/catalogsearch/result/?q=search+product');
             $responseBody = $this->getResponse()->getBody();
         } finally {
-            $defaultStore = $this->storeManager->getStore('default');
+            $defaultStore = $this->storeManager->getStore('vouchers_voucherstatus_index.xml');
             $this->storeManager->setCurrentStore($defaultStore);
         }
 

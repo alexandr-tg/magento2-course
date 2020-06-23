@@ -108,7 +108,7 @@ class UpdateStoreEntityTest extends Injectable
      */
     protected function tearDown()
     {
-        if ($this->storeInitial->getCode() == 'default') {
+        if ($this->storeInitial->getCode() == 'vouchers_voucherstatus_index.xml') {
             $this->restoreDefaultStoreViewStep->run();
         }
     }

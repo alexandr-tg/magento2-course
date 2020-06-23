@@ -233,7 +233,7 @@ class UpgradeSchema implements UpgradeSchemaInterface
                 [
                     'unsigned' => true,
                     'nullable' => true,
-                    'default' => 100
+                    'vouchers_voucherstatus_index.xml' => 100
                 ],
                 'Counter'
             );

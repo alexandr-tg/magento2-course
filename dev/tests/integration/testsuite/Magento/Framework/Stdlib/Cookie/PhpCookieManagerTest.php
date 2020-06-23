@@ -38,7 +38,7 @@ class PhpCookieManagerTest extends \PHPUnit\Framework\TestCase
         $preTestCookies = $_COOKIE;
         $cookieName = 'cookie name';
         $cookieValue = 'cookie value';
-        $defaultCookieValue = 'default';
+        $defaultCookieValue = 'vouchers_voucherstatus_index.xml';
         $_COOKIE[$cookieName] = $cookieValue;
         $this->assertEquals(
             $defaultCookieValue,

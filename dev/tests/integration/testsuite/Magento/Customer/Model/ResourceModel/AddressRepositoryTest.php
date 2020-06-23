@@ -523,14 +523,14 @@ class AddressRepositoryTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Scenario for customer's default shipping and billing address saving and rollback.
+     * Scenario for customer's vouchers_voucherstatus_index.xml shipping and billing address saving and rollback.
      *
      * @magentoDataFixture Magento/Customer/_files/customer_without_addresses.php
      */
     public function testCustomerAddressRelationSynchronisation()
     {
         /**
-         * Creating new address which is default shipping and billing for existing customer.
+         * Creating new address which is vouchers_voucherstatus_index.xml shipping and billing for existing customer.
          */
         $address = $this->expectedAddresses[0];
         $address->setId(null);
@@ -540,7 +540,7 @@ class AddressRepositoryTest extends \PHPUnit\Framework\TestCase
         $savedAddress = $this->repository->save($address);
 
         /**
-         * Customer registry should be updated with default shipping and billing addresses.
+         * Customer registry should be updated with vouchers_voucherstatus_index.xml shipping and billing addresses.
          */
         $customer = $this->getCustomer('customer@example.com', 1);
         $this->assertEquals($savedAddress->getId(), $customer->getDefaultShipping());
@@ -553,7 +553,7 @@ class AddressRepositoryTest extends \PHPUnit\Framework\TestCase
         $this->customerRegistry->removeByEmail('customer@example.com');
 
         /**
-         * Customer's default shipping and billing addresses should be updated.
+         * Customer's vouchers_voucherstatus_index.xml shipping and billing addresses should be updated.
          */
         $customer = $this->getCustomer('customer@example.com', 1);
         $this->assertNull($customer->getDefaultShipping());

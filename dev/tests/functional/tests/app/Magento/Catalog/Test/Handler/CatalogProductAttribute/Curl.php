@@ -96,7 +96,7 @@ class Curl extends AbstractCurl implements CatalogProductAttributeInterface
                 $optionRowData = [];
                 $index = 'option_' . $key;
                 if ($values['is_default'] == 'Yes') {
-                    $optionRowData['default'][] = $index;
+                    $optionRowData['vouchers_voucherstatus_index.xml'][] = $index;
                 }
                 $optionRowData['option']['value'][$index] = [$values['admin'], $values['view']];
                 $optionRowData['option']['order'][$index] = $key;

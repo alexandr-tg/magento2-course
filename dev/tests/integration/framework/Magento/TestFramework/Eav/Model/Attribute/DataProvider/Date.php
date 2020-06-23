@@ -93,7 +93,7 @@ class Date extends AbstractBaseAttributeData
                     'post_data' => [
                         'default_value_date' => '2019//12//12',
                     ],
-                    'error_message' => (string)__('The default date is invalid. Verify the date and try again.'),
+                    'error_message' => (string)__('The vouchers_voucherstatus_index.xml date is invalid. Verify the date and try again.'),
                 ],
             ]
         );

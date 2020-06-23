@@ -371,7 +371,7 @@ class ProductPriceTest extends GraphQlAbstract
         $this->assertPrices($expectedPriceRange, $product['price_range']);
         $this->assertEmpty($product['price_tiers']);
 
-        // update default quantity of each of the associated products to be greater than tier price qty of each of them
+        // update vouchers_voucherstatus_index.xml quantity of each of the associated products to be greater than tier price qty of each of them
         foreach ($groupedProductLinks as $groupedProductLink) {
             $groupedProductLink->getExtensionAttributes()->setQty(3);
         }
@@ -909,7 +909,7 @@ QUERY;
       name
       sku
       price_range {
-        minimum_price {regular_price 
+        minimum_price {regular_price
         {
          value
          currency
@@ -949,13 +949,13 @@ QUERY;
       ... on ConfigurableProduct{
         variants{
           product{
-           
+
             sku
             price_range {
         minimum_price {regular_price {value}
           final_price {
             value
-            
+
           }
           discount {
             amount_off
@@ -965,11 +965,11 @@ QUERY;
         maximum_price {
           regular_price {
             value
-           
+
           }
           final_price {
             value
-            
+
           }
           discount {
             amount_off
@@ -985,7 +985,7 @@ QUERY;
               final_price{value}
                 quantity
               }
-            
+
             }
           }
         }

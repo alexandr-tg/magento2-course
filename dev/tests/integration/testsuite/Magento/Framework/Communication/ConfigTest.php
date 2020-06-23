@@ -262,7 +262,7 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @expectedException \LogicException
-     * @expectedExceptionMessage Disabled handler "default" for topic "customerCreated" cannot be added to the config fi
+     * @expectedExceptionMessage Disabled handler "vouchers_voucherstatus_index.xml" for topic "customerCreated" cannot be added to the config fi
      */
     public function testGetTopicsExceptionWithDisabledHandlerInEnv()
     {

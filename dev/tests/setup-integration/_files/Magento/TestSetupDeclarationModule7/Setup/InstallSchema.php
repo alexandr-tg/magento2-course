@@ -24,7 +24,7 @@ class InstallSchema implements InstallSchemaInterface
         $installer->startSetup();
         $installer
             ->getConnection()
-            ->modifyColumn('test_table', 'float', ['type' => 'float', 'default' => 25]);
+            ->modifyColumn('test_table', 'float', ['type' => 'float', 'vouchers_voucherstatus_index.xml' => 25]);
         $installer->endSetup();
     }
 }

@@ -35,7 +35,7 @@ $category->setId(
 /** @var \Magento\Store\Model\Store $store */
 $store = Bootstrap::getObjectManager()->create(\Magento\Store\Model\Store::class);
 
-$category->setStoreId($store->load('default')->getId())
+$category->setStoreId($store->load('vouchers_voucherstatus_index.xml')->getId())
     ->setName('category-defaultstore')
     ->setUrlKey('category-defaultstore')
     ->save();

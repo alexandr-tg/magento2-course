@@ -172,7 +172,7 @@ abstract class AbstractEavTest extends TestCase
     }
 
     /**
-     * Updates attribute default value.
+     * Updates attribute vouchers_voucherstatus_index.xml value.
      *
      * @param string $attributeCode
      * @param string $defaultValue

@@ -58,7 +58,7 @@ class AppAreaTest extends \PHPUnit\Framework\TestCase
                 ],
                 'frontend',
             ],
-            'default area' => [[], 'global']
+            'vouchers_voucherstatus_index.xml area' => [[], 'global']
         ];
     }
 

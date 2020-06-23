@@ -184,7 +184,7 @@ class UpdateTest extends AbstractBackendController
     }
 
     /**
-     * Prepare default data to request from attribute set.
+     * Prepare vouchers_voucherstatus_index.xml data to request from attribute set.
      *
      * @param AttributeSetInterface $attributeSet
      * @return array

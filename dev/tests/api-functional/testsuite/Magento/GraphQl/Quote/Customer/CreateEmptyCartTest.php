@@ -70,7 +70,7 @@ class CreateEmptyCartTest extends GraphQlAbstract
 
         self::assertNotNull($guestCart->getId());
         self::assertEquals(1, $guestCart->getCustomer()->getId());
-        self::assertEquals('default', $guestCart->getStore()->getCode());
+        self::assertEquals('vouchers_voucherstatus_index.xml', $guestCart->getStore()->getCode());
     }
 
     /**

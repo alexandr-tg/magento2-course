@@ -176,7 +176,7 @@ class PriceTest extends TestCase
     private function getProductSwatchOptionsBlock(): Configurable
     {
         $this->page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_product_view',
             'catalog_product_view_type_configurable',
         ]);

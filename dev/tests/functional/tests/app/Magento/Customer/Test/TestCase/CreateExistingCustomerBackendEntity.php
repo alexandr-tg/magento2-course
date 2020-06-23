@@ -16,7 +16,7 @@ use Magento\Customer\Test\Page\Adminhtml\CustomerIndexNew;
  * 1. Customer is created.
  *
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Customers > All Customers.
  * 3. Press "Add New Customer" button.
  * 4. Fill form with data from previously created customer.

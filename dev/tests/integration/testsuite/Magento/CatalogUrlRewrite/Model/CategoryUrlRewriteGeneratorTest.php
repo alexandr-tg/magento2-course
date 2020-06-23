@@ -38,7 +38,7 @@ class CategoryUrlRewriteGeneratorTest extends TestCase
 
     /**
      * @magentoDataFixture Magento/CatalogUrlRewrite/_files/categories_with_products.php
-     * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
      */
@@ -106,7 +106,7 @@ class CategoryUrlRewriteGeneratorTest extends TestCase
 
     /**
      * @magentoDbIsolation enabled
-     * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
      * @magentoDataFixture Magento/CatalogUrlRewrite/_files/categories_with_products.php
      * @magentoAppIsolation enabled
      */
@@ -251,7 +251,7 @@ class CategoryUrlRewriteGeneratorTest extends TestCase
     }
 
     /**
-     * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 0
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 0
      * @magentoDataFixture Magento/CatalogUrlRewrite/_files/categories_with_products.php
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
@@ -280,7 +280,7 @@ class CategoryUrlRewriteGeneratorTest extends TestCase
     }
 
     /**
-     * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 0
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 0
      * @magentoDataFixture Magento/CatalogUrlRewrite/_files/categories_with_products.php
      * @magentoAppIsolation enabled
      */
@@ -312,7 +312,7 @@ class CategoryUrlRewriteGeneratorTest extends TestCase
      * Check number of records after removing product
      *
      * @magentoDataFixture Magento/CatalogUrlRewrite/_files/categories_with_products.php
-     * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
      *

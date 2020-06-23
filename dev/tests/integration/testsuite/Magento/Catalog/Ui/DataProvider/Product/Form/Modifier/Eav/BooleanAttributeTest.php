@@ -50,7 +50,7 @@ class BooleanAttributeTest extends AbstractEavTest
     public function testModifyMetaNewProduct(): void
     {
         $this->setAttributeDefaultValue('boolean_attribute', '0');
-        $attributesMeta = array_merge($this->getAttributeMeta(), ['default' => '0']);
+        $attributesMeta = array_merge($this->getAttributeMeta(), ['vouchers_voucherstatus_index.xml' => '0']);
         $expectedMeta = $this->addMetaNesting(
             $attributesMeta,
             'product-details',

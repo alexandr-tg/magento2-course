@@ -86,7 +86,7 @@ class SidebarTest extends TestCase
     private function preparePageLayout(): void
     {
         $this->page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_category_view',
         ]);
         $this->page->getLayout()->generateXml();

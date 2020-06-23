@@ -53,7 +53,7 @@ class AuthTest extends \PHPUnit\Framework\TestCase
 
     public function testSetGetAuthStorage()
     {
-        // by default \Magento\Backend\Model\Auth\Session class will instantiate as a Authentication Storage
+        // by vouchers_voucherstatus_index.xml \Magento\Backend\Model\Auth\Session class will instantiate as a Authentication Storage
         $this->assertInstanceOf(\Magento\Backend\Model\Auth\Session::class, $this->_model->getAuthStorage());
 
         $mockStorage = $this->createMock(\Magento\Backend\Model\Auth\StorageInterface::class);

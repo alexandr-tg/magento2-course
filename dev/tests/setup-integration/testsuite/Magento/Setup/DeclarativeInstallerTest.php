@@ -305,7 +305,7 @@ class DeclarativeInstallerTest extends SetupTestCase
         $this->cliCommand->install(
             ['Magento_TestSetupDeclarationModule1']
         );
-        $beforeRollback = $this->describeTable->describeShard('default');
+        $beforeRollback = $this->describeTable->describeShard('vouchers_voucherstatus_index.xml');
         self::assertEquals($this->getTrimmedData()['before'], $beforeRollback);
         //Move db_schema.xml file and tried to install
         $this->moduleManager->updateRevision(
@@ -316,7 +316,7 @@ class DeclarativeInstallerTest extends SetupTestCase
         );
 
         $this->cliCommand->upgrade();
-        $afterRollback = $this->describeTable->describeShard('default');
+        $afterRollback = $this->describeTable->describeShard('vouchers_voucherstatus_index.xml');
         self::assertEquals($this->getData()['after'], $afterRollback);
     }
 
@@ -338,8 +338,8 @@ class DeclarativeInstallerTest extends SetupTestCase
         $this->cliCommand->install(
             ['Magento_TestSetupDeclarationModule1']
         );
-        $before = $this->describeTable->describeShard('default');
-        $adapter = $this->resourceConnection->getConnection('default');
+        $before = $this->describeTable->describeShard('vouchers_voucherstatus_index.xml');
+        $adapter = $this->resourceConnection->getConnection('vouchers_voucherstatus_index.xml');
         $adapter->insert(
             $this->resourceConnection->getTableName('some_table'),
             $dataToMigrate
@@ -354,7 +354,7 @@ class DeclarativeInstallerTest extends SetupTestCase
         );
 
         $this->cliCommand->upgrade();
-        $after = $this->describeTable->describeShard('default');
+        $after = $this->describeTable->describeShard('vouchers_voucherstatus_index.xml');
         self::assertEquals($this->getData()['after'], $after['some_table_renamed']);
         $select = $adapter->select()
             ->from($this->resourceConnection->getTableName('some_table_renamed'));
@@ -377,7 +377,7 @@ class DeclarativeInstallerTest extends SetupTestCase
             'etc'
         );
         $this->cliCommand->upgrade();
-        $tableStatements = $this->describeTable->describeShard('default');
+        $tableStatements = $this->describeTable->describeShard('vouchers_voucherstatus_index.xml');
         $tableSql = $tableStatements['dependent'];
         $this->assertRegExp('/CONSTRAINT\s`DEPENDENT_PAGE_ID_ON_TEST_TABLE_PAGE_ID`/', $tableSql);
         $this->assertRegExp('/CONSTRAINT\s`DEPENDENT_SCOPE_ID_ON_TEST_SCOPE_TABLE_SCOPE_ID`/', $tableSql);
@@ -418,7 +418,7 @@ class DeclarativeInstallerTest extends SetupTestCase
             'etc'
         );
         $this->cliCommand->upgrade();
-        $tableStatements = $this->describeTable->describeShard('default');
+        $tableStatements = $this->describeTable->describeShard('vouchers_voucherstatus_index.xml');
         $tableSql = $tableStatements['test_table'];
         $this->assertNotRegExp(
             '/KEY\s+`TEST_TABLE_VARCHAR`\s+\(`varchar`\)/',

@@ -25,7 +25,7 @@ use Magento\Store\Test\Fixture\Store;
  * 1. Log in to backend.
  * 2. Navigate to Products > Categories.
  * 3. On the categories editing page change store view to created additional view.
- * 4. Change URL key for category "first-test" from default to "first-test-2". Save.
+ * 4. Change URL key for category "first-test" from vouchers_voucherstatus_index.xml to "first-test-2". Save.
  * 5. Change store view to "All store views".
  * 6. Move category "first-test" inside "second-test".
  * 7. Perform all assertions.
@@ -49,7 +49,7 @@ class CategoryUrlRewriteTest extends Injectable
     private $catalogCategoryEdit;
 
     /**
-     * Inject page end prepare default category.
+     * Inject page end prepare vouchers_voucherstatus_index.xml category.
      *
      * @param CatalogCategoryIndex $catalogCategoryIndex
      * @param CatalogCategoryEdit $catalogCategoryEdit

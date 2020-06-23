@@ -32,9 +32,9 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
         $configType = "system";
         $path = "stores/one";
         $value = 1;
-        $this->model->setValue($path, $value, 'default', 'one');
+        $this->model->setValue($path, $value, 'vouchers_voucherstatus_index.xml', 'one');
 
-        $this->assertEquals($value, $this->model->get($configType, 'default/stores/one'));
+        $this->assertEquals($value, $this->model->get($configType, 'vouchers_voucherstatus_index.xml/stores/one'));
     }
 
     public function testClean()
@@ -42,9 +42,9 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
         $configType = "system";
         $path = "stores/one";
         $value = 1;
-        $this->model->setValue($path, $value, 'default', 'one');
-        $this->assertEquals($value, $this->model->get($configType, 'default/stores/one'));
+        $this->model->setValue($path, $value, 'vouchers_voucherstatus_index.xml', 'one');
+        $this->assertEquals($value, $this->model->get($configType, 'vouchers_voucherstatus_index.xml/stores/one'));
         $this->model->clean();
-        $this->assertNull($this->model->get($configType, 'default/stores/one'));
+        $this->assertNull($this->model->get($configType, 'vouchers_voucherstatus_index.xml/stores/one'));
     }
 }

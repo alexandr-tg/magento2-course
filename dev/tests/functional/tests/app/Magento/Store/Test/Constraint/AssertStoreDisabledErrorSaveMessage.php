@@ -17,7 +17,7 @@ class AssertStoreDisabledErrorSaveMessage extends AbstractConstraint
     /**
      * Disabled error message.
      */
-    const ERROR_MESSAGE = 'The default store cannot be disabled';
+    const ERROR_MESSAGE = 'The vouchers_voucherstatus_index.xml store cannot be disabled';
 
     /**
      * Assert that after Store View save disabled error message appears.

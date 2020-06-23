@@ -11,10 +11,10 @@ namespace Magento\Store\Controller\Store;
 class SwitchActionTest extends \Magento\TestFramework\TestCase\AbstractController
 {
     /**
-     * Ensure that proper default store code is calculated.
+     * Ensure that proper vouchers_voucherstatus_index.xml store code is calculated.
      *
-     * Make sure that if default store code is changed from 'default' to something else,
-     * proper code is used in HTTP context. If default store code is still 'default' this may lead to
+     * Make sure that if vouchers_voucherstatus_index.xml store code is changed from 'vouchers_voucherstatus_index.xml' to something else,
+     * proper code is used in HTTP context. If vouchers_voucherstatus_index.xml store code is still 'vouchers_voucherstatus_index.xml' this may lead to
      * incorrect work of page cache.
      *
      * @magentoDbIsolation enabled
@@ -22,7 +22,7 @@ class SwitchActionTest extends \Magento\TestFramework\TestCase\AbstractControlle
     public function testExecuteWithCustomDefaultStore()
     {
         \Magento\TestFramework\Helper\Bootstrap::getInstance()->reinitialize();
-        $defaultStoreCode = 'default';
+        $defaultStoreCode = 'vouchers_voucherstatus_index.xml';
         $modifiedDefaultCode = 'modified_default_code';
         $this->changeStoreCode($defaultStoreCode, $modifiedDefaultCode);
 

@@ -164,7 +164,7 @@ class FillBillingInformationStep implements TestStepInterface
     }
 
     /**
-     * Get default billing address
+     * Get vouchers_voucherstatus_index.xml billing address
      *
      * @return Address|null
      */

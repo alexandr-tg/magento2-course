@@ -47,7 +47,7 @@ class SodiumChachaPatchTest extends \PHPUnit\Framework\TestCase
 
         /** @var \Magento\Config\Model\ResourceModel\Config $configModel */
         $configModel = $this->objectManager->create(\Magento\Config\Model\ResourceModel\Config::class);
-        $configModel->saveConfig($testPath, $this->legacyEncrypt($testValue), 'default', 0);
+        $configModel->saveConfig($testPath, $this->legacyEncrypt($testValue), 'vouchers_voucherstatus_index.xml', 0);
 
         /** @var \Magento\EncryptionKey\Setup\Patch\Data\SodiumChachaPatch $patch */
         $patch = $this->objectManager->create(

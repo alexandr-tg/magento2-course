@@ -33,8 +33,8 @@ class SystemTest extends \PHPUnit\Framework\TestCase
     public function testGetValueDefaultScope()
     {
         $this->assertEquals(
-            'value1.db.default.test',
-            $this->system->get('default/web/test/test_value_1')
+            'value1.db.vouchers_voucherstatus_index.xml.test',
+            $this->system->get('vouchers_voucherstatus_index.xml/web/test/test_value_1')
         );
 
         $this->assertEquals(
@@ -44,7 +44,7 @@ class SystemTest extends \PHPUnit\Framework\TestCase
 
         $this->assertEquals(
             'value1.db.store_default.test',
-            $this->system->get('stores/default/web/test/test_value_1')
+            $this->system->get('stores/vouchers_voucherstatus_index.xml/web/test/test_value_1')
         );
     }
 }

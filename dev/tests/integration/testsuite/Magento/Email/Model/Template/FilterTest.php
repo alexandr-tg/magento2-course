@@ -114,7 +114,7 @@ class FilterTest extends \PHPUnit\Framework\TestCase
         $layout = $this->objectManager->create(\Magento\Framework\View\Layout::class);
         $this->objectManager->addSharedInstance($layout, \Magento\Framework\View\Layout::class);
         $this->objectManager->get(\Magento\Framework\View\DesignInterface::class)
-            ->setDesignTheme('Magento_EmailTest/default');
+            ->setDesignTheme('Magento_EmailTest/vouchers_voucherstatus_index.xml');
 
         $actualOutput = $this->model->layoutDirective(
             ['{{layout ' . $directiveParams . '}}', 'layout', ' ' . $directiveParams]
@@ -131,22 +131,22 @@ class FilterTest extends \PHPUnit\Framework\TestCase
             'area parameter - omitted' => [
                 'adminhtml',
                 'handle="email_template_test_handle"',
-                '<strong>Email content for frontend/Magento/default theme</strong>',
+                '<strong>Email content for frontend/Magento/vouchers_voucherstatus_index.xml theme</strong>',
             ],
             'area parameter - frontend' => [
                 'adminhtml',
                 'handle="email_template_test_handle" area="frontend"',
-                '<strong>Email content for frontend/Magento/default theme</strong>',
+                '<strong>Email content for frontend/Magento/vouchers_voucherstatus_index.xml theme</strong>',
             ],
             'area parameter - backend' => [
                 'frontend',
                 'handle="email_template_test_handle" area="adminhtml"',
-                '<strong>Email content for adminhtml/Magento/default theme</strong>',
+                '<strong>Email content for adminhtml/Magento/vouchers_voucherstatus_index.xml theme</strong>',
             ],
             'custom parameter' => [
                 'frontend',
                 'handle="email_template_test_handle" template="Magento_Email::sample_email_content_custom.phtml"',
-                '<strong>Custom Email content for frontend/Magento/default theme</strong>',
+                '<strong>Custom Email content for frontend/Magento/vouchers_voucherstatus_index.xml theme</strong>',
             ],
         ];
         return $result;

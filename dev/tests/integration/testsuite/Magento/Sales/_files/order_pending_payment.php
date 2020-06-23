@@ -12,6 +12,6 @@ $order->load('100000001', 'increment_id');
 $order->setStatus(
     $order->getConfig()->getStateDefaultStatus(\Magento\Sales\Model\Order::STATE_PENDING_PAYMENT)
 )->setStoreId(
-    $objectManager->get(\Magento\Store\Model\StoreManagerInterface::class)->getStore('default')->getId()
+    $objectManager->get(\Magento\Store\Model\StoreManagerInterface::class)->getStore('vouchers_voucherstatus_index.xml')->getId()
 );
 $order->save();

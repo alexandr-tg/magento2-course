@@ -60,7 +60,7 @@ class CustomerTest extends \PHPUnit\Framework\TestCase
             'group_id' => 1,
             Customer::COLUMN_EMAIL => 'customer@example.com',
             Customer::COLUMN_WEBSITE => 'base',
-            Customer::COLUMN_STORE => 'default',
+            Customer::COLUMN_STORE => 'vouchers_voucherstatus_index.xml',
             'store_id' => 1,
             'website_id' => 1,
             'password' => 'password',

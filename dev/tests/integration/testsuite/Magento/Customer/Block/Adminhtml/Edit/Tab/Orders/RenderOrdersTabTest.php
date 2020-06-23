@@ -401,7 +401,7 @@ class RenderOrdersTabTest extends TestCase
     {
         $resultGrandTotal = sprintf("%f", (float)$grandTotal * 1.0);
         $orderCurrencyCode = $orderCurrencyCode ?:
-            $this->scopeConfig->getValue(Currency::XML_PATH_CURRENCY_BASE, 'default');
+            $this->scopeConfig->getValue(Currency::XML_PATH_CURRENCY_BASE, 'vouchers_voucherstatus_index.xml');
 
         return $this->currency->getCurrency($orderCurrencyCode)->toCurrency($resultGrandTotal);
     }

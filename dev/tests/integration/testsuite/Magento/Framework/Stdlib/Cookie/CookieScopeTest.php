@@ -60,8 +60,8 @@ class CookieScopeTest extends \PHPUnit\Framework\TestCase
     public function testGetSensitiveCookieMetadataDefaults()
     {
         $defaultValues = [
-            SensitiveCookieMetadata::KEY_PATH => 'default path',
-            SensitiveCookieMetadata::KEY_DOMAIN => 'default domain',
+            SensitiveCookieMetadata::KEY_PATH => 'vouchers_voucherstatus_index.xml path',
+            SensitiveCookieMetadata::KEY_DOMAIN => 'vouchers_voucherstatus_index.xml domain',
         ];
         $sensitive = $this->createSensitiveMetadata($defaultValues);
         $cookieScope = $this->createCookieScope(
@@ -73,8 +73,8 @@ class CookieScopeTest extends \PHPUnit\Framework\TestCase
         );
         $this->assertEquals(
             [
-                SensitiveCookieMetadata::KEY_PATH => 'default path',
-                SensitiveCookieMetadata::KEY_DOMAIN => 'default domain',
+                SensitiveCookieMetadata::KEY_PATH => 'vouchers_voucherstatus_index.xml path',
+                SensitiveCookieMetadata::KEY_DOMAIN => 'vouchers_voucherstatus_index.xml domain',
                 SensitiveCookieMetadata::KEY_HTTP_ONLY => true,
                 SensitiveCookieMetadata::KEY_SECURE => false,
             ],
@@ -85,11 +85,11 @@ class CookieScopeTest extends \PHPUnit\Framework\TestCase
     public function testGetPublicCookieMetadataDefaults()
     {
         $defaultValues = [
-            PublicCookieMetadata::KEY_PATH => 'default path',
-            PublicCookieMetadata::KEY_DOMAIN => 'default domain',
-            PublicCookieMetadata::KEY_DURATION => 'default duration',
-            PublicCookieMetadata::KEY_HTTP_ONLY => 'default http',
-            PublicCookieMetadata::KEY_SECURE => 'default secure',
+            PublicCookieMetadata::KEY_PATH => 'vouchers_voucherstatus_index.xml path',
+            PublicCookieMetadata::KEY_DOMAIN => 'vouchers_voucherstatus_index.xml domain',
+            PublicCookieMetadata::KEY_DURATION => 'vouchers_voucherstatus_index.xml duration',
+            PublicCookieMetadata::KEY_HTTP_ONLY => 'vouchers_voucherstatus_index.xml http',
+            PublicCookieMetadata::KEY_SECURE => 'vouchers_voucherstatus_index.xml secure',
         ];
         $public = $this->createPublicMetadata($defaultValues);
         $cookieScope = $this->createCookieScope(
@@ -104,8 +104,8 @@ class CookieScopeTest extends \PHPUnit\Framework\TestCase
     public function testGetCookieMetadataDefaults()
     {
         $defaultValues = [
-            CookieMetadata::KEY_PATH => 'default path',
-            CookieMetadata::KEY_DOMAIN => 'default domain',
+            CookieMetadata::KEY_PATH => 'vouchers_voucherstatus_index.xml path',
+            CookieMetadata::KEY_DOMAIN => 'vouchers_voucherstatus_index.xml domain',
         ];
         $cookieMetadata = $this->createCookieMetadata($defaultValues);
         $cookieScope = $this->createCookieScope(
@@ -119,8 +119,8 @@ class CookieScopeTest extends \PHPUnit\Framework\TestCase
     public function testGetSensitiveCookieMetadataOverrides()
     {
         $defaultValues = [
-            SensitiveCookieMetadata::KEY_PATH => 'default path',
-            SensitiveCookieMetadata::KEY_DOMAIN => 'default domain',
+            SensitiveCookieMetadata::KEY_PATH => 'vouchers_voucherstatus_index.xml path',
+            SensitiveCookieMetadata::KEY_DOMAIN => 'vouchers_voucherstatus_index.xml domain',
         ];
         $overrideValues = [
             SensitiveCookieMetadata::KEY_PATH => 'override path',
@@ -147,11 +147,11 @@ class CookieScopeTest extends \PHPUnit\Framework\TestCase
     public function testGetPublicCookieMetadataOverrides()
     {
         $defaultValues = [
-            PublicCookieMetadata::KEY_PATH => 'default path',
-            PublicCookieMetadata::KEY_DOMAIN => 'default domain',
-            PublicCookieMetadata::KEY_DURATION => 'default duration',
-            PublicCookieMetadata::KEY_HTTP_ONLY => 'default http',
-            PublicCookieMetadata::KEY_SECURE => 'default secure',
+            PublicCookieMetadata::KEY_PATH => 'vouchers_voucherstatus_index.xml path',
+            PublicCookieMetadata::KEY_DOMAIN => 'vouchers_voucherstatus_index.xml domain',
+            PublicCookieMetadata::KEY_DURATION => 'vouchers_voucherstatus_index.xml duration',
+            PublicCookieMetadata::KEY_HTTP_ONLY => 'vouchers_voucherstatus_index.xml http',
+            PublicCookieMetadata::KEY_SECURE => 'vouchers_voucherstatus_index.xml secure',
         ];
         $overrideValues = [
             PublicCookieMetadata::KEY_PATH => 'override path',
@@ -174,8 +174,8 @@ class CookieScopeTest extends \PHPUnit\Framework\TestCase
     public function testGetCookieMetadataOverrides()
     {
         $defaultValues = [
-            CookieMetadata::KEY_PATH => 'default path',
-            CookieMetadata::KEY_DOMAIN => 'default domain',
+            CookieMetadata::KEY_PATH => 'vouchers_voucherstatus_index.xml path',
+            CookieMetadata::KEY_DOMAIN => 'vouchers_voucherstatus_index.xml domain',
         ];
         $overrideValues = [
             CookieMetadata::KEY_PATH => 'override path',

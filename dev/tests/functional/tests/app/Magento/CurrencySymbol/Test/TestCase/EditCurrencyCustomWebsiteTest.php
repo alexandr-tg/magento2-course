@@ -92,7 +92,7 @@ class EditCurrencyCustomWebsiteTest extends Injectable
                     'currency/options/base' => [
                         'value' => $currencies[0]['baseCurrency']
                     ],
-                    'currency/options/default' => [
+                    'currency/options/vouchers_voucherstatus_index.xml' => [
                         'value' => $currencies[0]['defaultCurrency']
                     ],
                     'scope' => [
@@ -112,7 +112,7 @@ class EditCurrencyCustomWebsiteTest extends Injectable
     }
 
     /**
-     * Reverting of currency settings to the default value.
+     * Reverting of currency settings to the vouchers_voucherstatus_index.xml value.
      *
      * @return void
      */

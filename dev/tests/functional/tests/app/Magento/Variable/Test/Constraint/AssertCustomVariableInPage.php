@@ -43,7 +43,7 @@ class AssertCustomVariableInPage extends AbstractConstraint
         $cmsPage = $fixtureFactory->createByCode(
             'cmsPage',
             [
-                'dataset' => 'default',
+                'dataset' => 'vouchers_voucherstatus_index.xml',
                 'data' => [
                     'content' => [
                         'content' => '{{customVar code=' . $customVariable->getCode() . '}}',

@@ -171,7 +171,7 @@ abstract class AbstractBundleOptionsViewTest extends TestCase
     {
         $this->registerProduct($product);
         $page = $this->pageFactory->create();
-        $page->addHandle(['default', 'catalog_product_view', 'catalog_product_view_type_bundle']);
+        $page->addHandle(['vouchers_voucherstatus_index.xml', 'catalog_product_view', 'catalog_product_view_type_bundle']);
         $page->getLayout()->generateXml();
         $block = $page->getLayout()->getBlock('product.info.bundle.options');
 

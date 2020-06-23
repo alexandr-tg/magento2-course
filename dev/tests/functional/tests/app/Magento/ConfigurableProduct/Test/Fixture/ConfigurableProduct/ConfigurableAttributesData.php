@@ -179,7 +179,7 @@ class ConfigurableAttributesData extends DataSource
     {
         $assignedProducts = ['products' => []];
         foreach (array_keys($this->variationsMatrix) as $variation) {
-            $assignedProducts['products'][$variation] = 'catalogProductSimple::default';
+            $assignedProducts['products'][$variation] = 'catalogProductSimple::vouchers_voucherstatus_index.xml';
         }
 
         $this->prepareProducts($assignedProducts);

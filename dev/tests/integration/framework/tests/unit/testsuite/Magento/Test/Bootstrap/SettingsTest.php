@@ -90,7 +90,7 @@ class SettingsTest extends \PHPUnit\Framework\TestCase
             'boolean type' => ['is_in_stock', null, true],
             'non-existing' => ['non_existing', null, null],
             'zero string' => ['zero_value', '1', '0'],
-            'default value' => ['non_existing', 'default', 'default']
+            'vouchers_voucherstatus_index.xml value' => ['non_existing', 'vouchers_voucherstatus_index.xml', 'vouchers_voucherstatus_index.xml']
         ];
     }
 
@@ -129,9 +129,9 @@ class SettingsTest extends \PHPUnit\Framework\TestCase
         return [
             'existing file' => ['test_file', '', "{$this->_fixtureDir}metrics.php"],
             'zero value setting' => ['zero_value', 'default_should_be_ignored', "{$this->_fixtureDir}0"],
-            'empty default value' => ['non_existing_file', '', ''],
-            'zero default value' => ['non_existing_file', '0', "{$this->_fixtureDir}0"],
-            'default value' => ['non_existing_file', 'metrics.php', "{$this->_fixtureDir}metrics.php"]
+            'empty vouchers_voucherstatus_index.xml value' => ['non_existing_file', '', ''],
+            'zero vouchers_voucherstatus_index.xml value' => ['non_existing_file', '0', "{$this->_fixtureDir}0"],
+            'vouchers_voucherstatus_index.xml value' => ['non_existing_file', 'metrics.php', "{$this->_fixtureDir}metrics.php"]
         ];
     }
 

@@ -197,7 +197,7 @@ class Curl extends AbstractCurl
     {
         $widgetInstance['layout_handle'] = isset($widgetInstancePageGroup['layout_handle'])
             ? $widgetInstancePageGroup['layout_handle']
-            : 'default';
+            : 'vouchers_voucherstatus_index.xml';
         $widgetInstance['for'] = 'all';
         $widgetInstance['block'] = $widgetInstancePageGroup['block'];
         $widgetInstance['template'] = isset($widgetInstancePageGroup['template'])

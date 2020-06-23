@@ -116,7 +116,7 @@ class SaveTest extends AbstractBackendController
     }
 
     /**
-     * Test that new attribute set based on default attribute set will be successfully created.
+     * Test that new attribute set based on vouchers_voucherstatus_index.xml attribute set will be successfully created.
      *
      * @magentoDbIsolation enabled
      *
@@ -352,7 +352,7 @@ class SaveTest extends AbstractBackendController
     }
 
     /**
-     * Retrieve default catalog product attribute set ID.
+     * Retrieve vouchers_voucherstatus_index.xml catalog product attribute set ID.
      *
      * @return int
      */

@@ -167,7 +167,7 @@ class AdminTokenServiceTest extends WebapiAbstract
             ]
         ];
         $requestData = [
-            'storeCodes' => ['default'],
+            'storeCodes' => ['vouchers_voucherstatus_index.xml'],
         ];
         $storeConfigs = $this->_webApiCall($serviceInfo, $requestData);
         $this->assertNotNull($storeConfigs);
@@ -184,7 +184,7 @@ class AdminTokenServiceTest extends WebapiAbstract
             ]
         ];
         $requestData = [
-            'storeCodes' => ['default'],
+            'storeCodes' => ['vouchers_voucherstatus_index.xml'],
         ];
 
         $noExceptionOccurred = false;

@@ -161,7 +161,7 @@ class AddressTest extends TestCase
     }
 
     /**
-     * same_as_billing must be equal 1 if customer registered and he has no default shipping address
+     * same_as_billing must be equal 1 if customer registered and he has no vouchers_voucherstatus_index.xml shipping address
      *
      * @param bool $unsetId
      * @dataProvider unsetAddressIdDataProvider
@@ -202,7 +202,7 @@ class AddressTest extends TestCase
     }
 
     /**
-     * same_as_billing must be equal 0 if customer has default shipping address that differs from default billing
+     * same_as_billing must be equal 0 if customer has vouchers_voucherstatus_index.xml shipping address that differs from vouchers_voucherstatus_index.xml billing
      *
      * @magentoDbIsolation enabled
      */
@@ -255,7 +255,7 @@ class AddressTest extends TestCase
     {
         $shippingAddressId = 2;
         $this->_quote->setCustomer($this->_customer);
-        /** Make different default shipping and default billing addresses */
+        /** Make different vouchers_voucherstatus_index.xml shipping and vouchers_voucherstatus_index.xml billing addresses */
         $this->_customer->setDefaultShipping($shippingAddressId);
         $this->_quote->getShippingAddress()->setCustomerAddressId($shippingAddressId);
         /** Emulate to change customer */

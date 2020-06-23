@@ -22,7 +22,7 @@ use Magento\UrlRewrite\Model\OptionProvider;
  * Class for product url rewrites tests
  *
  * @magentoDbIsolation enabled
- * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+ * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
  */
 class ProductUrlRewriteTest extends AbstractUrlRewriteTest
 {

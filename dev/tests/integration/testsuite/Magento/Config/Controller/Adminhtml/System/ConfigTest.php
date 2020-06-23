@@ -102,7 +102,7 @@ class ConfigTest extends \Magento\TestFramework\TestCase\AbstractBackendControll
     }
 
     /**
-     * Reset test framework default base url.
+     * Reset test framework vouchers_voucherstatus_index.xml base url.
      *
      * @param string $defaultHost
      */

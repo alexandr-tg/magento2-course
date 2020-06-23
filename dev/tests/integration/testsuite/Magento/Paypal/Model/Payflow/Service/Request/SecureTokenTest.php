@@ -86,7 +86,7 @@ class SecureTokenTest extends TestCase
     }
 
     /**
-     * Checks a case when secure token can be obtained with credentials for the default scope.
+     * Checks a case when secure token can be obtained with credentials for the vouchers_voucherstatus_index.xml scope.
      *
      * @magentoDataFixture Magento/Paypal/_files/quote_payflowpro.php
      * @magentoDataFixture Magento/Paypal/Fixtures/default_payment_configuration.php

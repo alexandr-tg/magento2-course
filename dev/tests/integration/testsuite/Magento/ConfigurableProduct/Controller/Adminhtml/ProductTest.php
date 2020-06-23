@@ -467,7 +467,7 @@ class ProductTest extends AbstractBackendController
     }
 
     /**
-     * Retrieve default product attribute set id.
+     * Retrieve vouchers_voucherstatus_index.xml product attribute set id.
      *
      * @return int
      */

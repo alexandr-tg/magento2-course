@@ -196,19 +196,19 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
             'Template from parent theme - frontend' => [
                 Area::AREA_FRONTEND,
                 'customer_create_account_email_confirmation_template',
-                'customer_create_account_email_confirmation_template template from Vendor/default',
+                'customer_create_account_email_confirmation_template template from Vendor/vouchers_voucherstatus_index.xml',
                 Area::AREA_FRONTEND,
             ],
             'Template from grandparent theme - frontend' => [
                 Area::AREA_FRONTEND,
                 'customer_create_account_email_confirmed_template',
-                'customer_create_account_email_confirmed_template template from Magento/default',
+                'customer_create_account_email_confirmed_template template from Magento/vouchers_voucherstatus_index.xml',
                 Area::AREA_FRONTEND,
             ],
             'Template from grandparent theme - adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 'catalog_productalert_cron_error_email_template',
-                'catalog_productalert_cron_error_email_template template from Magento/default',
+                'catalog_productalert_cron_error_email_template template from Magento/vouchers_voucherstatus_index.xml',
                 BackendFrontNameResolver::AREA_CODE,
             ],
 
@@ -326,19 +326,19 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
                 Area::AREA_FRONTEND,
                 TemplateTypesInterface::TYPE_HTML,
                 '{{template config_path="customer/create_account/email_confirmation_template"}}',
-                '<strong>customer_create_account_email_confirmation_template template from Vendor/default</strong',
+                '<strong>customer_create_account_email_confirmation_template template from Vendor/vouchers_voucherstatus_index.xml</strong',
             ],
             'Template from grandparent theme - frontend' => [
                 Area::AREA_FRONTEND,
                 TemplateTypesInterface::TYPE_HTML,
                 '{{template config_path="customer/create_account/email_confirmed_template"}}',
-                '<strong>customer_create_account_email_confirmed_template template from Magento/default</strong',
+                '<strong>customer_create_account_email_confirmed_template template from Magento/vouchers_voucherstatus_index.xml</strong',
             ],
             'Template from grandparent theme - adminhtml' => [
                 BackendFrontNameResolver::AREA_CODE,
                 TemplateTypesInterface::TYPE_HTML,
                 '{{template config_path="catalog/productalert_cron/error_email_template"}}',
-                '<strong>catalog_productalert_cron_error_email_template template from Magento/default</strong',
+                '<strong>catalog_productalert_cron_error_email_template template from Magento/vouchers_voucherstatus_index.xml</strong',
                 null,
                 null,
                 true,
@@ -445,7 +445,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
             $this->model->load($templateId);
         } else {
             // <!--@styles @--> parsing only via the loadDefault method. Since email template files won't contain
-            // @styles comments by default, it is necessary to mock an object to return testable contents
+            // @styles comments by vouchers_voucherstatus_index.xml, it is necessary to mock an object to return testable contents
             $themeDirectory = $this->getMockBuilder(\Magento\Framework\Filesystem\Directory\ReadInterface::class)
                 ->disableOriginalConstructor()
                 ->setMethods(

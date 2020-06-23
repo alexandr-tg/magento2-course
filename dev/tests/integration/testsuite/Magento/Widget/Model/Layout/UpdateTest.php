@@ -35,7 +35,7 @@ class UpdateTest extends \PHPUnit\Framework\TestCase
      */
     public function testCrud()
     {
-        $this->_model->setData(['handle' => 'default', 'xml' => '<layout/>', 'sort_order' => 123]);
+        $this->_model->setData(['handle' => 'vouchers_voucherstatus_index.xml', 'xml' => '<layout/>', 'sort_order' => 123]);
         $entityHelper = new \Magento\TestFramework\Entity(
             $this->_model,
             ['handle' => 'custom', 'xml' => '<layout version="0.1.0"/>', 'sort_order' => 456]

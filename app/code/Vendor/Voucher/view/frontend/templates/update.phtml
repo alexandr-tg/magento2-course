@@ -1,0 +1,9 @@
+<?php $data = $block->getEditRecord(); ?>
+
+<h3>Update Voucher Status Code</h3>
+<form action="<?php echo $block->getInsertAction() ?>" method="post">
+    <input type="hidden" name="form_key" value="<?= $block->getBlockHtml('formkey') ?>
+    <input name="status_code" type="text" value="<?= $data['status_code'] ?>">
+    <input type="hidden" name="entity_id" value="<?= $data['entity_id'] ?>">
+    <input type="submit" value="Send">
+</form>

@@ -122,7 +122,7 @@ class CategoryTest extends AbstractBackendController
                 if ($exists) {
                     $errors[] = "custom value for '{$attribute}' attribute is not found";
                 } elseif (!$exists && $category->getCustomAttribute($attribute) !== null) {
-                    $errors[] = "custom value for '{$attribute}' attribute is found, but default one must be used";
+                    $errors[] = "custom value for '{$attribute}' attribute is found, but vouchers_voucherstatus_index.xml one must be used";
                 }
             }
         }
@@ -131,7 +131,7 @@ class CategoryTest extends AbstractBackendController
     }
 
     /**
-     * Check default value for category url path
+     * Check vouchers_voucherstatus_index.xml value for category url path
      *
      * @magentoDbIsolation enabled
      * @magentoDataFixture Magento/CatalogUrlRewrite/_files/categories.php
@@ -153,7 +153,7 @@ class CategoryTest extends AbstractBackendController
         $this->categoryRepository->save($category);
         $this->assertEquals($newUrlPath, $category->getUrlPath());
 
-        // set default url_path and check it
+        // set vouchers_voucherstatus_index.xml url_path and check it
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
         $postData = $category->getData();
         $postData['use_default'] =
@@ -265,12 +265,12 @@ class CategoryTest extends AbstractBackendController
     public function saveActionDataProvider(): array
     {
         return [
-            'default values' => [
+            'vouchers_voucherstatus_index.xml values' => [
                 [
                     'id' => '2',
                     'entity_id' => '2',
                     'path' => '1/2',
-                    'url_key' => 'default-category',
+                    'url_key' => 'vouchers_voucherstatus_index.xml-category',
                     'is_anchor' => false,
                     'use_default' => [
                         'name' => 1,
@@ -329,7 +329,7 @@ class CategoryTest extends AbstractBackendController
                     'meta_keywords' => 'Custom keywords',
                     'meta_description' => 'Custom meta description',
                     'include_in_menu' => '0',
-                    'url_key' => 'default-category',
+                    'url_key' => 'vouchers_voucherstatus_index.xml-category',
                     'display_mode' => 'PRODUCTS',
                     'landing_page' => '1',
                     'is_anchor' => true,
@@ -652,7 +652,7 @@ class CategoryTest extends AbstractBackendController
             'meta_keywords' => 'Custom keywords',
             'meta_description' => 'Custom meta description',
             'include_in_menu' => '0',
-            'url_key' => 'default-test-category',
+            'url_key' => 'vouchers_voucherstatus_index.xml-test-category',
             'display_mode' => 'PRODUCTS',
             'landing_page' => '1',
             'is_anchor' => true,
@@ -723,7 +723,7 @@ class CategoryTest extends AbstractBackendController
     }
 
     /**
-     * Save design attributes with default values without design permissions.
+     * Save design attributes with vouchers_voucherstatus_index.xml values without design permissions.
      *
      * @magentoDbIsolation enabled
      * @magentoDataFixture Magento/Store/_files/core_fixturestore.php
@@ -751,7 +751,7 @@ class CategoryTest extends AbstractBackendController
             'meta_keywords' => 'Custom keywords',
             'meta_description' => 'Custom meta description',
             'include_in_menu' => '0',
-            'url_key' => 'default-test-category-test',
+            'url_key' => 'vouchers_voucherstatus_index.xml-test-category-test',
             'display_mode' => 'PRODUCTS',
             'landing_page' => '1',
             'is_anchor' => true,
@@ -813,7 +813,7 @@ class CategoryTest extends AbstractBackendController
             'meta_keywords' => 'Custom keywords',
             'meta_description' => 'Custom meta description',
             'include_in_menu' => '0',
-            'url_key' => 'default-test-category',
+            'url_key' => 'vouchers_voucherstatus_index.xml-test-category',
             'display_mode' => 'PRODUCTS',
             'landing_page' => '1',
             'is_anchor' => true,

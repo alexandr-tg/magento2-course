@@ -66,7 +66,7 @@ class ValidatorTest extends \PHPUnit\Framework\TestCase
             'theme_code' => 'space',
             'theme_title' => 'Space theme',
             'parent_theme' => null,
-            'theme_path' => 'default/space',
+            'theme_path' => 'vouchers_voucherstatus_index.xml/space',
             'preview_image' => 'images/preview.png'
         ];
     }
@@ -82,7 +82,7 @@ class ValidatorTest extends \PHPUnit\Framework\TestCase
             'theme_code' => 'space',
             'theme_title' => '',
             'parent_theme' => null,
-            'theme_path' => 'default/space',
+            'theme_path' => 'vouchers_voucherstatus_index.xml/space',
             'preview_image' => 'images/preview.png'
         ];
     }

@@ -143,7 +143,7 @@ class MockResponseDataProvider
             [
                 'bin' => $token,
                 'consumed' => false,
-                'default' => true,
+                'vouchers_voucherstatus_index.xml' => true,
                 'description' => 'ending in ' . $lastTwo,
                 'details' => [
                     'bin' => $this->random->getRandomString(6),

@@ -23,7 +23,7 @@ class Processor
 {
     const MAGE_ERRORS_LOCAL_XML = 'local.xml';
     const MAGE_ERRORS_DESIGN_XML = 'design.xml';
-    const DEFAULT_SKIN = 'default';
+    const DEFAULT_SKIN = 'vouchers_voucherstatus_index.xml';
     const ERROR_DIR = 'pub/errors';
     const NUMBER_SYMBOLS_IN_SUBDIR_NAME = 2;
 

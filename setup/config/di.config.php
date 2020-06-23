@@ -20,7 +20,7 @@ return [
             \Magento\Framework\Setup\Declaration\Schema\SchemaConfig::class => [
                 'parameters' => [
                     'connectionScopes' => [
-                        'default',
+                        'vouchers_voucherstatus_index.xml',
                         'checkout',
                         'sales'
                     ]

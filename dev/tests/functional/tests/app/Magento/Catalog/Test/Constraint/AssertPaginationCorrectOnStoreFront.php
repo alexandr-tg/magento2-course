@@ -44,7 +44,7 @@ class AssertPaginationCorrectOnStoreFront extends AbstractConstraint
         \PHPUnit\Framework\Assert::assertEquals(
             $catalogCategoryView->getBottomToolbar()->getLimitedValueByIndex(0),
             $catalogCategoryView->getListProductBlock()->getProductsCount(),
-            'Count of products on 1 page does not equivalent with declared in pagination (default value)'
+            'Count of products on 1 page does not equivalent with declared in pagination (vouchers_voucherstatus_index.xml value)'
         );
         $catalogCategoryView->getBottomToolbar()->nextPage();
         \PHPUnit\Framework\Assert::assertEquals(
@@ -54,7 +54,7 @@ class AssertPaginationCorrectOnStoreFront extends AbstractConstraint
                 $productsCount
             ),
             $catalogCategoryView->getListProductBlock()->getProductsCount(),
-            'Count of products on 2 page does not equivalent with declared in pagination (default value)'
+            'Count of products on 2 page does not equivalent with declared in pagination (vouchers_voucherstatus_index.xml value)'
         );
         $catalogCategoryView->getBottomToolbar()->firstPage();
         $catalogCategoryView->getBottomToolbar()->setLimiterValueByIndex(1);

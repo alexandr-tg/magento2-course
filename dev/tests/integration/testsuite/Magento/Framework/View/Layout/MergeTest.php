@@ -194,13 +194,13 @@ class MergeTest extends \PHPUnit\Framework\TestCase
 
         /* test that only the first existing handle is taken into account */
         $handlesToTry = [
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_category_default',
             'catalog_product_view',
             'catalog_product_view_type_simple',
         ];
         $expectedPageHandles = [
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_category_default',
             'catalog_product_view',
             'catalog_product_view_type_simple',
@@ -210,11 +210,11 @@ class MergeTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals(array_merge($nonPageHandles, $expectedPageHandles), $this->_model->getHandles());
 
         /* test that new handles override the previous ones */
-        $expectedPageHandles = ['default', 'checkout_index_index'];
+        $expectedPageHandles = ['vouchers_voucherstatus_index.xml', 'checkout_index_index'];
         $this->_model->removeHandle('catalog_category_default');
         $this->_model->removeHandle('catalog_product_view');
         $this->_model->removeHandle('catalog_product_view_type_simple');
-        $this->assertTrue($this->_model->addPageHandles(['default', 'checkout_index_index']));
+        $this->assertTrue($this->_model->addPageHandles(['vouchers_voucherstatus_index.xml', 'checkout_index_index']));
         $this->assertEquals($expectedPageHandles, $this->_model->getPageHandles());
         $this->assertEquals(array_merge($nonPageHandles, $expectedPageHandles), $this->_model->getHandles());
     }
@@ -231,7 +231,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
     {
         return [
             'non-existing handle' => ['non_existing_handle', false],
-            'existing page type' => ['default', true],
+            'existing page type' => ['vouchers_voucherstatus_index.xml', true],
         ];
     }
 
@@ -245,11 +245,11 @@ class MergeTest extends \PHPUnit\Framework\TestCase
         $expectedResult = '
             <root>
                 <body>
-                    <block class="Magento\Framework\View\Element\Template" 
+                    <block class="Magento\Framework\View\Element\Template"
                            template="Magento_Framework::fixture_template_one.phtml"/>
                 </body>
                 <body>
-                    <block class="Magento\Framework\View\Element\Template" 
+                    <block class="Magento\Framework\View\Element\Template"
                            template="Magento_Framework::fixture_template_two.phtml"/>
                 </body>
             </root>
@@ -266,7 +266,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
             <root>
                 <body>
                     <referenceContainer name="main.container">
-                        <block class="Magento\Framework\View\Element\Template" 
+                        <block class="Magento\Framework\View\Element\Template"
                                template="Magento_Framework::fixture_template_one.phtml"/>
                     </referenceContainer>
                 </body>
@@ -340,7 +340,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
 
     public function testGetContainers()
     {
-        $this->_model->addPageHandles(['default']);
+        $this->_model->addPageHandles(['vouchers_voucherstatus_index.xml']);
         $this->_model->addPageHandles(['catalog_product_view']);
         $this->_model->addPageHandles(['catalog_product_view_type_configurable']);
         $this->_model->load();
@@ -428,7 +428,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
      */
     public function testLoadWithInvalidLayout()
     {
-        $this->_model->addPageHandles(['default']);
+        $this->_model->addPageHandles(['vouchers_voucherstatus_index.xml']);
 
         $this->_appState->expects($this->once())->method('getMode')->willReturn(State::MODE_DEVELOPER);
 
@@ -449,7 +449,7 @@ class MergeTest extends \PHPUnit\Framework\TestCase
         // Testing error message is logged with logger
         $this->_logger->expects($this->once())->method('info')
             ->with(
-                'Cache file with merged layout: ' . $cacheId . ' and handles default' . ': ' . array_shift($messages)
+                'Cache file with merged layout: ' . $cacheId . ' and handles vouchers_voucherstatus_index.xml' . ': ' . array_shift($messages)
             );
 
         $this->_model->load();
@@ -463,6 +463,6 @@ class MergeTest extends \PHPUnit\Framework\TestCase
     {
         $this->_appState->expects($this->once())->method('getMode')->willReturn(State::MODE_DEVELOPER);
 
-        $this->_model->addPageHandles(['default']);
+        $this->_model->addPageHandles(['vouchers_voucherstatus_index.xml']);
     }
 }

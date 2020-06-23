@@ -266,7 +266,7 @@ class MagentoStyleTest extends TestCase
 
         $this->assertEquals(
             'test Answer',
-            $magentoStyle->ask('test question?', 'test default')
+            $magentoStyle->ask('test question?', 'test vouchers_voucherstatus_index.xml')
         );
     }
 

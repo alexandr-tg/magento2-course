@@ -309,7 +309,7 @@ class TaxRuleRepositoryInterfaceTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
 
@@ -375,7 +375,7 @@ class TaxRuleRepositoryInterfaceTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
 
@@ -571,7 +571,7 @@ class TaxRuleRepositoryInterfaceTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
         $searchResults = $this->_webApiCall($serviceInfo, $requestData);

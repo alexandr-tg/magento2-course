@@ -43,7 +43,7 @@ class XmlTest extends \PHPUnit\Framework\TestCase
      */
     public function parseDataProvider()
     {
-        $default = str_replace('\\', '/', realpath(dirname(__FILE__))) . '/_files/default.xml';
+        $default = str_replace('\\', '/', realpath(dirname(__FILE__))) . '/_files/vouchers_voucherstatus_index.xml.xml';
         $defaultDi = str_replace('\\', '/', realpath(dirname(__FILE__))) . '/_files/default_di.xml';
 
         return [

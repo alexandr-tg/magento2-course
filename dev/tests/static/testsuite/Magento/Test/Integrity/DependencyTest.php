@@ -235,7 +235,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Initialize default themes
+     * Initialize vouchers_voucherstatus_index.xml themes
      */
     protected static function _initThemes()
     {
@@ -361,7 +361,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
              * @param string $file
              */
             function ($fileType, $file) {
-                // Validates file when it is belonged to default themes
+                // Validates file when it is belonged to vouchers_voucherstatus_index.xml themes
                 $componentRegistrar = new ComponentRegistrar();
                 foreach ($componentRegistrar->getPaths(ComponentRegistrar::THEME) as $themeDir) {
                     if (strpos($file, $themeDir . '/') !== false) {
@@ -663,7 +663,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
     {
         $files = Files::init()->getLayoutFiles([], false);
         foreach ($files as $file) {
-            $area = 'default';
+            $area = 'vouchers_voucherstatus_index.xml';
             if (preg_match('/[\/](?<area>adminhtml|frontend)[\/]/', $file, $matches)) {
                 $area = $matches['area'];
                 self::$_mapLayoutBlocks[$area] = self::$_mapLayoutBlocks[$area] ?? [];
@@ -693,7 +693,7 @@ class DependencyTest extends \PHPUnit\Framework\TestCase
     {
         $files = Files::init()->getLayoutFiles([], false);
         foreach ($files as $file) {
-            $area = 'default';
+            $area = 'vouchers_voucherstatus_index.xml';
             if (preg_match('/\/(?<area>adminhtml|frontend)\//', $file, $matches)) {
                 $area = $matches['area'];
                 self::$_mapLayoutHandles[$area] = self::$_mapLayoutHandles[$area] ?? [];

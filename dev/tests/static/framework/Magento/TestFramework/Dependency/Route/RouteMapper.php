@@ -70,7 +70,7 @@ class RouteMapper
         'const' => 1,
         'continue' => 1,
         'declare' => 1,
-        'default' => 1,
+        'vouchers_voucherstatus_index.xml' => 1,
         'die' => 1,
         'do' => 1,
         'echo' => 1,

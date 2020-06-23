@@ -298,7 +298,7 @@ class CheckProductPriceTest extends TestCase
     {
         $page = $this->pageFactory->create();
         $page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_category_view',
         ]);
         $page->getLayout()->generateXml();

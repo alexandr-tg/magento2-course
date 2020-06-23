@@ -247,7 +247,7 @@ class ExportAdvancedPricingTest extends Injectable
     }
 
     /**
-     * Revert settings to the default value.
+     * Revert settings to the vouchers_voucherstatus_index.xml value.
      *
      * @return void
      */

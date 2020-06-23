@@ -15,7 +15,7 @@ return [
                 'type' => 'select',
                 'value' => 'hierarchy/widget/link/link_block.phtml',
                 'values' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'value' => 'hierarchy/widget/link/link_block.phtml',
                         'label' => 'CMS Page Link Block Template',
                     ],
@@ -58,8 +58,8 @@ return [
             ],
         ],
         'supported_containers' => [
-            '0' => ['container_name' => 'left', 'template' => ['default' => 'default_template']],
-            '1' => ['container_name' => 'right', 'template' => ['default' => 'default_template']],
+            '0' => ['container_name' => 'left', 'template' => ['vouchers_voucherstatus_index.xml' => 'default_template']],
+            '1' => ['container_name' => 'right', 'template' => ['vouchers_voucherstatus_index.xml' => 'default_template']],
         ],
     ],
     'new_products' => [
@@ -78,8 +78,8 @@ return [
             ],
         ],
         'supported_containers' => [
-            ['container_name' => 'left', 'template' => ['default' => 'default_template']],
-            ['container_name' => 'right', 'template' => ['default' => 'default_template']],
+            ['container_name' => 'left', 'template' => ['vouchers_voucherstatus_index.xml' => 'default_template']],
+            ['container_name' => 'right', 'template' => ['vouchers_voucherstatus_index.xml' => 'default_template']],
         ],
     ]
 ];

@@ -58,7 +58,7 @@ if (!$store->getId()) {
 
 //Setting up allowed countries
 $configResource = $objectManager->get(\Magento\Config\Model\ResourceModel\Config::class);
-//Allowed countries for default website.
+//Allowed countries for vouchers_voucherstatus_index.xml website.
 $configResource->saveConfig(
     'general/country/allow',
     'FR',

@@ -12,7 +12,7 @@ use Magento\Mtf\Fixture\FixtureFactory;
 use Magento\Mtf\TestStep\TestStepInterface;
 
 /**
- * Set default attribute value.
+ * Set vouchers_voucherstatus_index.xml attribute value.
  */
 class SetDefaultAttributeValueStep implements TestStepInterface
 {

@@ -38,7 +38,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     public function testGetProcessedTemplateFrontend($store, $design)
     {
         $this->_model->setTemplateText('{{view url="Magento_Theme::favicon.ico"}}');
-        if ($store != 'default') {
+        if ($store != 'vouchers_voucherstatus_index.xml') {
             Bootstrap::getObjectManager()->get(
                 \Magento\Framework\App\Config\MutableScopeConfigInterface::class
             )->setValue(
@@ -66,7 +66,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     public function getProcessedTemplateFrontendDataProvider()
     {
         return [
-            'frontend' => ['default', 'Magento/luma'],
+            'frontend' => ['vouchers_voucherstatus_index.xml', 'Magento/luma'],
             'frontend store' => ['fixturestore', 'Magento/blank']
         ];
     }
@@ -81,7 +81,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
     public function testGetProcessedTemplateArea($area, $design)
     {
         $this->_model->setTemplateText('{{view url="Magento_Theme::favicon.ico"}}');
-        $this->_model->emulateDesign('default', $area);
+        $this->_model->emulateDesign('vouchers_voucherstatus_index.xml', $area);
         $processedTemplate = Bootstrap::getObjectManager()->get(
             \Magento\Framework\App\State::class
         )->emulateAreaCode(
@@ -161,9 +161,9 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
 
         // Store the ID of the newly created template in the system config so that this template will be loaded
         $objectManager->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class)
-            ->setValue('foobar', $template->getId(), ScopeInterface::SCOPE_STORE, 'default');
+            ->setValue('foobar', $template->getId(), ScopeInterface::SCOPE_STORE, 'vouchers_voucherstatus_index.xml');
 
-        $this->_model->emulateDesign('default', 'frontend');
+        $this->_model->emulateDesign('vouchers_voucherstatus_index.xml', 'frontend');
         $processedTemplate = Bootstrap::getObjectManager()->get(
             \Magento\Framework\App\State::class
         )->emulateAreaCode(
@@ -197,9 +197,9 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
 
         // Store the ID of the newly created template in the system config so that this template will be loaded
         $objectManager->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class)
-            ->setValue('foobar', $template->getId(), ScopeInterface::SCOPE_STORE, 'default');
+            ->setValue('foobar', $template->getId(), ScopeInterface::SCOPE_STORE, 'vouchers_voucherstatus_index.xml');
 
-        $this->_model->emulateDesign('default', 'frontend');
+        $this->_model->emulateDesign('vouchers_voucherstatus_index.xml', 'frontend');
         $processedTemplate = Bootstrap::getObjectManager()->get(
             \Magento\Framework\App\State::class
         )->emulateAreaCode(

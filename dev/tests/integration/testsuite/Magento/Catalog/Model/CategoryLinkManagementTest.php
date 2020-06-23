@@ -209,7 +209,7 @@ class CategoryLinkManagementTest extends TestCase
     private function getCategoryProductIndexRecordsCount(
         int $productId,
         array $categoryIds,
-        string $storeCode = 'default'
+        string $storeCode = 'vouchers_voucherstatus_index.xml'
     ): int {
         $storeId = (int)$this->storeRepository->get($storeCode)->getId();
         $select = $this->categoryResourceModel->getConnection()->select();

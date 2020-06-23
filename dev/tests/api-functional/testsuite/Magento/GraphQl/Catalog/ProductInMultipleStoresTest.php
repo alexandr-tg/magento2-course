@@ -16,7 +16,7 @@ use Magento\TestFramework\TestCase\GraphQlAbstract;
 class ProductInMultipleStoresTest extends GraphQlAbstract
 {
     /**
-     * Test a product from a specific and a default store
+     * Test a product from a specific and a vouchers_voucherstatus_index.xml store
      *
      * @magentoApiDataFixture Magento/Store/_files/second_store.php
      * @magentoApiDataFixture Magento/Catalog/_files/product_simple.php
@@ -74,14 +74,14 @@ QUERY;
             'Product name in fixture store is invalid.'
         );
 
-        //use case for default storeCode
+        //use case for vouchers_voucherstatus_index.xml storeCode
         $nameInDefaultStore = 'Simple Product';
-        $headerMapDefault = ['Store' => 'default'];
+        $headerMapDefault = ['Store' => 'vouchers_voucherstatus_index.xml'];
         $response = $this->graphQlQuery($query, [], '', $headerMapDefault);
         $this->assertEquals(
             $nameInDefaultStore,
             $response['products']['items'][0]['name'],
-            'Product name in default store is invalid.'
+            'Product name in vouchers_voucherstatus_index.xml store is invalid.'
         );
 
         //use case for empty storeCode
@@ -90,7 +90,7 @@ QUERY;
         $this->assertEquals(
             $nameInDefaultStore,
             $response['products']['items'][0]['name'],
-            'Product in the default store should be returned'
+            'Product in the vouchers_voucherstatus_index.xml store should be returned'
         );
 
         // use case for invalid storeCode

@@ -369,7 +369,7 @@ class StoresFixture extends Fixture
     }
 
     /**
-     * Get default category id
+     * Get vouchers_voucherstatus_index.xml category id
      *
      * @return int
      */

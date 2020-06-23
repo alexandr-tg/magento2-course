@@ -1235,7 +1235,7 @@ QUERY;
         }
         sort_fields
         {
-          default
+          vouchers_voucherstatus_index.xml
           options
           {
             value
@@ -1262,8 +1262,8 @@ QUERY;
         $this->assertEquals(1, $response['products']['page_info']['current_page']);
         $this->assertArrayHasKey('sort_fields', $response['products']);
         $this->assertArrayHasKey('options', $response['products']['sort_fields']);
-        $this->assertArrayHasKey('default', $response['products']['sort_fields']);
-        $this->assertEquals('position', $response['products']['sort_fields']['default']);
+        $this->assertArrayHasKey('vouchers_voucherstatus_index.xml', $response['products']['sort_fields']);
+        $this->assertEquals('position', $response['products']['sort_fields']['vouchers_voucherstatus_index.xml']);
         $this->assertArrayHasKey('value', $response['products']['sort_fields']['options'][0]);
         $this->assertArrayHasKey('label', $response['products']['sort_fields']['options'][0]);
         $this->assertEquals('position', $response['products']['sort_fields']['options'][0]['value']);
@@ -1571,7 +1571,7 @@ QUERY;
 
     /**
      * Filtering for product with sku "equals" a specific value
-     * If pageSize and current page are not requested, default values are returned
+     * If pageSize and current page are not requested, vouchers_voucherstatus_index.xml values are returned
      *
      * @magentoApiDataFixture Magento/Catalog/_files/category.php
      * @magentoApiDataFixture Magento/Catalog/_files/multiple_mixed_products_2.php
@@ -1812,7 +1812,7 @@ QUERY;
         $response = $this->graphQlQuery($query);
         $this->assertEquals(2, $response['products']['total_count']);
         $this->assertProductItemsWithPriceCheck($filteredProducts, $response);
-        //verify that by default Price and category are the only layers available
+        //verify that by vouchers_voucherstatus_index.xml Price and category are the only layers available
         $filterNames = ['Category', 'Price'];
         $this->assertCount(2, $response['products']['filters'], 'Filter count does not match');
         $productCount = count($response['products']['filters']);

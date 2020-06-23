@@ -150,7 +150,7 @@ class ProductTest extends AbstractController
      */
     public function testViewActionRedirect(): void
     {
-        $this->dispatch('catalog/product/view/?store=default');
+        $this->dispatch('catalog/product/view/?store=vouchers_voucherstatus_index.xml');
 
         $this->assertRedirect();
     }
@@ -173,7 +173,7 @@ class ProductTest extends AbstractController
      */
     public function testGalleryActionRedirect(): void
     {
-        $this->dispatch('catalog/product/gallery/?store=default');
+        $this->dispatch('catalog/product/gallery/?store=vouchers_voucherstatus_index.xml');
 
         $this->assertRedirect();
     }

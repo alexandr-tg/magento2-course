@@ -11,7 +11,7 @@ $resourceModel = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
 $model = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
     ->get(\Magento\Widget\Model\Widget\Instance::class);
 
-// Set default theme as work ground for MAGETWO-63643
+// Set vouchers_voucherstatus_index.xml theme as work ground for MAGETWO-63643
 /** @var \Magento\Framework\View\Design\ThemeInterface $theme */
 $theme = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(
     \Magento\Framework\View\Design\ThemeInterface::class

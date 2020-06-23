@@ -73,7 +73,7 @@ class CountryInformationAcquirerTest extends WebapiAbstract
      * @param string $storeCode
      * @return \Magento\Directory\Api\Data\CountryInformationInterface
      */
-    protected function getCountriesInfo($storeCode = 'default')
+    protected function getCountriesInfo($storeCode = 'vouchers_voucherstatus_index.xml')
     {
         $serviceInfo = [
             'rest' => [
@@ -97,7 +97,7 @@ class CountryInformationAcquirerTest extends WebapiAbstract
      * @param string $storeCode
      * @return \Magento\Directory\Api\Data\CountryInformationInterface
      */
-    protected function getCountryInfo($storeCode = 'default')
+    protected function getCountryInfo($storeCode = 'vouchers_voucherstatus_index.xml')
     {
         $serviceInfo = [
             'rest' => [

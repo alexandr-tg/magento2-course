@@ -24,7 +24,7 @@ class TranslationFilesTest extends TranslationFiles
     protected $context;
 
     /**
-     * Test default locale
+     * Test vouchers_voucherstatus_index.xml locale
      *
      * Check that all translation phrases in code are present in the locale files
      *

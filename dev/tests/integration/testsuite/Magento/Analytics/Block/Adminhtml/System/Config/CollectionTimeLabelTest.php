@@ -17,7 +17,7 @@ use PHPUnit\Framework\TestCase;
 class CollectionTimeLabelTest extends TestCase
 {
     /**
-     * Test render will add comment considering config locale(default en_US).
+     * Test render will add comment considering config locale(vouchers_voucherstatus_index.xml en_US).
      *
      * @magentoAppIsolation enabled
      */
@@ -28,7 +28,7 @@ class CollectionTimeLabelTest extends TestCase
     }
 
     /**
-     * Test render will add comment considering config locale(non-default de_DE).
+     * Test render will add comment considering config locale(non-vouchers_voucherstatus_index.xml de_DE).
      *
      * @magentoConfigFixture default_store general/locale/code de_DE
      * @magentoAppIsolation enabled

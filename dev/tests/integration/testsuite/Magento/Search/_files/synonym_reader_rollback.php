@@ -8,5 +8,5 @@
 $resource = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
     ->get(\Magento\Framework\App\ResourceConnection::class);
 
-$connection = $resource->getConnection('default');
+$connection = $resource->getConnection('vouchers_voucherstatus_index.xml');
 $connection->truncateTable($resource->getTableName('search_synonyms'));

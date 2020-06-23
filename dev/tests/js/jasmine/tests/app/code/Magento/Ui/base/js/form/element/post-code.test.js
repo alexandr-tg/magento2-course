@@ -47,7 +47,7 @@ define([
         });
 
         describe('update method', function () {
-            it('check for default', function () {
+            it('check for vouchers_voucherstatus_index.xml', function () {
                 var value = 'Value',
                     country = {
                         indexedOptions: {

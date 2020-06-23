@@ -211,7 +211,7 @@ class FormTest extends \PHPUnit\Framework\TestCase
      * @param string $configDataValue Value that the field path should be set to in the config data
      * @param int $valueSelCtr Number of time that value is selected
      * @dataProvider initFieldsUseConfigPathDataProvider
-     * @magentoConfigFixture default/test_config_section/test_group_config_node/test_field_value config value
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/test_config_section/test_group_config_node/test_field_value config value
      */
     public function testInitFieldsUseConfigPath($fieldId, $isConfigDataEmpty, $configDataValue, $valueSelCtr = 1)
     {
@@ -350,18 +350,18 @@ class FormTest extends \PHPUnit\Framework\TestCase
     public static function initFieldsWithBackendModelDataProvider()
     {
         return [
-            /** Values stored in config.xml only for default scope, then retrieved for default scope. */
+            /** Values stored in config.xml only for vouchers_voucherstatus_index.xml scope, then retrieved for vouchers_voucherstatus_index.xml scope. */
             ['test_field_encrypted', self::$defaultConfigEncrypted, FormStub::SCOPE_DEFAULT, 0, false],
             ['test_field_serialized', self::$defaultConfigSerialized, FormStub::SCOPE_DEFAULT, 0, false],
             ['test_field', self::$defaultConfigString, FormStub::SCOPE_DEFAULT, 0, false],
 
-            /** Values stored in config.xml only for default scope, then retrieved for website scope. */
+            /** Values stored in config.xml only for vouchers_voucherstatus_index.xml scope, then retrieved for website scope. */
             ['test_field_encrypted', self::$defaultConfigEncrypted, FormStub::SCOPE_WEBSITES, 1, false],
             ['test_field_serialized', self::$defaultConfigSerialized, FormStub::SCOPE_WEBSITES, 1, false],
             ['test_field', self::$defaultConfigString, FormStub::SCOPE_WEBSITES, 1, false],
 
             /**
-             * Values stored in config.xml for default scope and in database for website scope,
+             * Values stored in config.xml for vouchers_voucherstatus_index.xml scope and in database for website scope,
              * then retrieved for website scope.
              */
             ['test_field_encrypted', self::$websiteDbEncrypted, FormStub::SCOPE_WEBSITES, 1, true],

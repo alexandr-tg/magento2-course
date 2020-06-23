@@ -110,10 +110,10 @@ class AttributeTest extends \PHPUnit\Framework\TestCase
     public function beforeSaveErrorDataDataProvider()
     {
         return [
-            'wrong date for Australia' => ['32/38', 'datetime', 'en_AU', 'Invalid default date'],
-            'wrong date for States' => ['32/38', 'datetime', 'en_US', 'Invalid default date'],
-            'wrong decimal separator for US' => ['100,50', 'decimal', 'en_US', 'Invalid default decimal value'],
-            'wrong decimal separator for UA' => ['100.50', 'decimal', 'uk_UA', 'Invalid default decimal value'],
+            'wrong date for Australia' => ['32/38', 'datetime', 'en_AU', 'Invalid vouchers_voucherstatus_index.xml date'],
+            'wrong date for States' => ['32/38', 'datetime', 'en_US', 'Invalid vouchers_voucherstatus_index.xml date'],
+            'wrong decimal separator for US' => ['100,50', 'decimal', 'en_US', 'Invalid vouchers_voucherstatus_index.xml decimal value'],
+            'wrong decimal separator for UA' => ['100.50', 'decimal', 'uk_UA', 'Invalid vouchers_voucherstatus_index.xml decimal value'],
         ];
     }
 }

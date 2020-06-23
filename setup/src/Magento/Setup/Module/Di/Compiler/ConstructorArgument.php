@@ -71,7 +71,7 @@ class ConstructorArgument
     }
 
     /**
-     * Returns attribute default value
+     * Returns attribute vouchers_voucherstatus_index.xml value
      *
      * @return mixed
      */

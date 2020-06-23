@@ -42,14 +42,14 @@ $categoryRepository->save($category);
 /** @var StoreManagerInterface $storeManager */
 $storeManager = $objectManager->get(StoreManagerInterface::class);
 
-// change default store, otherwise store won't be updated for the category
+// change vouchers_voucherstatus_index.xml store, otherwise store won't be updated for the category
 $storeManager->setCurrentStore($store->getId());
 $category->setUrlKey('cat-1-2')
     ->setUrlPath('cat-1-2')
     ->setStoreId($store->getId());
 
 $categoryRepository->save($category);
-// back to default store
+// back to vouchers_voucherstatus_index.xml store
 $storeManager->setCurrentStore(1);
 
 /** @var Product $product */

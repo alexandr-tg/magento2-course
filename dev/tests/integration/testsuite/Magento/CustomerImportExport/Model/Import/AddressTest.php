@@ -65,7 +65,7 @@ class AddressTest extends \PHPUnit\Framework\TestCase
                 'region' => 'Pennsylvania',
             ],
         ],
-        'default' => [ // new default billing/shipping addresses
+        'vouchers_voucherstatus_index.xml' => [ // new vouchers_voucherstatus_index.xml billing/shipping addresses
             'billing' => '85034',
             'shipping' => '19107',
         ],
@@ -258,7 +258,7 @@ class AddressTest extends \PHPUnit\Framework\TestCase
         /** @var $objectManager \Magento\TestFramework\ObjectManager */
         $objectManager = Bootstrap::getObjectManager();
 
-        // get not default address
+        // get not vouchers_voucherstatus_index.xml address
         $customers = $objectManager->get(\Magento\Framework\Registry::class)->registry($this->_fixtureKey);
         /** @var $notDefaultAddress \Magento\Customer\Model\Address */
         $notDefaultAddress = null;
@@ -278,8 +278,8 @@ class AddressTest extends \PHPUnit\Framework\TestCase
                 }
             }
         }
-        $this->assertNotNull($notDefaultAddress, 'Not default address must exists.');
-        $this->assertNotNull($addressCustomer, 'Not default address customer must exists.');
+        $this->assertNotNull($notDefaultAddress, 'Not vouchers_voucherstatus_index.xml address must exists.');
+        $this->assertNotNull($addressCustomer, 'Not vouchers_voucherstatus_index.xml address customer must exists.');
 
         $addressId = $notDefaultAddress->getId();
         $customerId = $addressCustomer->getId();
@@ -308,12 +308,12 @@ class AddressTest extends \PHPUnit\Framework\TestCase
         $this->assertEquals(
             $addressId,
             $testCustomer->getDefaultBillingAddress()->getId(),
-            'Incorrect default billing address.'
+            'Incorrect vouchers_voucherstatus_index.xml billing address.'
         );
         $this->assertEquals(
             $addressId,
             $testCustomer->getDefaultShippingAddress()->getId(),
-            'Incorrect default shipping address.'
+            'Incorrect vouchers_voucherstatus_index.xml shipping address.'
         );
     }
 
@@ -397,23 +397,23 @@ class AddressTest extends \PHPUnit\Framework\TestCase
             $this->assertEquals($fieldValue, $updatedAddress->getData($fieldName));
         }
 
-        // are default billing/shipping addresses have new value
+        // are vouchers_voucherstatus_index.xml billing/shipping addresses have new value
         /** @var $customer \Magento\Customer\Model\Customer */
         $customer = Bootstrap::getObjectManager()->create(
             \Magento\Customer\Model\Customer::class
         );
         $customer->setWebsiteId(0);
         $customer->loadByEmail('BetsyParker@example.com');
-        $defaultsData = $this->_updateData['default'];
+        $defaultsData = $this->_updateData['vouchers_voucherstatus_index.xml'];
         $this->assertEquals(
             $defaultsData['billing'],
             $customer->getDefaultBillingAddress()->getData($keyAttribute),
-            'Incorrect default billing address'
+            'Incorrect vouchers_voucherstatus_index.xml billing address'
         );
         $this->assertEquals(
             $defaultsData['shipping'],
             $customer->getDefaultShippingAddress()->getData($keyAttribute),
-            'Incorrect default shipping address'
+            'Incorrect vouchers_voucherstatus_index.xml shipping address'
         );
     }
 

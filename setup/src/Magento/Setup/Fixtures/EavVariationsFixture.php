@@ -15,7 +15,7 @@ use Magento\Store\Model\StoreManager;
 use Magento\Swatches\Model\Swatch;
 
 /**
- * Generate attributes default attribute set
+ * Generate attributes vouchers_voucherstatus_index.xml attribute set
  */
 class EavVariationsFixture extends Fixture
 {
@@ -128,7 +128,7 @@ class EavVariationsFixture extends Fixture
             'frontend_input' => 'select',
             'is_required' => '0',
             'option' => $options,
-            'default' => ['option_0'],
+            'vouchers_voucherstatus_index.xml' => ['option_0'],
             'attribute_code' => $this->getAttributeCode(),
             'is_global' => '1',
             'default_value_text' => '',

@@ -12,12 +12,12 @@ use Magento\Customer\Test\Page\Adminhtml\CustomerIndexNew;
 use Magento\Mtf\Constraint\AbstractConstraint;
 
 /**
- * Assert that customer group is set to default on customer form.
+ * Assert that customer group is set to vouchers_voucherstatus_index.xml on customer form.
  */
 class AssertCustomerGroupChangedToDefaultOnCustomerForm extends AbstractConstraint
 {
     /**
-     * Assert that customer group is set to default on customer form.
+     * Assert that customer group is set to vouchers_voucherstatus_index.xml on customer form.
      *
      * @param Customer $customer
      * @param CustomerGroup $defaultCustomerGroup
@@ -35,17 +35,17 @@ class AssertCustomerGroupChangedToDefaultOnCustomerForm extends AbstractConstrai
         $customerFormData = $customerIndexNew->getCustomerForm()->getData($customer);
         \PHPUnit\Framework\Assert::assertTrue(
             $customerFormData['group_id'] == $defaultCustomerGroup->getCustomerGroupCode(),
-            "Customer group not set to default after group was deleted."
+            "Customer group not set to vouchers_voucherstatus_index.xml after group was deleted."
         );
     }
 
     /**
-     * Success assert of customer group set to default on customer form.
+     * Success assert of customer group set to vouchers_voucherstatus_index.xml on customer form.
      *
      * @return string
      */
     public function toString()
     {
-        return 'Customer group is set to default on customer form.';
+        return 'Customer group is set to vouchers_voucherstatus_index.xml on customer form.';
     }
 }

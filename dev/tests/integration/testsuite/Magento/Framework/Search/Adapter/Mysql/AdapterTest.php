@@ -140,7 +140,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testMatchQuery()
     {
@@ -154,7 +154,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/Framework/Search/_files/products_multi_option.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testMatchOrderedQuery()
     {
@@ -171,7 +171,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testAggregationsQuery()
     {
@@ -188,7 +188,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testMatchQueryFilters()
     {
@@ -205,7 +205,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Range filter test with all fields filled
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testRangeFilterWithAllFields()
     {
@@ -220,7 +220,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Range filter test with all fields filled
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testRangeFilterWithoutFromField()
     {
@@ -234,7 +234,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Range filter test with all fields filled
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testRangeFilterWithoutToField()
     {
@@ -248,7 +248,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Term filter test
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testTermFilter()
     {
@@ -263,7 +263,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Term filter test
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testTermFilterArray()
     {
@@ -277,7 +277,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Term filter test
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testWildcardFilter()
     {
@@ -293,7 +293,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Request limits test
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testSearchLimit()
     {
@@ -309,7 +309,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Bool filter test
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testBoolFilter()
     {
@@ -332,7 +332,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Test bool filter with nested negative bool filter
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testBoolFilterWithNestedNegativeBoolFilter()
     {
@@ -350,7 +350,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Test range inside nested negative bool filter
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testBoolFilterWithNestedRangeInNegativeBoolFilter()
     {
@@ -367,7 +367,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
     /**
      * Sample Advanced search request test
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      * @dataProvider advancedSearchDataProvider
      * @param string $nameQuery
      * @param string $descriptionQuery
@@ -408,7 +408,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/Framework/Search/_files/filterable_attribute.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testCustomFilterableAttribute()
     {
@@ -471,7 +471,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
      * Test filtering by two attributes.
      *
      * @magentoDataFixture Magento/Framework/Search/_files/filterable_attributes.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      * @dataProvider filterByAttributeValuesDataProvider
      * @param string $requestName
      * @param array $additionalData
@@ -508,7 +508,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
      * @param $rangeFilter
      * @param $expectedRecordsCount
      * @magentoDataFixture Magento/Framework/Search/_files/date_attribute.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      * @dataProvider dateDataProvider
      */
     public function testAdvancedSearchDateField($rangeFilter, $expectedRecordsCount)
@@ -523,7 +523,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/Framework/Search/_files/product_configurable.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testAdvancedSearchCompositeProductWithOutOfStockOption()
     {
@@ -561,7 +561,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoDataFixture Magento/Framework/Search/_files/product_configurable_with_disabled_child.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testAdvancedSearchCompositeProductWithDisabledChild()
     {
@@ -595,7 +595,7 @@ class AdapterTest extends \PHPUnit\Framework\TestCase
      * and affects search results.
      *
      * @magentoDataFixture Magento/Framework/Search/_files/search_weight_products.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testSearchQueryBoost()
     {

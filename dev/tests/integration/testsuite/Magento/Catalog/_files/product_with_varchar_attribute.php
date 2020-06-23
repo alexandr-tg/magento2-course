@@ -14,7 +14,7 @@ require __DIR__ . '/product_simple.php';
 $eavConfig = $objectManager->get(Config::class);
 $eavConfig->clear();
 
-$attribute->setDefaultValue('Varchar default value');
+$attribute->setDefaultValue('Varchar vouchers_voucherstatus_index.xml value');
 $attributeRepository->save($attribute);
 
 $product->setCustomAttribute('varchar_attribute', $attribute->getDefaultValue());

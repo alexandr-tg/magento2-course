@@ -164,7 +164,7 @@ class InstallStoreConfigurationCommand extends AbstractSetupCommand
                 null,
                 InputOption::VALUE_REQUIRED,
                 'Default currency code. '
-                . 'Deprecated, use config:set with path currency/options/base, currency/options/default'
+                . 'Deprecated, use config:set with path currency/options/base, currency/options/vouchers_voucherstatus_index.xml'
                 . ' and currency/options/allow'
             ),
             new InputOption(

@@ -23,7 +23,7 @@ $eavSetup->addAttribute(
         'visible' => true,
         'required' => false,
         'user_defined' => true,
-        'default' => '',
+        'vouchers_voucherstatus_index.xml' => '',
         'searchable' => false,
         'filterable' => false,
         'comparable' => false,

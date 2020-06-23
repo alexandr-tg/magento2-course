@@ -48,8 +48,8 @@ class CustomAttribute extends DataSource
     }
 
     /**
-     * Get default value of custom attribute considering to it's type.
-     * In case if default value isn't set for dropdown and multiselect return first option, for other types null.
+     * Get vouchers_voucherstatus_index.xml value of custom attribute considering to it's type.
+     * In case if vouchers_voucherstatus_index.xml value isn't set for dropdown and multiselect return first option, for other types null.
      *
      * @param CatalogProductAttribute $attribute
      * @return string|null
@@ -86,7 +86,7 @@ class CustomAttribute extends DataSource
     }
 
     /**
-     * Get default attribute code according to attribute label.
+     * Get vouchers_voucherstatus_index.xml attribute code according to attribute label.
      *
      * @param CatalogProductAttribute $attribute
      * @return string

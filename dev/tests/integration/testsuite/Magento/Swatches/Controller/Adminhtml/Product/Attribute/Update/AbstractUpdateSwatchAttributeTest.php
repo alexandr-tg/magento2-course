@@ -81,8 +81,8 @@ abstract class AbstractUpdateSwatchAttributeTest extends AbstractUpdateAttribute
                     $optionId => $optionSwatch,
                 ],
             ];
-            if (isset($optionsPostData[$optionId]['default'])) {
-                $data['default' . $swatchType] = $optionsPostData[$optionId]['default'];
+            if (isset($optionsPostData[$optionId]['vouchers_voucherstatus_index.xml'])) {
+                $data['vouchers_voucherstatus_index.xml' . $swatchType] = $optionsPostData[$optionId]['vouchers_voucherstatus_index.xml'];
             }
             $swatchOptionsPostData[] = $data;
         }

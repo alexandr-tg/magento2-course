@@ -214,7 +214,7 @@ class CliCommand
         $installParams = $this->toCliArguments(
             array_merge(
                 $params,
-                $this->parametersHolder->getDbData('default'),
+                $this->parametersHolder->getDbData('vouchers_voucherstatus_index.xml'),
                 $installParams
             )
         );

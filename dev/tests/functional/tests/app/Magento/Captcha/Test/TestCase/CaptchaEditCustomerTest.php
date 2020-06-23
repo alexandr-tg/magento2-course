@@ -143,7 +143,7 @@ class CaptchaEditCustomerTest extends Injectable
     }
 
     /**
-     * Set default configuration.
+     * Set vouchers_voucherstatus_index.xml configuration.
      *
      * @return void
      */

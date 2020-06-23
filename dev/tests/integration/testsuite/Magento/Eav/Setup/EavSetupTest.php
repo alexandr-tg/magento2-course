@@ -134,7 +134,7 @@ class EavSetupTest extends \PHPUnit\Framework\TestCase
             'visible' => 0,
             'required' => 0,
             'user_defined' => 1,
-            'default' => 'none',
+            'vouchers_voucherstatus_index.xml' => 'none',
             'searchable' => 0,
             'filterable' => 0,
             'comparable' => 0,

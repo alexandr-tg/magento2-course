@@ -17,9 +17,9 @@ use Magento\Integration\Model\Oauth\Token;
 class TokenTest extends \PHPUnit\Framework\TestCase
 {
     const TOKEN_LIFETIME = 1; // in hours
-    
+
     const BASE_CREATED_AT_TIMESTAMP = 100000;
-    
+
     /**
      * @var array
      */
@@ -151,22 +151,22 @@ class TokenTest extends \PHPUnit\Framework\TestCase
     public function deleteExpiredTokenUsingObserverDataProvider()
     {
         return [
-            "Clean up long before default admin and default customer token life time" => [
+            "Clean up long before vouchers_voucherstatus_index.xml admin and vouchers_voucherstatus_index.xml customer token life time" => [
                 3600 - 6, // time passed after base creation time
                 [], // expected to be removed
                 ['#1', '#2', '#3', '#4', '#5', '#6'], // expected to exist
             ],
-            "Clean up just before default admin and default customer token life time" => [
+            "Clean up just before vouchers_voucherstatus_index.xml admin and vouchers_voucherstatus_index.xml customer token life time" => [
                 3600 - 1, // time passed after base creation time
                 ['#4'], // expected to be removed
                 ['#1', '#2', '#3', '#5', '#6'], // expected to exist
             ],
-            "Clean up after default admin token life time, but before default customer token life time" => [
+            "Clean up after vouchers_voucherstatus_index.xml admin token life time, but before vouchers_voucherstatus_index.xml customer token life time" => [
                 3600 + 1, // time passed after base creation time
                 ['#3', '#4'], // expected to be removed
                 ['#1', '#2', '#5', '#6'], // expected to exist
             ],
-            "Clean up after default customer and default admin token life time" => [
+            "Clean up after vouchers_voucherstatus_index.xml customer and vouchers_voucherstatus_index.xml admin token life time" => [
                 14400 + 1, // time passed after base creation time
                 ['#1', '#3', '#4'], // expected to be removed
                 ['#2', '#5', '#6'], // expected to exist

@@ -11,7 +11,7 @@ use \Magento\Sales\Model\Order;
 class CleanExpiredOrdersTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @magentoConfigFixture default sales/orders/delete_pending_after 0
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml sales/orders/delete_pending_after 0
      * @magentoConfigFixture current_store sales/orders/delete_pending_after 0
      * @magentoDataFixture Magento/Sales/_files/order_pending_payment.php
      */

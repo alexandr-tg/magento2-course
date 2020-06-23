@@ -522,7 +522,7 @@ class TaxRateRepositoryTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
 
@@ -570,7 +570,7 @@ class TaxRateRepositoryTest extends WebapiAbstract
             ->setValue('2.2000')
             ->create();
         $this->searchCriteriaBuilder->addFilters([$filterBR, $filterUS, $filterCZ]);
-        // Order them by descending postcode (not the default order)
+        // Order them by descending postcode (not the vouchers_voucherstatus_index.xml order)
         $this->searchCriteriaBuilder->addFilters([$filterCZ, $filterRate])
             ->addSortOrder($sortOrder);
         $searchData = $this->searchCriteriaBuilder->create()->__toArray();
@@ -583,7 +583,7 @@ class TaxRateRepositoryTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
 

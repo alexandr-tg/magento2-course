@@ -150,7 +150,7 @@ class EavVariationsFixtureTest extends \PHPUnit\Framework\TestCase
                             'value' => ['option_1' => [$storeId => 'option 1']],
                             'delete' => ['option_1' => ''],
                         ],
-                        'default' => ['option_0'],
+                        'vouchers_voucherstatus_index.xml' => ['option_0'],
                         'attribute_code' => 'configurable_variation',
                         'is_global' => '1',
                         'default_value_text' => '',

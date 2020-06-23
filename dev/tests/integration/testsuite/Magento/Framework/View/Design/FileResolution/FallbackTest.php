@@ -85,33 +85,33 @@ class FallbackTest extends \PHPUnit\Framework\TestCase
     public function getTemplateFileDataProvider()
     {
         return [
-            'non-modular: no default inheritance' => [
+            'non-modular: no vouchers_voucherstatus_index.xml inheritance' => [
                 'fixture_template.phtml', 'Vendor_ViewTest/standalone_theme', null,
                 null,
             ],
             'non-modular: inherit parent theme' => [
                 'fixture_template.phtml', 'Vendor_ViewTest/custom_theme', null,
-                '%s/frontend/Vendor/default/templates/fixture_template.phtml',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/templates/fixture_template.phtml',
             ],
             'non-modular: inherit grandparent theme' => [
                 'fixture_template.phtml', 'Vendor_ViewTest/custom_theme2', null,
-                '%s/frontend/Vendor/default/templates/fixture_template.phtml',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/templates/fixture_template.phtml',
             ],
-            'modular: no default inheritance' => [
+            'modular: no vouchers_voucherstatus_index.xml inheritance' => [
                 'fixture_template.phtml', 'Vendor_ViewTest/standalone_theme', 'ViewTest_Module',
                 null,
             ],
             'modular: no fallback to non-modular file' => [
-                'nonexistent_fixture_script.phtml', 'Vendor_ViewTest/default', 'ViewTest_Module',
+                'nonexistent_fixture_script.phtml', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', 'ViewTest_Module',
                 null,
             ],
             'modular: inherit parent theme' => [
                 'fixture_template.phtml', 'Vendor_ViewTest/custom_theme', 'ViewTest_Module',
-                '%s/frontend/Vendor/default/ViewTest_Module/templates/fixture_template.phtml',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/ViewTest_Module/templates/fixture_template.phtml',
             ],
             'modular: inherit grandparent theme' => [
                 'fixture_template.phtml', 'Vendor_ViewTest/custom_theme2', 'ViewTest_Module',
-                '%s/frontend/Vendor/default/ViewTest_Module/templates/fixture_template.phtml',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/ViewTest_Module/templates/fixture_template.phtml',
             ],
         ];
     }
@@ -146,7 +146,7 @@ class FallbackTest extends \PHPUnit\Framework\TestCase
     public function getLocaleFileDataProvider()
     {
         return [
-            'no default inheritance' => [
+            'no vouchers_voucherstatus_index.xml inheritance' => [
                 'Vendor_ViewTest/standalone_theme', 'en_US',
                 null,
             ],
@@ -193,65 +193,65 @@ class FallbackTest extends \PHPUnit\Framework\TestCase
     public function getViewFileDataProvider()
     {
         return [
-            'non-modular: no default inheritance' => [
+            'non-modular: no vouchers_voucherstatus_index.xml inheritance' => [
                 'fixture_script.js', 'Vendor_ViewTest/standalone_theme', null, null,
                 null,
             ],
             'non-modular: inherit same package & parent theme' => [
                 'fixture_script.js', 'Vendor_ViewTest/custom_theme', null, null,
-                '%s/frontend/Vendor/default/web/fixture_script.js',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/web/fixture_script.js',
             ],
             'non-modular: inherit same package & grandparent theme' => [
                 'fixture_script.js', 'Vendor_ViewTest/custom_theme2', null, null,
-                '%s/frontend/Vendor/default/web/fixture_script.js',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/web/fixture_script.js',
             ],
             'non-modular: fallback to non-localized file' => [
-                'fixture_script.js', 'Vendor_ViewTest/default', 'en_US', null,
-                '%s/frontend/Vendor/default/web/fixture_script.js',
+                'fixture_script.js', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', 'en_US', null,
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/web/fixture_script.js',
             ],
             'non-modular: localized file' => [
-                'fixture_script.js', 'Vendor_ViewTest/default', 'ru_RU', null,
-                '%s/frontend/Vendor/default/web/i18n/ru_RU/fixture_script.js',
+                'fixture_script.js', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', 'ru_RU', null,
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/web/i18n/ru_RU/fixture_script.js',
             ],
             'non-modular: override js lib file' => [
                 'mage/script.js', 'Vendor_ViewTest/custom_theme', null, null,
                 '%s/frontend/Vendor/custom_theme/web/mage/script.js',
             ],
             'non-modular: inherit js lib file' => [
-                'mage/script.js', 'Vendor_ViewTest/default', null, null,
+                'mage/script.js', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', null, null,
                 '%s/lib/web/mage/script.js',
             ],
-            'modular: no default inheritance' => [
+            'modular: no vouchers_voucherstatus_index.xml inheritance' => [
                 'fixture_script.js', 'Vendor_ViewTest/standalone_theme', null, 'ViewTest_Module',
                 null,
             ],
             'modular: no fallback to non-modular file' => [
-                'nonexistent_fixture_script.js', 'Vendor_ViewTest/default', null, 'ViewTest_Module',
+                'nonexistent_fixture_script.js', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', null, 'ViewTest_Module',
                 null,
             ],
             'modular: no fallback to js lib file' => [
-                'mage/script.js', 'Vendor_ViewTest/default', null, 'ViewTest_Module',
+                'mage/script.js', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', null, 'ViewTest_Module',
                 null,
             ],
             'modular: no fallback to non-modular localized file' => [
-                'nonexistent_fixture_script.js', 'Vendor_ViewTest/default', 'ru_RU', 'ViewTest_Module',
+                'nonexistent_fixture_script.js', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', 'ru_RU', 'ViewTest_Module',
                 null,
             ],
             'modular: inherit same package & parent theme' => [
                 'fixture_script.js', 'Vendor_ViewTest/custom_theme', null, 'ViewTest_Module',
-                '%s/frontend/Vendor/default/ViewTest_Module/web/fixture_script.js',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/ViewTest_Module/web/fixture_script.js',
             ],
             'modular: inherit same package & grandparent theme' => [
                 'fixture_script.js', 'Vendor_ViewTest/custom_theme2', null, 'ViewTest_Module',
-                '%s/frontend/Vendor/default/ViewTest_Module/web/fixture_script.js',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/ViewTest_Module/web/fixture_script.js',
             ],
             'modular: fallback to non-localized file' => [
-                'fixture_script.js', 'Vendor_ViewTest/default', 'en_US', 'ViewTest_Module',
-                '%s/frontend/Vendor/default/ViewTest_Module/web/fixture_script.js',
+                'fixture_script.js', 'Vendor_ViewTest/vouchers_voucherstatus_index.xml', 'en_US', 'ViewTest_Module',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/ViewTest_Module/web/fixture_script.js',
             ],
             'modular: localized file' => [
                 'fixture_script.js', 'Vendor_ViewTest/custom_theme2', 'ru_RU', 'ViewTest_Module',
-                '%s/frontend/Vendor/default/ViewTest_Module/web/i18n/ru_RU/fixture_script.js',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/ViewTest_Module/web/i18n/ru_RU/fixture_script.js',
             ],
         ];
     }
@@ -306,13 +306,13 @@ class FallbackTest extends \PHPUnit\Framework\TestCase
                 'account_new_confirmation.html',
                 'Vendor_EmailTest/custom_theme',
                 'Magento_Customer',
-                '%s/frontend/Vendor/default/Magento_Customer/email/account_new_confirmation.html',
+                '%s/frontend/Vendor/vouchers_voucherstatus_index.xml/Magento_Customer/email/account_new_confirmation.html',
             ],
             'inherit parent package & grandparent theme' => [
                 'account_new_confirmed.html',
                 'Vendor_EmailTest/custom_theme',
                 'Magento_Customer',
-                '%s/frontend/Magento/default/Magento_Customer/email/account_new_confirmed.html',
+                '%s/frontend/Magento/vouchers_voucherstatus_index.xml/Magento_Customer/email/account_new_confirmed.html',
             ],
         ];
     }

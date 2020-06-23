@@ -73,7 +73,7 @@ class ChangeCurrencyOnCustomWebsiteStep implements TestStepInterface
                             'currency/options/base' => [
                                 'value' => $currency
                             ],
-                            'currency/options/default' => [
+                            'currency/options/vouchers_voucherstatus_index.xml' => [
                                 'value' => $currency
                             ],
                             'scope' => [

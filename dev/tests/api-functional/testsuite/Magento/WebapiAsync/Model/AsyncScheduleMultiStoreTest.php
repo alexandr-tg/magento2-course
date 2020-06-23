@@ -43,7 +43,7 @@ class AsyncScheduleMultiStoreTest extends WebapiAbstract
     const STORE_NAME_FROM_FIXTURE = 'Fixture Store';
 
     const STORE_CODE_ALL = 'all';
-    const STORE_CODE_DEFAULT = 'default';
+    const STORE_CODE_DEFAULT = 'vouchers_voucherstatus_index.xml';
 
     private $stores = [
         self::STORE_CODE_DEFAULT,

@@ -78,7 +78,7 @@ if (isset($_SERVER['PATH_INFO']) && !empty($_SERVER['PATH_INFO'])) {
         header('Location: ../setup');
         die();
     }
-    $type = 'default';
+    $type = 'vouchers_voucherstatus_index.xml';
     $titles = [];
     $defaultHeaderTitle = 'Magento Updater';
     if (file_exists(MAGENTO_BP . '/var/.type.json')) {

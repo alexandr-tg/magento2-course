@@ -29,7 +29,7 @@ class AssertDeveloperSectionVisibility extends AbstractConstraint
         } else {
             \PHPUnit\Framework\Assert::assertTrue(
                 in_array('Developer', $configEdit->getTabs()->getSubTabsNames('Advanced')),
-                'Developer section should be not hidden in developer or default mode.'
+                'Developer section should be not hidden in developer or vouchers_voucherstatus_index.xml mode.'
             );
         }
     }

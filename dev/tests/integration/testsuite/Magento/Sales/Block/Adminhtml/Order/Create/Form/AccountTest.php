@@ -117,7 +117,7 @@ class AccountTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Tests a case when user defined custom attribute has default value.
+     * Tests a case when user defined custom attribute has vouchers_voucherstatus_index.xml value.
      *
      * @magentoDataFixture Magento/Store/_files/core_second_third_fixturestore.php
      * @magentoConfigFixture current_store customer/create_account/default_group 2

@@ -23,12 +23,12 @@ class PoolTest extends TestCase
         $argumentConfig = $diConfig->getArguments(\Magento\Framework\App\Cache\Frontend\Pool::class);
 
         $pageCacheDir = $argumentConfig['frontendSettings']['page_cache']['backend_options']['cache_dir'] ?? null;
-        $defaultCacheDir = $argumentConfig['frontendSettings']['default']['backend_options']['cache_dir'] ?? null;
+        $defaultCacheDir = $argumentConfig['frontendSettings']['vouchers_voucherstatus_index.xml']['backend_options']['cache_dir'] ?? null;
 
-        $noPageCacheMessage = "No default page_cache directory set in di.xml: \n" . var_export($argumentConfig, true);
+        $noPageCacheMessage = "No vouchers_voucherstatus_index.xml page_cache directory set in di.xml: \n" . var_export($argumentConfig, true);
         $this->assertNotEmpty($pageCacheDir, $noPageCacheMessage);
 
-        $sameCacheDirMessage = 'The page_cache and default cache storages share the same cache directory';
+        $sameCacheDirMessage = 'The page_cache and vouchers_voucherstatus_index.xml cache storages share the same cache directory';
         $this->assertNotSame($pageCacheDir, $defaultCacheDir, $sameCacheDirMessage);
     }
 
@@ -47,7 +47,7 @@ class PoolTest extends TestCase
         $pageCache = $cacheFrontendPool->get('page_cache');
         $pageCache->save($testData, $testKey);
 
-        $defaultCache = $cacheFrontendPool->get('default');
+        $defaultCache = $cacheFrontendPool->get('vouchers_voucherstatus_index.xml');
         $defaultCache->clean();
 
         $this->assertSame($testData, $pageCache->load($testKey));

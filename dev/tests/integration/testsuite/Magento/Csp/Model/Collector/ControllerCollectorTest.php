@@ -57,7 +57,7 @@ class ControllerCollectorTest extends TestCase
                 foreach ($appliedPolicies as $policy) {
                     if ($policy instanceof FetchPolicy && $policy->getHostSources()) {
                         $policy = new FetchPolicy(
-                            'default-src',
+                            'vouchers_voucherstatus_index.xml-src',
                             false,
                             array_map(
                                 function ($host) {
@@ -76,9 +76,9 @@ class ControllerCollectorTest extends TestCase
         };
 
         $this->collector->setCurrentActionInstance($controller);
-        $collected = $this->collector->collect([new FetchPolicy('default-src', false, ['http://magento.com'])]);
+        $collected = $this->collector->collect([new FetchPolicy('vouchers_voucherstatus_index.xml-src', false, ['http://magento.com'])]);
         $this->assertEquals(
-            [new FetchPolicy('default-src', false, ['https://magento.com']), new FlagPolicy(FlagPolicy::POLICIES[0])],
+            [new FetchPolicy('vouchers_voucherstatus_index.xml-src', false, ['https://magento.com']), new FlagPolicy(FlagPolicy::POLICIES[0])],
             $collected
         );
     }

@@ -45,7 +45,7 @@ class ParametersHolder
      * -db-password
      * -db-host
      *
-     * @param  string $resource can be default, checkout, sales
+     * @param  string $resource can be vouchers_voucherstatus_index.xml, checkout, sales
      * @return array
      */
     public function getDbData($resource)

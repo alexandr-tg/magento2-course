@@ -138,15 +138,15 @@ class SensitiveConfigSetCommandTest extends \PHPUnit\Framework\TestCase
                 ScopeConfigInterface::SCOPE_TYPE_DEFAULT,
                 null,
                 function (array $config) {
-                    $this->assertTrue(isset($config['system']['default']['some']['config']['path_two']));
-                    $this->assertTrue(isset($config['system']['default']['some']['config']['path_three']));
+                    $this->assertTrue(isset($config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_two']));
+                    $this->assertTrue(isset($config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_three']));
                     $this->assertEquals(
                         'sensitiveValue',
-                        $config['system']['default']['some']['config']['path_two']
+                        $config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_two']
                     );
                     $this->assertEquals(
                         'sensitiveValue',
-                        $config['system']['default']['some']['config']['path_three']
+                        $config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_three']
                     );
                 }
             ],
@@ -209,20 +209,20 @@ class SensitiveConfigSetCommandTest extends \PHPUnit\Framework\TestCase
                 ScopeConfigInterface::SCOPE_TYPE_DEFAULT,
                 null,
                 function (array $config) {
-                    $this->assertTrue(isset($config['system']['default']['some']['config']['path_one']));
-                    $this->assertTrue(isset($config['system']['default']['some']['config']['path_two']));
-                    $this->assertTrue(isset($config['system']['default']['some']['config']['path_three']));
+                    $this->assertTrue(isset($config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_one']));
+                    $this->assertTrue(isset($config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_two']));
+                    $this->assertTrue(isset($config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_three']));
                     $this->assertEquals(
                         'sensitiveValue',
-                        $config['system']['default']['some']['config']['path_one']
+                        $config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_one']
                     );
                     $this->assertEquals(
                         'sensitiveValue',
-                        $config['system']['default']['some']['config']['path_two']
+                        $config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_two']
                     );
                     $this->assertEquals(
                         'sensitiveValue',
-                        $config['system']['default']['some']['config']['path_three']
+                        $config['system']['vouchers_voucherstatus_index.xml']['some']['config']['path_three']
                     );
                 }
             ],
@@ -300,7 +300,7 @@ class SensitiveConfigSetCommandTest extends \PHPUnit\Framework\TestCase
     {
         $inputMock = $this->createMock(InputInterface::class);
         $isInteractive = $key === null;
-        
+
         if (!$isInteractive) {
             $inputMock->expects($this->exactly(2))
                 ->method('getArgument')

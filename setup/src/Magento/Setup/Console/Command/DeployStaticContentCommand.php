@@ -107,8 +107,8 @@ class DeployStaticContentCommand extends Command
         if (!$input->getOption(Options::FORCE_RUN) && $this->getAppState()->getMode() !== State::MODE_PRODUCTION) {
             throw new LocalizedException(
                 __(
-                    'NOTE: Manual static content deployment is not required in "default" and "developer" modes.'
-                    . PHP_EOL . 'In "default" and "developer" modes static contents are being deployed '
+                    'NOTE: Manual static content deployment is not required in "vouchers_voucherstatus_index.xml" and "developer" modes.'
+                    . PHP_EOL . 'In "vouchers_voucherstatus_index.xml" and "developer" modes static contents are being deployed '
                     . 'automatically on demand.'
                     . PHP_EOL . 'If you still want to deploy in these modes, use -f option: '
                     . "'bin/magento setup:static-content:deploy -f'"

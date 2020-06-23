@@ -13,7 +13,7 @@ use Magento\Mtf\TestCase\Injectable;
 
 /**
  * Preconditions:
- * 1. Create default simple product.
+ * 1. Create vouchers_voucherstatus_index.xml simple product.
  * 2. Create custom url rewrite.
  *
  * Steps:

@@ -36,7 +36,7 @@ class ConnectionManagerTest extends \PHPUnit\Framework\TestCase
      * Test if 'elasticsearch5' search engine returned by connection manager.
      *
      * @magentoAppIsolation enabled
-     * @magentoConfigFixture default/catalog/search/engine elasticsearch5
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine elasticsearch5
      */
     public function testCorrectElasticsearchClientEs5()
     {
@@ -51,7 +51,7 @@ class ConnectionManagerTest extends \PHPUnit\Framework\TestCase
      * Test if 'elasticsearch6' search engine returned by connection manager.
      *
      * @magentoAppIsolation enabled
-     * @magentoConfigFixture default/catalog/search/engine elasticsearch6
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine elasticsearch6
      */
     public function testCorrectElasticsearchClientEs6()
     {

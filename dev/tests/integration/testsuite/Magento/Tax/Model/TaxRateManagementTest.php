@@ -20,7 +20,7 @@ class TaxRateManagementTest extends \PHPUnit\Framework\TestCase
     private $taxRuleFixtureFactory;
 
     /**
-     * Array of default tax classes ids
+     * Array of vouchers_voucherstatus_index.xml tax classes ids
      *
      * Key is class name
      *
@@ -29,7 +29,7 @@ class TaxRateManagementTest extends \PHPUnit\Framework\TestCase
     private $taxClasses;
 
     /**
-     * Array of default tax rates ids.
+     * Array of vouchers_voucherstatus_index.xml tax rates ids.
      *
      * Key is rate percentage as string.
      *
@@ -38,7 +38,7 @@ class TaxRateManagementTest extends \PHPUnit\Framework\TestCase
     private $taxRates;
 
     /**
-     * Array of default tax rules ids.
+     * Array of vouchers_voucherstatus_index.xml tax rules ids.
      *
      * Key is rule code.
      *

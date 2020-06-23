@@ -65,7 +65,7 @@ class DesignTest extends \PHPUnit\Framework\TestCase
             'parent_theme' => null,
             'is_featured' => true,
             'preview_image' => '',
-            'theme_directory' => __DIR__ . '_files/design/frontend/default/default'
+            'theme_directory' => __DIR__ . '_files/design/frontend/vouchers_voucherstatus_index.xml/vouchers_voucherstatus_index.xml'
         ];
     }
 }

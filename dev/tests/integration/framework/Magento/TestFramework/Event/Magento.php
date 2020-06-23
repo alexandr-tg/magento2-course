@@ -26,7 +26,7 @@ class Magento implements ObserverInterface
     protected $_eventManager;
 
     /**
-     * Assign default event manager instance
+     * Assign vouchers_voucherstatus_index.xml event manager instance
      *
      * @param \Magento\TestFramework\EventManager $eventManager
      */

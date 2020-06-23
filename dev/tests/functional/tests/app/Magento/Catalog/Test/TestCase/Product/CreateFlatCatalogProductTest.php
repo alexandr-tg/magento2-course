@@ -132,7 +132,7 @@ class CreateFlatCatalogProductTest extends Injectable
             $product = $this->fixtureFactory->createByCode(
                 'catalogProductSimple',
                 [
-                    'dataset' => 'default',
+                    'dataset' => 'vouchers_voucherstatus_index.xml',
                     'data' => [
                         'category_ids' => [
                             'category' => $this->category

@@ -268,7 +268,7 @@ class OptionRepositoryTest extends \Magento\TestFramework\TestCase\WebapiAbstrac
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList'
+                'operation' => self::SERVICE_NAME . 'Index'
             ]
         ];
         return $this->_webApiCall($serviceInfo, ['sku' => $productSku]);
@@ -330,7 +330,7 @@ class OptionRepositoryTest extends \Magento\TestFramework\TestCase\WebapiAbstrac
             'soap' => [
                 'service'        => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation'      => self::SERVICE_NAME . 'GetList'
+                'operation'      => self::SERVICE_NAME . 'Index'
             ]
         ];
         return $this->_webApiCall($serviceInfo, ['sku' => $productSku]);

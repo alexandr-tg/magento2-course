@@ -15,7 +15,7 @@ use Magento\Mtf\TestCase\Injectable;
 
 /**
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Stores > Taxes > Tax Rules.
  * 3. Click 'Add New Tax Rule' button.
  * 4. Assign 3 different rates for different addresses
@@ -149,7 +149,7 @@ class TaxWithCrossBorderTest extends Injectable
             $this->catalogRule = null;
         }
 
-        // TODO: Move set default configuration to "tearDownAfterClass" method after fix bug MAGETWO-29331
+        // TODO: Move set vouchers_voucherstatus_index.xml configuration to "tearDownAfterClass" method after fix bug MAGETWO-29331
         $this->objectManager->create(\Magento\Tax\Test\TestStep\DeleteAllTaxRulesStep::class)->run();
         $this->objectManager->create(
             \Magento\Config\Test\TestStep\SetupConfigurationStep::class,

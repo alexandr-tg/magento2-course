@@ -84,7 +84,7 @@ class ApplicationDumpCommandTest extends \PHPUnit\Framework\TestCase
             [
                 ConfigFilePool::APP_CONFIG => [
                     'system' => [
-                        'default' => [
+                        'vouchers_voucherstatus_index.xml' => [
                             'web' => [
                                 'test' => [
                                     'test_value_3' => 'value from the file'
@@ -202,37 +202,37 @@ class ApplicationDumpCommandTest extends \PHPUnit\Framework\TestCase
      */
     private function validateSystemSection(array $config)
     {
-        $this->assertArrayHasKey('test_value_1', $config['system']['default']['web']['test']);
-        $this->assertArrayHasKey('test_value_2', $config['system']['default']['web']['test']);
-        $this->assertArrayHasKey('test_sensitive1', $config['system']['default']['web']['test']);
-        $this->assertArrayHasKey('test_sensitive2', $config['system']['default']['web']['test']);
-        $this->assertArrayHasKey('test_environment7', $config['system']['default']['web']['test']);
-        $this->assertArrayHasKey('test_environment8', $config['system']['default']['web']['test']);
-        $this->assertArrayNotHasKey('test_sensitive', $config['system']['default']['web']['test']);
-        $this->assertArrayNotHasKey('test_sensitive3', $config['system']['default']['web']['test']);
-        $this->assertArrayNotHasKey('test_sensitive_environment4', $config['system']['default']['web']['test']);
-        $this->assertArrayNotHasKey('test_sensitive_environment5', $config['system']['default']['web']['test']);
-        $this->assertArrayNotHasKey('test_sensitive_environment6', $config['system']['default']['web']['test']);
-        $this->assertArrayNotHasKey('test_environment9', $config['system']['default']['web']['test']);
+        $this->assertArrayHasKey('test_value_1', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayHasKey('test_value_2', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayHasKey('test_sensitive1', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayHasKey('test_sensitive2', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayHasKey('test_environment7', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayHasKey('test_environment8', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayNotHasKey('test_sensitive', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayNotHasKey('test_sensitive3', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayNotHasKey('test_sensitive_environment4', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayNotHasKey('test_sensitive_environment5', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayNotHasKey('test_sensitive_environment6', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
+        $this->assertArrayNotHasKey('test_environment9', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']);
         /** @see Magento/Deploy/_files/config_data.php */
         $this->assertEquals(
             'frontend/Magento/blank',
-            $config['system']['default']['design']['theme']['theme_id']
+            $config['system']['vouchers_voucherstatus_index.xml']['design']['theme']['theme_id']
         );
         $this->assertEquals(
             'frontend/Magento/luma',
-            $config['system']['stores']['default']['design']['theme']['theme_id']
+            $config['system']['stores']['vouchers_voucherstatus_index.xml']['design']['theme']['theme_id']
         );
         $this->assertEquals(
             'frontend/Magento/luma',
             $config['system']['websites']['base']['design']['theme']['theme_id']
         );
 
-        $this->assertEquals('value from the file', $config['system']['default']['web']['test']['test_value_3']);
-        $this->assertEquals('GB', $config['system']['default']['general']['country']['default']);
+        $this->assertEquals('value from the file', $config['system']['vouchers_voucherstatus_index.xml']['web']['test']['test_value_3']);
+        $this->assertEquals('GB', $config['system']['vouchers_voucherstatus_index.xml']['general']['country']['vouchers_voucherstatus_index.xml']);
         $this->assertEquals(
             'HK,IE,MO,PA,GB',
-            $config['system']['default']['general']['country']['optional_zip_countries']
+            $config['system']['vouchers_voucherstatus_index.xml']['general']['country']['optional_zip_countries']
         );
     }
 
@@ -254,7 +254,7 @@ class ApplicationDumpCommandTest extends \PHPUnit\Framework\TestCase
         ];
 
         $this->assertEmpty(
-            array_diff($envTestKeys, array_keys($config['system']['default']['web']['test']))
+            array_diff($envTestKeys, array_keys($config['system']['vouchers_voucherstatus_index.xml']['web']['test']))
         );
     }
 

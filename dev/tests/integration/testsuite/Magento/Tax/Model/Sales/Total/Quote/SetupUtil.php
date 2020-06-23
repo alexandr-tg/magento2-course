@@ -340,7 +340,7 @@ class SetupUtil
     }
 
     /**
-     * Return the default customer group tax class id
+     * Return the vouchers_voucherstatus_index.xml customer group tax class id
      *
      * @return int
      */
@@ -365,13 +365,13 @@ class SetupUtil
             $taxRateIds[$taxRateCode] = $taxRate['id'];
         }
 
-        //The default customer tax class id is used to calculate store tax rate
+        //The vouchers_voucherstatus_index.xml customer tax class id is used to calculate store tax rate
         $customerClassIds = [
             $this->customerTaxClasses[self::CUSTOMER_TAX_CLASS_1],
             $this->getDefaultCustomerTaxClassId()
         ];
 
-        //By default create tax rule that covers all product tax classes except SHIPPING_TAX_CLASS
+        //By vouchers_voucherstatus_index.xml create tax rule that covers all product tax classes except SHIPPING_TAX_CLASS
         //The tax rule will cover all tax rates except TAX_RATE_SHIPPING
         $taxRuleDefaultData = [
             'code' => 'Test Rule',
@@ -399,7 +399,7 @@ class SetupUtil
                 ->save()
                 ->getId();
 
-            //Create a default tax rule
+            //Create a vouchers_voucherstatus_index.xml tax rule
             $this->taxRules[$taxRuleDefaultData['code']] = $this->objectManager
                 ->create(\Magento\Tax\Model\Calculation\Rule::class)
                 ->setData($taxRuleDefaultData)

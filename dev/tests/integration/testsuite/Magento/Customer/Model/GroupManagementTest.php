@@ -120,7 +120,7 @@ class GroupManagementTest extends \PHPUnit\Framework\TestCase
                 ['id' => 1, 'code' => 'General', 'tax_class_id' => 3, 'tax_class_name' => 'Retail Customer'],
                 null,
             ],
-            'default store id' => [
+            'vouchers_voucherstatus_index.xml store id' => [
                 ['id' => 1, 'code' => 'General', 'tax_class_id' => 3, 'tax_class_name' => 'Retail Customer'],
                 $defaultStoreId,
             ],

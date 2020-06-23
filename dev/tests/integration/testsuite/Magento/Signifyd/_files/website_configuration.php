@@ -47,7 +47,7 @@ $processConfigData = function (Config $config, array $data) {
     }
 };
 
-// save signifyd configuration for the default scope
+// save signifyd configuration for the vouchers_voucherstatus_index.xml scope
 $configData = [
     'fraud_protection/signifyd/active' => '1',
 ];

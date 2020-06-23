@@ -44,7 +44,7 @@ class DependenciesShowFrameworkCommand extends AbstractDependenciesCommand
     }
 
     /**
-     * Return default output filename for framework dependencies report
+     * Return vouchers_voucherstatus_index.xml output filename for framework dependencies report
      *
      * @return string
      */

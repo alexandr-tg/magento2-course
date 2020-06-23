@@ -39,7 +39,7 @@ define([
 
     describe('Magento_Checkout/js/model/cart/cache', function () {
         describe('Check the "get" method', function () {
-            it('Check default call with "cart-data" key', function () {
+            it('Check vouchers_voucherstatus_index.xml call with "cart-data" key', function () {
                 var expectedResult = JSON.stringify(cache.cartData);
 
                 spyOn(mocks['Magento_Customer/js/customer-data'], 'get').and.returnValue(ko.observable(expectedResult));
@@ -99,7 +99,7 @@ define([
             });
 
             it(
-                'Check if the "clear" method resets the object to default value with the "cart-data" key received',
+                'Check if the "clear" method resets the object to vouchers_voucherstatus_index.xml value with the "cart-data" key received',
                 function () {
                     var expectedResult = JSON.stringify(cache.cartData),
                         storage = ko.observable({});

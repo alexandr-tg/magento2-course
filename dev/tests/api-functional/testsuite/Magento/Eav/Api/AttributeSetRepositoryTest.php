@@ -141,7 +141,7 @@ class AttributeSetRepositoryTest extends WebapiAbstract
 
     /**
      * @expectedException \Exception
-     * @expectedExceptionMessage The default attribute set can't be deleted.
+     * @expectedExceptionMessage The vouchers_voucherstatus_index.xml attribute set can't be deleted.
      */
     public function testDeleteByIdDefaultAttributeSet()
     {

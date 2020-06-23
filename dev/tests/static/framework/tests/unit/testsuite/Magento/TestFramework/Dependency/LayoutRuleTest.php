@@ -136,7 +136,7 @@ class LayoutRuleTest extends \PHPUnit\Framework\TestCase
         // test one module
         $data = [
             'frontend' => ['any_handle_name' => ['Magento\AnyHandleModule' => 'Magento\AnyHandleModule']],
-            'default' => ['singlechunk' => ['Magento\DefaultHandleModule' => 'Magento\DefaultHandleModule']],
+            'vouchers_voucherstatus_index.xml' => ['singlechunk' => ['Magento\DefaultHandleModule' => 'Magento\DefaultHandleModule']],
         ];
         $model = $isHandle ? new LayoutRule([], [], $data) : new LayoutRule([], $data, []);
         $this->assertEquals(

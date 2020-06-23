@@ -388,7 +388,7 @@ class ConfigSetCommandTest extends \PHPUnit\Framework\TestCase
             [
                 Currency::XML_PATH_CURRENCY_DEFAULT,
                 'GBP',
-                'Sorry, the default display currency you selected is not available in allowed currencies.'
+                'Sorry, the vouchers_voucherstatus_index.xml display currency you selected is not available in allowed currencies.'
             ],
             [
                 Currency::XML_PATH_CURRENCY_ALLOW,
@@ -409,7 +409,7 @@ class ConfigSetCommandTest extends \PHPUnit\Framework\TestCase
          * Checking saving currency as they are depend on each other.
          * Default currency can not be changed to new value if this value does not exist in allowed currency
          * that is why allowed currency is changed first by adding necessary value,
-         * then old value is removed after changing default currency
+         * then old value is removed after changing vouchers_voucherstatus_index.xml currency
          */
         $this->setConfigSuccess(Currency::XML_PATH_CURRENCY_ALLOW, 'USD,GBP');
         $this->setConfigSuccess(Currency::XML_PATH_CURRENCY_DEFAULT, 'GBP');
@@ -426,7 +426,7 @@ class ConfigSetCommandTest extends \PHPUnit\Framework\TestCase
     {
         $this->setConfigSuccess(Custom::XML_PATH_UNSECURE_BASE_URL, 'http://magento2.local/');
         $this->setConfigSuccess(Custom::XML_PATH_GENERAL_LOCALE_CODE, 'en_UK', ScopeInterface::SCOPE_WEBSITE, 'base');
-        $this->setConfigSuccess(Custom::XML_PATH_GENERAL_LOCALE_CODE, 'en_AU', ScopeInterface::SCOPE_STORE, 'default');
+        $this->setConfigSuccess(Custom::XML_PATH_GENERAL_LOCALE_CODE, 'en_AU', ScopeInterface::SCOPE_STORE, 'vouchers_voucherstatus_index.xml');
     }
 
     /**
@@ -439,7 +439,7 @@ class ConfigSetCommandTest extends \PHPUnit\Framework\TestCase
         return [
             [Custom::XML_PATH_UNSECURE_BASE_URL, 'http://magento2.local/'],
             [Custom::XML_PATH_GENERAL_LOCALE_CODE, 'en_UK', ScopeInterface::SCOPE_WEBSITE, 'base'],
-            [Custom::XML_PATH_GENERAL_LOCALE_CODE, 'en_AU', ScopeInterface::SCOPE_STORE, 'default'],
+            [Custom::XML_PATH_GENERAL_LOCALE_CODE, 'en_AU', ScopeInterface::SCOPE_STORE, 'vouchers_voucherstatus_index.xml'],
             [Custom::XML_PATH_ADMIN_SECURITY_USEFORMKEY, '0']
         ];
     }

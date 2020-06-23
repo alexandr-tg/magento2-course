@@ -477,7 +477,7 @@ class ProductTest extends \Magento\TestFramework\TestCase\AbstractBackendControl
     }
 
     /**
-     * Save design without the permissions but with default values.
+     * Save design without the permissions but with vouchers_voucherstatus_index.xml values.
      *
      * @magentoDbIsolation enabled
      * @throws \Throwable

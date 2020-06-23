@@ -86,7 +86,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
 
     public function testGetSubmitUrl()
     {
-        /* by default same as add to cart */
+        /* by vouchers_voucherstatus_index.xml same as add to cart */
         $this->assertStringEndsWith('?options=cart', $this->block->getSubmitUrl($this->product));
         $this->block->setData('submit_route_data', ['route' => 'catalog/product/view']);
         $this->assertStringEndsWith('catalog/product/view/', $this->block->getSubmitUrl($this->product));
@@ -153,7 +153,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
                 ->get(\Magento\Framework\View\LayoutInterface::class)
         );
         $this->assertEquals(3, $this->block->getColumnCount());
-        /* default column count */
+        /* vouchers_voucherstatus_index.xml column count */
 
         $this->block->addColumnCountLayoutDepend('test', 10);
         $this->assertEquals(10, $this->block->getColumnCountLayoutDepend('test'));

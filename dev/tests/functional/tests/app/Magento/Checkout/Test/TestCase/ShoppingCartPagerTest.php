@@ -41,7 +41,7 @@ class ShoppingCartPagerTest extends Scenario
     {
         $products = [];
         for ($i = 1; $i <= 20; $i++) {
-            $products[$i] = $fixtureFactory->createByCode('catalogProductSimple', ['dataset' => 'default']);
+            $products[$i] = $fixtureFactory->createByCode('catalogProductSimple', ['dataset' => 'vouchers_voucherstatus_index.xml']);
             $products[$i]->persist();
         }
 

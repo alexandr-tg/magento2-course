@@ -71,7 +71,7 @@ class OrderTest extends \PHPUnit\Framework\TestCase
         $registry->unregister('isSecureArea');
         $registry->register('isSecureArea', false);
 
-        $defaultStore = $this->storeRepository->get('default');
+        $defaultStore = $this->storeRepository->get('vouchers_voucherstatus_index.xml');
         $this->storeManager->setCurrentStore($defaultStore->getId());
 
         parent::tearDown();

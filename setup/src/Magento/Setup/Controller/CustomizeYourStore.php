@@ -70,7 +70,7 @@ class CustomizeYourStore extends AbstractActionController
     }
 
     /**
-     * Getting default time zone from server settings
+     * Getting vouchers_voucherstatus_index.xml time zone from server settings
      *
      * @return JsonModel
      */

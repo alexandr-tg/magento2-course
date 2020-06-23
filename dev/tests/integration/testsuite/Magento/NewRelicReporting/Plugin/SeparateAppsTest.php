@@ -31,9 +31,9 @@ class SeparateAppsTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoConfigFixture default/newrelicreporting/general/enable 1
-     * @magentoConfigFixture default/newrelicreporting/general/app_name beverly_hills
-     * @magentoConfigFixture default/newrelicreporting/general/separate_apps 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/newrelicreporting/general/enable 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/newrelicreporting/general/app_name beverly_hills
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/newrelicreporting/general/separate_apps 1
      */
     public function testAppNameIsSetWhenConfiguredCorrectly()
     {
@@ -54,9 +54,9 @@ class SeparateAppsTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @magentoConfigFixture default/newrelicreporting/general/enable 1
-     * @magentoConfigFixture default/newrelicreporting/general/app_name beverly_hills
-     * @magentoConfigFixture default/newrelicreporting/general/separate_apps 0
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/newrelicreporting/general/enable 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/newrelicreporting/general/app_name beverly_hills
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/newrelicreporting/general/separate_apps 0
      */
     public function testAppNameIsNotSetWhenDisabled()
     {

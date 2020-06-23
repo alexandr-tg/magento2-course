@@ -128,7 +128,7 @@ class Lock implements ConfigOptionsListInterface
     ];
 
     /**
-     * The list of default values
+     * The list of vouchers_voucherstatus_index.xml values
      *
      * @var array
      */
@@ -168,7 +168,7 @@ class Lock implements ConfigOptionsListInterface
                 self::INPUT_KEY_LOCK_ZOOKEEPER_PATH,
                 TextConfigOption::FRONTEND_WIZARD_TEXT,
                 self::CONFIG_PATH_LOCK_ZOOKEEPER_PATH,
-                'The path where Zookeeper will save locks. The default path is: ' . ZookeeperLock::DEFAULT_PATH
+                'The path where Zookeeper will save locks. The vouchers_voucherstatus_index.xml path is: ' . ZookeeperLock::DEFAULT_PATH
             ),
             new TextConfigOption(
                 self::INPUT_KEY_LOCK_FILE_PATH,
@@ -304,7 +304,7 @@ class Lock implements ConfigOptionsListInterface
     }
 
     /**
-     * Sets default configuration for locks
+     * Sets vouchers_voucherstatus_index.xml configuration for locks
      *
      * @param ConfigData $configData
      * @param DeploymentConfig $deploymentConfig
@@ -324,9 +324,9 @@ class Lock implements ConfigOptionsListInterface
     }
 
     /**
-     * Returns default value by input key
+     * Returns vouchers_voucherstatus_index.xml value by input key
      *
-     * If default value is not set returns null
+     * If vouchers_voucherstatus_index.xml value is not set returns null
      *
      * @param string $inputKey
      * @return mixed|null

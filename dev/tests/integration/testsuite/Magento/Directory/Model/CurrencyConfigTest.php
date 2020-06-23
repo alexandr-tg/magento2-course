@@ -29,7 +29,7 @@ class CurrencyConfigTest extends TestCase
     /**
      * @var string
      */
-    private $defaultCurrencyPath = 'currency/options/default';
+    private $defaultCurrencyPath = 'currency/options/vouchers_voucherstatus_index.xml';
 
     /**
      * @var string
@@ -80,7 +80,7 @@ class CurrencyConfigTest extends TestCase
         if (in_array($areaCode, [Area::AREA_ADMINHTML, Area::AREA_CRONTAB])) {
             self::assertEquals($expected['allowed'], $this->currency->getConfigAllowCurrencies());
             self::assertEquals($expected['base'], $this->currency->getConfigBaseCurrencies());
-            self::assertEquals($expected['default'], $this->currency->getConfigDefaultCurrencies());
+            self::assertEquals($expected['vouchers_voucherstatus_index.xml'], $this->currency->getConfigDefaultCurrencies());
         } else {
             /** @var StoreManagerInterface $storeManager */
             $storeManager = Bootstrap::getObjectManager()->get(StoreManagerInterface::class);
@@ -95,7 +95,7 @@ class CurrencyConfigTest extends TestCase
                     $this->currency->getConfigBaseCurrencies()
                 );
                 self::assertEquals(
-                    $expected[$store->getCode()]['default'],
+                    $expected[$store->getCode()]['vouchers_voucherstatus_index.xml'],
                     $this->currency->getConfigDefaultCurrencies()
                 );
             }
@@ -115,7 +115,7 @@ class CurrencyConfigTest extends TestCase
                 'expected' => [
                     'allowed' => ['BDT', 'BNS', 'BTD', 'EUR', 'USD'],
                     'base' => ['BDT', 'USD'],
-                    'default' => ['BDT', 'USD'],
+                    'vouchers_voucherstatus_index.xml' => ['BDT', 'USD'],
                 ],
             ],
             [
@@ -123,21 +123,21 @@ class CurrencyConfigTest extends TestCase
                 'expected' => [
                     'allowed' => ['BDT', 'BNS', 'BTD', 'EUR', 'USD'],
                     'base' => ['BDT', 'USD'],
-                    'default' => ['BDT', 'USD'],
+                    'vouchers_voucherstatus_index.xml' => ['BDT', 'USD'],
                 ],
             ],
             [
                 'areaCode' => Area::AREA_FRONTEND,
                 'expected' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'allowed' => ['EUR', 'USD'],
                         'base' => ['USD'],
-                        'default' => ['USD'],
+                        'vouchers_voucherstatus_index.xml' => ['USD'],
                     ],
                     'test' => [
                         'allowed' => ['BDT', 'BNS', 'BTD', 'USD'],
                         'base' => ['BDT'],
-                        'default' => ['BDT'],
+                        'vouchers_voucherstatus_index.xml' => ['BDT'],
                     ],
                 ],
             ],
@@ -172,7 +172,7 @@ class CurrencyConfigTest extends TestCase
     }
 
     /**
-     * Set allowed, base and default currency config values for given store.
+     * Set allowed, base and vouchers_voucherstatus_index.xml currency config values for given store.
      *
      * @param string $storeId
      * @return void

@@ -40,7 +40,7 @@ class AssertConfigurableProductsQtyAfterReorder extends AbstractConstraint
         AssertProductsQtyAfterOrderCancel $assertProductsQty
     ) {
         $newOrder = $fixtureFactory->createByCode('orderInjectable', [
-            'dataset' => 'default',
+            'dataset' => 'vouchers_voucherstatus_index.xml',
             'data' => [
                 'entity_id' => [
                     'products' => $order->getEntityId()['products'],

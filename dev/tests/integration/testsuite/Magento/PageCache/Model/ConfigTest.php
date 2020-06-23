@@ -75,10 +75,10 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
 
     // @codingStandardsIgnoreStart
     /**
-     * @magentoConfigFixture default/system/full_page_cache/varnish/backend_host example.com
-     * @magentoConfigFixture default/system/full_page_cache/varnish/backend_port 8080
-     * @magentoConfigFixture default/system/full_page_cache/varnish/grace_period 1234
-     * @magentoConfigFixture default/system/full_page_cache/varnish/access_list 127.0.0.1,192.168.0.1,127.0.0.2
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/system/full_page_cache/varnish/backend_host example.com
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/system/full_page_cache/varnish/backend_port 8080
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/system/full_page_cache/varnish/grace_period 1234
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/system/full_page_cache/varnish/access_list 127.0.0.1,192.168.0.1,127.0.0.2
      * @magentoConfigFixture current_store design/theme/ua_regexp {"_":{"regexp":"\/firefox\/i","value":"Magento\/blank"}}
      * @magentoAppIsolation enabled
      */

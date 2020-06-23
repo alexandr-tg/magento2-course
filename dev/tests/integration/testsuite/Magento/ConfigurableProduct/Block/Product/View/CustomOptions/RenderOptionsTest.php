@@ -88,7 +88,7 @@ class RenderOptionsTest extends AbstractRenderCustomOptionsTest
     protected function getHandlesList(): array
     {
         return [
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_product_view',
             'catalog_product_view_type_configurable',
         ];

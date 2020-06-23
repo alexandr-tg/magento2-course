@@ -224,7 +224,7 @@ class JsonGenerationFromDataObjectTest extends \Magento\TestFramework\TestCase\W
                                     '$ref' => '#/definitions/error-response',
                                 ],
                             ],
-                            'default' => [
+                            'vouchers_voucherstatus_index.xml' => [
                                 'description' => 'Unexpected error',
                                 'schema' => [
                                     '$ref' => '#/definitions/error-response',
@@ -334,7 +334,7 @@ class JsonGenerationFromDataObjectTest extends \Magento\TestFramework\TestCase\W
                                     '$ref' => '#/definitions/error-response',
                                 ],
                             ],
-                            'default' => [
+                            'vouchers_voucherstatus_index.xml' => [
                                 'description' => 'Unexpected error',
                                 'schema' => [
                                     '$ref' => '#/definitions/error-response',

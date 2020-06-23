@@ -1033,7 +1033,7 @@ class AccountManagementTest extends \PHPUnit\Framework\TestCase
             \Magento\Customer\Api\Data\AddressInterface::class
         );
 
-        // Response should have this set since we save as default shipping
+        // Response should have this set since we save as vouchers_voucherstatus_index.xml shipping
         $addressShippingExpected[AddressInterface::DEFAULT_SHIPPING] = true;
         $this->assertEquals($addressShippingExpected, $shippingResponse);
 
@@ -1048,7 +1048,7 @@ class AccountManagementTest extends \PHPUnit\Framework\TestCase
             \Magento\Customer\Api\Data\AddressInterface::class
         );
 
-        // Response should have this set since we save as default billing
+        // Response should have this set since we save as vouchers_voucherstatus_index.xml billing
         $addressBillingExpected[AddressInterface::DEFAULT_BILLING] = true;
         $this->assertEquals($addressBillingExpected, $billingResponse);
     }

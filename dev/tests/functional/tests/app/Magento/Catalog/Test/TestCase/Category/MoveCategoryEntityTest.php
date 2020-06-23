@@ -55,7 +55,7 @@ class MoveCategoryEntityTest extends Injectable
     private $fixtureFactory;
 
     /**
-     * Inject page end prepare default category.
+     * Inject page end prepare vouchers_voucherstatus_index.xml category.
      *
      * @param CatalogCategoryIndex $catalogCategoryIndex
      * @param CatalogCategoryEdit $catalogCategoryEdit

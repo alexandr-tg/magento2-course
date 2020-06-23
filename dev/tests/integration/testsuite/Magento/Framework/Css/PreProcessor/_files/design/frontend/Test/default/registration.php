@@ -6,4 +6,4 @@
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/FrameworkCssTest/default', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'frontend/FrameworkCssTest/vouchers_voucherstatus_index.xml', __DIR__);

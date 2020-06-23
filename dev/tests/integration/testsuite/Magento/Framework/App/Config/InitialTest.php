@@ -47,9 +47,9 @@ class InitialTest extends \PHPUnit\Framework\TestCase
     public function getDataDataProvider()
     {
         return [
-            ['default'],
-            ['stores|default'],
-            ['websites|default']
+            ['vouchers_voucherstatus_index.xml'],
+            ['stores|vouchers_voucherstatus_index.xml'],
+            ['websites|vouchers_voucherstatus_index.xml']
         ];
     }
 }

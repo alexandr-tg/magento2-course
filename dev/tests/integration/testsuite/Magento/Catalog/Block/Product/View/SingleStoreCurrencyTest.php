@@ -16,7 +16,7 @@ class SingleStoreCurrencyTest extends AbstractCurrencyTest
 {
     /**
      * @magentoConfigFixture current_store currency/options/base USD
-     * @magentoConfigFixture current_store currency/options/default CNY
+     * @magentoConfigFixture current_store currency/options/vouchers_voucherstatus_index.xml CNY
      * @magentoConfigFixture current_store currency/options/allow CNY,USD
      *
      * @magentoDataFixture Magento/Catalog/_files/second_product_simple.php
@@ -32,7 +32,7 @@ class SingleStoreCurrencyTest extends AbstractCurrencyTest
 
     /**
      * @magentoConfigFixture current_store currency/options/base USD
-     * @magentoConfigFixture current_store currency/options/default CNY
+     * @magentoConfigFixture current_store currency/options/vouchers_voucherstatus_index.xml CNY
      * @magentoConfigFixture current_store currency/options/allow EUR,CNY
      *
      * @magentoDataFixture Magento/Catalog/_files/product_special_price.php
@@ -48,7 +48,7 @@ class SingleStoreCurrencyTest extends AbstractCurrencyTest
 
     /**
      * @magentoConfigFixture current_store currency/options/base USD
-     * @magentoConfigFixture current_store currency/options/default CNY
+     * @magentoConfigFixture current_store currency/options/vouchers_voucherstatus_index.xml CNY
      * @magentoConfigFixture current_store currency/options/allow CNY,USD
      *
      * @magentoDataFixture Magento/Catalog/_files/product_simple_with_fixed_tier_price.php

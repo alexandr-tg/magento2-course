@@ -24,7 +24,7 @@ $configResource->saveConfig(
 $configResource->saveConfig(
     \Magento\Catalog\Helper\Data::XML_PATH_PRICE_SCOPE,
     \Magento\Store\Model\Store::PRICE_SCOPE_WEBSITE,
-    'default',
+    'vouchers_voucherstatus_index.xml',
     0
 );
 

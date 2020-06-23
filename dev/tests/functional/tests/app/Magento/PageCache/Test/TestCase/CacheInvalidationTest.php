@@ -16,7 +16,7 @@ use Magento\Catalog\Test\Page\Adminhtml\CatalogProductEdit;
 /**
  * Preconditions:
  * 1. Create a second website.
- * 2. Create a product that is assigned to the default main website.
+ * 2. Create a product that is assigned to the vouchers_voucherstatus_index.xml main website.
  *
  * Steps:
  * 1. Open category page in the 2nd website.

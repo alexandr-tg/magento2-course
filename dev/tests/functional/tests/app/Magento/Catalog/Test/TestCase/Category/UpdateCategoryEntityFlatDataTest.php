@@ -116,7 +116,7 @@ class UpdateCategoryEntityFlatDataTest extends UpdateCategoryEntityTest
     }
 
     /**
-     * Set default configuration.
+     * Set vouchers_voucherstatus_index.xml configuration.
      *
      * @return void
      */

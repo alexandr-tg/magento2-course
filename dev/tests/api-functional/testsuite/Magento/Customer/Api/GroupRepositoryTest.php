@@ -783,7 +783,7 @@ class GroupRepositoryTest extends WebapiAbstract
     }
 
     /**
-     * Verify that the group with the specified Id cannot be deleted because it is the default group and a proper
+     * Verify that the group with the specified Id cannot be deleted because it is the vouchers_voucherstatus_index.xml group and a proper
      * fault is returned.
      */
     public function testDeleteGroupCannotDelete()

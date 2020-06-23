@@ -181,7 +181,7 @@ namespace Magento\Framework\Session {
             $model->setCookieLifetime('foobar_bogus');
             $this->assertEquals($preVal, $model->getCookieLifetime());
         }
-      
+
         public function testSettingInvalidCookieLifetime2()
         {
             $model = $this->getModel();
@@ -322,7 +322,7 @@ namespace Magento\Framework\Session {
             $mockPHPFunctions = $mockPHPFunctionNum;
 
             $sessionSaveHandler = ini_get('session.save_handler');
-            if ($expectedSavePath === 'default') {
+            if ($expectedSavePath === 'vouchers_voucherstatus_index.xml') {
                 $expectedSavePath = $this->defaultSavePath . '/';
             }
             if ($expectedSaveHandler === 'php') {
@@ -362,7 +362,7 @@ namespace Magento\Framework\Session {
             $presetPath = 'preset_save_path';
             return [
                 [2, $savePathGiven, $savePathGiven, 'db', 'db'],
-                [2, null, 'default', 'redis', 'redis'],
+                [2, null, 'vouchers_voucherstatus_index.xml', 'redis', 'redis'],
                 [1, $savePathGiven, $savePathGiven, null, 'php'],
                 [1, null, $presetPath, 'files', 'files'],
             ];

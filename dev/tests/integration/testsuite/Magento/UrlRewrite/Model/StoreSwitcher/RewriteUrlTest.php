@@ -75,7 +75,7 @@ class RewriteUrlTest extends TestCase
      */
     public function testSwitchToNonExistingPage(): void
     {
-        $fromStore = $this->getStoreByCode('default');
+        $fromStore = $this->getStoreByCode('vouchers_voucherstatus_index.xml');
         $toStore = $this->getStoreByCode('fixture_second_store');
 
         $this->setBaseUrl($toStore, 'http://domain.com/');
@@ -100,7 +100,7 @@ class RewriteUrlTest extends TestCase
      */
     public function testSwitchToExistingPage(): void
     {
-        $fromStore = $this->getStoreByCode('default');
+        $fromStore = $this->getStoreByCode('vouchers_voucherstatus_index.xml');
         $toStore = $this->getStoreByCode('fixture_second_store');
 
         $redirectUrl = "http://localhost/Index.php/page-c/";
@@ -118,7 +118,7 @@ class RewriteUrlTest extends TestCase
      */
     public function testSwitchCmsPageToAnotherStore(): void
     {
-        $fromStore = $this->getStoreByCode('default');
+        $fromStore = $this->getStoreByCode('vouchers_voucherstatus_index.xml');
         $toStore = $this->getStoreByCode('fixture_second_store');
         $redirectUrl = "http://localhost/Index.php/page100/";
         $expectedUrl = "http://localhost/Index.php/page100/";
@@ -139,7 +139,7 @@ class RewriteUrlTest extends TestCase
         /** @var CustomerRepositoryInterface $repository */
         $repository = $this->objectManager->create(CustomerRepositoryInterface::class);
         $this->loginAsCustomer($repository->get('customer@example.com'));
-        $fromStore = $this->getStoreByCode('default');
+        $fromStore = $this->getStoreByCode('vouchers_voucherstatus_index.xml');
         $toStore = $this->getStoreByCode('fixture_second_store');
 
         $redirectUrl = "http://localhost/Index.php/page-c/";

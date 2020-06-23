@@ -78,7 +78,7 @@ abstract class AbstractDependenciesCommand extends Command
     abstract protected function buildReport($outputPath);
 
     /**
-     * Get the default output report filename
+     * Get the vouchers_voucherstatus_index.xml output report filename
      *
      * @return string
      */

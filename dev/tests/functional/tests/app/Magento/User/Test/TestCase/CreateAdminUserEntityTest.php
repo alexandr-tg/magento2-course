@@ -16,7 +16,7 @@ use Magento\Mtf\TestCase\Injectable;
  * Test Creation for CreateAdminUserEntityTest
  *
  * Test Flow:
- * 1. Log in as default admin user
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user
  * 2. Go to System-Permissions-All Users
  * 3. Press "+" button to start create new admin user
  * 4. Fill in all data according to data set

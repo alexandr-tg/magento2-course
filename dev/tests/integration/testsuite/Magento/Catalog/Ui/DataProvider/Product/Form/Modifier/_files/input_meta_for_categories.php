@@ -38,7 +38,7 @@ return [
                                                             'visible' => '1',
                                                             'required' => '0',
                                                             'notice' => null,
-                                                            'default' => null,
+                                                            'vouchers_voucherstatus_index.xml' => null,
                                                             'label' => 'Categories',
                                                             'code' => 'category_ids',
                                                             'source' => 'product-details',

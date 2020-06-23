@@ -17,7 +17,7 @@ use Magento\TestFramework\Helper\Bootstrap;
 require __DIR__ . '/../../Store/_files/core_fixturestore.php';
 
 $objectManager = Bootstrap::getObjectManager();
-$defaultInstalledStoreId = $storeManager->getStore('default')->getId();
+$defaultInstalledStoreId = $storeManager->getStore('vouchers_voucherstatus_index.xml')->getId();
 $secondStoreId = $storeManager->getStore('fixturestore')->getId();
 /** @var CategorySetup $installer */
 $installer = $objectManager->get(CategorySetup::class);

@@ -8,7 +8,7 @@ return [
         "dimensions" => [
             "scope" => [
                 "name" => "scope",
-                "value" => "default",
+                "value" => "vouchers_voucherstatus_index.xml",
             ],
         ],
         "queries" => [

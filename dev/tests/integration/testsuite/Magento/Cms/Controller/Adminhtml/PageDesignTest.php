@@ -147,7 +147,7 @@ class PageDesignTest extends AbstractBackendController
     }
 
     /**
-     * Check that default design values are accepted without the permissions.
+     * Check that vouchers_voucherstatus_index.xml design values are accepted without the permissions.
      *
      * @magentoDbIsolation disabled
      * @return void
@@ -162,7 +162,7 @@ class PageDesignTest extends AbstractBackendController
             PageInterface::TITLE => 'Page title',
             PageInterface::PAGE_LAYOUT => $defaultLayout
         ];
-        //Creating a new page with design properties without the required permissions but with default values.
+        //Creating a new page with design properties without the required permissions but with vouchers_voucherstatus_index.xml values.
         $this->aclBuilder->getAcl()->deny(null, 'Magento_Cms::save_design');
         $this->getRequest()->setMethod(HttpRequest::METHOD_POST);
         $this->getRequest()->setPostValue($requestData);

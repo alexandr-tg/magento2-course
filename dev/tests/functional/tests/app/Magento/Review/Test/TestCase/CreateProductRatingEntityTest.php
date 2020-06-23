@@ -70,7 +70,7 @@ class CreateProductRatingEntityTest extends Injectable
      */
     public function __prepare(FixtureFactory $fixtureFactory)
     {
-        $product = $fixtureFactory->createByCode('catalogProductSimple', ['dataset' => 'default']);
+        $product = $fixtureFactory->createByCode('catalogProductSimple', ['dataset' => 'vouchers_voucherstatus_index.xml']);
         $product->persist();
 
         return ['product' => $product];

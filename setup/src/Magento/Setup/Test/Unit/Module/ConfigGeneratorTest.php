@@ -119,21 +119,21 @@ class ConfigGeneratorTest extends TestCase
         $this->assertArrayHasKey('table_prefix', $dbData);
         $this->assertSame('testSomePrefix', $dbData['table_prefix']);
         $this->assertArrayHasKey('connection', $dbData);
-        $this->assertArrayHasKey('default', $dbData['connection']);
-        $this->assertArrayHasKey('host', $dbData['connection']['default']);
-        $this->assertSame('testLocalhost', $dbData['connection']['default']['host']);
-        $this->assertArrayHasKey('dbname', $dbData['connection']['default']);
-        $this->assertSame('testDbName', $dbData['connection']['default']['dbname']);
-        $this->assertArrayHasKey('username', $dbData['connection']['default']);
-        $this->assertSame('testDbUser', $dbData['connection']['default']['username']);
-        $this->assertArrayHasKey('active', $dbData['connection']['default']);
-        $this->assertSame('1', $dbData['connection']['default']['active']);
+        $this->assertArrayHasKey('vouchers_voucherstatus_index.xml', $dbData['connection']);
+        $this->assertArrayHasKey('host', $dbData['connection']['vouchers_voucherstatus_index.xml']);
+        $this->assertSame('testLocalhost', $dbData['connection']['vouchers_voucherstatus_index.xml']['host']);
+        $this->assertArrayHasKey('dbname', $dbData['connection']['vouchers_voucherstatus_index.xml']);
+        $this->assertSame('testDbName', $dbData['connection']['vouchers_voucherstatus_index.xml']['dbname']);
+        $this->assertArrayHasKey('username', $dbData['connection']['vouchers_voucherstatus_index.xml']);
+        $this->assertSame('testDbUser', $dbData['connection']['vouchers_voucherstatus_index.xml']['username']);
+        $this->assertArrayHasKey('active', $dbData['connection']['vouchers_voucherstatus_index.xml']);
+        $this->assertSame('1', $dbData['connection']['vouchers_voucherstatus_index.xml']['active']);
     }
 
     public function testCreateResourceConfig()
     {
         $returnValue = $this->configGeneratorObject->createResourceConfig();
         $this->assertEquals(ConfigFilePool::APP_ENV, $returnValue->getFileKey());
-        $this->assertEquals(['resource' => ['default_setup' => ['connection' => 'default']]], $returnValue->getData());
+        $this->assertEquals(['resource' => ['default_setup' => ['connection' => 'vouchers_voucherstatus_index.xml']]], $returnValue->getData());
     }
 }

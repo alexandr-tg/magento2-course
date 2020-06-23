@@ -20,7 +20,7 @@ use Magento\Customer\Test\Fixture\Customer;
  * 1. Catalog Price Rule is created.
  * 2. Customer is created if needed.
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Marketing > Catalog Price Rules.
  * 3. Select required catalog price rule from preconditions.
  * 4. Click on the "Delete" button.

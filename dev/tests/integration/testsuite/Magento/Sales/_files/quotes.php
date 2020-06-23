@@ -29,7 +29,7 @@ $appConfig = $objectManager->get(Config::class);
 $appConfig->clean();
 
 /** @var Store $defaultStore */
-$defaultStore = $storeRepository->getActiveStoreByCode('default');
+$defaultStore = $storeRepository->getActiveStoreByCode('vouchers_voucherstatus_index.xml');
 /** @var Store $secondStore */
 $secondStore = $storeRepository->getActiveStoreByCode('fixture_second_store');
 

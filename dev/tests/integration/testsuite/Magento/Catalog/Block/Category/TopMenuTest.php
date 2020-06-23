@@ -451,7 +451,7 @@ class TopMenuTest extends TestCase
     {
         return [
             'first_website' => [
-                'storeCode' => 'default',
+                'storeCode' => 'vouchers_voucherstatus_index.xml',
                 'expectedCategory' => '>Category 1<',
                 'notExpectedCategory' => '>Root2 Category 1<',
             ],

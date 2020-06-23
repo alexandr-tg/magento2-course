@@ -91,7 +91,7 @@ MUTATION;
      * @magentoApiDataFixture Magento/Customer/_files/customer_two_addresses.php
      *
      * @expectedException Exception
-     * @expectedExceptionMessage Customer Address 2 is set as default shipping address and can not be deleted
+     * @expectedExceptionMessage Customer Address 2 is set as vouchers_voucherstatus_index.xml shipping address and can not be deleted
      */
     public function testDeleteDefaultShippingCustomerAddress()
     {
@@ -117,7 +117,7 @@ MUTATION;
      * @magentoApiDataFixture Magento/Customer/_files/customer_two_addresses.php
      *
      * @expectedException Exception
-     * @expectedExceptionMessage Customer Address 2 is set as default billing address and can not be deleted
+     * @expectedExceptionMessage Customer Address 2 is set as vouchers_voucherstatus_index.xml billing address and can not be deleted
      */
     public function testDeleteDefaultBillingCustomerAddress()
     {

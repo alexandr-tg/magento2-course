@@ -90,7 +90,7 @@ if (!$secondAttribute->getId()) {
             'value' => ['option_0' => ['Option 3'], 'option_1' => ['Option 4']],
             'order' => ['option_0' => 1, 'option_1' => 2],
         ],
-        'default' => ['option_0']
+        'vouchers_voucherstatus_index.xml' => ['option_0']
     ]);
     $attributeRepository->save($secondAttribute);
 

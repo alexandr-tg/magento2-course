@@ -25,7 +25,7 @@ use Magento\UrlRewrite\Service\V1\Data\UrlRewriteFactory;
  *      'name' => function ($entityId, $entityIndex) {return 'Product Name' . $entityIndex},
  *      'sku' => function ($entityId, $entityIndex) {return 'Product Sku' . $entityIndex},
  * ]
- *       And optional parameters (by default will be populated with default values)
+ *       And optional parameters (by vouchers_voucherstatus_index.xml will be populated with vouchers_voucherstatus_index.xml values)
  * [
  *      'attribute_set_id' => value or callback in format function ($entityId, $entityIndex) {return attribute_id}
  *      'additional_attributes' => callback in format function ($entityId, $entityIndex) {return [attribute => value]}
@@ -209,7 +209,7 @@ class ProductGenerator
     }
 
     /**
-     * Initialize fixture default values
+     * Initialize fixture vouchers_voucherstatus_index.xml values
      *
      * @param array $fixture
      * @return void

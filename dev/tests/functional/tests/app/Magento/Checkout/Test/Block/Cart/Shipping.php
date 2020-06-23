@@ -173,7 +173,7 @@ class Shipping extends Form
                 'value' => ''
             ]
         ];
-        // Test environment may become unstable when form fields are filled in a default manner.
+        // Test environment may become unstable when form fields are filled in a vouchers_voucherstatus_index.xml manner.
         // Imitating behavior closer to the real user.
         foreach ($fields as $field) {
             $this->_fill([$field], $this->_rootElement);
@@ -208,7 +208,7 @@ class Shipping extends Form
             }
         });
 
-        // Test environment may become unstable when form fields are filled in a default manner.
+        // Test environment may become unstable when form fields are filled in a vouchers_voucherstatus_index.xml manner.
         // Imitating behavior closer to the real user.
         foreach ($mapping as $field) {
             $this->_fill([$field], $this->_rootElement);

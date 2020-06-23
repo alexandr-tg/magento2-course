@@ -70,7 +70,7 @@ class JoinDirectivesTest extends \Magento\TestFramework\TestCase\WebapiAbstract
             ],
             'soap' => [
                 'service' => $soapService,
-                'operation' => $soapService . 'GetList',
+                'operation' => $soapService . 'Index',
             ],
         ];
         $searchResult = $this->_webApiCall($serviceInfo, $requestData);
@@ -112,7 +112,7 @@ class JoinDirectivesTest extends \Magento\TestFramework\TestCase\WebapiAbstract
             ],
             'soap' => [
                 'service' => $soapService,
-                'operation' => $soapService . 'GetList',
+                'operation' => $soapService . 'Index',
             ],
         ];
         $searchResult = $this->_webApiCall($serviceInfo, $requestData);
@@ -155,7 +155,7 @@ class JoinDirectivesTest extends \Magento\TestFramework\TestCase\WebapiAbstract
             ],
             'soap' => [
                 'service' => $soapService,
-                'operation' => $soapService . 'GetList',
+                'operation' => $soapService . 'Index',
             ],
         ];
         $searchResult = $this->_webApiCall($serviceInfo, $requestData);

@@ -14,7 +14,7 @@ use Magento\Mtf\TestCase\Scenario;
  * Preconditions:
  * 1. Two simple products are created.
  * 2. Configurable attribute with two options is created.
- * 3. Configurable attribute added to default template.
+ * 3. Configurable attribute added to vouchers_voucherstatus_index.xml template.
  * 4. Configurable product is created.
  *
  * Steps:

@@ -206,7 +206,7 @@ class ConfigGenerator
         $configData = $this->configDataFactory->create(ConfigFilePool::APP_ENV);
 
         if ($this->deploymentConfig->get(ConfigOptionsListConstants::CONFIG_PATH_RESOURCE_DEFAULT_SETUP) === null) {
-            $configData->set(ConfigOptionsListConstants::CONFIG_PATH_RESOURCE_DEFAULT_SETUP, 'default');
+            $configData->set(ConfigOptionsListConstants::CONFIG_PATH_RESOURCE_DEFAULT_SETUP, 'vouchers_voucherstatus_index.xml');
         }
 
         return $configData;
@@ -229,7 +229,7 @@ class ConfigGenerator
     }
 
     /**
-     * Create default entry for mode config option
+     * Create vouchers_voucherstatus_index.xml entry for mode config option
      *
      * @return ConfigData
      */

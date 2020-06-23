@@ -53,7 +53,7 @@ class UrlRewriteHandlerTest extends TestCase
      *
      * @magentoDataFixture Magento/CatalogUrlRewrite/Fixtures/product_custom_url_key.php
      * @magentoConfigFixture admin_store catalog/seo/product_use_categories 1
-     * @magentoConfigFixture default/catalog/seo/generate_category_product_rewrites 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/seo/generate_category_product_rewrites 1
      */
     public function testGenerateProductUrlRewrites()
     {

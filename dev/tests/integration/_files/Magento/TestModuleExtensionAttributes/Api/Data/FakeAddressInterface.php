@@ -159,14 +159,14 @@ interface FakeAddressInterface extends ExtensibleDataInterface
     public function getVatId();
 
     /**
-     * Get if this address is default shipping address.
+     * Get if this address is vouchers_voucherstatus_index.xml shipping address.
      *
      * @return bool|null
      */
     public function isDefaultShipping();
 
     /**
-     * Get if this address is default billing address
+     * Get if this address is vouchers_voucherstatus_index.xml billing address
      *
      * @return bool|null
      */

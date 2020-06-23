@@ -23,10 +23,10 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
     {
         $connection = $this->_model->getConnection();
         $select = $connection->select()->from($this->_model->getMainTable())->where('path=?', 'test/config');
-        $this->_model->saveConfig('test/config', 'test', 'default', 0);
+        $this->_model->saveConfig('test/config', 'test', 'vouchers_voucherstatus_index.xml', 0);
         $this->assertNotEmpty($connection->fetchRow($select));
 
-        $this->_model->deleteConfig('test/config', 'default', 0);
+        $this->_model->deleteConfig('test/config', 'vouchers_voucherstatus_index.xml', 0);
         $this->assertEmpty($connection->fetchRow($select));
     }
 }

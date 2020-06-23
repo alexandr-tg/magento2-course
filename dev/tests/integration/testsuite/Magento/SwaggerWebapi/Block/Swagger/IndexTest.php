@@ -39,7 +39,7 @@ class IndexTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test that the Swagger UI outputs rest as the default when there is no type parameter supplied via URL.
+     * Test that the Swagger UI outputs rest as the vouchers_voucherstatus_index.xml when there is no type parameter supplied via URL.
      */
     public function testDefaultSchemaUrlOutput()
     {

@@ -21,14 +21,14 @@ class DefaultAddress extends Page
     const MCA = 'customer/address/index';
 
     /**
-     * Selector for default address block.
+     * Selector for vouchers_voucherstatus_index.xml address block.
      *
      * @var string
      */
-    protected $defaultAddressesSelector = '.block-addresses-default';
+    protected $defaultAddressesSelector = '.block-addresses-vouchers_voucherstatus_index.xml';
 
     /**
-     * Get default addresses block.
+     * Get vouchers_voucherstatus_index.xml addresses block.
      *
      * @return \Magento\Customer\Test\Block\Account\AddressesDefault
      */

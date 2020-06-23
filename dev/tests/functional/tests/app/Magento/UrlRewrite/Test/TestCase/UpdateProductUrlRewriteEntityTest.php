@@ -76,7 +76,7 @@ class UpdateProductUrlRewriteEntityTest extends Injectable
         $productRedirect = $fixtureFactory->createByCode(
             'urlRewrite',
             [
-                'dataset' => 'default',
+                'dataset' => 'vouchers_voucherstatus_index.xml',
                 'data' => ['target_path' => $urlRewrite->getTargetPath()]
             ]
         );

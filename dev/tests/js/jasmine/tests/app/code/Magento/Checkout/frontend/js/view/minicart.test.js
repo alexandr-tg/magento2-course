@@ -70,7 +70,7 @@ define(['squire'], function (Squire) {
 
         describe('"getItemRenderer" method', function () {
             describe('Returns different renderers by product type', function () {
-                it('Check for default renderer.', function () {
+                it('Check for vouchers_voucherstatus_index.xml renderer.', function () {
                     expect(obj.getItemRenderer('undefinedProductType')).toBe('defaultRenderer');
                 });
 

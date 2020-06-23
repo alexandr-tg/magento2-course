@@ -19,7 +19,7 @@ use Magento\User\Test\Page\Adminhtml\UserIndex;
 
 /**
  * Steps:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Customers > All Customers.
  * 3. Press "Add New Customer" button.
  * 4. Fill form.

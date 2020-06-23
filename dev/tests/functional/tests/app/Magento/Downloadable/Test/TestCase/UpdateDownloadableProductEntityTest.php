@@ -97,7 +97,7 @@ class UpdateDownloadableProductEntityTest extends Injectable
     ) {
         $this->product = $fixtureFactory->createByCode(
             'downloadableProduct',
-            ['dataset' => 'default']
+            ['dataset' => 'vouchers_voucherstatus_index.xml']
         );
         $this->product->persist();
         $this->fixtureFactory = $fixtureFactory;

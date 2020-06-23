@@ -87,7 +87,7 @@ class CreateCurrencyRateTest extends Injectable
     }
 
     /**
-     * Reset currency config to default values.
+     * Reset currency config to vouchers_voucherstatus_index.xml values.
      *
      * @return void
      */

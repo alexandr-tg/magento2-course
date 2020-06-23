@@ -362,7 +362,7 @@ class BackendValidatorTest extends TestCase
      */
     public function testValidateWithCsrfAwareAction()
     {
-        //Setting up request that would be valid for default validation.
+        //Setting up request that would be valid for vouchers_voucherstatus_index.xml validation.
         $this->request->setMethod(HttpRequest::METHOD_GET);
         $this->auth->login(
             TestBootstrap::ADMIN_NAME,

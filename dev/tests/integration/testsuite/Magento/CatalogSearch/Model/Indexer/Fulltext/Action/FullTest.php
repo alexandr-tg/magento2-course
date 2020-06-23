@@ -26,7 +26,7 @@ class FullTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/CatalogSearch/_files/products_for_index.php
      * @magentoDataFixture Magento/CatalogSearch/_files/product_configurable_not_available.php
      * @magentoDataFixture Magento/Framework/Search/_files/product_configurable.php
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      */
     public function testGetIndexData()
     {

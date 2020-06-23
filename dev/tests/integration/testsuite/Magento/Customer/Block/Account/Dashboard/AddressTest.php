@@ -104,9 +104,9 @@ class AddressTest extends \PHPUnit\Framework\TestCase
             . "\nUnited States<br />\nT: <a href=\"tel:3468676\">3468676</a>\n\n";
 
         return [
-            '0' => [0, 'You have not set a default shipping address.'],
+            '0' => [0, 'You have not set a vouchers_voucherstatus_index.xml shipping address.'],
             '1' => [1, $expected],
-            '5' => [5, 'You have not set a default shipping address.']
+            '5' => [5, 'You have not set a vouchers_voucherstatus_index.xml shipping address.']
         ];
     }
 
@@ -130,9 +130,9 @@ class AddressTest extends \PHPUnit\Framework\TestCase
         $expected = "John Smith<br />\nCompanyName<br />\nGreen str, 67<br />\n\n\n\nCityM,  Alabama, 75477<br />"
             . "\nUnited States<br />\nT: <a href=\"tel:3468676\">3468676</a>\n\n";
         return [
-            '0' => [0, 'You have not set a default billing address.'],
+            '0' => [0, 'You have not set a vouchers_voucherstatus_index.xml billing address.'],
             '1' => [1, $expected],
-            '5' => [5, 'You have not set a default billing address.'],
+            '5' => [5, 'You have not set a vouchers_voucherstatus_index.xml billing address.'],
         ];
     }
 

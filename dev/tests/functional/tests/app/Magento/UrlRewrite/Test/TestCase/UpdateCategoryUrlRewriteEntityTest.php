@@ -70,7 +70,7 @@ class UpdateCategoryUrlRewriteEntityTest extends Injectable
         $categoryRedirect = $fixtureFactory->createByCode(
             'urlRewrite',
             [
-                'dataset' => 'default',
+                'dataset' => 'vouchers_voucherstatus_index.xml',
                 'data' => ['target_path' => $category->getUrlKey() . '.html']
             ]
         );

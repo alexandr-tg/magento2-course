@@ -223,7 +223,7 @@ class Webapi extends AbstractWebapi implements CustomerInterface
     }
 
     /**
-     * Prepare default address data.
+     * Prepare vouchers_voucherstatus_index.xml address data.
      *
      * @param array $addressData
      * @return array

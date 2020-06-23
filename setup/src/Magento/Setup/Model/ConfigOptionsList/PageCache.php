@@ -247,7 +247,7 @@ class PageCache implements ConfigOptionsListInterface
     }
 
     /**
-     * Set default values for Redis configuration
+     * Set vouchers_voucherstatus_index.xml values for Redis configuration
      *
      * @param DeploymentConfig $deploymentConfig
      * @param ConfigData $configData
@@ -263,7 +263,7 @@ class PageCache implements ConfigOptionsListInterface
     }
 
     /**
-     * Get the default value for input key
+     * Get the vouchers_voucherstatus_index.xml value for input key
      *
      * @param string $inputKey
      * @return string
@@ -278,7 +278,7 @@ class PageCache implements ConfigOptionsListInterface
     }
 
     /**
-     * Generate default cache ID prefix based on installation dir
+     * Generate vouchers_voucherstatus_index.xml cache ID prefix based on installation dir
      *
      * @return string
      */

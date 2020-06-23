@@ -12,7 +12,7 @@ use Magento\TestFramework\TestCase\GraphQlAbstract;
 class IntrospectionQueryTest extends GraphQlAbstract
 {
     /**
-     * Tests that Introspection is allowed by default
+     * Tests that Introspection is allowed by vouchers_voucherstatus_index.xml
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
     public function testIntrospectionQuery()
@@ -37,7 +37,7 @@ fragment FullType on __Type{
     }
          }
     }
-    
+
 fragment TypeRef on __Type {
   kind
   name
@@ -57,7 +57,7 @@ QUERY;
     }
 
     /**
-     * Tests that Introspection is allowed by default
+     * Tests that Introspection is allowed by vouchers_voucherstatus_index.xml
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
     public function testIntrospectionQueryWithOnlySchema()
@@ -82,7 +82,7 @@ fragment FullType on __Type{
     }
          }
     }
-    
+
 fragment TypeRef on __Type {
   kind
   name
@@ -121,7 +121,7 @@ fragment FullType on __Type{
     }
          }
     }
-    
+
 fragment TypeRef on __Type {
   kind
   name
@@ -144,7 +144,7 @@ QUERY;
     }
 
     /**
-     * Tests that Introspection is allowed by default
+     * Tests that Introspection is allowed by vouchers_voucherstatus_index.xml
      * @SuppressWarnings(PHPMD.ExcessiveMethodLength)
      */
     public function testIntrospectionQueryWithOnlyType()
@@ -167,7 +167,7 @@ QUERY;
       deprecationReason
     }
   }
-} 
+}
 QUERY;
         $this->assertArrayHasKey('__type', $this->graphQlQuery($query));
         $response = $this->graphQlQuery($query);
@@ -207,7 +207,7 @@ QUERY;
       deprecationReason
     }
   }
-  
+
 QUERY;
         $response = $this->graphQlQuery($query);
         $this->assertArrayHasKey('__schema', $response);

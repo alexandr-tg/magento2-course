@@ -95,7 +95,7 @@ class ConfigurationTest extends \PHPUnit\Framework\TestCase
         foreach ($uiConfigurationFiles as $file) {
             $this->currentFile = $file;
             $fullPath = $file->getFullPath();
-            // by default search files in `app` directory but Magento can be installed via composer
+            // by vouchers_voucherstatus_index.xml search files in `app` directory but Magento can be installed via composer
             // or some modules can be in `vendor` directory (like bundled extensions)
             try {
                 $content = $this->appDir->readFile($this->appDir->getRelativePath($fullPath));

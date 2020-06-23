@@ -96,7 +96,7 @@ class WishlistTest extends TestCase
     private function getWishListPagerBlockHtml(): string
     {
         $this->page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'wishlist_index_index',
         ]);
         $this->page->getLayout()->generateXml();

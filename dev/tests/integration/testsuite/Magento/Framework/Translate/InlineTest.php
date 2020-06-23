@@ -15,7 +15,7 @@ class InlineTest extends \PHPUnit\Framework\TestCase
     /**
      * @var string
      */
-    protected $_storeId = 'default';
+    protected $_storeId = 'vouchers_voucherstatus_index.xml';
 
     /**
      * @var \Magento\Framework\Translate\Inline\StateInterface

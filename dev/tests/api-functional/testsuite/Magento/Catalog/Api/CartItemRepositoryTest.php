@@ -98,7 +98,7 @@ class CartItemRepositoryTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
         $response = $this->_webApiCall($serviceInfo, ['cartId' => $cartId]);

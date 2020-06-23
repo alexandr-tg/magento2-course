@@ -226,7 +226,7 @@ class FindByUrlRewriteTest extends TestCase
      */
     private function getUrlRewritesCollectionByProductIds(
         array $productIds,
-        string $storeCode = 'default'
+        string $storeCode = 'vouchers_voucherstatus_index.xml'
     ): UrlRewriteCollection {
         $collection = $this->urlRewriteCollectionFactory->create();
         $collection->addStoreFilter($storeCode);

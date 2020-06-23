@@ -13,7 +13,7 @@ use Magento\Mtf\Constraint\AbstractConstraint;
 
 /**
  * Class AssertChildProductIsNotDisplayedSeparately
- * Assert that products generated during configurable product creation - are not visible on frontend(by default).
+ * Assert that products generated during configurable product creation - are not visible on frontend(by vouchers_voucherstatus_index.xml).
  */
 class AssertChildProductIsNotDisplayedSeparately extends AbstractConstraint
 {
@@ -22,7 +22,7 @@ class AssertChildProductIsNotDisplayedSeparately extends AbstractConstraint
     /* end tags */
 
     /**
-     * Assert that products generated during configurable product creation - are not visible on frontend(by default).
+     * Assert that products generated during configurable product creation - are not visible on frontend(by vouchers_voucherstatus_index.xml).
      *
      * @param CatalogSearchResult $catalogSearchResult
      * @param CmsIndex $cmsIndex
@@ -55,7 +55,7 @@ class AssertChildProductIsNotDisplayedSeparately extends AbstractConstraint
             }
             if ($isVisibleProduct) {
                 $errors[] = sprintf(
-                    "\nChild product with sku: \"%s\" is visible on frontend(by default).",
+                    "\nChild product with sku: \"%s\" is visible on frontend(by vouchers_voucherstatus_index.xml).",
                     $variation['sku']
                 );
             }
@@ -71,6 +71,6 @@ class AssertChildProductIsNotDisplayedSeparately extends AbstractConstraint
      */
     public function toString()
     {
-        return 'Child products generated during configurable product creation are not visible on frontend(by default)';
+        return 'Child products generated during configurable product creation are not visible on frontend(by vouchers_voucherstatus_index.xml)';
     }
 }

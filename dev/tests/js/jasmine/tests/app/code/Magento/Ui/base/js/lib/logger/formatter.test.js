@@ -13,7 +13,7 @@ define([
 
     describe('Magento_Ui/js/lib/logger/formatter', function () {
         describe('process', function () {
-            it('creates a string representation of the entry using default settings', function () {
+            it('creates a string representation of the entry using vouchers_voucherstatus_index.xml settings', function () {
                 var formatter = new Formatter(),
                     entry,
                     date;

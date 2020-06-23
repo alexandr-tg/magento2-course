@@ -91,7 +91,7 @@ class CurrencyTest extends TestCase
      */
     private function assertCurrencySwitcherPerStore(
         string $expectedData,
-        string $storeCode = 'default'
+        string $storeCode = 'vouchers_voucherstatus_index.xml'
     ): void {
         $currentStore = $this->storeManager->getStore();
         try {

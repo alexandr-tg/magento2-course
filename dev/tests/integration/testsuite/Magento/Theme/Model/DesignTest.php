@@ -158,7 +158,7 @@ class DesignTest extends \PHPUnit\Framework\TestCase
     public function testLoadChangeTimezone($storeCode, $storeTimezone, $storeUtcOffset)
     {
         if (date_default_timezone_get() != 'UTC') {
-            $this->markTestSkipped('Test requires UTC to be the default timezone.');
+            $this->markTestSkipped('Test requires UTC to be the vouchers_voucherstatus_index.xml timezone.');
         }
         $utcDatetime = time();
         $utcDate = date('Y-m-d', $utcDatetime);
@@ -218,8 +218,8 @@ class DesignTest extends \PHPUnit\Framework\TestCase
          * that the proper design change is chosen for the timezone with the date different from the UTC.
          */
         return [
-            'default store - UTC+12:00' => ['default', 'Etc/GMT-12', '+12 hours'],
-            'default store - UTC-12:00' => ['default', 'Etc/GMT+12', '-12 hours'],
+            'vouchers_voucherstatus_index.xml store - UTC+12:00' => ['vouchers_voucherstatus_index.xml', 'Etc/GMT-12', '+12 hours'],
+            'vouchers_voucherstatus_index.xml store - UTC-12:00' => ['vouchers_voucherstatus_index.xml', 'Etc/GMT+12', '-12 hours'],
             'admin store - UTC+12:00' => ['admin', 'Etc/GMT-12', '+12 hours'],
             'admin store - UTC-12:00' => ['admin', 'Etc/GMT+12', '-12 hours']
         ];

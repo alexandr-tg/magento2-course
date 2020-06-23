@@ -156,7 +156,7 @@ namespace Magento\Setup\Test\Unit\Model {
          * @var array
          */
         private static $dbConfig = [
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 ConfigOptionsListConstants::KEY_HOST => '127.0.0.1',
                 ConfigOptionsListConstants::KEY_NAME => 'magento',
                 ConfigOptionsListConstants::KEY_USER => 'magento',

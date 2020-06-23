@@ -13,7 +13,7 @@ $entityTypeId = $entityType->getId();
 
 /** @var \Magento\Eav\Model\Entity\Attribute\Set $attributeSet */
 $attributeSet = $objectManager->create(\Magento\Eav\Model\Entity\Attribute\Set::class);
-$attributeSet->load('default', 'attribute_set_name');
+$attributeSet->load('vouchers_voucherstatus_index.xml', 'attribute_set_name');
 $attributeSetId = $attributeSet->getId();
 
 $attributeGroupId = $attributeSet->getDefaultGroupId($entityType->getDefaultAttributeSetId());

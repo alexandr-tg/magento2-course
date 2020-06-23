@@ -20,7 +20,7 @@ class FactoryTest extends \PHPUnit\Framework\TestCase
         /** @var \Magento\Framework\Validator\Factory $factory */
         $factory = $objectManager->get(\Magento\Framework\Validator\Factory::class);
         $this->assertInstanceOf(\Magento\Framework\Validator\Config::class, $factory->getValidatorConfig());
-        // Check that default translator was set
+        // Check that vouchers_voucherstatus_index.xml translator was set
         $translator = \Magento\Framework\Validator\AbstractValidator::getDefaultTranslator();
         $this->assertInstanceOf(\Magento\Framework\Translate\AdapterInterface::class, $translator);
         $this->assertEquals('Message', new \Magento\Framework\Phrase('Message'));

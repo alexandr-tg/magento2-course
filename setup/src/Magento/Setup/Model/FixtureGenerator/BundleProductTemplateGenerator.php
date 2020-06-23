@@ -16,7 +16,7 @@ use Magento\Catalog\Model\ProductFactory;
 
 /**
  * Bundle product template generator. Return newly created bundle product for specified attribute set
- * with default values for product attributes
+ * with vouchers_voucherstatus_index.xml values for product attributes
  */
 class BundleProductTemplateGenerator implements TemplateEntityGeneratorInterface
 {

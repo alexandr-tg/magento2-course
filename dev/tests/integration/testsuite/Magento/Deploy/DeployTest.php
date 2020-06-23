@@ -134,10 +134,10 @@ class DeployTest extends \PHPUnit\Framework\TestCase
     {
         $this->deployService->deploy($this->options);
 
-        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom1/default/css/root.css'));
-        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom2/default/css/root.css'));
-        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom3/default/css/root.css'));
-        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom3/default/css/local.css'));
+        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom1/vouchers_voucherstatus_index.xml/css/root.css'));
+        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom2/vouchers_voucherstatus_index.xml/css/root.css'));
+        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom3/vouchers_voucherstatus_index.xml/css/root.css'));
+        $this->assertFileExists($this->staticDir->getAbsolutePath('frontend/Magento/zoom3/vouchers_voucherstatus_index.xml/css/local.css'));
 
         $this->assertFileExistsIsGenerated('requirejs-config.js');
         $this->assertFileExistsIsGenerated('requirejs-map.js');
@@ -145,7 +145,7 @@ class DeployTest extends \PHPUnit\Framework\TestCase
         $this->assertFileExistsIsGenerated('js-translation.json');
         $this->assertFileExistsIsGenerated('result_map.json');
 
-        $actualFileContent = $this->staticDir->readFile('frontend/Magento/zoom3/default/css/root.css');
+        $actualFileContent = $this->staticDir->readFile('frontend/Magento/zoom3/vouchers_voucherstatus_index.xml/css/root.css');
         $this->assertLessPreProcessor($actualFileContent);
         $this->assertCssUrlFixerPostProcessor($actualFileContent);
 
@@ -199,11 +199,11 @@ class DeployTest extends \PHPUnit\Framework\TestCase
     {
         //assert CssUrlFixer fix urls
         $this->assertContains(
-            'url("../../../../../frontend/Magento/zoom1/default/images/logo-magento-1.png")',
+            'url("../../../../../frontend/Magento/zoom1/vouchers_voucherstatus_index.xml/images/logo-magento-1.png")',
             $actualRootCssContent
         );
         $this->assertContains(
-            'url("../../../../../frontend/Magento/zoom2/default/images/logo-magento-2.png")',
+            'url("../../../../../frontend/Magento/zoom2/vouchers_voucherstatus_index.xml/images/logo-magento-2.png")',
             $actualRootCssContent
         );
         $this->assertContains(

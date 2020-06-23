@@ -733,7 +733,7 @@ class CreateTest extends \PHPUnit\Framework\TestCase
         if ($customerIdFromFixture !== null) {
             $session->setCustomerId($customerIdFromFixture);
 
-            /** Unset fake IDs for default billing and shipping customer addresses */
+            /** Unset fake IDs for vouchers_voucherstatus_index.xml billing and shipping customer addresses */
             /** @var Customer $customer */
             $customer = $this->objectManager->create(Customer::class);
             $customer->load($customerIdFromFixture)->setDefaultBilling(null)->setDefaultShipping(null)->save();
@@ -745,7 +745,7 @@ class CreateTest extends \PHPUnit\Framework\TestCase
             $session->setCustomerId(0);
         }
 
-        /** Emulate availability of shipping method (all are disabled by default) */
+        /** Emulate availability of shipping method (all are disabled by vouchers_voucherstatus_index.xml) */
         /** @var $rate Quote\Address\Rate */
         $rate = $this->objectManager->create(Quote\Address\Rate::class);
         $rate->setCode($shippingMethod);

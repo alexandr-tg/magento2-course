@@ -13,7 +13,7 @@ class InlineParserTest extends \PHPUnit\Framework\TestCase
     protected $_inlineParser;
 
     /** @var string */
-    protected $_storeId = 'default';
+    protected $_storeId = 'vouchers_voucherstatus_index.xml';
 
     protected function setUp()
     {

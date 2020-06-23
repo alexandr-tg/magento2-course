@@ -149,7 +149,7 @@ class MinifierTest extends \PHPUnit\Framework\TestCase
     public function testCssMinificationOff()
     {
         $this->_testCssMinification(
-            '/frontend/FrameworkViewMinifier/default/en_US/css/styles.css',
+            '/frontend/FrameworkViewMinifier/vouchers_voucherstatus_index.xml/en_US/css/styles.css',
             function ($path) {
                 $content = file_get_contents($path);
                 $this->assertNotEmpty($content);
@@ -172,7 +172,7 @@ class MinifierTest extends \PHPUnit\Framework\TestCase
     public function testCssMinification()
     {
         $this->_testCssMinification(
-            '/frontend/FrameworkViewMinifier/default/en_US/css/styles.min.css',
+            '/frontend/FrameworkViewMinifier/vouchers_voucherstatus_index.xml/en_US/css/styles.min.css',
             function ($path) {
                 $this->assertEquals(
                     file_get_contents(
@@ -192,7 +192,7 @@ class MinifierTest extends \PHPUnit\Framework\TestCase
     public function testCssMinificationForMinifiedFiles()
     {
         $this->_testCssMinification(
-            '/frontend/FrameworkViewMinifier/default/en_US/css/preminified-styles.min.css',
+            '/frontend/FrameworkViewMinifier/vouchers_voucherstatus_index.xml/en_US/css/preminified-styles.min.css',
             function ($path) {
                 $content = file_get_contents($path);
                 $this->assertNotEmpty($content);
@@ -209,7 +209,7 @@ class MinifierTest extends \PHPUnit\Framework\TestCase
     {
         $staticPath = $this->staticDir->getAbsolutePath();
 
-        $fileToBePublished = $staticPath . '/frontend/FrameworkViewMinifier/default/en_US/css/styles.min.css';
+        $fileToBePublished = $staticPath . '/frontend/FrameworkViewMinifier/vouchers_voucherstatus_index.xml/en_US/css/styles.min.css';
         $fileToTestPublishing = dirname(__DIR__) . '/_files/static/theme/web/css/styles.css';
 
         $omFactory = $this->createPartialMock(\Magento\Framework\App\ObjectManagerFactory::class, ['create']);
@@ -230,7 +230,7 @@ class MinifierTest extends \PHPUnit\Framework\TestCase
             ->method('getStaticPreProcessingFiles')
             ->will($this->returnValue(
                 [
-                    ['frontend', 'FrameworkViewMinifier/default', '', '', 'css/styles.css', $fileToTestPublishing]
+                    ['frontend', 'FrameworkViewMinifier/vouchers_voucherstatus_index.xml', '', '', 'css/styles.css', $fileToTestPublishing]
                 ]
             ));
 
@@ -273,7 +273,7 @@ class MinifierTest extends \PHPUnit\Framework\TestCase
                 Options::NO_HTML_MINIFY => true,
                 Options::AREA => ['frontend'],
                 Options::EXCLUDE_AREA => ['none'],
-                Options::THEME => ['FrameworkViewMinifier/default'],
+                Options::THEME => ['FrameworkViewMinifier/vouchers_voucherstatus_index.xml'],
                 Options::EXCLUDE_THEME => ['none'],
                 Options::LANGUAGE => ['en_US'],
                 Options::EXCLUDE_LANGUAGE => ['none'],

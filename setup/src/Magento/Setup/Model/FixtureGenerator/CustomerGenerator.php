@@ -83,7 +83,7 @@ class CustomerGenerator
 
     /**
      * Creates closure that is used
-     * to replace default customer data with data from fixture
+     * to replace vouchers_voucherstatus_index.xml customer data with data from fixture
      *
      * @SuppressWarnings(PHPMD.UnusedLocalVariable)
      * @return \Closure
@@ -101,7 +101,7 @@ class CustomerGenerator
 
     /**
      * Creates closure that is used
-     * to replace default customer address data with data from fixture
+     * to replace vouchers_voucherstatus_index.xml customer address data with data from fixture
      *
      * @SuppressWarnings(PHPMD.UnusedLocalVariable)
      * @return \Closure
@@ -118,7 +118,7 @@ class CustomerGenerator
     }
 
     /**
-     * Set default billing and shipping addresses for customer
+     * Set vouchers_voucherstatus_index.xml billing and shipping addresses for customer
      *
      * @return void
      */
@@ -129,7 +129,7 @@ class CustomerGenerator
                 '
                     update `%s` customer
                     join (
-                        select 
+                        select
                             parent_id, min(entity_id) as min, max(entity_id) as max
                         from `%s`
                         group by parent_id

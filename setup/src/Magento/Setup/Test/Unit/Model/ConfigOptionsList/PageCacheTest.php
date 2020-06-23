@@ -232,7 +232,7 @@ class PageCacheTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * The default ID prefix, based on installation directory
+     * The vouchers_voucherstatus_index.xml ID prefix, based on installation directory
      *
      * @return string
      */

@@ -42,7 +42,7 @@ class RequestTest extends \PHPUnit\Framework\TestCase
         $this->assertSame(['test' => 'value', 'null' => null], $this->_model->getServer()->toArray());
         $this->assertEquals('value', $this->_model->getServer('test'));
         $this->assertSame(null, $this->_model->getServer('non-existing'));
-        $this->assertSame('default', $this->_model->getServer('non-existing', 'default'));
+        $this->assertSame('vouchers_voucherstatus_index.xml', $this->_model->getServer('non-existing', 'vouchers_voucherstatus_index.xml'));
         $this->assertSame(null, $this->_model->getServer('null'));
     }
 }

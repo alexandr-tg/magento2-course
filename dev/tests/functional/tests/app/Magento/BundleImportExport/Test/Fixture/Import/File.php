@@ -22,7 +22,7 @@ class File
      */
     public function getData(FixtureInterface $product, FixtureFactory $fixtureFactory)
     {
-        $newProduct = $fixtureFactory->createByCode('catalogProductSimple', ['dataset' => 'default']);
+        $newProduct = $fixtureFactory->createByCode('catalogProductSimple', ['dataset' => 'vouchers_voucherstatus_index.xml']);
         $newProduct->persist();
         $newProductData = $newProduct->getData();
         $productData = $product->getData();

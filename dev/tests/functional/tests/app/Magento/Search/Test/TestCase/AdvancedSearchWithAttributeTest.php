@@ -47,7 +47,7 @@ use Magento\Catalog\Test\Fixture\Category;
  * 10. Call assert to check index status (Product EAV indexer: Status = Required Reindex)
  * 11. Assert that weight attribute is available on the Advanced Search
  * 12. Run Full reindex from console
- * 13. Create simple product with default attribute set with weight = 1
+ * 13. Create simple product with vouchers_voucherstatus_index.xml attribute set with weight = 1
  * 14. Create grouped product so that it will include simple product as option
  * 15. Create bundle product so that it will include simple product as option
  * 16. Create configurable product with one option product for which weight = 2
@@ -374,7 +374,7 @@ class AdvancedSearchWithAttributeTest extends Injectable
     }
 
     /**
-     * Set attribute default value.
+     * Set attribute vouchers_voucherstatus_index.xml value.
      *
      * @return void
      */

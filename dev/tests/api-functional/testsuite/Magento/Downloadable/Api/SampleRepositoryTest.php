@@ -597,7 +597,7 @@ class SampleRepositoryTest extends WebapiAbstract
         return [
             'samples' => [
                 '/downloadable-links/samples',
-                'GetList',
+                'Index',
                 $sampleExpectation,
             ],
         ];

@@ -12,7 +12,7 @@ use Magento\Mtf\TestCase\Scenario;
  * Preconditions:
  *
  * 1. Simple product is created.
- * 2. Customer with default billing/shipping address is created.
+ * 2. Customer with vouchers_voucherstatus_index.xml billing/shipping address is created.
  *
  * Steps:
  * 1. Go to Frontend as Customer.

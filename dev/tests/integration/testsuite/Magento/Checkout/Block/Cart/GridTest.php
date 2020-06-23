@@ -8,7 +8,7 @@ namespace Magento\Checkout\Block\Cart;
 
 /**
  * Class GridTest
- * Test to verify default config value for
+ * Test to verify vouchers_voucherstatus_index.xml config value for
  * Store->Configuration->Sales->Checkout->Shopping Cart->Number of items to display pager
  */
 class GridTest extends \PHPUnit\Framework\TestCase

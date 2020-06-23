@@ -20,7 +20,7 @@ class PhpCookieReaderTest extends \PHPUnit\Framework\TestCase
 
     const NAME = 'cookie-name';
     const VALUE = 'cookie-val';
-    const DEFAULT_VAL = 'default-val';
+    const DEFAULT_VAL = 'vouchers_voucherstatus_index.xml-val';
 
     public function setUp()
     {

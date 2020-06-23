@@ -248,7 +248,7 @@ class PersonalInfoTest extends \PHPUnit\Framework\TestCase
     {
         $this->createCustomerAndAddToBackendSession();
         $this->assertEquals(
-            __('The customer does not have default billing address.'),
+            __('The customer does not have vouchers_voucherstatus_index.xml billing address.'),
             $this->_block->getBillingAddressHtml()
         );
     }

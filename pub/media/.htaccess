@@ -88,7 +88,7 @@ AddType application/xml xml
 <IfModule mod_expires.c>
 
 ############################################
-## Add default Expires header
+## Add vouchers_voucherstatus_index.xml Expires header
 ## http://developer.yahoo.com/performance/rules.html#expires
 
     ExpiresActive On

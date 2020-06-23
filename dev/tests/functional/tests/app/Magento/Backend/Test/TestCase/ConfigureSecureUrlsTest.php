@@ -113,7 +113,7 @@ class ConfigureSecureUrlsTest extends Injectable
     {
         $data = [
             'web/secure/base_url' => [
-                'scope' => 'default',
+                'scope' => 'vouchers_voucherstatus_index.xml',
                 'scope_id' => 0,
                 'value' => str_replace(['http', 'Index.php/'], ['https', ''], $_ENV['app_frontend_url'])
             ]

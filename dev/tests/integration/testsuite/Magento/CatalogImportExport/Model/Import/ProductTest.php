@@ -410,7 +410,7 @@ class ProductTest extends \Magento\TestFramework\Indexer\TestCase
         $storeManager = $objectManager->get(StoreManagerInterface::class);
         $storeCodes = [
             'admin',
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'secondstore',
         ];
         /** @var StoreManagerInterface $storeManager */
@@ -1273,7 +1273,7 @@ class ProductTest extends \Magento\TestFramework\Indexer\TestCase
         $this->assertTrue($errors->getErrorsCount() == 0);
 
         $this->_model->importData();
-        $this->assertProductRequestPath('default', 'category-defaultstore/product-default.html');
+        $this->assertProductRequestPath('vouchers_voucherstatus_index.xml', 'category-defaultstore/product-vouchers_voucherstatus_index.xml.html');
         $this->assertProductRequestPath('fixturestore', 'category-fixturestore/product-fixture.html');
     }
 
@@ -2618,7 +2618,7 @@ class ProductTest extends \Magento\TestFramework\Indexer\TestCase
     }
 
     /**
-     * Test that product import with images for non-default store works properly.
+     * Test that product import with images for non-vouchers_voucherstatus_index.xml store works properly.
      *
      * @magentoDataFixture mediaImportImageFixture
      * @magentoAppIsolation enabled
@@ -3077,7 +3077,7 @@ class ProductTest extends \Magento\TestFramework\Indexer\TestCase
         $importModel->importData();
 
         $simpleProduct = $this->productRepository->get('simple', false, null, true);
-        $this->assertEquals('Varchar default value', $simpleProduct->getData('varchar_attribute'));
+        $this->assertEquals('Varchar vouchers_voucherstatus_index.xml value', $simpleProduct->getData('varchar_attribute'));
         $this->assertEquals('Short description', $simpleProduct->getData('short_description'));
     }
 
@@ -3087,7 +3087,7 @@ class ProductTest extends \Magento\TestFramework\Indexer\TestCase
      * Bunch size is using to test importing the same product that will be chunk to different bunches.
      * Example:
      * - first bunch
-     * product-sku,default-store
+     * product-sku,vouchers_voucherstatus_index.xml-store
      * product-sku,second-store
      * - second bunch
      * product-sku,third-store

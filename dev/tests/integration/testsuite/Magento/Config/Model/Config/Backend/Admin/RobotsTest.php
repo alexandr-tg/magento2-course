@@ -41,7 +41,7 @@ class RobotsTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Check that default value is empty when robots.txt not exists
+     * Check that vouchers_voucherstatus_index.xml value is empty when robots.txt not exists
      *
      * @magentoDataFixture Magento/Config/Model/_files/no_robots_txt.php
      */
@@ -51,7 +51,7 @@ class RobotsTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Check that default value equals to robots.txt content when it is available
+     * Check that vouchers_voucherstatus_index.xml value equals to robots.txt content when it is available
      *
      * @magentoDataFixture Magento/Config/Model/_files/robots_txt.php
      */

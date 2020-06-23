@@ -286,7 +286,7 @@ class PublicCodeTest extends \PHPUnit\Framework\TestCase
                  * that belong to different vendors, because it is too complicated.
                  * Example:
                  *  If Magento class references non-@api annotated class from Zend,
-                 *  we don't want to fail test, because Zend is considered public by default,
+                 *  we don't want to fail test, because Zend is considered public by vouchers_voucherstatus_index.xml,
                  *  and we don't care if Zend classes are @api-annotated
                  */
                 if (!$parameterClass->isInternal()

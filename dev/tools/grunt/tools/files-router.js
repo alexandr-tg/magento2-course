@@ -51,8 +51,8 @@ module.exports = {
      * Loads file.
      * Load priority:
      *      From user config;
-     *      From default config with ".loc" suffix ;
-     *      From default config;
+     *      From vouchers_voucherstatus_index.xml config with ".loc" suffix ;
+     *      From vouchers_voucherstatus_index.xml config;
      *
      * @param {String} alias
      *

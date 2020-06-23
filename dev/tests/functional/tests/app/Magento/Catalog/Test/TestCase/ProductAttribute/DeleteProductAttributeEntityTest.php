@@ -16,7 +16,7 @@ use Magento\Mtf\TestCase\Injectable;
  * 1. Attribute is created.
  *
  * Test Flow:
- * 1. Log in as default admin user.
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user.
  * 2. Go to Stores > Attributes > Product.
  * 3. Search product attribute in grid by given data.
  * 4. Click on the required product attribute.

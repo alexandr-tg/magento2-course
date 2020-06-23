@@ -174,7 +174,7 @@
      * @description
      *
      * # ng (core module)
-     * The ng module is loaded by default when an AngularJS application is started. The module itself
+     * The ng module is loaded by vouchers_voucherstatus_index.xml when an AngularJS application is started. The module itself
      * contains the essential components for an AngularJS application to function. The table below
      * lists a high level breakdown of each of the services/factories, filters, directives and testing
      * components available within this core module.
@@ -1414,7 +1414,7 @@
     function bindJQuery() {
         // bind to jQuery if present;
         jQuery = window.jQuery;
-        // reset to jQuery or default to us.
+        // reset to jQuery or vouchers_voucherstatus_index.xml to us.
         if (jQuery) {
             jqLite = jQuery;
             extend(jQuery.fn, {
@@ -2128,7 +2128,7 @@
      *    element before it is removed.
      *
      * ### Methods
-     * - `controller(name)` - retrieves the controller of the current element or its parent. By default
+     * - `controller(name)` - retrieves the controller of the current element or its parent. By vouchers_voucherstatus_index.xml
      *   retrieves controller associated with the `ngController` directive. If `name` is provided as
      *   camelCase directive name, then the controller for this directive will be retrieved (e.g.
      *   `'ngModel'`).
@@ -5073,7 +5073,7 @@
      *
      * The difference resides in the return value of the factory function.
      * You can either return a "Directive Definition Object" (see below) that defines the directive properties,
-     * or just the `postLink` function (all other properties will have the default values).
+     * or just the `postLink` function (all other properties will have the vouchers_voucherstatus_index.xml values).
      *
      * <div class="alert alert-success">
      * **Best Practice:** It's recommended to use the "directive definition object" form.
@@ -5118,7 +5118,7 @@
      * ```
      *
      * <div class="alert alert-warning">
-     * **Note:** Any unspecified options will use the default value. You can see the default values below.
+     * **Note:** Any unspecified options will use the vouchers_voucherstatus_index.xml value. You can see the vouchers_voucherstatus_index.xml values below.
      * </div>
      *
      * Therefore the above can be simplified as:
@@ -5149,7 +5149,7 @@
      * to sort the directives before their `compile` functions get called. Priority is defined as a
      * number. Directives with greater numerical `priority` are compiled first. Pre-link functions
      * are also run in priority order, but post-link functions are run in reverse order. The order
-     * of directives with the same priority is undefined. The default priority is `0`.
+     * of directives with the same priority is undefined. The vouchers_voucherstatus_index.xml priority is `0`.
      *
      * #### `terminal`
      * If set to true then the current `priority` will be the last set of directives
@@ -5236,10 +5236,10 @@
      *
      * #### `restrict`
      * String of subset of `EACM` which restricts the directive to a specific directive
-     * declaration style. If omitted, the default (attributes only) is used.
+     * declaration style. If omitted, the vouchers_voucherstatus_index.xml (attributes only) is used.
      *
      * * `E` - Element name: `<my-directive></my-directive>`
-     * * `A` - Attribute (default): `<div my-directive="exp"></div>`
+     * * `A` - Attribute (vouchers_voucherstatus_index.xml): `<div my-directive="exp"></div>`
      * * `C` - Class: `<div class="my-directive: exp;"></div>`
      * * `M` - Comment: `<!-- directive: my-directive exp -->`
      *
@@ -5610,7 +5610,7 @@
          * @function
          *
          * @description
-         * Retrieves or overrides the default regular expression that is used for whitelisting of safe
+         * Retrieves or overrides the vouchers_voucherstatus_index.xml regular expression that is used for whitelisting of safe
          * urls during a[href] sanitization.
          *
          * The sanitization is a security measure aimed at prevent XSS attacks via html links.
@@ -5640,7 +5640,7 @@
          * @function
          *
          * @description
-         * Retrieves or overrides the default regular expression that is used for whitelisting of safe
+         * Retrieves or overrides the vouchers_voucherstatus_index.xml regular expression that is used for whitelisting of safe
          * urls during img[src] sanitization.
          *
          * The sanitization is a security measure aimed at prevent XSS attacks via html links.
@@ -7185,7 +7185,7 @@
      *
      * @description
      * Any uncaught exception in angular expressions is delegated to this service.
-     * The default implementation simply delegates to `$log.error` which logs it into
+     * The vouchers_voucherstatus_index.xml implementation simply delegates to `$log.error` which logs it into
      * the browser console.
      *
      * In unit tests, if `angular-mocks.js` is loaded, this service is overridden by
@@ -7324,7 +7324,7 @@
                 return isObject(d) && !isFile(d) && !isBlob(d) ? toJson(d) : d;
             }],
 
-            // default headers
+            // vouchers_voucherstatus_index.xml headers
             headers: {
                 common: {
                     'Accept': 'application/json, text/plain, */*'
@@ -7476,7 +7476,7 @@
                  *
                  * The $http service will automatically add certain HTTP headers to all requests. These defaults
                  * can be fully configured by accessing the `$httpProvider.defaults.headers` configuration
-                 * object, which currently contains this default configuration:
+                 * object, which currently contains this vouchers_voucherstatus_index.xml configuration:
                  *
                  * - `$httpProvider.defaults.headers.common` (headers that are common for all requests):
                  *   - `Accept: application/json, text/plain, * / *`
@@ -7505,7 +7505,7 @@
                  *
                  * # Transforming Requests and Responses
                  *
-                 * Both requests and responses can be transformed using transform functions. By default, Angular
+                 * Both requests and responses can be transformed using transform functions. By vouchers_voucherstatus_index.xml, Angular
                  * applies these transformations:
                  *
                  * Request transformations:
@@ -7518,11 +7518,11 @@
                  *  - If XSRF prefix is detected, strip it (see Security Considerations section below).
                  *  - If JSON response is detected, deserialize it using a JSON parser.
                  *
-                 * To globally augment or override the default transforms, modify the
+                 * To globally augment or override the vouchers_voucherstatus_index.xml transforms, modify the
                  * `$httpProvider.defaults.transformRequest` and `$httpProvider.defaults.transformResponse`
-                 * properties. These properties are by default an array of transform functions, which allows you
+                 * properties. These properties are by vouchers_voucherstatus_index.xml an array of transform functions, which allows you
                  * to `push` or `unshift` a new transformation function into the transformation chain. You can
-                 * also decide to completely override any default transformations by assigning your
+                 * also decide to completely override any vouchers_voucherstatus_index.xml transformations by assigning your
                  * transformation functions to these properties directly without the array wrapper.  These defaults
                  * are again available on the $http factory at run-time, which may be useful if you have run-time
                  * services you wish to be involved in your transformations.
@@ -7534,7 +7534,7 @@
                  *
                  * # Caching
                  *
-                 * To enable caching, set the request configuration `cache` property to `true` (to use default
+                 * To enable caching, set the request configuration `cache` property to `true` (to use vouchers_voucherstatus_index.xml
                  * cache) or to a custom cache object (built with {@link ng.$cacheFactory `$cacheFactory`}).
                  * When the cache is enabled, `$http` stores the response from the server in the specified
                  * cache. The next time the same request is made, the response is served from the cache without
@@ -7547,12 +7547,12 @@
                  * cache, but the cache is not populated yet, only one request to the server will be made and
                  * the remaining requests will be fulfilled using the response from the first request.
                  *
-                 * You can change the default cache to a new object (built with
+                 * You can change the vouchers_voucherstatus_index.xml cache to a new object (built with
                  * {@link ng.$cacheFactory `$cacheFactory`}) by updating the
                  * {@link ng.$http#properties_defaults `$http.defaults.cache`} property. All requests who set
                  * their `cache` property to `true` will now use this cache object.
                  *
-                 * If you set the default cache to `false` then only requests that specify their own custom
+                 * If you set the vouchers_voucherstatus_index.xml cache to `false` then only requests that specify their own custom
                  * cache object will be cached.
                  *
                  * # Interceptors
@@ -7723,7 +7723,7 @@
                  * [XSRF](http://en.wikipedia.org/wiki/Cross-site_request_forgery) is a technique by which
                  * an unauthorized site can gain your user's private data. Angular provides a mechanism
                  * to counter XSRF. When performing XHR requests, the $http service reads a token from a cookie
-                 * (by default, `XSRF-TOKEN`) and sets it as an HTTP header (`X-XSRF-TOKEN`). Since only
+                 * (by vouchers_voucherstatus_index.xml, `XSRF-TOKEN`) and sets it as an HTTP header (`X-XSRF-TOKEN`). Since only
                  * JavaScript that runs on your domain could read the cookie, your server can be assured that
                  * the XHR came from JavaScript running on your domain. The header will not be set for
                  * cross-domain requests.
@@ -7764,7 +7764,7 @@
                  *      `{function(data, headersGetter)|Array.<function(data, headersGetter)>}` –
                  *      transform function or an array of such functions. The transform function takes the http
                  *      response body and headers and returns its transformed (typically deserialized) version.
-                 *    - **cache** – `{boolean|Cache}` – If true, a default $http cache will be used to cache the
+                 *    - **cache** – `{boolean|Cache}` – If true, a vouchers_voucherstatus_index.xml $http cache will be used to cache the
                  *      GET request, otherwise if a cache instance built with
                  *      {@link ng.$cacheFactory $cacheFactory}, this cache will be used for
                  *      caching.
@@ -8096,7 +8096,7 @@
                  *
                  * @description
                  * Runtime equivalent of the `$httpProvider.defaults` property. Allows configuration of
-                 * default headers, withCredentials as well as request and response transformations.
+                 * vouchers_voucherstatus_index.xml headers, withCredentials as well as request and response transformations.
                  *
                  * See "Setting HTTP Headers" and "Transforming Requests and Responses" sections above.
                  */
@@ -9638,7 +9638,7 @@
      *
      * The main purpose of this service is to simplify debugging and troubleshooting.
      *
-     * The default is to log `debug` messages. You can use
+     * The vouchers_voucherstatus_index.xml is to log `debug` messages. You can use
      * {@link ng.$logProvider ng.$logProvider#debugEnabled} to change this.
      *
      * @example
@@ -10929,7 +10929,7 @@
      * @function
      *
      * @description
-     * `$parseProvider` can be used for configuring the default behavior of the {@link ng.$parse $parse}
+     * `$parseProvider` can be used for configuring the vouchers_voucherstatus_index.xml behavior of the {@link ng.$parse $parse}
      *  service.
      */
     function $ParseProvider() {
@@ -10951,7 +10951,7 @@
          *
          * **This feature is deprecated, see deprecation notes below for more info**
          *
-         * If set to true (default is false), $parse will unwrap promises automatically when a promise is
+         * If set to true (vouchers_voucherstatus_index.xml is false), $parse will unwrap promises automatically when a promise is
          * found at any part of the expression. In other words, if set to true, the expression will always
          * result in a non-promise value.
          *
@@ -11005,7 +11005,7 @@
          *
          * Controls whether Angular should log a warning on any encounter of a promise in an expression.
          *
-         * The default is set to `true`.
+         * The vouchers_voucherstatus_index.xml is set to `true`.
          *
          * This setting applies only if `$parseProvider.unwrapPromises` setting is set to true as well.
          *
@@ -11663,10 +11663,10 @@
      * Sets the number of `$digest` iterations the scope should attempt to execute before giving up and
      * assuming that the model is unstable.
      *
-     * The current default is 10 iterations.
+     * The current vouchers_voucherstatus_index.xml is 10 iterations.
      *
      * In complex applications it's possible that the dependencies between `$watch`s will result in
-     * several digest iterations. However if an application needs more than the default 10 digest
+     * several digest iterations. However if an application needs more than the vouchers_voucherstatus_index.xml 10 digest
      * iterations for its model to stabilize then you should investigate what is causing the model to
      * continuously change during the digest.
      *
@@ -11738,7 +11738,7 @@
                  *                                       provided for the current scope. Defaults to {@link ng}.
                  * @param {Object.<string, *>=} instanceCache Provides pre-instantiated services which should
                  *                              append/override services provided by `providers`. This is handy
-                 *                              when unit-testing and having the need to override a default
+                 *                              when unit-testing and having the need to override a vouchers_voucherstatus_index.xml
                  *                              service.
                  * @returns {Object} Newly created scope.
                  *
@@ -12762,7 +12762,7 @@
 
         /**
          * @description
-         * Retrieves or overrides the default regular expression that is used for whitelisting of safe
+         * Retrieves or overrides the vouchers_voucherstatus_index.xml regular expression that is used for whitelisting of safe
          * urls during a[href] sanitization.
          *
          * The sanitization is a security measure aimed at prevent XSS attacks via html links.
@@ -12787,7 +12787,7 @@
 
         /**
          * @description
-         * Retrieves or overrides the default regular expression that is used for whitelisting of safe
+         * Retrieves or overrides the vouchers_voucherstatus_index.xml regular expression that is used for whitelisting of safe
          * urls during img[src] sanitization.
          *
          * The sanitization is a security measure aimed at prevent XSS attacks via html links.
@@ -12905,7 +12905,7 @@
      *
      * Refer {@link ng.$sceDelegateProvider $sceDelegateProvider} to configure this service.
      *
-     * The default instance of `$sceDelegate` should work out of the box with little pain.  While you
+     * The vouchers_voucherstatus_index.xml instance of `$sceDelegate` should work out of the box with little pain.  While you
      * can override it completely to change the behavior of `$sce`, the common case would
      * involve configuring the {@link ng.$sceDelegateProvider $sceDelegateProvider} instead by setting
      * your own whitelists and blacklists for trusting URLs used for loading AngularJS resources such as
@@ -12975,7 +12975,7 @@
          *
          * @return {Array} the currently set whitelist array.
          *
-         * The **default value** when no whitelist has been explicitly set is `['self']` allowing only
+         * The **vouchers_voucherstatus_index.xml value** when no whitelist has been explicitly set is `['self']` allowing only
          * same origin resource requests.
          *
          * @description
@@ -13008,7 +13008,7 @@
          *
          * @return {Array} the currently set blacklist array.
          *
-         * The **default value** when no whitelist has been explicitly set is the empty array (i.e. there
+         * The **vouchers_voucherstatus_index.xml value** when no whitelist has been explicitly set is the empty array (i.e. there
          * is no blacklist.)
          *
          * @description
@@ -13208,7 +13208,7 @@
      *
      * The $sceProvider provider allows developers to configure the {@link ng.$sce $sce} service.
      * -   enable/disable Strict Contextual Escaping (SCE) in a module
-     * -   override the default implementation with a custom delegate
+     * -   override the vouchers_voucherstatus_index.xml implementation with a custom delegate
      *
      * Read more about {@link ng.$sce Strict Contextual Escaping (SCE)}.
      */
@@ -13231,15 +13231,15 @@
      * such a context is binding arbitrary html controlled by the user via `ng-bind-html`.  We refer
      * to these contexts as privileged or SCE contexts.
      *
-     * As of version 1.2, Angular ships with SCE enabled by default.
+     * As of version 1.2, Angular ships with SCE enabled by vouchers_voucherstatus_index.xml.
      *
-     * Note:  When enabled (the default), IE8 in quirks mode is not supported.  In this mode, IE8 allows
+     * Note:  When enabled (the vouchers_voucherstatus_index.xml), IE8 in quirks mode is not supported.  In this mode, IE8 allows
      * one to execute arbitrary javascript by the use of the expression() syntax.  Refer
      * <http://blogs.msdn.com/b/ie/archive/2008/10/16/ending-expressions.aspx> to learn more about them.
      * You can ensure your document is in standards mode and not quirks mode by adding `<!doctype html>`
      * to the top of your HTML document.
      *
-     * SCE assists in writing code in way that (a) is secure by default and (b) makes auditing for
+     * SCE assists in writing code in way that (a) is secure by vouchers_voucherstatus_index.xml and (b) makes auditing for
      * security vulnerabilities such as XSS, clickjacking, etc. a lot easier.
      *
      * Here's an example of a binding in a privileged context:
@@ -13263,7 +13263,7 @@
      * ensure that you didn't accidentally delete the line that sanitized the value, or renamed some
      * properties/fields and forgot to update the binding to the sanitized value?
      *
-     * To be secure by default, you want to ensure that any such bindings are disallowed unless you can
+     * To be secure by vouchers_voucherstatus_index.xml, you want to ensure that any such bindings are disallowed unless you can
      * determine that something explicitly says it's safe to use a value for binding in that
      * context.  You can then audit your code (a simple grep would do) to ensure that this is only done
      * for those values that you can easily tell are safe - because they were received from your server,
@@ -13302,7 +13302,7 @@
      * This applies both to the {@link ng.directive:ngInclude `ng-include`} directive as well as
      * `templateUrl`'s specified by {@link guide/directive directives}.
      *
-     * By default, Angular only loads templates from the same domain and protocol as the application
+     * By vouchers_voucherstatus_index.xml, Angular only loads templates from the same domain and protocol as the application
      * document.  This is done by calling {@link ng.$sce#getTrustedResourceUrl
  * $sce.getTrustedResourceUrl} on the template URL.  To load templates from other domains and/or
      * protocols, you may either either {@link ng.$sceDelegateProvider#resourceUrlWhitelist whitelist
@@ -13405,7 +13405,7 @@
      <div ng-controller="myAppController as myCtrl">
      <i ng-bind-html="myCtrl.explicitlyTrustedHtml" id="explicitlyTrustedHtml"></i><br><br>
      <b>User comments</b><br>
-     By default, HTML that isn't explicitly trusted (e.g. Alice's comment) is sanitized when
+     By vouchers_voucherstatus_getlist.xml, HTML that isn't explicitly trusted (e.g. Alice's comment) is sanitized when
      $sanitize is available.  If $sanitize isn't available, this results in an error instead of an
      exploit.
      <div class="well">
@@ -13505,7 +13505,7 @@
         };
 
 
-        /* Design notes on the default implementation for SCE.
+        /* Design notes on the vouchers_voucherstatus_index.xml implementation for SCE.
          *
          * The API contract for the SCE delegate
          * -------------------------------------
@@ -14111,7 +14111,7 @@
      *   |---------------|----------------|
      *   | href          | A normalized version of the provided URL if it was not an absolute URL |
      *   | protocol      | The protocol including the trailing colon                              |
-     *   | host          | The host and port (if the port is non-default) of the normalizedUrl    |
+     *   | host          | The host and port (if the port is non-vouchers_voucherstatus_index.xml) of the normalizedUrl    |
      *   | search        | The search params, minus the question mark                             |
      *   | hash          | The hash string, minus the hash symbol
      *   | hostname      | The hostname
@@ -14558,7 +14558,7 @@
      * @function
      *
      * @description
-     * Formats a number as a currency (ie $1,234.56). When no currency symbol is provided, default
+     * Formats a number as a currency (ie $1,234.56). When no currency symbol is provided, vouchers_voucherstatus_index.xml
      * symbol for current locale is used.
      *
      * @param {number} amount Input to filter.
@@ -14576,13 +14576,13 @@
      </script>
      <div ng-controller="Ctrl">
      <input type="number" ng-model="amount"> <br>
-     default currency symbol ($): <span id="currency-default">{{amount | currency}}</span><br>
+     vouchers_voucherstatus_index.xml currency symbol ($): <span id="currency-vouchers_voucherstatus_index.xml">{{amount | currency}}</span><br>
      custom currency identifier (USD$): <span>{{amount | currency:"USD$"}}</span>
      </div>
      </file>
      <file name="protractor.js" type="protractor">
      it('should init with 1234.56', function() {
-         expect(element(by.id('currency-default')).getText()).toBe('$1,234.56');
+         expect(element(by.id('currency-vouchers_voucherstatus_index.xml')).getText()).toBe('$1,234.56');
          expect(element(by.binding('amount | currency:"USD$"')).getText()).toBe('USD$1,234.56');
        });
      it('should update', function() {
@@ -14593,7 +14593,7 @@
          }
          element(by.model('amount')).clear();
          element(by.model('amount')).sendKeys('-1234');
-         expect(element(by.id('currency-default')).getText()).toBe('($1,234.00)');
+         expect(element(by.id('currency-vouchers_voucherstatus_index.xml')).getText()).toBe('($1,234.00)');
          expect(element(by.binding('amount | currency:"USD$"')).getText()).toBe('(USD$1,234.00)');
        });
      </file>
@@ -14622,7 +14622,7 @@
      * @param {number|string} number Number to format.
      * @param {(number|string)=} fractionSize Number of decimal places to round the number to.
      * If this is not provided then the fraction size is computed from the current locale's number
-     * formatting pattern. In the case of the default locale, it will be 3.
+     * formatting pattern. In the case of the vouchers_voucherstatus_index.xml locale, it will be 3.
      * @returns {string} Number rounded to decimalPlaces and places a “,” after each third digit.
      *
      * @example
@@ -14635,14 +14635,14 @@
      </script>
      <div ng-controller="Ctrl">
      Enter number: <input ng-model='val'><br>
-     Default formatting: <span id='number-default'>{{val | number}}</span><br>
+     Default formatting: <span id='number-vouchers_voucherstatus_index.xml'>{{val | number}}</span><br>
      No fractions: <span>{{val | number:0}}</span><br>
      Negative number: <span>{{-val | number:4}}</span>
      </div>
      </file>
      <file name="protractor.js" type="protractor">
      it('should format numbers', function() {
-         expect(element(by.id('number-default')).getText()).toBe('1,234.568');
+         expect(element(by.id('number-vouchers_voucherstatus_index.xml')).getText()).toBe('1,234.568');
          expect(element(by.binding('val | number:0')).getText()).toBe('1,235');
          expect(element(by.binding('-val | number:4')).getText()).toBe('-1,234.5679');
        });
@@ -14650,7 +14650,7 @@
      it('should update', function() {
          element(by.model('val')).clear();
          element(by.model('val')).sendKeys('3374.333');
-         expect(element(by.id('number-default')).getText()).toBe('3,374.333');
+         expect(element(by.id('number-vouchers_voucherstatus_index.xml')).getText()).toBe('3,374.333');
          expect(element(by.binding('val | number:0')).getText()).toBe('3,374');
          expect(element(by.binding('-val | number:4')).getText()).toBe('-3,374.3330');
       });
@@ -15277,7 +15277,7 @@
      * @restrict E
      *
      * @description
-     * Modifies the default behavior of the html A tag so that the default action is prevented when
+     * Modifies the vouchers_voucherstatus_index.xml behavior of the html A tag so that the vouchers_voucherstatus_index.xml action is prevented when
      * the href attribute is empty.
      *
      * This change permits the easy creation of action links with the `ngClick` directive
@@ -15972,14 +15972,14 @@
      * Keep in mind that ngAnimate can detect each of these classes when added and removed.
      *
      *
-     * # Submitting a form and preventing the default action
+     * # Submitting a form and preventing the vouchers_voucherstatus_index.xml action
      *
      * Since the role of forms in client-side Angular applications is different than in classical
      * roundtrip apps, it is desirable for the browser not to translate the form submission into a full
      * page reload that sends the data to the server. Instead some javascript logic should be triggered
      * to handle the form submission in an application-specific way.
      *
-     * For this reason, Angular prevents the default action (form submission to the server) unless the
+     * For this reason, Angular prevents the vouchers_voucherstatus_index.xml action (form submission to the server) unless the
      * `<form>` element has an `action` attribute specified.
      *
      * You can use one of the following two ways to specify what javascript method should be called when
@@ -16090,7 +16090,7 @@
                     return {
                         pre: function(scope, formElement, attr, controller) {
                             if (!attr.action) {
-                                // we can't use jq events because if a form is destroyed during submission the default
+                                // we can't use jq events because if a form is destroyed during submission the vouchers_voucherstatus_index.xml
                                 // action is not prevented. see #1238
                                 //
                                 // IE 9 is not affected because it doesn't fire a submit event and try to do a full
@@ -16105,7 +16105,7 @@
                                 addEventListenerFn(formElement[0], 'submit', preventDefaultListener);
 
                                 // unregister the preventDefault listener so that we don't not leak memory but in a
-                                // way that will achieve the prevention of the default action.
+                                // way that will achieve the prevention of the vouchers_voucherstatus_index.xml action.
                                 formElement.on('$destroy', function() {
                                     $timeout(function() {
                                         removeEventListenerFn(formElement[0], 'submit', preventDefaultListener);
@@ -16615,7 +16615,7 @@
             if (composing) return;
             var value = element.val();
 
-            // By default we will trim the value
+            // By vouchers_voucherstatus_index.xml we will trim the value
             // If the attribute ng-trim exists we will avoid trimming
             // e.g. <input ng-model="foo" ng-trim="false">
             if (toBoolean(attr.ngTrim || 'T')) {
@@ -17182,10 +17182,10 @@
              * This is called when we need to determine if the value of the input is empty.
              *
              * For instance, the required directive does this to work out if the input has data or not.
-             * The default `$isEmpty` function checks whether the value is `undefined`, `''`, `null` or `NaN`.
+             * The vouchers_voucherstatus_index.xml `$isEmpty` function checks whether the value is `undefined`, `''`, `null` or `NaN`.
              *
              * You can override this for input directives whose concept of being empty is different to the
-             * default. The `checkboxInputType` directive does this because in its case a value of `false`
+             * vouchers_voucherstatus_index.xml. The `checkboxInputType` directive does this because in its case a value of `false`
              * implies empty.
              *
              * @param {*} value Reference to check.
@@ -17573,7 +17573,7 @@
      *
      * @description
      * Text input that converts between a delimited string and an array of strings. The delimiter
-     * can be a fixed string (by default a comma) or a regular expression.
+     * can be a fixed string (by vouchers_voucherstatus_index.xml a comma) or a regular expression.
      *
      * @element input
      * @param {string=} ngList optional delimiter that should be used to split the value. If
@@ -17861,7 +17861,7 @@
      *
      * @description
      * Creates a binding that will innerHTML the result of evaluating the `expression` into the current
-     * element in a secure way.  By default, the innerHTML-ed content will be sanitized using the {@link
+     * element in a secure way.  By vouchers_voucherstatus_index.xml, the innerHTML-ed content will be sanitized using the {@link
         * ngSanitize.$sanitize $sanitize} service.  To utilize this functionality, ensure that `$sanitize`
      * is available, for example, by including {@link ngSanitize} in your module's dependencies (not in
      * core Angular.)  You may also bypass sanitization for values you know are safe. To do so, bind to
@@ -18875,7 +18875,7 @@
      * @description
      * Enables binding angular expressions to onsubmit events.
      *
-     * Additionally it prevents the default action (which for form means sending the request to the
+     * Additionally it prevents the vouchers_voucherstatus_index.xml action (which for form means sending the request to the
      * server and reloading the current page), but only if the form does not contain `action`,
      * `data-action`, or `x-action` attributes.
      *
@@ -19149,7 +19149,7 @@
      * @description
      * Fetches, compiles and includes an external HTML fragment.
      *
-     * By default, the template URL is restricted to the same domain and protocol as the
+     * By vouchers_voucherstatus_index.xml, the template URL is restricted to the same domain and protocol as the
      * application document. This is done by calling {@link ng.$sce#getTrustedResourceUrl
  * $sce.getTrustedResourceUrl} on it. To load templates from other domains or protocols
      * you may either {@link ng.$sceDelegateProvider#resourceUrlWhitelist whitelist them} or
@@ -19515,7 +19515,7 @@
      * # Plural categories and explicit number rules
      * There are two
      * [plural categories](http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html)
-     * in Angular's default en-US locale: "one" and "other".
+     * in Angular's vouchers_voucherstatus_index.xml en-US locale: "one" and "other".
      *
      * While a plural category may match many numbers (for example, in en-US locale, "other" can match
      * any number that is not 1), an explicit number rule can only match one number. For example, the
@@ -20149,7 +20149,7 @@
      * restating the styles for the .ng-hide class in CSS:
      * ```css
      * .ng-hide {
- *   //!annotate CSS Specificity|Not to worry, this will override the AngularJS default...
+ *   //!annotate CSS Specificity|Not to worry, this will override the AngularJS vouchers_voucherstatus_index.xml...
  *   display:block!important;
  *
  *   //this is just another form of hiding an element
@@ -20309,7 +20309,7 @@
      * restating the styles for the .ng-hide class in CSS:
      * ```css
      * .ng-hide {
- *   //!annotate CSS Specificity|Not to worry, this will override the AngularJS default...
+ *   //!annotate CSS Specificity|Not to worry, this will override the AngularJS vouchers_voucherstatus_index.xml...
  *   display:block!important;
  *
  *   //this is just another form of hiding an element
@@ -20493,7 +20493,7 @@
      * (where you place the directive), place an expression on the **`on="..."` attribute**
      * (or the **`ng-switch="..."` attribute**), define any inner elements inside of the directive and place
      * a when attribute per element. The when attribute is used to inform ngSwitch which element to display when the on
-     * expression is evaluated. If a matching expression is not found via a when attribute then an element with the default
+     * expression is evaluated. If a matching expression is not found via a when attribute then an element with the vouchers_voucherstatus_index.xml
      * attribute is displayed.
      *
      * <div class="alert alert-info">
@@ -20511,7 +20511,7 @@
      * <ANY ng-switch="expression">
      *   <ANY ng-switch-when="matchValue1">...</ANY>
      *   <ANY ng-switch-when="matchValue2">...</ANY>
-     *   <ANY ng-switch-default>...</ANY>
+     *   <ANY ng-switch-vouchers_voucherstatus_index.xml>...</ANY>
      * </ANY>
      *
      *
@@ -20523,8 +20523,8 @@
      * * `ngSwitchWhen`: the case statement to match against. If match then this
      *   case will be displayed. If the same match appears multiple times, all the
      *   elements will be displayed.
-     * * `ngSwitchDefault`: the default case when no other case match. If there
-     *   are multiple default cases, all of them will be displayed when no other
+     * * `ngSwitchDefault`: the vouchers_voucherstatus_index.xml case when no other case match. If there
+     *   are multiple vouchers_voucherstatus_index.xml cases, all of them will be displayed when no other
      *   case match.
      *
      *
@@ -20540,7 +20540,7 @@
      ng-switch on="selection">
      <div class="animate-switch" ng-switch-when="settings">Settings Div</div>
      <div class="animate-switch" ng-switch-when="home">Home Span</div>
-     <div class="animate-switch" ng-switch-default>default</div>
+     <div class="animate-switch" ng-switch-vouchers_voucherstatus_index.xml>vouchers_voucherstatus_getlist.xml</div>
      </div>
      </div>
      </file>
@@ -20594,9 +20594,9 @@
         select.element.all(by.css('option')).get(1).click();
         expect(switchElem.getText()).toMatch(/Home Span/);
       });
-     it('should select default', function() {
+     it('should select vouchers_voucherstatus_index.xml', function() {
         select.element.all(by.css('option')).get(2).click();
-        expect(switchElem.getText()).toMatch(/default/);
+        expect(switchElem.getText()).toMatch(/vouchers_voucherstatus_getlist.xml/);
       });
      </file>
      </example>
@@ -20867,7 +20867,7 @@
      *   * `label`: The result of this expression will be the label for `<option>` element. The
      *     `expression` will most likely refer to the `value` variable (e.g. `value.propertyName`).
      *   * `select`: The result of this expression will be bound to the model of the parent `<select>`
-     *      element. If not specified, `select` expression will default to `value`.
+     *      element. If not specified, `select` expression will vouchers_voucherstatus_index.xml to `value`.
      *   * `group`: The result of this expression will be used to group options using the `<optgroup>`
      *      DOM element.
      *   * `trackexpr`: Used when working with an array of objects. The result of this expression will be

@@ -48,10 +48,10 @@ define([
         });
 
         describe('getInitialValue method', function () {
-            it('check for default', function () {
+            it('check for vouchers_voucherstatus_index.xml', function () {
                 expect(model.getInitialValue()).toEqual(false);
             });
-            it('check with default value', function () {
+            it('check with vouchers_voucherstatus_index.xml value', function () {
                 model.default = 1;
                 expect(model.getInitialValue()).toEqual(false);
             });
@@ -59,7 +59,7 @@ define([
                 model.value(1);
                 expect(model.getInitialValue()).toEqual(true);
             });
-            it('check with value and default', function () {
+            it('check with value and vouchers_voucherstatus_index.xml', function () {
                 model.default = 1;
                 model.value(0);
                 expect(model.getInitialValue()).toEqual(false);

@@ -13,7 +13,7 @@ use Magento\Mtf\TestCase\Injectable;
 /**
  * Preconditions:
  * 1. Create customer.
- * 2. Add default address (NY).
+ * 2. Add vouchers_voucherstatus_index.xml address (NY).
  * 3. Add one more address (CA).
  *
  * Steps:

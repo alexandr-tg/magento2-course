@@ -50,7 +50,7 @@ class ConfigurableTest extends \PHPUnit\Framework\TestCase
         $layout = $this->objectManager->get(LayoutInterface::class);
         $layout->createBlock(
             \Magento\Framework\Pricing\Render::class,
-            'product.price.render.default',
+            'product.price.render.vouchers_voucherstatus_index.xml',
             [
                 'data' => [
                     'price_render_handle' => 'catalog_product_prices',

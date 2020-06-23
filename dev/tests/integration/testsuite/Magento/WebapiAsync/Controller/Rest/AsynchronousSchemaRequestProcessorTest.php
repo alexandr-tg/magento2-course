@@ -53,7 +53,7 @@ class AsynchronousSchemaRequestProcessorTest extends AbstractController
             ['rest/async/schema'],
             ['rest/async/schema?services=all'],
             ['rest/all/async/schema?services=all'],
-            ['rest/default/async/schema?services=all'],
+            ['rest/vouchers_voucherstatus_index.xml/async/schema?services=all'],
             ['rest/async/schema?services=all'],
         ];
     }

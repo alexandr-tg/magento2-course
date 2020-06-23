@@ -21,7 +21,7 @@ return [
     ],
     'resource' => [],
     'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'default',
+    'MAGE_MODE' => 'vouchers_voucherstatus_index.xml',
     'cache_types' => [
         'config' => 1,
         'layout' => 1,

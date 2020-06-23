@@ -16,7 +16,7 @@ return [
      * CONFIG__DEFAULT__SOME__CONFIG__PATH_THREE for some/config/path_three
      */
     'system' => [
-        'default' => [
+        'vouchers_voucherstatus_index.xml' => [
             'web' => [],
             'general' => []
         ]

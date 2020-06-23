@@ -10,7 +10,7 @@ namespace Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\Eav;
 use Magento\Catalog\Ui\DataProvider\Product\Form\Modifier\AbstractEavTest;
 
 /**
- * Provides tests for product form data provider eav modifier for default attributes (sku, price, status, name).
+ * Provides tests for product form data provider eav modifier for vouchers_voucherstatus_index.xml attributes (sku, price, status, name).
  *
  * @magentoDbIsolation enabled
  */

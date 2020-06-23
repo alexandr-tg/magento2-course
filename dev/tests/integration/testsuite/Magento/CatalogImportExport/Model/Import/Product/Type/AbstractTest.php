@@ -22,7 +22,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
 
     /**
      * On product import abstract class methods level it doesn't matter what product type is using.
-     * That is why current tests are using simple product entity type by default
+     * That is why current tests are using simple product entity type by vouchers_voucherstatus_index.xml
      */
     protected function setUp()
     {
@@ -72,12 +72,12 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
     public function prepareAttributesWithDefaultValueForSaveDataProvider(): array
     {
         return [
-            'Updating existing product with attributes that do not have default values' => [
+            'Updating existing product with attributes that do not have vouchers_voucherstatus_index.xml values' => [
                 ['sku' => 'simple_product_1', 'price' => 55, '_attribute_set' => 'Default', 'product_type' => 'simple'],
                 false,
                 ['price' => 55],
             ],
-            'Updating existing product with attributes that have default values' => [
+            'Updating existing product with attributes that have vouchers_voucherstatus_index.xml values' => [
                 [
                     'sku' => 'simple_product_2',
                     'price' => 65,
@@ -89,7 +89,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
                 false,
                 ['price' => 65, 'visibility' => 1, 'tax_class_id' => ''],
             ],
-            'Adding new product with attributes that do not have default values' => [
+            'Adding new product with attributes that do not have vouchers_voucherstatus_index.xml values' => [
                 [
                     'sku' => 'simple_product_3',
                     'store_view_code' => '',
@@ -120,7 +120,7 @@ class AbstractTest extends \PHPUnit\Framework\TestCase
                     'msrp_display_actual_price_type' => 0
                 ],
             ],
-            'Adding new product with attributes that have default values' => [
+            'Adding new product with attributes that have vouchers_voucherstatus_index.xml values' => [
                 [
                     'sku' => 'simple_product_4',
                     'store_view_code' => '',

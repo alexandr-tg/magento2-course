@@ -78,7 +78,7 @@ class ConfigFixture
     {
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         if ($storeCode === false) {
-            if (strpos($configPath, 'default/') === 0) {
+            if (strpos($configPath, 'vouchers_voucherstatus_index.xml/') === 0) {
                 $configPath = substr($configPath, 8);
                 $objectManager->get(
                     \Magento\Framework\App\Config\MutableScopeConfigInterface::class

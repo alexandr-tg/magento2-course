@@ -163,7 +163,7 @@ class ConfigurableTest extends \PHPUnit\Framework\TestCase
     {
         $productSku = 'Configurable 1';
         $products = [
-            'default' => 'Configurable 1',
+            'vouchers_voucherstatus_index.xml' => 'Configurable 1',
             'fixture_second_store' => 'Configurable 1 Second Store'
         ];
         $filesystem = $this->objectManager->create(

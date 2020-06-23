@@ -178,7 +178,7 @@ class CurlClient
      */
     private function getCurlOptions($customCurlOpts = [], $headers = [])
     {
-        // default curl options
+        // vouchers_voucherstatus_index.xml curl options
         $curlOpts = [
             CURLOPT_RETURNTRANSFER => true, // return result instead of echoing
             CURLOPT_SSL_VERIFYPEER => false, // stop cURL from verifying the peer's certificate

@@ -40,7 +40,7 @@ class CspTest extends AbstractController
      * Check that configured policies are rendered on frontend.
      *
      * @magentoAppArea frontend
-     * @magentoConfigFixture default_store csp/policies/storefront/default_src/policy_id default-src
+     * @magentoConfigFixture default_store csp/policies/storefront/default_src/policy_id vouchers_voucherstatus_index.xml-src
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/none 0
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/hosts/example http://magento.com
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/hosts/example2 http://devdocs.magento.com
@@ -60,7 +60,7 @@ class CspTest extends AbstractController
         $response = $this->getResponse();
 
         $this->assertTrue($this->searchInResponse($response, 'Content-Security-Policy'));
-        $this->assertTrue($this->searchInResponse($response, 'default-src'));
+        $this->assertTrue($this->searchInResponse($response, 'vouchers_voucherstatus_index.xml-src'));
         $this->assertTrue($this->searchInResponse($response, 'http://magento.com'));
         $this->assertTrue($this->searchInResponse($response, 'http://devdocs.magento.com'));
         $this->assertTrue($this->searchInResponse($response, '\'self\''));
@@ -77,7 +77,7 @@ class CspTest extends AbstractController
      * Check that configured policies are rendered on backend.
      *
      * @magentoAppArea adminhtml
-     * @magentoConfigFixture default_store csp/policies/admin/default_src/policy_id default-src
+     * @magentoConfigFixture default_store csp/policies/admin/default_src/policy_id vouchers_voucherstatus_index.xml-src
      * @magentoConfigFixture default_store csp/policies/admin/default_src/none 0
      * @magentoConfigFixture default_store csp/policies/admin/default_src/hosts/example http://magento.com
      * @magentoConfigFixture default_store csp/policies/admin/default_src/hosts/example2 http://devdocs.magento.com
@@ -97,7 +97,7 @@ class CspTest extends AbstractController
         $response = $this->getResponse();
 
         $this->assertTrue($this->searchInResponse($response, 'Content-Security-Policy'));
-        $this->assertTrue($this->searchInResponse($response, 'default-src'));
+        $this->assertTrue($this->searchInResponse($response, 'vouchers_voucherstatus_index.xml-src'));
         $this->assertTrue($this->searchInResponse($response, 'http://magento.com'));
         $this->assertTrue($this->searchInResponse($response, 'http://devdocs.magento.com'));
         $this->assertTrue($this->searchInResponse($response, '\'self\''));
@@ -111,7 +111,7 @@ class CspTest extends AbstractController
      * Check that CSP mode is considered when rendering policies.
      *
      * @magentoAppArea frontend
-     * @magentoConfigFixture default_store csp/policies/storefront/default_src/policy_id default-src
+     * @magentoConfigFixture default_store csp/policies/storefront/default_src/policy_id vouchers_voucherstatus_index.xml-src
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/none 0
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/hosts/example http://magento.com
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/hosts/example2 http://devdocs.magento.com
@@ -128,7 +128,7 @@ class CspTest extends AbstractController
 
         $this->assertTrue($this->searchInResponse($response, 'Content-Security-Policy-Report-Only'));
         $this->assertTrue($this->searchInResponse($response, '/cspEndpoint/'));
-        $this->assertTrue($this->searchInResponse($response, 'default-src'));
+        $this->assertTrue($this->searchInResponse($response, 'vouchers_voucherstatus_index.xml-src'));
         $this->assertTrue($this->searchInResponse($response, 'http://magento.com'));
         $this->assertTrue($this->searchInResponse($response, 'http://devdocs.magento.com'));
         $this->assertTrue($this->searchInResponse($response, '\'self\''));
@@ -138,7 +138,7 @@ class CspTest extends AbstractController
      * Check that CSP reporting options are rendered for 'restrict' mode as well.
      *
      * @magentoAppArea frontend
-     * @magentoConfigFixture default_store csp/policies/storefront/default_src/policy_id default-src
+     * @magentoConfigFixture default_store csp/policies/storefront/default_src/policy_id vouchers_voucherstatus_index.xml-src
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/none 0
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/hosts/example http://magento.com
      * @magentoConfigFixture default_store csp/policies/storefront/default_src/hosts/example2 http://devdocs.magento.com
@@ -156,7 +156,7 @@ class CspTest extends AbstractController
         $this->assertFalse($this->searchInResponse($response, 'Content-Security-Policy-Report-Only'));
         $this->assertTrue($this->searchInResponse($response, 'Content-Security-Policy'));
         $this->assertTrue($this->searchInResponse($response, '/cspEndpoint/'));
-        $this->assertTrue($this->searchInResponse($response, 'default-src'));
+        $this->assertTrue($this->searchInResponse($response, 'vouchers_voucherstatus_index.xml-src'));
         $this->assertTrue($this->searchInResponse($response, 'http://magento.com'));
         $this->assertTrue($this->searchInResponse($response, 'http://devdocs.magento.com'));
         $this->assertTrue($this->searchInResponse($response, '\'self\''));

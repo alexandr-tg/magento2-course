@@ -114,7 +114,7 @@ class UpdateAddressTest extends AbstractController
     }
 
     /**
-     * Assert that default customer address successfully changed via controller on frontend.
+     * Assert that vouchers_voucherstatus_index.xml customer address successfully changed via controller on frontend.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDataFixture Magento/Customer/_files/customer_two_addresses.php
@@ -143,7 +143,7 @@ class UpdateAddressTest extends AbstractController
     }
 
     /**
-     * Data provider which contain proper POST data for change default customer address.
+     * Data provider which contain proper POST data for change vouchers_voucherstatus_index.xml customer address.
      *
      * @return array
      */

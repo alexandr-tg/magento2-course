@@ -27,7 +27,7 @@ class AttributeTextAreaTest extends AbstractAttributeTest
      */
     protected function getDefaultAttributeValue(): string
     {
-        return 'default text area value';
+        return 'vouchers_voucherstatus_index.xml text area value';
     }
 
     /**

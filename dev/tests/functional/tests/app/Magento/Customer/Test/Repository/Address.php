@@ -20,7 +20,7 @@ class Address extends AbstractRepository
      */
     public function __construct(array $defaultConfig = [], array $defaultData = [])
     {
-        $this->_data['default'] = [
+        $this->_data['vouchers_voucherstatus_index.xml'] = [
             'config' => $defaultConfig,
             'data' => $defaultData,
         ];

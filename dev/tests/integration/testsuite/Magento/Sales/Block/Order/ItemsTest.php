@@ -47,7 +47,7 @@ class ItemsTest extends \PHPUnit\Framework\TestCase
 
     /**
      * @magentoAppIsolation enabled
-     * @magentoConfigFixture default/sales/orders/items_per_page 3
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/sales/orders/items_per_page 3
      * @magentoDataFixture Magento/Sales/_files/order_item_list.php
      */
     public function testPagerIsDisplayed()
@@ -88,7 +88,7 @@ class ItemsTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoAppIsolation enabled
      * @magentoAppArea frontend
-     * @magentoConfigFixture default/sales/orders/items_per_page 3
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/sales/orders/items_per_page 3
      * @magentoDataFixture Magento/Sales/_files/order_item_list.php
      */
     public function testGetPagerHtml()

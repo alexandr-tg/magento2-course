@@ -112,7 +112,7 @@ class ProductCustomOptionRepositoryTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => 'V1',
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
         $options = $this->_webApiCall($serviceInfo, ['sku' => $productSku]);

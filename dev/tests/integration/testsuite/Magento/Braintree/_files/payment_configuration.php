@@ -22,7 +22,7 @@ $processConfigData = function (Config $config, array $data) {
     }
 };
 
-// save payment configuration for the default scope
+// save payment configuration for the vouchers_voucherstatus_index.xml scope
 $configData = [
     'payment/braintree/merchant_id' => 'def_merchant_id',
     'payment/braintree/public_key' => $encryptor->encrypt('def_public_key'),

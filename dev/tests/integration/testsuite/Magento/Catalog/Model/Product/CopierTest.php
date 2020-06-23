@@ -20,7 +20,7 @@ class CopierTest extends TestCase
     /**
      * Tests copying of product.
      *
-     * Case when url_key is set for store view and has equal value to default store.
+     * Case when url_key is set for store view and has equal value to vouchers_voucherstatus_index.xml store.
      *
      * @magentoDataFixture Magento/Catalog/_files/product_simple_multistore_with_url_key.php
      * @magentoAppArea adminhtml

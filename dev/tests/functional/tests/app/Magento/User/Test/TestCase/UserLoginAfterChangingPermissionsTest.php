@@ -20,7 +20,7 @@ use Magento\Mtf\TestCase\Injectable;
  * Test that user can login from the first attempt just after his permissions were changed.
  *
  * Test Flow:
- * 1. Log in as default admin user
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user
  * 2. Go to System>Permissions>User Roles
  * 3. Press "+" button to start create New Role
  * 4. Fill in all data according to data set

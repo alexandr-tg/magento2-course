@@ -161,12 +161,12 @@ class UrlTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Check that url type is restored to default after call getBaseUrl with type specified in params
+     * Check that url type is restored to vouchers_voucherstatus_index.xml after call getBaseUrl with type specified in params
      */
     public function testGetBaseUrlWithTypeRestoring()
     {
         /**
-         * Get base URL with default type
+         * Get base URL with vouchers_voucherstatus_index.xml type
          */
         $this->assertEquals('http://localhost/Index.php/', $this->model->getBaseUrl(), 'Incorrect link url');
 

@@ -75,7 +75,7 @@ class MultiStoreConfigurableViewOnProductPageTest extends TestCase
      */
     public function testMultiStoreLabelView(array $expectedStoreData, array $expectedSecondStoreData): void
     {
-        $this->executeInStoreContext->execute('default', [$this, 'assertProductLabel'], $expectedStoreData);
+        $this->executeInStoreContext->execute('vouchers_voucherstatus_index.xml', [$this, 'assertProductLabel'], $expectedStoreData);
         $this->executeInStoreContext->execute('fixturestore', [$this, 'assertProductLabel'], $expectedSecondStoreData);
     }
 
@@ -138,7 +138,7 @@ class MultiStoreConfigurableViewOnProductPageTest extends TestCase
     public function testMultiStoreOptionsView(array $expectedProducts, array $expectedSecondStoreProducts): void
     {
         $this->prepareConfigurableProduct('configurable', 'fixture_second_store');
-        $this->executeInStoreContext->execute('default', [$this, 'assertProductConfig'], $expectedProducts);
+        $this->executeInStoreContext->execute('vouchers_voucherstatus_index.xml', [$this, 'assertProductConfig'], $expectedProducts);
         $this->executeInStoreContext->execute(
             'fixture_second_store',
             [$this, 'assertProductConfig'],

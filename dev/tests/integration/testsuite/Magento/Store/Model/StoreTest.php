@@ -100,7 +100,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
      */
     public function loadDataProvider()
     {
-        return [[1, 1], ['default', 1], ['nostore', null]];
+        return [[1, 1], ['vouchers_voucherstatus_index.xml', 1], ['nostore', null]];
     }
 
     public function testSetGetWebsite()
@@ -138,7 +138,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
     public function testGetBaseUrl($type, $useRewrites, $useStoreCode, $expected)
     {
         /* config operations require store to be loaded */
-        $this->model->load('default');
+        $this->model->load('vouchers_voucherstatus_index.xml');
         \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
             ->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class)
             ->setValue(Store::XML_PATH_USE_REWRITES, $useRewrites, ScopeInterface::SCOPE_STORE);
@@ -162,9 +162,9 @@ class StoreTest extends \PHPUnit\Framework\TestCase
             [UrlInterface::URL_TYPE_WEB, true, false, 'http://localhost/'],
             [UrlInterface::URL_TYPE_WEB, true, true, 'http://localhost/'],
             [UrlInterface::URL_TYPE_LINK, false, false, 'http://localhost/Index.php/'],
-            [UrlInterface::URL_TYPE_LINK, false, true, 'http://localhost/Index.php/default/'],
+            [UrlInterface::URL_TYPE_LINK, false, true, 'http://localhost/Index.php/vouchers_voucherstatus_index.xml/'],
             [UrlInterface::URL_TYPE_LINK, true, false, 'http://localhost/'],
-            [UrlInterface::URL_TYPE_LINK, true, true, 'http://localhost/default/'],
+            [UrlInterface::URL_TYPE_LINK, true, true, 'http://localhost/vouchers_voucherstatus_index.xml/'],
             [UrlInterface::URL_TYPE_DIRECT_LINK, false, false, 'http://localhost/Index.php/'],
             [UrlInterface::URL_TYPE_DIRECT_LINK, false, true, 'http://localhost/Index.php/'],
             [UrlInterface::URL_TYPE_DIRECT_LINK, true, false, 'http://localhost/'],
@@ -192,7 +192,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
         ]);
 
         $this->model = $this->_getStoreModel();
-        $this->model->load('default');
+        $this->model->load('vouchers_voucherstatus_index.xml');
 
         $this->assertEquals('http://localhost/pub/static/', $this->model->getBaseUrl(UrlInterface::URL_TYPE_STATIC));
         $this->assertEquals('http://localhost/pub/media/', $this->model->getBaseUrl(UrlInterface::URL_TYPE_MEDIA));
@@ -211,7 +211,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
     public function testGetBaseUrlForCustomEntryPoint($type, $useCustomEntryPoint, $useStoreCode, $expected)
     {
         /* config operations require store to be loaded */
-        $this->model->load('default');
+        $this->model->load('vouchers_voucherstatus_index.xml');
         \Magento\TestFramework\Helper\Bootstrap::getObjectManager()
             ->get(\Magento\Framework\App\Config\MutableScopeConfigInterface::class)
             ->setValue(Store::XML_PATH_USE_REWRITES, false, ScopeInterface::SCOPE_STORE);
@@ -246,10 +246,10 @@ class StoreTest extends \PHPUnit\Framework\TestCase
                 UrlInterface::URL_TYPE_LINK,
                 false,
                 true,
-                'http://localhost/custom_entry.php/default/'
+                'http://localhost/custom_entry.php/vouchers_voucherstatus_index.xml/'
             ],
             [UrlInterface::URL_TYPE_LINK, true, false, 'http://localhost/Index.php/'],
-            [UrlInterface::URL_TYPE_LINK, true, true, 'http://localhost/Index.php/default/'],
+            [UrlInterface::URL_TYPE_LINK, true, true, 'http://localhost/Index.php/vouchers_voucherstatus_index.xml/'],
             [
                 UrlInterface::URL_TYPE_DIRECT_LINK,
                 false,
@@ -270,7 +270,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
     public function testGetDefaultCurrency()
     {
         /* currency operations require store to be loaded */
-        $this->model->load('default');
+        $this->model->load('vouchers_voucherstatus_index.xml');
         $this->assertEquals($this->model->getDefaultCurrencyCode(), $this->model->getDefaultCurrency()->getCode());
     }
 
@@ -298,8 +298,8 @@ class StoreTest extends \PHPUnit\Framework\TestCase
         $this->model
             ->expects($this->any())->method('getUrl')
             ->will($this->returnValue('http://localhost/Index.php'));
-        $this->assertStringEndsWith('default', $this->model->getCurrentUrl());
-        $this->assertStringEndsNotWith('default', $this->model->getCurrentUrl(false));
+        $this->assertStringEndsWith('vouchers_voucherstatus_index.xml', $this->model->getCurrentUrl());
+        $this->assertStringEndsNotWith('vouchers_voucherstatus_index.xml', $this->model->getCurrentUrl(false));
 
         $this->model
             ->expects($this->any())->method('getUrl')
@@ -322,7 +322,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
             $url
         );
         $this->assertEquals(
-            $secondStore->getBaseUrl() . '?SID=12345&___from_store=default',
+            $secondStore->getBaseUrl() . '?SID=12345&___from_store=vouchers_voucherstatus_index.xml',
             $secondStore->getCurrentUrl()
         );
         $this->assertEquals(
@@ -340,7 +340,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
     {
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
         $objectManager->get(\Magento\Framework\App\Config\ReinitableConfigInterface::class)
-            ->setValue('web/url/use_store', false, ScopeInterface::SCOPE_STORE, 'default');
+            ->setValue('web/url/use_store', false, ScopeInterface::SCOPE_STORE, 'vouchers_voucherstatus_index.xml');
 
         /** @var \Magento\Store\Model\Store $secondStore */
         $secondStore = $objectManager->get(StoreRepositoryInterface::class)->get('fixture_second_store');
@@ -366,7 +366,7 @@ class StoreTest extends \PHPUnit\Framework\TestCase
             $url
         );
         $this->assertEquals(
-            $secondStore->getBaseUrl() . '?___store=fixture_second_store&___from_store=default',
+            $secondStore->getBaseUrl() . '?___store=fixture_second_store&___from_store=vouchers_voucherstatus_index.xml',
             $secondStore->getCurrentUrl()
         );
         $this->assertEquals(

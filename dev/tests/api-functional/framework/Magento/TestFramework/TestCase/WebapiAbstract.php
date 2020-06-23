@@ -518,7 +518,7 @@ abstract class WebapiAbstract extends \PHPUnit\Framework\TestCase
                 \Magento\Framework\App\Config\ScopeConfigInterface::class
             )->getNode(
                 $path,
-                'default'
+                'vouchers_voucherstatus_index.xml'
             );
         }
 

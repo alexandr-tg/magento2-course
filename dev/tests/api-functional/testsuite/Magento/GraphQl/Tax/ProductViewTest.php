@@ -68,7 +68,7 @@ class ProductViewTest extends GraphQlAbstract
             Config::CONFIG_XML_PATH_PRICE_DISPLAY_TYPE
         );
 
-        //default state tax calculation AL
+        //vouchers_voucherstatus_index.xml state tax calculation AL
         $config->saveConfig(
             Config::CONFIG_XML_PATH_DEFAULT_REGION,
             1
@@ -94,7 +94,7 @@ class ProductViewTest extends GraphQlAbstract
         /** @var \Magento\Config\Model\ResourceModel\Config $config */
         $config = $this->objectManager->get(\Magento\Config\Model\ResourceModel\Config::class);
 
-        //default state tax calculation AL
+        //vouchers_voucherstatus_index.xml state tax calculation AL
         $config->saveConfig(
             Config::CONFIG_XML_PATH_DEFAULT_REGION,
             $this->defaultRegionSystemSetting

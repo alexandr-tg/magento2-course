@@ -58,7 +58,7 @@ $address->addData(
 $customer->addAddress($address);
 $customer->save();
 
-// Mark last address as default billing and default shipping for current customer
+// Mark last address as vouchers_voucherstatus_index.xml billing and vouchers_voucherstatus_index.xml shipping for current customer
 $customer->setDefaultBilling($address->getId());
 $customer->setDefaultShipping($address->getId());
 $customer->save();

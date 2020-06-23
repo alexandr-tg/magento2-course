@@ -55,8 +55,8 @@ class ConfigCollectorTest extends TestCase
             ),
             'child-src2' => new FetchPolicy('child-src', false, [], [], false, false, true),
             'connect-src' => new FetchPolicy('connect-src'),
-            'default-src' => new FetchPolicy(
-                'default-src',
+            'vouchers_voucherstatus_index.xml-src' => new FetchPolicy(
+                'vouchers_voucherstatus_index.xml-src',
                 false,
                 ['http://magento.com', 'http://devdocs.magento.com'],
                 [],
@@ -86,13 +86,13 @@ class ConfigCollectorTest extends TestCase
      * Test initiating policies from config.
      *
      * @magentoAppArea frontend
-     * @magentoConfigFixture default_store csp/policies/storefront/default/policy_id default-src
-     * @magentoConfigFixture default_store csp/policies/storefront/default/none 0
-     * @magentoConfigFixture default_store csp/policies/storefront/default/hosts/example http://magento.com
-     * @magentoConfigFixture default_store csp/policies/storefront/default/hosts/example2 http://devdocs.magento.com
-     * @magentoConfigFixture default_store csp/policies/storefront/default/self 1
-     * @magentoConfigFixture default_store csp/policies/storefront/default/eval 0
-     * @magentoConfigFixture default_store csp/policies/storefront/default/inline 0
+     * @magentoConfigFixture default_store csp/policies/storefront/vouchers_voucherstatus_index.xml/policy_id vouchers_voucherstatus_index.xml-src
+     * @magentoConfigFixture default_store csp/policies/storefront/vouchers_voucherstatus_index.xml/none 0
+     * @magentoConfigFixture default_store csp/policies/storefront/vouchers_voucherstatus_index.xml/hosts/example http://magento.com
+     * @magentoConfigFixture default_store csp/policies/storefront/vouchers_voucherstatus_index.xml/hosts/example2 http://devdocs.magento.com
+     * @magentoConfigFixture default_store csp/policies/storefront/vouchers_voucherstatus_index.xml/self 1
+     * @magentoConfigFixture default_store csp/policies/storefront/vouchers_voucherstatus_index.xml/eval 0
+     * @magentoConfigFixture default_store csp/policies/storefront/vouchers_voucherstatus_index.xml/inline 0
      * @magentoConfigFixture default_store csp/policies/storefront/children/policy_id child-src
      * @magentoConfigFixture default_store csp/policies/storefront/children/none 0
      * @magentoConfigFixture default_store csp/policies/storefront/children/hosts/example http://magento.com

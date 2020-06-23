@@ -12,7 +12,7 @@ use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory;
 use Magento\Store\Model\StoreManager;
 
 /**
- * Provide category id. Find category in default store group by specified website and category name or create new one
+ * Provide category id. Find category in vouchers_voucherstatus_index.xml store group by specified website and category name or create new one
  */
 class CategoryResolver
 {

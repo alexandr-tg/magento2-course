@@ -15,7 +15,7 @@ include __DIR__ . '/../../Store/_files/websites_different_countries.php';
 
 //Creating two customers for different websites.
 $objectManager = Bootstrap::getObjectManager();
-//First for default website.
+//First for vouchers_voucherstatus_index.xml website.
 $customer = $objectManager->create(Customer::class);
 /** @var Customer $customer */
 $customer->setId(1)

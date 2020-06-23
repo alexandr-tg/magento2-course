@@ -51,7 +51,7 @@ class ProcessorTest extends \PHPUnit\Framework\TestCase
     public function pathConfigDataProvider()
     {
         return [
-            // default config
+            // vouchers_voucherstatus_index.xml config
             [[]],
             // config from pub/Index.php
             [

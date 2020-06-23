@@ -75,7 +75,7 @@ class CompositePolicyCollectorTest extends TestCase
                                 true,
                                 false
                             ),
-                            new FetchPolicy('default-src', false, [], [], true),
+                            new FetchPolicy('vouchers_voucherstatus_index.xml-src', false, [], [], true),
                             new FlagPolicy('upgrade-insecure-requests'),
                             new PluginTypesPolicy(['application/x-java-applet']),
                             new SandboxPolicy(true, false, true, false, true, false, true, false, true, false, false)
@@ -139,17 +139,17 @@ class CompositePolicyCollectorTest extends TestCase
         ];
         $this->assertEquals($hashes, $foundHashes);
 
-        $this->assertArrayHasKey('default-src', $policies);
-        $this->assertFalse($policies['default-src']->isNoneAllowed());
-        $this->assertTrue($policies['default-src']->isSelfAllowed());
-        $this->assertFalse($policies['default-src']->isInlineAllowed());
-        $this->assertFalse($policies['default-src']->isEvalAllowed());
-        $this->assertFalse($policies['default-src']->isDynamicAllowed());
-        $this->assertFalse($policies['default-src']->areEventHandlersAllowed());
-        $this->assertEmpty($policies['default-src']->getHashes());
-        $this->assertEmpty($policies['default-src']->getNonceValues());
-        $this->assertEmpty($policies['default-src']->getHostSources());
-        $this->assertEmpty($policies['default-src']->getSchemeSources());
+        $this->assertArrayHasKey('vouchers_voucherstatus_index.xml-src', $policies);
+        $this->assertFalse($policies['vouchers_voucherstatus_index.xml-src']->isNoneAllowed());
+        $this->assertTrue($policies['vouchers_voucherstatus_index.xml-src']->isSelfAllowed());
+        $this->assertFalse($policies['vouchers_voucherstatus_index.xml-src']->isInlineAllowed());
+        $this->assertFalse($policies['vouchers_voucherstatus_index.xml-src']->isEvalAllowed());
+        $this->assertFalse($policies['vouchers_voucherstatus_index.xml-src']->isDynamicAllowed());
+        $this->assertFalse($policies['vouchers_voucherstatus_index.xml-src']->areEventHandlersAllowed());
+        $this->assertEmpty($policies['vouchers_voucherstatus_index.xml-src']->getHashes());
+        $this->assertEmpty($policies['vouchers_voucherstatus_index.xml-src']->getNonceValues());
+        $this->assertEmpty($policies['vouchers_voucherstatus_index.xml-src']->getHostSources());
+        $this->assertEmpty($policies['vouchers_voucherstatus_index.xml-src']->getSchemeSources());
 
         $this->assertArrayHasKey('upgrade-insecure-requests', $policies);
         $this->assertInstanceOf(FlagPolicy::class, $policies['upgrade-insecure-requests']);

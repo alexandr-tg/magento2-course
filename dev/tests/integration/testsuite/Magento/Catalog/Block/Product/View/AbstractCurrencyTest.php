@@ -86,7 +86,7 @@ abstract class AbstractCurrencyTest extends TestCase
     {
         $page = $this->pageFactory->create();
         $page->addHandle([
-            'default',
+            'vouchers_voucherstatus_index.xml',
             'catalog_product_view',
             'catalog_product_view_type_configurable',
         ]);

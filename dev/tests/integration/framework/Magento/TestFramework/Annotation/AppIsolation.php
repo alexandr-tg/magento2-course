@@ -91,7 +91,7 @@ class AppIsolation
             }
             $isIsolationEnabled = $isolation === ['enabled'];
         } else {
-            /* Controller tests should be isolated by default */
+            /* Controller tests should be isolated by vouchers_voucherstatus_index.xml */
             $isIsolationEnabled = $test instanceof \Magento\TestFramework\TestCase\AbstractController;
         }
 

@@ -73,13 +73,13 @@ class BCMultiModuleTest extends SetupTestCase
             'Magento_TestSetupDeclarationModule7'
         ]);
         //Check if declaration is applied
-        $indexes = $this->dbSchemaReader->readIndexes('test_table', 'default');
+        $indexes = $this->dbSchemaReader->readIndexes('test_table', 'vouchers_voucherstatus_index.xml');
         self::assertCount(1, $indexes);
         self::assertArrayHasKey('TEST_TABLE_TINYINT_BIGINT', $indexes);
         //Check UpgradeSchema old format, that modify declaration
-        $columns = $this->dbSchemaReader->readColumns('test_table', 'default');
+        $columns = $this->dbSchemaReader->readColumns('test_table', 'vouchers_voucherstatus_index.xml');
         $floatColumn = $columns['float'];
-        self::assertEquals(29, $floatColumn['default']);
+        self::assertEquals(29, $floatColumn['vouchers_voucherstatus_index.xml']);
     }
 
     private function doUsToUsRevision()
@@ -131,7 +131,7 @@ class BCMultiModuleTest extends SetupTestCase
      */
     private function assertUsToUsUpgrade()
     {
-        $usToUsTables = $this->dbSchemaReader->readTables('default');
+        $usToUsTables = $this->dbSchemaReader->readTables('vouchers_voucherstatus_index.xml');
         self::assertContains('custom_table', $usToUsTables);
         self::assertTrue($this->dbVersionInfo->isDataUpToDate('Magento_TestSetupDeclarationModule7'));
         self::assertTrue($this->dbVersionInfo->isSchemaUpToDate('Magento_TestSetupDeclarationModule7'));
@@ -147,10 +147,10 @@ class BCMultiModuleTest extends SetupTestCase
     private function assertUsToDsUpgrade()
     {
         //Check UpgradeSchema old format, that modify declaration
-        $columns = $this->dbSchemaReader->readColumns('test_table', 'default');
+        $columns = $this->dbSchemaReader->readColumns('test_table', 'vouchers_voucherstatus_index.xml');
         $floatColumn = $columns['float'];
         //Check whether declaration will be applied
-        self::assertEquals(35, $floatColumn['default']);
+        self::assertEquals(35, $floatColumn['vouchers_voucherstatus_index.xml']);
         self::assertTrue($this->dbVersionInfo->isDataUpToDate('Magento_TestSetupDeclarationModule7'));
         self::assertTrue($this->dbVersionInfo->isSchemaUpToDate('Magento_TestSetupDeclarationModule7'));
         self::assertEquals(
@@ -194,7 +194,7 @@ class BCMultiModuleTest extends SetupTestCase
         );
         //Check removal case, when we need to remove table with declaration and table was created in old scripts
         $this->cliCommand->upgrade();
-        $tables = $this->dbSchemaReader->readTables('default');
+        $tables = $this->dbSchemaReader->readTables('vouchers_voucherstatus_index.xml');
         self::assertNotContains('custom_table', $tables);
     }
 
@@ -225,17 +225,17 @@ class BCMultiModuleTest extends SetupTestCase
         );
 
         $indexes = $this->dbSchemaReader
-            ->readIndexes($tableName, 'default');
+            ->readIndexes($tableName, 'vouchers_voucherstatus_index.xml');
         self::assertCount(1, $indexes);
         self::assertArrayHasKey($indexName, $indexes);
 
         $constraints = $this->dbSchemaReader
-            ->readConstraints($tableName, 'default');
+            ->readConstraints($tableName, 'vouchers_voucherstatus_index.xml');
         self::assertCount(1, $constraints);
         self::assertArrayHasKey($constraintName, $constraints);
 
         $foreignKeys = $this->dbSchemaReader
-            ->readReferences($tableName, 'default');
+            ->readReferences($tableName, 'vouchers_voucherstatus_index.xml');
         self::assertCount(1, $foreignKeys);
         self::assertArrayHasKey($foreignKeyName, $foreignKeys);
     }

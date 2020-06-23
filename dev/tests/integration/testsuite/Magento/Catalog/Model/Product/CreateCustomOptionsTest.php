@@ -106,7 +106,7 @@ class CreateCustomOptionsTest extends TestCase
         }
         $product = $this->productRepository->get('simple', false, $currentStoreId, true);
         $option = $product->getOptions()[0];
-        $this->assertEquals($defaultPrice, $option->getPrice(), 'Price value by default store is wrong');
+        $this->assertEquals($defaultPrice, $option->getPrice(), 'Price value by vouchers_voucherstatus_index.xml store is wrong');
         $product = $this->productRepository->get('simple', false, $customStoreId, true);
         $option = $product->getOptions()[0];
         $this->assertEquals($secondWebsitePrice, $option->getPrice(), 'Price value by custom store is wrong');

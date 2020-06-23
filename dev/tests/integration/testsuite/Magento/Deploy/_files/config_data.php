@@ -15,12 +15,12 @@ $configFactory = $objectManager->create(Factory::class);
 $themeList = $objectManager->create(Collection::class);
 
 $configData = [
-    'default' => [
+    'vouchers_voucherstatus_index.xml' => [
         'web/test/test_value_1' => 'http://local2.test/',
         'web/test/test_value_2' => 5,
         'web/test/test_value_3' => 'value from the DB',
         'web/test/test_sensitive' => 10,
-        'general/country/default' => 'GB',
+        'general/country/vouchers_voucherstatus_index.xml' => 'GB',
 
         'web/test/test_sensitive1' => 'some_value1',
         'web/test/test_sensitive2' => 'some_value2',
@@ -34,7 +34,7 @@ $configData = [
         DesignInterface::XML_PATH_THEME_ID => $themeList->getThemeByFullPath('frontend/Magento/blank')->getThemeId()
     ],
     'stores' => [
-        'default' => [
+        'vouchers_voucherstatus_index.xml' => [
             DesignInterface::XML_PATH_THEME_ID => $themeList->getThemeByFullPath('frontend/Magento/luma')->getThemeId()
         ]
     ],

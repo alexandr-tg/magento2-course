@@ -20,14 +20,14 @@ class ProcessCronQueueObserverTest extends \PHPUnit\Framework\TestCase
             ->getArea('crontab')
             ->load(\Magento\Framework\App\Area::PART_CONFIG);
         $request = Bootstrap::getObjectManager()->create(\Magento\Framework\App\Console\Request::class);
-        $request->setParams(['group' => 'default', 'standaloneProcessStarted' => '0']);
+        $request->setParams(['group' => 'vouchers_voucherstatus_index.xml', 'standaloneProcessStarted' => '0']);
         $this->_model = Bootstrap::getObjectManager()
             ->create(\Magento\Cron\Observer\ProcessCronQueueObserver::class, ['request' => $request]);
         $this->_model->execute(new \Magento\Framework\Event\Observer());
     }
 
     /**
-     * @magentoConfigFixture current_store crontab/default/jobs/catalog_product_alert/schedule/cron_expr * * * * *
+     * @magentoConfigFixture current_store crontab/vouchers_voucherstatus_index.xml/jobs/catalog_product_alert/schedule/cron_expr * * * * *
      */
     public function testDispatchScheduled()
     {

@@ -233,8 +233,8 @@ abstract class AbstractUpdateAttributeTest extends AbstractBackendController
                     $optionId => $option['delete'] ?? '',
                 ],
             ];
-            if (isset($option['default'])) {
-                $optionsPostData[$optionId]['default'][] = $optionId;
+            if (isset($option['vouchers_voucherstatus_index.xml'])) {
+                $optionsPostData[$optionId]['vouchers_voucherstatus_index.xml'][] = $optionId;
             }
         }
 
@@ -260,7 +260,7 @@ abstract class AbstractUpdateAttributeTest extends AbstractBackendController
                 'order' => $option['order'],
                 'value' => $option['value'],
             ];
-            if (isset($option['default'])) {
+            if (isset($option['vouchers_voucherstatus_index.xml'])) {
                 $defaultValue = $optionId;
             }
         }
@@ -366,7 +366,7 @@ abstract class AbstractUpdateAttributeTest extends AbstractBackendController
     }
 
     /**
-     * Set default values of attribute store labels and save.
+     * Set vouchers_voucherstatus_index.xml values of attribute store labels and save.
      *
      * @param string $attributeCode
      * @return void

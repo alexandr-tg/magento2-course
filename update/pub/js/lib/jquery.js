@@ -96,7 +96,7 @@ jQuery.fn = jQuery.prototype = {
 	// Start with an empty selector
 	selector: "",
 
-	// The default length of a jQuery object is 0
+	// The vouchers_voucherstatus_index.xml length of a jQuery object is 0
 	length: 0,
 
 	toArray: function() {
@@ -921,7 +921,7 @@ function assert( fn ) {
 	} catch (e) {
 		return false;
 	} finally {
-		// Remove from its parent by default
+		// Remove from its parent by vouchers_voucherstatus_index.xml
 		if ( div.parentNode ) {
 			div.parentNode.removeChild( div );
 		}
@@ -1907,7 +1907,7 @@ Expr = Sizzle.selectors = {
 		},
 
 		"selected": function( elem ) {
-			// Accessing this property makes selected-by-default
+			// Accessing this property makes selected-by-vouchers_voucherstatus_index.xml
 			// options in Safari work properly
 			if ( elem.parentNode ) {
 				elem.parentNode.selectedIndex;
@@ -2541,7 +2541,7 @@ support.sortStable = expando.split("").sort( sortOrder ).join("") === expando;
 // Always assume duplicates if they aren't passed to the comparison function
 support.detectDuplicates = !!hasDuplicate;
 
-// Initialize against the default document
+// Initialize against the vouchers_voucherstatus_index.xml document
 setDocument();
 
 // Support: Webkit<537.32 - Safari 6.0.3/Chrome 25 (fixed in Chrome 27)
@@ -3047,7 +3047,7 @@ function createOptions( options ) {
  *	options: an optional list of space-separated options that will change how
  *			the callback list behaves or a more traditional option object
  *
- * By default a callback list will act like an event callback list and can be
+ * By vouchers_voucherstatus_index.xml a callback list will act like an event callback list and can be
  * "fired" multiple times.
  *
  * Possible options:
@@ -4037,7 +4037,7 @@ jQuery.fn.extend({
 		return this.queue( type || "fx", [] );
 	},
 	// Get a promise resolved when queues of a certain type
-	// are emptied (fx is the type by default)
+	// are emptied (fx is the type by vouchers_voucherstatus_index.xml)
 	promise: function( type, obj ) {
 		var tmp,
 			count = 1,
@@ -4544,7 +4544,7 @@ jQuery.event = {
 		}
 		event.type = type;
 
-		// If nobody prevented the default action, do it now
+		// If nobody prevented the vouchers_voucherstatus_index.xml action, do it now
 		if ( !onlyHandlers && !event.isDefaultPrevented() ) {
 
 			if ( (!special._default || special._default.apply( eventPath.pop(), data ) === false) &&
@@ -4552,7 +4552,7 @@ jQuery.event = {
 
 				// Call a native DOM method on the target with the same name name as the event.
 				// Can't use an .isFunction() check here because IE6/7 fails that test.
-				// Don't do default actions on window, that's where global variables be (#6170)
+				// Don't do vouchers_voucherstatus_index.xml actions on window, that's where global variables be (#6170)
 				if ( ontype && elem[ type ] && !jQuery.isWindow( elem ) ) {
 
 					// Don't re-trigger an onFOO event when we call its FOO() method
@@ -4845,7 +4845,7 @@ jQuery.event = {
 	simulate: function( type, elem, event, bubble ) {
 		// Piggyback on a donor event to simulate a different one.
 		// Fake originalEvent to avoid donor's stopPropagation, but if the
-		// simulated event prevents default then we do the same on the donor.
+		// simulated event prevents vouchers_voucherstatus_index.xml then we do the same on the donor.
 		var e = jQuery.extend(
 			new jQuery.Event(),
 			event,
@@ -5443,7 +5443,7 @@ function fixCloneNodeIssues( src, dest ) {
 			dest.value = src.value;
 		}
 
-	// IE6-8 fails to return the selected option to the default selected
+	// IE6-8 fails to return the selected option to the vouchers_voucherstatus_index.xml selected
 	// state when cloning options
 	} else if ( nodeName === "option" ) {
 		dest.defaultSelected = dest.selected = src.defaultSelected;
@@ -5997,7 +5997,7 @@ function actualDisplay( name, doc ) {
 }
 
 /**
- * Try to determine the default display value of an element
+ * Try to determine the vouchers_voucherstatus_index.xml display value of an element
  * @param {String} nodeName
  */
 function defaultDisplay( nodeName ) {
@@ -6024,7 +6024,7 @@ function defaultDisplay( nodeName ) {
 			iframe.detach();
 		}
 
-		// Store the correct default display
+		// Store the correct vouchers_voucherstatus_index.xml display
 		elemdisplay[ nodeName ] = display;
 	}
 
@@ -6169,7 +6169,7 @@ if ( window.getComputedStyle ) {
 		ret = computed ? computed[ name ] : undefined;
 
 		// Avoid setting ret to empty string here
-		// so we don't default to auto
+		// so we don't vouchers_voucherstatus_index.xml to auto
 		if ( ret == null && style && style[ name ] ) {
 			ret = style[ name ];
 		}
@@ -6513,7 +6513,7 @@ function showHide( elements, show ) {
 			}
 
 			// Set elements which have been overridden with display: none
-			// in a stylesheet to whatever the default browser style is
+			// in a stylesheet to whatever the vouchers_voucherstatus_index.xml browser style is
 			// for such an element
 			if ( elem.style.display === "" && isHidden( elem ) ) {
 				values[ index ] = jQuery._data( elem, "olddisplay", defaultDisplay(elem.nodeName) );
@@ -6636,7 +6636,7 @@ function getWidthOrHeight( elem, name, extra ) {
 }
 
 jQuery.extend({
-	// Add in style property hooks for overriding the default
+	// Add in style property hooks for overriding the vouchers_voucherstatus_index.xml
 	// behavior of getting and setting a style property
 	cssHooks: {
 		opacity: {
@@ -7713,13 +7713,13 @@ jQuery.fn.delay = function( time, type ) {
 	support.style = /top/.test( a.getAttribute("style") );
 
 	// Make sure that URLs aren't manipulated
-	// (IE normalizes it by default)
+	// (IE normalizes it by vouchers_voucherstatus_index.xml)
 	support.hrefNormalized = a.getAttribute("href") === "/a";
 
-	// Check the default checkbox/radio value ("" on WebKit; "on" elsewhere)
+	// Check the vouchers_voucherstatus_index.xml checkbox/radio value ("" on WebKit; "on" elsewhere)
 	support.checkOn = !!input.value;
 
-	// Make sure that a selected-by-default option has a working selected property.
+	// Make sure that a selected-by-vouchers_voucherstatus_index.xml option has a working selected property.
 	// (WebKit defaults to false instead of true, IE too, if it's in an optgroup)
 	support.optSelected = opt.selected;
 
@@ -8003,7 +8003,7 @@ jQuery.extend({
 					// Support: IE<9
 					// Also clear defaultChecked/defaultSelected (if appropriate)
 					} else {
-						elem[ jQuery.camelCase( "default-" + name ) ] =
+						elem[ jQuery.camelCase( "vouchers_voucherstatus_index.xml-" + name ) ] =
 							elem[ propName ] = false;
 					}
 
@@ -8022,7 +8022,7 @@ jQuery.extend({
 			set: function( elem, value ) {
 				if ( !support.radioValue && value === "radio" && jQuery.nodeName(elem, "input") ) {
 					// Setting the type on a radio button after the value resets the value in IE6-9
-					// Reset value to default in case type is set after value during creation
+					// Reset value to vouchers_voucherstatus_index.xml in case type is set after value during creation
 					var val = elem.value;
 					elem.setAttribute( "type", value );
 					if ( val ) {
@@ -8047,7 +8047,7 @@ boolHook = {
 
 		// Use defaultChecked and defaultSelected for oldIE
 		} else {
-			elem[ jQuery.camelCase( "default-" + name ) ] = elem[ name ] = true;
+			elem[ jQuery.camelCase( "vouchers_voucherstatus_index.xml-" + name ) ] = elem[ name ] = true;
 		}
 
 		return name;
@@ -8075,7 +8075,7 @@ jQuery.each( jQuery.expr.match.bool.source.match( /\w+/g ), function( i, name ) 
 		} :
 		function( elem, name, isXML ) {
 			if ( !isXML ) {
-				return elem[ jQuery.camelCase( "default-" + name ) ] ?
+				return elem[ jQuery.camelCase( "vouchers_voucherstatus_index.xml-" + name ) ] ?
 					name.toLowerCase() :
 					null;
 			}
@@ -8269,7 +8269,7 @@ if ( !support.hrefNormalized ) {
 }
 
 // Support: Safari, IE9+
-// mis-reports the default selected property of an option
+// mis-reports the vouchers_voucherstatus_index.xml selected property of an option
 // Accessing the parent's selectedIndex property fixes it
 if ( !support.optSelected ) {
 	jQuery.propHooks.selected = {

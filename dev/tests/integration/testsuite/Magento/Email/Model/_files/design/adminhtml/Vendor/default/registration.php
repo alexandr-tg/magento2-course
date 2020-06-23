@@ -6,4 +6,4 @@
 
 use \Magento\Framework\Component\ComponentRegistrar;
 
-ComponentRegistrar::register(ComponentRegistrar::THEME, 'adminhtml/Vendor_EmailTest/default', __DIR__);
+ComponentRegistrar::register(ComponentRegistrar::THEME, 'adminhtml/Vendor_EmailTest/vouchers_voucherstatus_index.xml', __DIR__);

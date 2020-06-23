@@ -97,7 +97,7 @@ class CreateAddressTest extends AbstractController
     }
 
     /**
-     * Assert that default or non-default customer address successfully created via controller on frontend.
+     * Assert that vouchers_voucherstatus_index.xml or non-vouchers_voucherstatus_index.xml customer address successfully created via controller on frontend.
      *
      * @dataProvider postDataForSuccessCreateDefaultAddressDataProvider
      *
@@ -112,8 +112,8 @@ class CreateAddressTest extends AbstractController
         bool $isBillingDefault
     ): void {
         $customer = $this->customerRepository->get('customer5@example.com');
-        $this->assertNull($customer->getDefaultShipping(), 'Customer already have default shipping address');
-        $this->assertNull($customer->getDefaultBilling(), 'Customer already have default billing address');
+        $this->assertNull($customer->getDefaultShipping(), 'Customer already have vouchers_voucherstatus_index.xml shipping address');
+        $this->assertNull($customer->getDefaultBilling(), 'Customer already have vouchers_voucherstatus_index.xml billing address');
         $this->assertEmpty($customer->getAddresses(), 'Customer already has address');
         $this->performRequestWithData($postData);
         $this->checkRequestPerformedSuccessfully();
@@ -129,7 +129,7 @@ class CreateAddressTest extends AbstractController
     }
 
     /**
-     * Data provider which contain proper POST data for create default or non-default customer address.
+     * Data provider which contain proper POST data for create vouchers_voucherstatus_index.xml or non-vouchers_voucherstatus_index.xml customer address.
      *
      * @return array
      */

@@ -230,7 +230,7 @@ class FixedProductTaxAttributeTest extends TestCase
     /**
      * @magentoDbIsolation disabled
      *
-     * @magentoConfigFixture default/catalog/price/scope 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/price/scope 1
      * @magentoConfigFixture fixture_second_store_store tax/weee/enable 1
      * @magentoConfigFixture fixture_second_store_store tax/weee/display 2
      *
@@ -388,7 +388,7 @@ class FixedProductTaxAttributeTest extends TestCase
         $block = $this->objectManager->create(Render::class);
         $block->setPriceRenderHandle('catalog_product_prices');
         $block->setLayout($this->layout);
-        $this->layout->addBlock($block, 'product.price.render.default');
+        $this->layout->addBlock($block, 'product.price.render.vouchers_voucherstatus_index.xml');
     }
 
     /**
@@ -400,9 +400,9 @@ class FixedProductTaxAttributeTest extends TestCase
     {
         $render = $this->objectManager->create(Render::class);
         $render->setPriceRenderHandle('catalog_product_prices');
-        $this->layout->addBlock($render, 'product.price.render.default');
+        $this->layout->addBlock($render, 'product.price.render.vouchers_voucherstatus_index.xml');
         $block = $this->objectManager->create(CatalogPricingRender::class);
-        $block->setPriceRender('product.price.render.default');
+        $block->setPriceRender('product.price.render.vouchers_voucherstatus_index.xml');
         $block->setPriceTypeCode('final_price');
         $this->layout->addBlock($block, 'render.product.prices');
         $block->setLayout($this->layout);

@@ -24,7 +24,7 @@ class CheckoutAgreementsListTest extends WebapiAbstract
         $searchCriteriaBuilder->setCurrentPage(1);
         $requestData = ['searchCriteria' => $searchCriteriaBuilder->create()->__toArray()];
 
-        // Checkout agreements are disabled by default
+        // Checkout agreements are disabled by vouchers_voucherstatus_index.xml
         $agreements = $this->_webApiCall($this->getServiceInfo($requestData), $requestData);
         $this->assertEquals(2, count($agreements));
     }

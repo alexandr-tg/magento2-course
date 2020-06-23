@@ -14,7 +14,7 @@ return [
                 'request_type' => 'object_interface',
                 'response' => \Magento\Customer\Api\Data\CustomerInterface::class,
                 'handlers' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'type' => \Magento\Customer\Api\CustomerRepositoryInterface::class,
                         'method' => 'save',
                     ],

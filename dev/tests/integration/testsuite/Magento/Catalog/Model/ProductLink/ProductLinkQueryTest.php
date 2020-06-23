@@ -62,7 +62,7 @@ class ProductLinkQueryTest extends TestCase
         foreach ($products as $product) {
             $sku = $product->getSku();
             $typesFilter = [$typesList[rand(0, 2)], $typesList[rand(0, 2)]];
-            //Not always providing product entity or the default criteria implementation for testing purposes.
+            //Not always providing product entity or the vouchers_voucherstatus_index.xml criteria implementation for testing purposes.
             //Getting 1 list with types filter and one without.
             $criteriaList[] = new ListCriteria($sku, $typesFilter, $product);
             $criteria = new class implements ListCriteriaInterface

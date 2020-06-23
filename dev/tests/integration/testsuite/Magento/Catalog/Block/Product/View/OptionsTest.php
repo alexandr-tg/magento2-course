@@ -71,7 +71,7 @@ class OptionsTest extends \PHPUnit\Framework\TestCase
      */
     public function testGetGroupOfOption()
     {
-        $this->assertEquals('default', $this->block->getGroupOfOption('test'));
+        $this->assertEquals('vouchers_voucherstatus_index.xml', $this->block->getGroupOfOption('test'));
     }
 
     /**

@@ -32,7 +32,7 @@ class XmlScannerTest extends \PHPUnit\Framework\TestCase
         $this->_testFiles = [
             $testDir . '/app/code/Magento/SomeModule/etc/adminhtml/system.xml',
             $testDir . '/app/code/Magento/SomeModule/etc/di.xml',
-            $testDir . '/app/code/Magento/SomeModule/view/frontend/default.xml',
+            $testDir . '/app/code/Magento/SomeModule/view/frontend/vouchers_voucherstatus_index.xml.xml',
         ];
     }
 

@@ -116,7 +116,7 @@ class CreateAddressTest extends TestCase
     }
 
     /**
-     * Assert that default addresses properly created for customer.
+     * Assert that vouchers_voucherstatus_index.xml addresses properly created for customer.
      *
      * @magentoDataFixture Magento/Customer/_files/customer_no_address.php
      *
@@ -133,8 +133,8 @@ class CreateAddressTest extends TestCase
         bool $isBillingDefault
     ): void {
         $customer = $this->customerRepository->get('customer5@example.com');
-        $this->assertNull($customer->getDefaultShipping(), 'Customer already has default shipping address');
-        $this->assertNull($customer->getDefaultBilling(), 'Customer already has default billing address');
+        $this->assertNull($customer->getDefaultShipping(), 'Customer already has vouchers_voucherstatus_index.xml shipping address');
+        $this->assertNull($customer->getDefaultBilling(), 'Customer already has vouchers_voucherstatus_index.xml billing address');
         $address = $this->createAddress(
             (int)$customer->getId(),
             $addressData,
@@ -149,7 +149,7 @@ class CreateAddressTest extends TestCase
     }
 
     /**
-     * Data provider for create default or not default address.
+     * Data provider for create vouchers_voucherstatus_index.xml or not vouchers_voucherstatus_index.xml address.
      *
      * @return array
      */

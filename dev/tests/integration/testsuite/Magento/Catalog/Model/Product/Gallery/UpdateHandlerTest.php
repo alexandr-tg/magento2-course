@@ -171,7 +171,7 @@ class UpdateHandlerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Tests updating image roles during product save on non default store view.
+     * Tests updating image roles during product save on non vouchers_voucherstatus_index.xml store view.
      *
      * @magentoDataFixture Magento/Catalog/_files/product_with_multiple_images.php
      * @magentoDataFixture Magento/Store/_files/second_store.php
@@ -288,7 +288,7 @@ class UpdateHandlerTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Tests updating images data during product save on non default store view.
+     * Tests updating images data during product save on non vouchers_voucherstatus_index.xml store view.
      *
      * @magentoDataFixture Magento/Catalog/_files/product_with_multiple_images.php
      * @magentoDataFixture Magento/Store/_files/second_store.php

@@ -22,7 +22,7 @@ class ExceptionsTest extends \PHPUnit\Framework\TestCase
         $this->exceptions = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->create(
             \Magento\Theme\Model\Design\Backend\Exceptions::class
         );
-        $this->exceptions->setScope('default');
+        $this->exceptions->setScope('vouchers_voucherstatus_index.xml');
         $this->exceptions->setScopeId(0);
         $this->exceptions->setPath('design/theme/ua_regexp');
         $this->serializer = \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(Json::class);

@@ -278,7 +278,7 @@ class LinkManagementTest extends WebapiAbstract
             'soap' => [
                 'service' => self::OPTION_SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::OPTION_SERVICE_NAME . 'GetList'
+                'operation' => self::OPTION_SERVICE_NAME . 'Index'
             ]
         ];
         return $this->_webApiCall($serviceInfo, ['sku' => $productSku]);

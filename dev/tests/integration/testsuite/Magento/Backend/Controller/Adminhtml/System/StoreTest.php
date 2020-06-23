@@ -105,8 +105,8 @@ class StoreTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
                 'post' => [
                     'group' => [
                         'website_id' => '1',
-                        'name' => 'default',
-                        'code' => 'default',
+                        'name' => 'vouchers_voucherstatus_index.xml',
+                        'code' => 'vouchers_voucherstatus_index.xml',
                         'root_category_id' => '1',
                         'group_id' => '',
                     ],
@@ -118,8 +118,8 @@ class StoreTest extends \Magento\TestFramework\TestCase\AbstractBackendControlle
             [
                 'post' => [
                     'store' => [
-                        'name' => 'default',
-                        'code' => 'default',
+                        'name' => 'vouchers_voucherstatus_index.xml',
+                        'code' => 'vouchers_voucherstatus_index.xml',
                         'is_active' => '1',
                         'sort_order' => '',
                         'is_default' => '',

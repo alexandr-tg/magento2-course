@@ -49,7 +49,7 @@ class ViewedTest extends \PHPUnit\Framework\TestCase
      * @magentoDataFixture Magento/Catalog/_files/product_simple.php
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
-     * @magentoConfigFixture default/reports/options/enabled 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/reports/options/enabled 1
      */
     public function testGetPreparedCollectionProductPrice()
     {

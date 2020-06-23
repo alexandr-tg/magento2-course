@@ -58,10 +58,10 @@ class RenderingBasedOnIsProductListFlagWithDimensionTest extends \PHPUnit\Framew
         $this->rendererPool = Bootstrap::getObjectManager()->create(RendererPool::class);
         $this->rendererPool->setData(
             [
-                'default' =>
+                'vouchers_voucherstatus_index.xml' =>
                     [
                         'default_amount_render_class' => Amount::class,
-                        'default_amount_render_template' => 'Magento_Catalog::product/price/amount/default.phtml',
+                        'default_amount_render_template' => 'Magento_Catalog::product/price/amount/vouchers_voucherstatus_index.xml.phtml',
                     ],
             ]
         );

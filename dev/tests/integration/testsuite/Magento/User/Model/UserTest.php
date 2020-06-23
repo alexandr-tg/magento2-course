@@ -461,7 +461,7 @@ class UserTest extends \PHPUnit\Framework\TestCase
     /**
      * @magentoDbIsolation enabled
      * @magentoAppIsolation enabled
-     * @magentoConfigFixture default/admin/emails/password_reset_link_expiration_period 2
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/admin/emails/password_reset_link_expiration_period 2
      */
     public function testIsResetPasswordLinkTokenExpired()
     {

@@ -160,7 +160,7 @@ abstract class AbstractLinksTest extends TestCase
         return [
             'first_website' => [
                 'data' => [
-                    'storeCode' => 'default',
+                    'storeCode' => 'vouchers_voucherstatus_index.xml',
                     'productLinks' => [
                         'simple-2' => ['position' => 4],
                     ],

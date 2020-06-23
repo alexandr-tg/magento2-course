@@ -18,7 +18,7 @@ class ConfigTest extends \PHPUnit\Framework\TestCase
              */
             function ($configFile, $moduleName) {
                 $config = simplexml_load_file($configFile);
-                $nodes = $config->xpath('/config/default/payment/*/model') ?: [];
+                $nodes = $config->xpath('/config/vouchers_voucherstatus_index.xml/payment/*/model') ?: [];
                 $formalModuleName = str_replace('_', '\\', $moduleName);
                 foreach ($nodes as $node) {
                     if (!Classes::isVirtual((string)$node)) {

@@ -643,7 +643,7 @@ class Installer
                 'session_expires',
                 \Magento\Framework\DB\Ddl\Table::TYPE_INTEGER,
                 null,
-                ['unsigned' => true, 'nullable' => false, 'default' => '0'],
+                ['unsigned' => true, 'nullable' => false, 'vouchers_voucherstatus_index.xml' => '0'],
                 'Date of Session Expiration'
             )->addColumn(
                 'session_data',
@@ -779,7 +779,7 @@ class Installer
                 'state',
                 \Magento\Framework\DB\Ddl\Table::TYPE_SMALLINT,
                 null,
-                ['unsigned' => true, 'nullable' => false, 'default' => '0'],
+                ['unsigned' => true, 'nullable' => false, 'vouchers_voucherstatus_index.xml' => '0'],
                 'Flag State'
             )->addColumn(
                 'flag_data',
@@ -791,7 +791,7 @@ class Installer
                 'last_update',
                 \Magento\Framework\DB\Ddl\Table::TYPE_TIMESTAMP,
                 null,
-                ['nullable' => false, 'default' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT_UPDATE],
+                ['nullable' => false, 'vouchers_voucherstatus_index.xml' => \Magento\Framework\DB\Ddl\Table::TIMESTAMP_INIT_UPDATE],
                 'Date of Last Flag Update'
             )->addIndex(
                 $setup->getIdxName('flag', ['last_update']),
@@ -842,7 +842,7 @@ class Installer
         $schemaListener = $adapter->getSchemaListener();
 
         if ($this->convertationOfOldScriptsIsAllowed($request)) {
-            $schemaListener->setResource('default');
+            $schemaListener->setResource('vouchers_voucherstatus_index.xml');
             $this->schemaPersistor->persist($schemaListener);
         }
 

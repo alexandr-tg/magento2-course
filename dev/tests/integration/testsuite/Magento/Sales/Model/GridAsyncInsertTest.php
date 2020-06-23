@@ -67,7 +67,7 @@ class GridAsyncInsertTest extends \PHPUnit\Framework\TestCase
     /**
      * Checks a case when order's grid should be updated asynchronously.
      *
-     * @magentoConfigFixture default/dev/grid/async_indexing 1
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/dev/grid/async_indexing 1
      * @magentoDataFixture Magento/Sales/_files/order.php
      * @return void
      */

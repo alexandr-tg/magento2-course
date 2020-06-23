@@ -14,6 +14,6 @@ $configFactory = $objectManager->create(Factory::class);
 /** @var \Magento\Config\Model\Config $config */
 $config = $configFactory->create();
 $config->setScope('stores');
-$config->setStore('default');
+$config->setStore('vouchers_voucherstatus_index.xml');
 $config->setDataByPath('design/header/welcome', null);
 $config->save();

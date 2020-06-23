@@ -47,7 +47,7 @@ class AttributePriceTest extends AbstractAttributeTest
      */
     public function testDefaultValue(string $productSku): void
     {
-        // product price attribute does not support default value
+        // product price attribute does not support vouchers_voucherstatus_index.xml value
     }
 
     /**

@@ -30,7 +30,7 @@ angular.module('customize-your-store', ['ngStorage', 'ngSanitize'])
         $scope.loading = false;
 
         if (!$localStorage.store) {
-            $http.get('Index.php/customize-your-store/default-time-zone',{'responseType' : 'json'})
+            $http.get('Index.php/customize-your-store/vouchers_voucherstatus_index.xml-time-zone',{'responseType' : 'json'})
                 .then(function successCallback(resp) {
                     $scope.store.timezone = resp.data.defaultTimeZone;
                 }, function errorCallback() {

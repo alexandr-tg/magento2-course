@@ -24,7 +24,7 @@ class EncryptedTest extends \PHPUnit\Framework\TestCase
         $model = Bootstrap::getObjectManager()->create(\Magento\Config\Model\Config\Backend\Encrypted::class);
         $model->setPath('carriers/usps/password');
         $model->setScopeId(0);
-        $model->setScope('default');
+        $model->setScope('vouchers_voucherstatus_index.xml');
         $model->setScopeCode('');
         $model->setValue($originalValue);
         $model->save();
@@ -32,7 +32,7 @@ class EncryptedTest extends \PHPUnit\Framework\TestCase
         // Pass in the obscured value
         $model->setPath('carriers/usps/password');
         $model->setScopeId(0);
-        $model->setScope('default');
+        $model->setScope('vouchers_voucherstatus_index.xml');
         $model->setScopeCode('');
         $model->setValue('*****');
         $model->save();
@@ -46,7 +46,7 @@ class EncryptedTest extends \PHPUnit\Framework\TestCase
 
         $model->setPath('carriers/usps/password');
         $model->setScopeId(0);
-        $model->setScope('default');
+        $model->setScope('vouchers_voucherstatus_index.xml');
         $model->setScopeCode('');
         $model->setValue($changedValue);
         $model->save();

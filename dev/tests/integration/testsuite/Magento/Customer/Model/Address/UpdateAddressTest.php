@@ -86,7 +86,7 @@ class UpdateAddressTest extends TestCase
     }
 
     /**
-     * Assert that default addresses properly updated for customer.
+     * Assert that vouchers_voucherstatus_index.xml addresses properly updated for customer.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDataFixture Magento/Customer/_files/customer_address.php
@@ -120,7 +120,7 @@ class UpdateAddressTest extends TestCase
     }
 
     /**
-     * Data provider for update address as default billing or default shipping.
+     * Data provider for update address as vouchers_voucherstatus_index.xml billing or vouchers_voucherstatus_index.xml shipping.
      *
      * @return array
      */

@@ -28,7 +28,7 @@ return [
                 'request_type' => 'object_interface',
                 'response' => null,
                 'handlers' => [
-                    'default' => [
+                    'vouchers_voucherstatus_index.xml' => [
                         'type' => \Magento\Customer\Api\CustomerRepositoryInterface::class,
                         'method' => 'save',
                         'disabled' => true

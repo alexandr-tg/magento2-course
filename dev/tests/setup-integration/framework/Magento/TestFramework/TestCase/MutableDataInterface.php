@@ -27,7 +27,7 @@ interface MutableDataInterface
     public function getData();
 
     /**
-     * Revert data to default dataProviders data.
+     * Revert data to vouchers_voucherstatus_index.xml dataProviders data.
      *
      * @return void
      */

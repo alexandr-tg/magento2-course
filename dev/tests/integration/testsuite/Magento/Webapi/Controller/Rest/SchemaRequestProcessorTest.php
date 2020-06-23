@@ -49,7 +49,7 @@ class SchemaRequestProcessorTest extends AbstractController
             ['rest/schema'],
             ['rest/schema?services=all'],
             ['rest/all/schema?services=all'],
-            ['rest/default/schema?services=all'],
+            ['rest/vouchers_voucherstatus_index.xml/schema?services=all'],
             ['rest/schema?services=all'],
         ];
     }

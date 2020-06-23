@@ -114,7 +114,7 @@ class WebsiteTest extends \PHPUnit\Framework\TestCase
 
     public function testGetStoreCodes()
     {
-        $this->assertEquals([1 => 'default'], $this->_model->getStoreCodes());
+        $this->assertEquals([1 => 'vouchers_voucherstatus_index.xml'], $this->_model->getStoreCodes());
     }
 
     public function testGetStoresCount()

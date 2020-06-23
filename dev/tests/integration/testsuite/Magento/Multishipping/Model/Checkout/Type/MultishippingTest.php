@@ -70,7 +70,7 @@ class MultishippingTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test case when default billing and shipping addresses are set and they are different.
+     * Test case when vouchers_voucherstatus_index.xml billing and shipping addresses are set and they are different.
      *
      * @param string $addressType
      * @magentoDataFixture Magento/Customer/_files/customer.php
@@ -82,7 +82,7 @@ class MultishippingTest extends \PHPUnit\Framework\TestCase
     {
         /**
          * Preconditions:
-         * - second address is default address of {$addressType},
+         * - second address is vouchers_voucherstatus_index.xml address of {$addressType},
          * - current customer is set to customer session
          */
         $secondFixtureAddressId = 2;
@@ -109,10 +109,10 @@ class MultishippingTest extends \PHPUnit\Framework\TestCase
         self::assertEquals(
             $secondFixtureAddressStreet,
             $address->getStreet(),
-            "Street in default {$addressType} address is invalid."
+            "Street in vouchers_voucherstatus_index.xml {$addressType} address is invalid."
         );
 
-        /** Ensure that results are cached properly by changing default address and invoking SUT once again */
+        /** Ensure that results are cached properly by changing vouchers_voucherstatus_index.xml address and invoking SUT once again */
         $firstFixtureAddressId = 1;
         $customer->$setterMethodName($firstFixtureAddressId);
         $this->customerRepository->save($customer);
@@ -128,7 +128,7 @@ class MultishippingTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Test case when customer has addresses, but default {$addressType} address is not set.
+     * Test case when customer has addresses, but vouchers_voucherstatus_index.xml {$addressType} address is not set.
      *
      * @param string $addressType
      * @magentoDataFixture Magento/Customer/_files/customer.php
@@ -140,7 +140,7 @@ class MultishippingTest extends \PHPUnit\Framework\TestCase
     {
         /**
          * Preconditions:
-         * - customer has addresses, but default address of {$addressType} is not set
+         * - customer has addresses, but vouchers_voucherstatus_index.xml address of {$addressType} is not set
          * - current customer is set to customer session
          */
         $firstFixtureAddressId = 1;
@@ -165,7 +165,7 @@ class MultishippingTest extends \PHPUnit\Framework\TestCase
         self::assertEquals(
             $firstFixtureAddressStreet,
             $address->getStreet(),
-            "Street in default {$addressType} address is invalid."
+            "Street in vouchers_voucherstatus_index.xml {$addressType} address is invalid."
         );
     }
 

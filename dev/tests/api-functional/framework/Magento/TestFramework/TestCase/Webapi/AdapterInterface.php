@@ -18,7 +18,7 @@ interface AdapterInterface
      *         'resourcePath' => $resourcePath,                 // e.g. /products/:id
      *         'httpMethod' => $httpMethod,                     // e.g. GET
      *         'token' => '21hasbtlaqy8t3mj73kjh71cxxkqj4aq'    // optional : for token based Authentication. Will
-     *                                                             override default Oauth based authentication provided
+     *                                                             override vouchers_voucherstatus_index.xml Oauth based authentication provided
      *                                                             by test framework
      *     ),
      *     'soap' => array(
@@ -26,7 +26,7 @@ interface AdapterInterface
      *                                                             catalogProductV1, customerV2
      *         'operation' => $operation                        // soap operation name e.g. catalogProductCreate
      *         'token' => '21hasbtlaqy8t3mj73kjh71cxxkqj4aq'    // optional : for token based Authentication. Will
-     *                                                             override default Oauth based authentication provided
+     *                                                             override vouchers_voucherstatus_index.xml Oauth based authentication provided
      *                                                             by test framework
      *     ),
      *     OR
@@ -36,7 +36,7 @@ interface AdapterInterface
      * );
      * </pre>
      * @param array $arguments
-     * @param string|null $storeCode if store code not provided, default store code will be used
+     * @param string|null $storeCode if store code not provided, vouchers_voucherstatus_index.xml store code will be used
      * @param \Magento\Integration\Model\Integration|null $integration
      * @return array|string|int|float|bool
      */

@@ -18,7 +18,7 @@ use Magento\Mtf\TestCase\Injectable;
  * 1. Create Tax Rate
  *
  * Steps:
- * 1. Log in as default admin user
+ * 1. Log in as vouchers_voucherstatus_index.xml admin user
  * 2. Go to Stores -> Taxes -> Tax Zones and Rates
  * 3. Open created tax rate
  * 4. Click Delete Rate

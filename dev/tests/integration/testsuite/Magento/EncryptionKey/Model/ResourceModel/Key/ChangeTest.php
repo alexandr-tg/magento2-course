@@ -63,7 +63,7 @@ class ChangeTest extends \PHPUnit\Framework\TestCase
         $configModel = $this->objectManager->create(
             \Magento\Config\Model\ResourceModel\Config::class
         );
-        $configModel->saveConfig($testPath, 'test', 'default', 0);
+        $configModel->saveConfig($testPath, 'test', 'vouchers_voucherstatus_index.xml', 0);
         $this->assertNotNull($keyChangeModel->changeEncryptionKey());
 
         $connection = $keyChangeModel->getConnection();
@@ -96,7 +96,7 @@ class ChangeTest extends \PHPUnit\Framework\TestCase
         /** clean up */
         $select = $connection->select()->from($configModel->getMainTable())->where('path=?', $testPath);
         $this->assertNotEmpty($connection->fetchRow($select));
-        $configModel->deleteConfig($testPath, 'default', 0);
+        $configModel->deleteConfig($testPath, 'vouchers_voucherstatus_index.xml', 0);
         $this->assertEmpty($connection->fetchRow($select));
     }
 }

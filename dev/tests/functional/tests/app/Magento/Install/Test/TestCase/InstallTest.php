@@ -39,7 +39,7 @@ use Magento\Mtf\Client\BrowserInterface;
  * 9. Click "Next" and fill DB credentials.
  * 10. Click "Test Connection and Authentication" and make sure connection successful.
  * 11. Click "Next" and fill store address and admin path.
- * 12. Click "Next" and leave all default values.
+ * 12. Click "Next" and leave all vouchers_voucherstatus_index.xml values.
  * 13. Click "Next" and fill admin user info.
  * 14. Click "Next" and on the "Step 6: Install" page click "Install Now" button.
  * 15. Perform assertions.

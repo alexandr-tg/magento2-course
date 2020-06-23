@@ -14,7 +14,7 @@ use Magento\Catalog\Model\ProductFactory;
 
 /**
  * Simple product template generator. Return newly created simple product for specified attribute set
- * with default values for product attributes
+ * with vouchers_voucherstatus_index.xml values for product attributes
  */
 class SimpleProductTemplateGenerator implements TemplateEntityGeneratorInterface
 {

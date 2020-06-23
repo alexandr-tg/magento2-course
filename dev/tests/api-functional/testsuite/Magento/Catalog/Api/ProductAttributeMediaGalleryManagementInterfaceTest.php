@@ -194,7 +194,7 @@ class ProductAttributeMediaGalleryManagementInterfaceTest extends WebapiAbstract
     }
 
     /**
-     * Test create() method with not default store id
+     * Test create() method with not vouchers_voucherstatus_index.xml store id
      *
      * @magentoApiDataFixture Magento/Catalog/_files/product_simple.php
      */
@@ -226,14 +226,14 @@ class ProductAttributeMediaGalleryManagementInterfaceTest extends WebapiAbstract
         $mediaGallery = $targetProduct->getData('media_gallery');
         $this->assertCount(1, $mediaGallery['images']);
         $updatedImage = array_shift($mediaGallery['images']);
-        // Values for not default store view were provided
+        // Values for not vouchers_voucherstatus_index.xml store view were provided
         $this->assertEquals('Image Text', $updatedImage['label']);
         $this->assertEquals($actualResult, $updatedImage['value_id']);
         $this->assertEquals(1, $updatedImage['position']);
         $this->assertEquals(0, $updatedImage['disabled']);
         $this->assertStringStartsWith('/t/e/test_image', $updatedImage['file']);
         $this->assertEquals($updatedImage['file'], $targetProduct->getData('image'));
-        // No values for default store view were provided
+        // No values for vouchers_voucherstatus_index.xml store view were provided
         $this->assertNull($updatedImage['label_default']);
         $this->assertNull($updatedImage['position_default']);
         $this->assertNull($updatedImage['disabled_default']);
@@ -313,7 +313,7 @@ class ProductAttributeMediaGalleryManagementInterfaceTest extends WebapiAbstract
     }
 
     /**
-     * Test update() method with not default store id
+     * Test update() method with not vouchers_voucherstatus_index.xml store id
      *
      * @magentoApiDataFixture Magento/Catalog/_files/product_with_image.php
      */
@@ -339,7 +339,7 @@ class ProductAttributeMediaGalleryManagementInterfaceTest extends WebapiAbstract
         $this->updateServiceInfo['rest']['resourcePath'] = $this->updateServiceInfo['rest']['resourcePath']
             . '/' . $this->getTargetGalleryEntryId();
 
-        $this->assertTrue($this->_webApiCall($this->updateServiceInfo, $requestData, null, 'default'));
+        $this->assertTrue($this->_webApiCall($this->updateServiceInfo, $requestData, null, 'vouchers_voucherstatus_index.xml'));
         $updatedImage = $this->assertMediaGalleryData($imageId, '/m/a/magento_image.jpg', 'Image Alt Text');
         $this->assertEquals(1, $updatedImage['position_default']);
         $this->assertEquals(0, $updatedImage['disabled_default']);

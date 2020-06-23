@@ -35,7 +35,7 @@ class Config implements \Magento\Framework\Data\Wysiwyg\ConfigProviderInterface
      */
     public function getConfig(\Magento\Framework\DataObject $config): \Magento\Framework\DataObject
     {
-        //get default config
+        //get vouchers_voucherstatus_index.xml config
         $config = $this->cmsConfigProvider->getConfig($config);
 
         $config = $this->removeSpecialCharacterFromToolbar($config);

@@ -33,7 +33,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
         $this->objectManager->addSharedInstance(
             $this->objectManager->create(
                 \Magento\Framework\App\Arguments\ValidationState::class,
-                ['appMode' => 'default']
+                ['appMode' => 'vouchers_voucherstatus_index.xml']
             ),
             \Magento\Framework\App\Arguments\ValidationState::class
         );
@@ -48,7 +48,7 @@ class TemplateTest extends \PHPUnit\Framework\TestCase
 
         \Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('adminhtml');
         $this->objectManager->get(\Magento\Framework\View\DesignInterface::class)
-            ->setDesignTheme('FrameworkViewUiComponent/default');
+            ->setDesignTheme('FrameworkViewUiComponent/vouchers_voucherstatus_index.xml');
         CacheCleaner::cleanAll();
 
         $resultOne = $this->model->getTemplate('test.xml');

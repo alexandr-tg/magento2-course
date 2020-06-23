@@ -55,7 +55,7 @@ class QuickSearchTest extends TestCase
     /**
      * Assert that configurable child products has not found by query using mysql search engine.
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      *
      * @return void
      */
@@ -68,7 +68,7 @@ class QuickSearchTest extends TestCase
      * Assert that child product of configurable will be available by search after
      * set to product visibility by catalog and search using mysql search engine.
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      * @dataProvider productAvailabilityInSearchByVisibilityDataProvider
      *
      * @param int $visibility
@@ -113,7 +113,7 @@ class QuickSearchTest extends TestCase
     /**
      * Assert that configurable product was found by option value using mysql search engine.
      *
-     * @magentoConfigFixture default/catalog/search/engine mysql
+     * @magentoConfigFixture vouchers_voucherstatus_index.xml/catalog/search/engine mysql
      *
      * @return void
      */

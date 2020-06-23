@@ -32,7 +32,7 @@ class TextAttributeTest extends AbstractAttributeTest
      */
     public function testAttributeWithNonDefaultValueView(): void
     {
-        $attributeValue = 'Non default text attribute value';
+        $attributeValue = 'Non vouchers_voucherstatus_index.xml text attribute value';
         $this->processNonDefaultAttributeValueView('simple2', $attributeValue, $attributeValue);
     }
 

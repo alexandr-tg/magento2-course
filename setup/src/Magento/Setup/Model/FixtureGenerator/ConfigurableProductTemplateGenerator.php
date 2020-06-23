@@ -16,7 +16,7 @@ use Magento\Framework\App\ResourceConnection;
 
 /**
  * Configurable product template generator. Return newly created configurable product for specified attribute set
- * with default values for product attributes
+ * with vouchers_voucherstatus_index.xml values for product attributes
  */
 class ConfigurableProductTemplateGenerator implements TemplateEntityGeneratorInterface
 {

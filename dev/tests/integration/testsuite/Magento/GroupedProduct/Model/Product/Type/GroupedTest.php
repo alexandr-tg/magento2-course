@@ -214,7 +214,7 @@ class GroupedTest extends \PHPUnit\Framework\TestCase
                     ],
                 ],
                 [
-                    'virtual-product' => 2.5, // This is a default quantity.
+                    'virtual-product' => 2.5, // This is a vouchers_voucherstatus_index.xml quantity.
                 ],
             ],
             'Out of stock product are hidden #1' => [
@@ -242,7 +242,7 @@ class GroupedTest extends \PHPUnit\Framework\TestCase
                     ],
                 ],
                 [
-                    'virtual-product' => 2.5, // This is a default quantity.
+                    'virtual-product' => 2.5, // This is a vouchers_voucherstatus_index.xml quantity.
                 ],
             ],
         ];
@@ -256,7 +256,7 @@ class GroupedTest extends \PHPUnit\Framework\TestCase
      * @param string $scope
      * @param int $scopeId
      */
-    private function changeConfigValue(string $path, string $value, string $scope = 'default', int $scopeId = 0)
+    private function changeConfigValue(string $path, string $value, string $scope = 'vouchers_voucherstatus_index.xml', int $scopeId = 0)
     {
         $configValue = $this->objectManager->create(Value::class);
         $configValue->setPath($path)

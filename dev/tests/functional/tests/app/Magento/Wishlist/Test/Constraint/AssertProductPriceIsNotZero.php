@@ -9,7 +9,7 @@ namespace Magento\Wishlist\Test\Constraint;
 class AssertProductPriceIsNotZero extends \Magento\Mtf\Constraint\AbstractConstraint
 {
     /**
-     * Assert that product price is not zero in default wishlist.
+     * Assert that product price is not zero in vouchers_voucherstatus_index.xml wishlist.
      *
      * @param \Magento\Cms\Test\Page\CmsIndex $cmsIndex
      * @param \Magento\Customer\Test\Page\CustomerAccountIndex $customerAccountIndex
@@ -42,6 +42,6 @@ class AssertProductPriceIsNotZero extends \Magento\Mtf\Constraint\AbstractConstr
      */
     public function toString()
     {
-        return 'Product price is not zero in default Wish List.';
+        return 'Product price is not zero in vouchers_voucherstatus_index.xml Wish List.';
     }
 }

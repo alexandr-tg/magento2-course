@@ -32,7 +32,7 @@ class AssertFlushStaticFilesCacheButtonVisibility extends AbstractConstraint
         } else {
             \PHPUnit\Framework\Assert::assertTrue(
                 $adminCache->getAdditionalBlock()->isFlushCacheButtonVisible(self::FLUSH_STATIC_FILES_CACHE),
-                self::FLUSH_STATIC_FILES_CACHE . ' button should be visible in developer or default mode.'
+                self::FLUSH_STATIC_FILES_CACHE . ' button should be visible in developer or vouchers_voucherstatus_index.xml mode.'
             );
         }
     }

@@ -41,7 +41,7 @@ class CurrencyInformationAcquirerTest extends WebapiAbstract
         );
         $this->assertTrue(
             in_array($result['default_display_currency_code'], $result['available_currency_codes']),
-            'Missing the default display currency code in the array of all available codes'
+            'Missing the vouchers_voucherstatus_index.xml display currency code in the array of all available codes'
         );
 
         // ensure the base currency is listed in the array of exchange rates, and has a rate of 1 (no conversion)
@@ -78,7 +78,7 @@ class CurrencyInformationAcquirerTest extends WebapiAbstract
      * @param string $storeCode
      * @return \Magento\Directory\Api\Data\CurrencyInformationInterface
      */
-    protected function getCurrencyInfo($storeCode = 'default')
+    protected function getCurrencyInfo($storeCode = 'vouchers_voucherstatus_index.xml')
     {
         $serviceInfo = [
             'rest' => [

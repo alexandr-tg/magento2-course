@@ -30,7 +30,7 @@ class DeleteProductsFromWishlistOnFrontendTest extends AbstractWishlistTest
     /* end tags */
 
     /**
-     * Delete products form default wish list.
+     * Delete products form vouchers_voucherstatus_index.xml wish list.
      *
      * @param Customer $customer
      * @param string $products

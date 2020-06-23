@@ -276,7 +276,7 @@ class SimpleProductsFixture extends Fixture
     }
 
     /**
-     * Get default attribute set id
+     * Get vouchers_voucherstatus_index.xml attribute set id
      *
      * @return int
      */
@@ -290,7 +290,7 @@ class SimpleProductsFixture extends Fixture
     }
 
     /**
-     * Get default attribute sets with attributes.
+     * Get vouchers_voucherstatus_index.xml attribute sets with attributes.
      *
      * @return array
      * @see config/attributeSets.xml

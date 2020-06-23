@@ -293,7 +293,7 @@ class ProductRepositoryInterfaceTest extends WebapiAbstract
     }
 
     /**
-     * Add product associated with website that is not associated with default store
+     * Add product associated with website that is not associated with vouchers_voucherstatus_index.xml store
      *
      * @magentoApiDataFixture Magento/Store/_files/second_website_with_two_stores.php
      */
@@ -320,7 +320,7 @@ class ProductRepositoryInterfaceTest extends WebapiAbstract
     }
 
     /**
-     * Update product to be associated with website that is not associated with default store
+     * Update product to be associated with website that is not associated with vouchers_voucherstatus_index.xml store
      *
      * @magentoApiDataFixture Magento/Catalog/_files/product_with_two_websites.php
      * @magentoApiDataFixture Magento/Store/_files/second_website_with_two_stores.php
@@ -890,7 +890,7 @@ class ProductRepositoryInterfaceTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
 
@@ -996,7 +996,7 @@ class ProductRepositoryInterfaceTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
         $response = $this->_webApiCall($serviceInfo, $searchCriteria);
@@ -1029,7 +1029,7 @@ class ProductRepositoryInterfaceTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
         $response = $this->_webApiCall($serviceInfo, $searchCriteria);
@@ -1152,7 +1152,7 @@ class ProductRepositoryInterfaceTest extends WebapiAbstract
             'soap' => [
                 'service' => self::SERVICE_NAME,
                 'serviceVersion' => self::SERVICE_VERSION,
-                'operation' => self::SERVICE_NAME . 'GetList',
+                'operation' => self::SERVICE_NAME . 'Index',
             ],
         ];
 

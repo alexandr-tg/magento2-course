@@ -27,7 +27,7 @@ class AttributeTextTest extends AbstractAttributeTest
      */
     protected function getDefaultAttributeValue(): string
     {
-        return 'default text value';
+        return 'vouchers_voucherstatus_index.xml text value';
     }
 
     /**

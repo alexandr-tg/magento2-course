@@ -19,7 +19,7 @@ return [
     ],
     'resource' => [],
     'x-frame-options' => 'SAMEORIGIN',
-    'MAGE_MODE' => 'default',
+    'MAGE_MODE' => 'vouchers_voucherstatus_index.xml',
     'cache_types' => [
         'config' => 1,
         'layout' => 1,
@@ -39,11 +39,11 @@ return [
         'date' => 'Thu, 09 Feb 2017 14:28:00 +0000',
     ],
     'system' => [
-        'default' => [
+        'vouchers_voucherstatus_index.xml' => [
             'web' => [
                 'test2' => [
-                    'test_value_3' => 'value3.config.default.test',
-                    'test_value_4' => 'value4.config.default.test',
+                    'test_value_3' => 'value3.config.vouchers_voucherstatus_index.xml.test',
+                    'test_value_4' => 'value4.config.vouchers_voucherstatus_index.xml.test',
                 ],
             ],
         ],
@@ -58,7 +58,7 @@ return [
             ],
         ],
         'stores' => [
-            'default' => [
+            'vouchers_voucherstatus_index.xml' => [
                 'web' => [
                     'test2' => [
                         'test_value_3' => 'value3.config.store_default.test',

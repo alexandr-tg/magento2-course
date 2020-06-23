@@ -13,12 +13,12 @@ use Magento\Mtf\Constraint\AbstractAssertForm;
 
 /**
  * Class AssertGroupedProductsDefaultQty
- * Assert that default qty for sub products in grouped product displays according to dataset on product page
+ * Assert that vouchers_voucherstatus_index.xml qty for sub products in grouped product displays according to dataset on product page
  */
 class AssertGroupedProductsDefaultQty extends AbstractAssertForm
 {
     /**
-     * Assert that default qty for sub products in grouped product displays according to dataset on product page
+     * Assert that vouchers_voucherstatus_index.xml qty for sub products in grouped product displays according to dataset on product page
      *
      * @param CatalogProductView $groupedProductView
      * @param GroupedProduct $product
@@ -56,7 +56,7 @@ class AssertGroupedProductsDefaultQty extends AbstractAssertForm
     }
 
     /**
-     * Text of Visible in grouped assert for default qty for sub products
+     * Text of Visible in grouped assert for vouchers_voucherstatus_index.xml qty for sub products
      *
      * @return string
      */

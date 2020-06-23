@@ -237,7 +237,7 @@ class QuoteTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Billing and shipping address arguments are not passed, customer has default billing and shipping addresses.
+     * Billing and shipping address arguments are not passed, customer has vouchers_voucherstatus_index.xml billing and shipping addresses.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDataFixture Magento/Customer/_files/customer_address.php
@@ -248,7 +248,7 @@ class QuoteTest extends \PHPUnit\Framework\TestCase
     {
         /** Preconditions:
          * Customer with two addresses created
-         * First address is default billing, second is default shipping.
+         * First address is vouchers_voucherstatus_index.xml billing, second is vouchers_voucherstatus_index.xml shipping.
          */
         /** @var Quote $quote */
         $quote = $this->objectManager->create(Quote::class);
@@ -303,7 +303,7 @@ class QuoteTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * Billing and shipping address arguments are passed, customer has default billing and shipping addresses.
+     * Billing and shipping address arguments are passed, customer has vouchers_voucherstatus_index.xml billing and shipping addresses.
      *
      * @magentoDataFixture Magento/Customer/_files/customer.php
      * @magentoDataFixture Magento/Customer/_files/customer_address.php
@@ -314,7 +314,7 @@ class QuoteTest extends \PHPUnit\Framework\TestCase
     {
         /** Preconditions:
          * Customer with two addresses created
-         * First address is default billing, second is default shipping.
+         * First address is vouchers_voucherstatus_index.xml billing, second is vouchers_voucherstatus_index.xml shipping.
          */
         /** @var Quote $quote */
         $quote = $this->objectManager->create(Quote::class);
@@ -435,7 +435,7 @@ class QuoteTest extends \PHPUnit\Framework\TestCase
     /**
      * Prepare quote for testing assignCustomerWithAddressChange method.
      *
-     * Customer with two addresses created. First address is default billing, second is default shipping.
+     * Customer with two addresses created. First address is vouchers_voucherstatus_index.xml billing, second is vouchers_voucherstatus_index.xml shipping.
      *
      * @param Quote $quote
      * @return CustomerInterface

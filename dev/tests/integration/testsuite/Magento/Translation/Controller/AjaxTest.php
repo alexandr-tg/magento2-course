@@ -14,7 +14,7 @@ class AjaxTest extends \Magento\TestFramework\TestCase\AbstractController
         \Magento\TestFramework\Helper\Bootstrap::getObjectManager()->get(
             \Magento\Store\Model\StoreManagerInterface::class
         )->getStore(
-            'default'
+            'vouchers_voucherstatus_index.xml'
         )->getConfig(
             'dev/translate_inline/active'
         );
@@ -24,7 +24,7 @@ class AjaxTest extends \Magento\TestFramework\TestCase\AbstractController
             'dev/translate_inline/active',
             true,
             \Magento\Store\Model\ScopeInterface::SCOPE_STORE,
-            'default'
+            'vouchers_voucherstatus_index.xml'
         );
         parent::setUp();
     }

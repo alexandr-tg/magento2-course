@@ -71,7 +71,7 @@ class DesignTest extends \PHPUnit\Framework\TestCase
      *
      * @param string $themePath
      */
-    protected function _emulateFixtureTheme($themePath = 'Test_FrameworkThemeTest/default')
+    protected function _emulateFixtureTheme($themePath = 'Test_FrameworkThemeTest/vouchers_voucherstatus_index.xml')
     {
         \Magento\TestFramework\Helper\Bootstrap::getInstance()->loadArea('frontend');
         $objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();

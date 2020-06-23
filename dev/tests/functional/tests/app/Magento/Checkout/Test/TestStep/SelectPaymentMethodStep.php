@@ -60,7 +60,7 @@ class SelectPaymentMethodStep implements TestStepInterface
         CheckoutOnepage $checkoutOnepage,
         array $payment,
         CreditCard $creditCard = null,
-        $paymentForm = 'default',
+        $paymentForm = 'vouchers_voucherstatus_index.xml',
         $fillCreditCardOn3rdParty = false
     ) {
         $this->checkoutOnepage = $checkoutOnepage;

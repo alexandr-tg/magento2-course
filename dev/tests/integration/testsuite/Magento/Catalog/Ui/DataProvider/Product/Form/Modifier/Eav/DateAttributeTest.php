@@ -50,7 +50,7 @@ class DateAttributeTest extends AbstractEavTest
     public function testModifyMetaNewProduct(): void
     {
         $this->setAttributeDefaultValue('date_attribute', '01/01/2000');
-        $attributesMeta = array_merge($this->getAttributeMeta(), ['default' => '2000-01-01 00:00:00']);
+        $attributesMeta = array_merge($this->getAttributeMeta(), ['vouchers_voucherstatus_index.xml' => '2000-01-01 00:00:00']);
         $expectedMeta = $this->addMetaNesting(
             $attributesMeta,
             'product-details',
