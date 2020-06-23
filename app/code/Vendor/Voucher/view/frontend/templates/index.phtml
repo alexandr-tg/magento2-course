@@ -1,0 +1,30 @@
+<table>
+    <tr>
+        <th>Entity_Id</th>
+        <th>Status_Code</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+        <th colspan="2">Action</th>
+    </tr>
+
+    <?php foreach ($block->getResult() as $value): ?>
+        <tr>
+            <td><?= $value->getData('entity_id') ?></td>
+            <td><?= $value->getData('status_code') ?></td>
+            <td><?= $value->getData('created_at') ?></td>
+            <td><?= $value->getData('updated_at') ?></td>
+            <td><a class="action primary" href="<?= $block->getUrl('vouchers/voucherstatus/update') . 'id/' . $value->
+                getData('entity_id') ?>">Edit</a></td>
+            <td><a class="action primary" href="<?= $block->getUrl('vouchers/voucherstatus/delete') . 'id/' . $value->
+                getData('entity_id') ?>">Delete</a></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
+
+
+<h3>Create Voucher Status Code</h3>
+<form action="<?php echo $block->getInsertAction() ?>" method="post">
+    <input type="hidden" name="form_key" value="<?= $block->getBlockHtml('formkey') ?>
+    <input name="status_code" type="text">
+    <input type="submit" value="Send">
+</form>

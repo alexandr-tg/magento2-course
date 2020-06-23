@@ -1,0 +1,17 @@
+<?php $data = $block->getEditRecord();
+$availableStatuses = $block->getAvailableStatuses();
+?>
+
+<h3>Update Voucher</h3>
+<form action="<?php echo $block->getInsertAction() ?>" method="POST">
+    <input type="hidden" name="form_key" value="<?= $block->getBlockHtml('formkey') ?>
+    <input type="hidden" name="entity_id" value="<?= $data['entity_id'] ?>">
+    Voucher Status: <input type="text" name="status_id" list="voucher_statuses"><br>
+    <datalist id="voucher_statuses">
+        <?php foreach ($availableStatuses as $value): ?>
+            <option value="<?= $value->getData('entity_id'); ?>"><?= $value->getData('status_code') ?></option>
+        <?php endforeach; ?>
+    </datalist>
+    Voucher Code: <input name="voucher_code" type="text" value="<?= $data['voucher_code'] ?>">
+    <input type="submit" value="Send">
+</form>
