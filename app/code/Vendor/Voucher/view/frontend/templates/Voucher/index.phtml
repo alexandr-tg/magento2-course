@@ -1,0 +1,44 @@
+<?php
+$availableStatuses = $block->getVoucherStatuses();
+?>
+
+<table>
+    <tr>
+        <th>Entity_Id</th>
+        <th>Customer_id</th>
+        <th>Status_id</th>
+        <th>Voucher_code</th>
+        <th>Created At</th>
+        <th colspan="2">Action</th>
+    </tr>
+
+    <?php foreach ($block->getResult() as $value): ?>
+
+        <tr>
+            <td><?= $value->getData('entity_id') ?></td>
+            <td><?= $value->getData('customer_id') ?></td>
+            <td><?= $value->getData('status_id') ?></td>
+            <td><?= $value->getData('voucher_code') ?></td>
+            <td><?= $value->getData('created_at') ?></td>
+            <td><a class="action primary" href="<?= $block->getUrl('vouchers/voucher/update') . 'id/' . $value->
+                getData('entity_id') ?>">Edit</a></td>
+            <td><a class="action primary" href="<?= $block->getUrl('vouchers/voucher/delete') . 'id/' . $value->
+                getData('entity_id') ?>">Delete</a></td>
+        </tr>
+
+    <?php endforeach; ?>
+</table>
+
+
+<h3>Create Voucher</h3>
+<form action="<?php echo $block->getInsertAction() ?>" method="post">
+    <input type="hidden" name="form_key" value="<?= $block->getBlockHtml('formkey') ?>
+    Voucher Status: <input type="text" name="status_id" list="voucher_statuses"><br>
+    <datalist id="voucher_statuses">
+        <?php foreach ($availableStatuses as $value): ?>
+            <option value="<?= $value->getData('entity_id'); ?>"><?= $value->getData('status_code') ?></option>
+        <?php endforeach; ?>
+    </datalist>
+    Voucher Code: <input name="voucher_code" type="text">
+    <input type="submit" value="Send">
+</form>
