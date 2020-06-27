@@ -11,6 +11,33 @@
         <plugin name="Vendor\Voucher\Plugin\VoucherBeforeSavePlugin" type="Vendor\Voucher\Plugin\VoucherBeforeSavePlugin" sortOrder="20" />
     </type>
 
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="vendor_voucher_voucher_listing_data_source" xsi:type="string">Vendor\Voucher\Model\ResourceModel\Voucher\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Vendor\Voucher\Model\ResourceModel\Voucher\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">voucher</argument>
+            <argument name="resourceModel" xsi:type="string">Vendor\Voucher\Model\ResourceModel\Voucher</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="vendor_voucher_voucherstatus_listing_data_source" xsi:type="string">Vendor\Voucher\Model\ResourceModel\VoucherStatus\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Vendor\Voucher\Model\ResourceModel\VoucherStatus\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">voucher_status</argument>
+            <argument name="resourceModel" xsi:type="string">Vendor\Voucher\Model\ResourceModel\VoucherStatus</argument>
+        </arguments>
+    </virtualType>
 
 </config>
 

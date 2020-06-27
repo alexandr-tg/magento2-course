@@ -1,0 +1,16 @@
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+                "components": {
+                    "voucher-scope": {
+                        "component": "Vendor_Voucher/js/voucher"
+                    }
+                }
+        }
+    }
+}
+</script>
+<div id="voucher" data-bind="scope: 'voucher-scope'">
+    <!--ko template: getTemplate()--><!--/ko-->
+</div>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+            id="Vendor_Voucher::voucher"
+            title="Vouchers"
+            module="Vendor_Voucher"
+            sortOrder="65"
+            parent="Magento_Customer::customer"
+            action="vouchers/voucher/"
+            resource="Magento_Customer::manage"
+        />
+        <add
+            id="Vendor_Voucher::voucherstatus"
+            title="Voucher Statuses"
+            module="Vendor_Voucher"
+            sortOrder="70"
+            parent="Magento_Customer::customer"
+            action="vouchers/voucherstatus/"
+            resource="Magento_Customer::manage"
+        />
+    </menu>
+</config>

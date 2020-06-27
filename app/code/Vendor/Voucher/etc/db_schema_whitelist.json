@@ -6,6 +6,9 @@
             "created_at": true,
             "updated_at": true
         },
+        "index": {
+            "VOUCHER_STATUS_STATUS_CODE": true
+        },
         "constraint": {
             "PRIMARY": true,
             "VOUCHER_STATUS_STATUS_CODE": true
@@ -19,6 +22,9 @@
             "voucher_code": true,
             "created_at": true,
             "consumed_date": true
+        },
+        "index": {
+            "VOUCHER_VOUCHER_CODE": true
         },
         "constraint": {
             "PRIMARY": true,
