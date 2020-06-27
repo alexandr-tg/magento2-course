@@ -2,6 +2,7 @@
 
 namespace Vendor\Voucher\Api;
 
+
 /**
  * @Api
  * Interface VoucherManagementInterface
@@ -50,5 +51,10 @@ interface VoucherManagementInterface
      * @return string[]
      */
     public function getAllVouchersByCustomerId($id);
+
+    /**
+     * @return string[]
+     */
+    public function getCurrentCustomerVouchers();
 
 }

@@ -49,4 +49,11 @@
             <resource ref="anonymous"/>
         </resources>
     </route>
+
+    <route method="GET" url="/V1/CurrentCustomerVouchers/">
+        <service class="Vendor\Voucher\Api\VoucherManagementInterface" method="getCurrentCustomerVouchers"/>
+        <resources>
+            <resource ref="self"/>
+        </resources>
+    </route>
 </routes>
