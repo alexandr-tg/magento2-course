@@ -143,6 +143,7 @@ class VoucherManagement implements VoucherManagementInterface
 
         $voucherCollection = $this->voucherCollectionFactory->create();
 
+
         if (!$customer || !$customer->getId()) {
             throw new \Exception("Customer $id is invalid");
         }

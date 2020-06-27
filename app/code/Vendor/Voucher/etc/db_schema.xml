@@ -17,9 +17,13 @@
             <column name="entity_id"/>
         </constraint>
 
-        <constraint xsi:type="unique" referenceId="VOUCHER_STATUS_STATUS_CODE">
+        <constraint xsi:type="unique" referenceId="VOUCHER_STATUS_STATUS_CODE" disabled="true">
             <column name="status_code"/>
         </constraint>
+
+        <index referenceId="VOUCHER_STATUS_STATUS_CODE" indexType="fulltext">
+            <column name="status_code"/>
+        </index>
 
     </table>
 
@@ -51,9 +55,13 @@
         <constraint xsi:type="foreign" referenceId="VOUCHER_STATUS_ID_VOUCHER_STATUS_ENTITY_ID" table="voucher"
                     column="status_id" referenceTable="voucher_status" referenceColumn="entity_id" onDelete="CASCADE"/>
 
-        <constraint xsi:type="unique" referenceId="VOUCHER_VOUCHER_CODE">
+        <constraint xsi:type="unique" referenceId="VOUCHER_VOUCHER_CODE" disabled="true">
             <column name="voucher_code"/>
         </constraint>
+
+        <index referenceId="VOUCHER_CUSTOMER_STATUS_VOUCHER" indexType="fulltext">
+            <column name="voucher_code"/>
+        </index>
 
     </table>
 </schema>
