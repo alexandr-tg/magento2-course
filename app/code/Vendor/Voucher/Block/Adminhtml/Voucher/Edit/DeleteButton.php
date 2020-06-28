@@ -9,7 +9,7 @@ class DeleteButton extends GenericButton implements ButtonProviderInterface
     public function getButtonData()
     {
         return [
-            'label' => __('Delete Contact'),
+            'label' => __('Delete'),
             'on_click' => 'deleteConfirm(\'' . __('Are you sure you want to delete this contact ?') . '\', \'' . $this->getDeleteUrl() . '\')',
             'class' => 'delete',
             'sort_order' => 20
@@ -25,6 +25,6 @@ class DeleteButton extends GenericButton implements ButtonProviderInterface
 
         $id = $parts[6];
 
-        return $this->getUrl('*/*/delete', ['id' => $id]);
+        return $this->getUrl('vouchers/voucherform/delete', ['id' => $id]);
     }
 }

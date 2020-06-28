@@ -8,6 +8,7 @@ use Magento\Framework\View\Result\PageFactory;
 use Vendor\Voucher\Api\VoucherManagementInterface as VoucherManagement;
 use Vendor\Voucher\Model\ResourceModel\Voucher as VoucherResource;
 use Vendor\Voucher\Model\VoucherFactory;
+use Magento\Framework\App\Response\RedirectInterface;
 
 class Save extends Action
 {
@@ -17,18 +18,21 @@ class Save extends Action
     protected $voucher;
     protected $voucherResource;
     protected $voucherManagement;
+    protected $redirect;
 
     public function __construct(
         Context $context,
         PageFactory $resultPageFactory,
         VoucherFactory $voucher,
         VoucherManagement $voucherManagement,
-        VoucherResource $voucherResource
+        VoucherResource $voucherResource,
+        RedirectInterface $redirect
     ) {
         $this->resultPageFactory = $resultPageFactory;
         $this->voucher = $voucher;
         $this->voucherManagement = $voucherManagement;
         $this->voucherResource = $voucherResource;
+        $this->redirect = $redirect;
         parent::__construct($context);
     }
 
@@ -55,7 +59,7 @@ class Save extends Action
                 $this->messageManager->addSuccess('Item successfully edited');
             }
 
-            return $resultRedirect->setPath('*/*/');
+            return $resultRedirect->setPath($this->redirect->getRefererUrl());
         }
     }
 }

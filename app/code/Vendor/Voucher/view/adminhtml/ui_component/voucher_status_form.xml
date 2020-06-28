@@ -22,7 +22,6 @@
         <item name="buttons" xsi:type="array">
             <item name="back" xsi:type="string">Vendor\Voucher\Block\Adminhtml\VoucherStatus\Edit\BackButton</item>
             <item name="delete" xsi:type="string">Vendor\Voucher\Block\Adminhtml\VoucherStatus\Edit\DeleteButton</item>
-            <item name="reset" xsi:type="string">Vendor\Voucher\Block\Adminhtml\VoucherStatus\Edit\ResetButton</item>
             <item name="save" xsi:type="string">Vendor\Voucher\Block\Adminhtml\VoucherStatus\Edit\SaveButton</item>
         </item>
     </argument>
