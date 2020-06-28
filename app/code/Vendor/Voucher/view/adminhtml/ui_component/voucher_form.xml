@@ -7,11 +7,6 @@
         </item>
 
         <item name="label" xsi:type="string" translate="true">Contact Form</item>
-        <!--
-        <item name="layout" xsi:type="array">
-            <item name="type" xsi:type="string">tabs</item>
-        </item>
-        -->
         <item name="config" xsi:type="array">
             <item name="dataScope" xsi:type="string">data</item>
             <item name="namespace" xsi:type="string">contact_form</item>
@@ -67,11 +62,12 @@
 
         <field name="customer_id">
             <argument name="data" xsi:type="array">
+                <item name="options" xsi:type="object">Vendor\Voucher\Model\VoucherForm\OpinionCustomerProvider</item>
                 <item name="config" xsi:type="array">
                     <item name="label" xsi:type="string">Customer</item>
                     <item name="visible" xsi:type="boolean">true</item>
                     <item name="dataType" xsi:type="string">text</item>
-                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="formElement" xsi:type="string">select</item>
                     <item name="source" xsi:type="string">contact</item>
                 </item>
             </argument>
@@ -79,11 +75,12 @@
 
         <field name="status_id">
             <argument name="data" xsi:type="array">
+                <item name="options" xsi:type="object">Vendor\Voucher\Model\VoucherForm\OpinionStatusProvider</item>
                 <item name="config" xsi:type="array">
                     <item name="label" xsi:type="string">Status</item>
                     <item name="visible" xsi:type="boolean">true</item>
                     <item name="dataType" xsi:type="string">text</item>
-                    <item name="formElement" xsi:type="string">input</item>
+                    <item name="formElement" xsi:type="string">select</item>
                     <item name="source" xsi:type="string">contact</item>
                 </item>
             </argument>
