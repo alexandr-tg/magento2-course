@@ -3,10 +3,24 @@
 
 namespace Vendor\Voucher\Block\Adminhtml\Voucher\Edit;
 
+use Magento\Backend\Block\Widget\Context;
+use Magento\Framework\App\Response\RedirectInterface;
+use Magento\Framework\Registry;
 use Magento\Framework\View\Element\UiComponent\Control\ButtonProviderInterface;
 
 class BackButton extends GenericButton implements ButtonProviderInterface
 {
+
+    protected $redirect;
+
+    public function __construct(
+        Context $context,
+        Registry $registry,
+        RedirectInterface $redirect
+    ) {
+        $this->redirect = $redirect;
+        parent::__construct($context, $registry);
+    }
 
     public function getButtonData()
     {
@@ -20,6 +34,6 @@ class BackButton extends GenericButton implements ButtonProviderInterface
 
     public function getBackUrl()
     {
-        return $this->getUrl('*/*/');
+        return $this->redirect->getRefererUrl();
     }
 }

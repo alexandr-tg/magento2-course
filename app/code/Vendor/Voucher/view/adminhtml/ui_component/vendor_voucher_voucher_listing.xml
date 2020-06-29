@@ -84,7 +84,10 @@
                 </item>
             </argument>
         </column>
-        <column name="customer_id">
+        <column name="customer_id" class="Vendor\Voucher\Ui\Component\Listing\Column\VoucherCustomerActions">
+            <settings>
+                <bodyTmpl>ui/grid/cells/html</bodyTmpl>
+            </settings>
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="filter" xsi:type="string">text</item>
@@ -98,7 +101,10 @@
                 </item>
             </argument>
         </column>
-        <column name="status_id">
+        <column name="status_id" class="Vendor\Voucher\Ui\Component\Listing\Column\VoucherVoucherStatusActions">
+            <settings>
+                <bodyTmpl>ui/grid/cells/html</bodyTmpl>
+            </settings>
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="filter" xsi:type="string">text</item>

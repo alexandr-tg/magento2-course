@@ -6,6 +6,7 @@ use Magento\Backend\App\Action;
 use Magento\Backend\App\Action\Context;
 use Magento\Framework\View\Result\PageFactory;
 use Vendor\Voucher\Model\VoucherStatusFactory;
+use Magento\Framework\App\Response\RedirectInterface;
 
 class Save extends Action
 {
@@ -13,14 +14,17 @@ class Save extends Action
 
     protected $resultPageFactory;
     protected $voucherStatusFactory;
+    protected $redirect;
 
     public function __construct(
         Context $context,
         PageFactory $resultPageFactory,
-        VoucherStatusFactory $voucherStatusFactory
+        VoucherStatusFactory $voucherStatusFactory,
+        RedirectInterface $redirect
     ) {
         $this->resultPageFactory = $resultPageFactory;
         $this->voucherStatusFactory = $voucherStatusFactory;
+        $this->redirect = $redirect;
         parent::__construct($context);
     }
 
@@ -51,6 +55,6 @@ class Save extends Action
             }
         }
 
-        return $resultRedirect->setPath('*/*/');
+        return $this->redirect->getRefererUrl();
     }
 }

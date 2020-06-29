@@ -3,6 +3,10 @@
 namespace Vendor\Voucher\Controller\Adminhtml\VoucherStatusForm;
 
 use Magento\Backend\App\Action;
+use Magento\Backend\App\Action\Context;
+use Magento\Framework\View\Result\PageFactory;
+use Vendor\Voucher\Model\VoucherStatusFactory;
+use Vendor\Voucher\Model\ResourceModel\VoucherStatus as VoucherResource;
 
 class Delete extends Action
 {
@@ -10,34 +14,31 @@ class Delete extends Action
 
     protected $resultPageFactory;
     protected $statusFactory;
+    protected $voucherStatusResource;
 
     public function __construct(
-        \Magento\Backend\App\Action\Context $context,
-        \Magento\Framework\View\Result\PageFactory $resultPageFactory,
-        \Vendor\Voucher\Model\VoucherStatusFactory $statusFactory
+        Context $context,
+        PageFactory $resultPageFactory,
+        VoucherStatusFactory $statusFactory,
+        VoucherResource $voucherStatusResource
     ) {
         $this->resultPageFactory = $resultPageFactory;
         $this->statusFactory = $statusFactory;
+        $this->voucherStatusResource = $voucherStatusResource;
         parent::__construct($context);
     }
 
     public function execute()
     {
         $id = $this->getRequest()->getParam('id');
+        $voucher = $this->statusFactory->create()->setEntityId($id);
 
-        $contact = $this->statusFactory->create()->load($id);
-
-        if (!$contact) {
-            $this->messageManager->addError(__('Unable to process. please, try again.'));
-            $resultRedirect = $this->resultRedirectFactory->create();
-            return $resultRedirect->setPath('*/*/', ['_current' => true]);
-        }
 
         try {
-            $contact->delete();
-            $this->messageManager->addSuccess(__('Your contact has been deleted !'));
+            $this->voucherStatusResource->delete($voucher);
+            $this->messageManager->addSuccess(__('Voucher Status has been deleted !'));
         } catch (\Exception $e) {
-            $this->messageManager->addError(__('Error while trying to delete contact'));
+            $this->messageManager->addError(__('Error while trying to delete voucher status'));
             $resultRedirect = $this->resultRedirectFactory->create();
             return $resultRedirect->setPath('*/*/index', ['_current' => true]);
         }
